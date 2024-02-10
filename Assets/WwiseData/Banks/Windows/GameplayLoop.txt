@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1423690258	testSuccess			\Default Work Unit\UI\testAudio\testSuccess	
+	1435302941	testFail			\Default Work Unit\UI\testAudio\testFail	
+	4011858643	testStart			\Default Work Unit\UI\testAudio\testStart	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	281856875	testSuccess	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Windows\SFX\scoreUp_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testAudio\testSuccess		576096
+	519084594	testStart	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Windows\SFX\playerJoin_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testAudio\testStart		465416
+	889930564	testFail	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Windows\SFX\scoreDown_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testAudio\testFail		677496
+

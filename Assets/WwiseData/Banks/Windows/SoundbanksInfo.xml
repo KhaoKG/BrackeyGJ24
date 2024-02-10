@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../../../../BrackeyGJ24_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../BrackeyGJ24_WwiseProject/.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../BrackeyGJ24_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986F18F8-3785-040C-E323-B8DCD8FD9025}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="77978275" Name="Ambient"/>
+				<Bus Id="833916109" Name="NPCs"/>
+				<Bus Id="838047381" Name="Non-World"/>
+				<Bus Id="1069431850" Name="Player"/>
+				<Bus Id="1551306167" Name="UI"/>
+				<Bus Id="1695690031" Name="Objects"/>
+				<Bus Id="2609808943" Name="World"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{45388BB9-626A-B2E1-AD48-7953E6062C80}">
+			<ShortName>GameplayLoop</ShortName>
+			<Path>GameplayLoop.bnk</Path>
+			<Media>
+				<File Id="281856875" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>scoreUp.wav</ShortName>
+					<CachePath>SFX/scoreUp_818F3B66.wem</CachePath>
+				</File>
+				<File Id="519084594" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJoin.wav</ShortName>
+					<CachePath>SFX/playerJoin_818F3B66.wem</CachePath>
+				</File>
+				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>scoreDown.wav</ShortName>
+					<CachePath>SFX/scoreDown_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1435302941" Name="testFail" DurationType="OneShot" DurationMin="3.528125" DurationMax="3.528125">
+					<MediaRefs>
+						<MediaRef Id="889930564"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4011858643" Name="testStart" DurationType="OneShot" DurationMin="2.4235418" DurationMax="2.4235418">
+					<MediaRefs>
+						<MediaRef Id="519084594"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1423690258" Name="testSuccess" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="281856875"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3F0EA889-BBAF-1B41-97DE-F4C2195B69CB}</FileHash>
+</SoundBanksInfo>

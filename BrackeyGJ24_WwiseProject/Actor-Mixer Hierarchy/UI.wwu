@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}" SchemaVersion="119" RootDocumentID="{C2FC293E-ECDE-4DA1-9AFB-32BD77150DDF}" ParentDocumentID="{C2FC293E-ECDE-4DA1-9AFB-32BD77150DDF}">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}" OwnerID="{5FDB43FE-D7C5-412F-956A-706017303FEF}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="UI" ID="{9AB3BDE6-BF64-4991-BFAC-30FD5FFE6FFC}" ShortID="1005960598">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="testAudio" ID="{56120123-F130-472D-865C-FB95B1317B08}" ShortID="297925721">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="testSuccess" ID="{151DBEBC-1E51-4CAB-8F0B-B5F8AFFED8B8}" ShortID="1396667">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="scoreUp" ID="{0791FCA3-F694-4DB8-8E0D-D2C1F817547F}">
+											<Language>SFX</Language>
+											<AudioFile>scoreUp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="281856875"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="scoreUp" ID="{0791FCA3-F694-4DB8-8E0D-D2C1F817547F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="testStart" ID="{AAB3130C-B0CB-439B-994C-27A74526C858}" ShortID="940781254">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="playerJoin" ID="{6D0545E3-0C0F-4BDD-9982-45D74FA6EB52}">
+											<Language>SFX</Language>
+											<AudioFile>playerJoin.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="519084594"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="playerJoin" ID="{6D0545E3-0C0F-4BDD-9982-45D74FA6EB52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="testFail" ID="{D7EBDB58-B991-4E44-8BF8-5BAB7CE96A23}" ShortID="94536607">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="scoreDown" ID="{FC12ED02-607B-4B1E-845E-BEFA673FA2FA}">
+											<Language>SFX</Language>
+											<AudioFile>scoreDown.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="889930564"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="scoreDown" ID="{FC12ED02-607B-4B1E-845E-BEFA673FA2FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

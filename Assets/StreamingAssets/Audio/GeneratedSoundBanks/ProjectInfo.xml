@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="BrackeyGJ24_WwiseProject" GUID="{A9F4CCB6-032A-4E14-998F-A0A016F4800A}" Generator="2023.1.1.8417"/>
+	<CacheRoot>../../../../BrackeyGJ24_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Linux" GUID="{006CBF35-AE70-41CA-A26A-038325005752}" BasePlatform="Linux" BasePlatformGUID="{BD0BDF13-3125-454F-8BFD-319537169F81}" Path="../../../WwiseData/Banks/Linux"/>
+		<Platform Name="Mac" GUID="{EC607702-370A-4C2A-9F47-DE7376EDA8B9}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../WwiseData/Banks/Mac"/>
+		<Platform Name="Web" GUID="{B13AAFB0-C4B8-4BF8-A535-3AD1469B542B}" BasePlatform="Web" BasePlatformGUID="{639AD233-23F2-4C0F-9127-79F44C15E1DA}" Path="../../../WwiseData/Banks/Web"/>
+		<Platform Name="Windows" GUID="{E2283620-4B36-4BC6-A6DB-EAFBA3B3C03B}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../WwiseData/Banks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{660D2068-C1DD-43EF-A5D9-143A871153CF}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{781BCF29-A048-C4B6-24B0-FD712E0CDE27}</FileHash>
+</ProjectInfo>
