@@ -106,10 +106,7 @@ public class Player : MonoBehaviour
         Debug.Log("Took Damage, health is now " + health);
 
         // update UI
-        for(int i=1; i==damage; i++)
-        {
-            healthBar.fillAmount = (health / maxHealth);
-        }
+        healthBar.fillAmount = ((float)health / maxHealth);
 
         // knockback
         StartCoroutine(DoHitStun());
@@ -131,6 +128,7 @@ public class Player : MonoBehaviour
         }
 
         isInHitstun = false;
+        rb.velocity = Vector2.zero;
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -138,7 +136,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == "Enemy" && !isInHitstun)
         {
             // Get knockback direction
-            Vector2 knockbackDirection = transform.position - collision.transform.position; 
+            Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(1, knockbackDirection.normalized);
         }
     }
