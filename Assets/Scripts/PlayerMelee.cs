@@ -9,6 +9,8 @@ public class PlayerMelee : MonoBehaviour
     Animator attackAnimator; // animator sitting on the actual attack object
     [SerializeField]
     float attackCooldown = 0.5f; // how long before you can melee again
+    [SerializeField]
+    GameObject attackHitbox;
 
 
     // Start is called before the first frame update
@@ -47,9 +49,13 @@ public class PlayerMelee : MonoBehaviour
 
     IEnumerator DoAttack()
     {
+        attackHitbox.SetActive(true);
         inAttack = true;
         attackAnimator.SetTrigger("attack");
+
         yield return new WaitForSeconds(attackCooldown);
+
         inAttack = false;
+        attackHitbox.SetActive(false);
     }
 }

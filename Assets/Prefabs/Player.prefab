@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackAnimator: {fileID: 6036200964700534384}
+  attackCooldown: 0.5
+  attackHitbox: {fileID: 7777723505001612792}
 --- !u!1 &6065484187918596696
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8621960390123409325
 Transform:
   m_ObjectHideFlags: 0
