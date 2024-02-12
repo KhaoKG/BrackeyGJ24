@@ -16,13 +16,18 @@ public class Player : MonoBehaviour
 
     [Header("Door related")]
     [SerializeField]
-    bool isHoldingDoor = false;
+    bool isHoldingDoor = true;
+    //[SerializeField]
+    //GameObject doorHeld = null;
+    //[SerializeField]
+    //bool isNearDoor = false;
+    //[SerializeField]
+    //GameObject doorNearby = null;
+
+    [Header("Attack")]
     [SerializeField]
-    GameObject doorHeld = null;
-    [SerializeField]
-    bool isNearDoor = false;
-    [SerializeField]
-    GameObject doorNearby = null;
+    GameObject attackParent; // this is the parent of the attack hitbox. This object is rotated towards the mouse so the attackalways happens in the direction of the mouse
+
 
     [Header("Movement")]
     [SerializeField]
@@ -42,54 +47,23 @@ public class Player : MonoBehaviour
 
         if (!isInHitstun) {
             Run();
-            FlipSprite();
+            //FlipSprite(); commented out until we fix it so it flips just the sprite and not the whole character
         }
 
         rb.AddForce(moveDirection * moveSpeed);
     }
 
+    private void FixedUpdate()
+    {
+        
+    }
+
     void OnAttack(InputValue value) {
         if (isHoldingDoor) {
-            doorHeld.transform.RotateAround(transform.position, Vector3.forward, -90f * transform.localScale.x);
-            StartCoroutine(RotateDoorBack());
+            
         }
         else {
-            // TODO Remove test punch attack
-            GameObject punch = transform.GetChild(0).gameObject;
-
-            // If punch not active
-            if (!punch.activeSelf) {
-                punch.SetActive(true);
-                StartCoroutine(DisappearPunch());
-            }
-        }
-    }
-
-    // TODO Remove test "attack end"
-    IEnumerator DisappearPunch() {
-        yield return new WaitForSeconds(0.1f);
-        transform.GetChild(0).gameObject.SetActive(false);
-    }
-
-    // TODO Remove test "door attack end"
-    IEnumerator RotateDoorBack() {
-        yield return new WaitForSeconds(0.1f);
-        doorHeld.transform.RotateAround(transform.position, Vector3.forward, 90f * transform.localScale.x);
-    }
-
-    void OnGrabDoor(InputValue value) {
-        // Grab door if nearby
-        if (isNearDoor) {
-            doorHeld = doorNearby;
-            doorHeld.transform.parent = transform;
-            doorHeld.transform.localPosition = Vector3.up * 1.2f;
-
-            // Prepare door as weapon
-            doorHeld.tag = "Player";
-            doorHeld.layer = LayerMask.NameToLayer("PlayerAttack");
-            doorHeld.GetComponent<BoxCollider2D>().isTrigger = false;
-
-            isHoldingDoor = true;
+            
         }
     }
 
@@ -110,19 +84,5 @@ public class Player : MonoBehaviour
 
     public bool IsAlive() {
         return health > 0;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("Door")) {
-            isNearDoor = true;
-            doorNearby = collision.gameObject;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision) {
-        if (collision.CompareTag("Door")) {
-            isNearDoor = false;
-            doorNearby = null;
-        }
     }
 }
