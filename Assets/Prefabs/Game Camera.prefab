@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  cam2dOffset: 1.2
 --- !u!1 &8562292700214955195
 GameObject:
   m_ObjectHideFlags: 0
