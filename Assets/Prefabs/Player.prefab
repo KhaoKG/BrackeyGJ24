@@ -128,12 +128,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f54f5c058a63ff4d9777651396ff157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  maxHealth: 10
+  healthBar: {fileID: 0}
   punchDamage: 1
-  animator: {fileID: 0}
-  isHoldingDoor: 0
-  attackParent: {fileID: 0}
-  moveSpeed: 2
+  animator: {fileID: 6036200964700534384}
+  isHoldingDoor: 1
+  attackParent: {fileID: 2103094387012240461}
+  knockbackForce: 150
+  knockbackDuration: 0.5
+  moveSpeed: 6
   rb: {fileID: 420199765914226485}
   isInHitstun: 0
 --- !u!212 &5676607009974289422

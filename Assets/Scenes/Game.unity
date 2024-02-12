@@ -615,6 +615,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: knockbackForce
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: knockbackDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

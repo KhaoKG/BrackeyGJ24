@@ -15,6 +15,8 @@ public class PlayerFollowOffset : MonoBehaviour
     float baseOffsetZ;
     [SerializeField]
     float cam2dOffset;
+    [SerializeField]
+    float offsetMoveSpeed = 2f;
 
     private void Start() {
         mainCamera = Camera.main;
@@ -26,10 +28,13 @@ public class PlayerFollowOffset : MonoBehaviour
     }
 
     private void Update() {
-        Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 offsetDirection = cam2dOffset * (mousePos - player.transform.position).normalized;
+        Vector2 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 offsetDirection = cam2dOffset * (mousePos - (Vector2)player.transform.position).normalized;
 
-        transposer.m_FollowOffset = new Vector3(offsetDirection.x, offsetDirection.y, baseOffsetZ);
+        Debug.Log(offsetDirection.magnitude);
+
+        transposer.m_FollowOffset = Vector3.MoveTowards(transposer.m_FollowOffset, 
+            new Vector3(offsetDirection.x, offsetDirection.y, baseOffsetZ), offsetMoveSpeed * Time.deltaTime);
     }
 
 
