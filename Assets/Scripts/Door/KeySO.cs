@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "AbilityKey", menuName = "Abilities/AbilityKey")]
+[CreateAssetMenu(fileName = "AbilityKey", menuName = "ScriptableObjects/AbilityKey")]
 public class KeySO : ScriptableObject
 {
     public string Name;

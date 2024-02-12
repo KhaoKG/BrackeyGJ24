@@ -4,8 +4,7 @@ using UnityEngine;
 
 public interface IAbility
 {
-    public void DealDamage();
     public void Activate();
     public void Deactivate();
-    public AbilitySO GetAbilitySO();
+    public AbilitySO GetAbilitySo();
 }
