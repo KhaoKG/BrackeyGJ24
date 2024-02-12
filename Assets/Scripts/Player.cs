@@ -29,9 +29,11 @@ public class Player : MonoBehaviour
     //[SerializeField]
     //GameObject doorNearby = null;
 
-    [Header("Attack")]
+    [Header("Combat")]
     [SerializeField]
     GameObject attackParent; // this is the parent of the attack hitbox. This object is rotated towards the mouse so the attackalways happens in the direction of the mouse
+    [SerializeField] float knockbackForce;
+    [SerializeField] float knockbackDuration;
 
 
     [Header("Movement")]
@@ -42,12 +44,14 @@ public class Player : MonoBehaviour
     Vector2 moveDirection;
     [SerializeField]
     bool isInHitstun = false;
+    SpriteRenderer sr;
 
     public int PunchDamage { get => punchDamage; set => punchDamage = value; }
 
     private void Start()
     {
         health = maxHealth;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update() {
@@ -59,8 +63,6 @@ public class Player : MonoBehaviour
             Run();
             //FlipSprite(); commented out until we fix it so it flips just the sprite and not the whole character
         }
-
-        rb.AddForce(moveDirection * moveSpeed);
     }
 
     private void FixedUpdate()
@@ -101,6 +103,8 @@ public class Player : MonoBehaviour
         // update health
         health -= damage;
 
+        Debug.Log("Took Damage, health is now " + health);
+
         // update UI
         for(int i=1; i==damage; i++)
         {
@@ -108,17 +112,34 @@ public class Player : MonoBehaviour
         }
 
         // knockback
+        StartCoroutine(DoHitStun());
+        rb.velocity = Vector2.zero;
+        rb.AddForce(direction * knockbackForce);
+    }
+
+    IEnumerator DoHitStun()
+    {
         isInHitstun = true;
-        rb.AddForce(direction * 500); //TODO: make '3' a variable for knockback force
+        float knockbackDurationFraction = knockbackDuration / 6;
+
+        for(int i=0; i<3; i++)
+        {
+            sr.color = Color.clear;
+            yield return new WaitForSeconds(knockbackDurationFraction);
+            sr.color = Color.white;
+            yield return new WaitForSeconds(knockbackDurationFraction);
+        }
+
+        isInHitstun = false;
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy" && !isInHitstun)
         {
             // Get knockback direction
-            Vector2 knockbackDirection = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
-            TakeDamage(1, knockbackDirection);
+            Vector2 knockbackDirection = transform.position - collision.transform.position; 
+            TakeDamage(1, knockbackDirection.normalized);
         }
     }
 }
