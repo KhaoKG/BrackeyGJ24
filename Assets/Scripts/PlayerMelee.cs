@@ -8,7 +8,7 @@ public class PlayerMelee : MonoBehaviour
     [SerializeField]
     Animator attackAnimator; // animator sitting on the actual attack object
     [SerializeField]
-    float attackCooldown = 0.5f; // how long before you can melee again
+    float attackCooldown = 0.1f; // how long before you can melee again
     [SerializeField]
     GameObject attackHitbox;
 
@@ -27,6 +27,9 @@ public class PlayerMelee : MonoBehaviour
         {
             StartCoroutine(DoAttack());
         }
+
+        if (inAttack)
+            return;
 
         // ROTATE ATTACK TOWARD MOUSE
         // Get screen position of the object
