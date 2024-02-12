@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    [Header("Health")]
     [SerializeField]
-    int health = 10;
+    int maxHealth = 10;
+    int health;
+    [SerializeField]
+    Image healthBar;
 
     [SerializeField]
     int punchDamage = 1;
@@ -39,6 +44,11 @@ public class Player : MonoBehaviour
     bool isInHitstun = false;
 
     public int PunchDamage { get => punchDamage; set => punchDamage = value; }
+
+    private void Start()
+    {
+        health = maxHealth;
+    }
 
     private void Update() {
         if (!IsAlive()) {
@@ -84,5 +94,31 @@ public class Player : MonoBehaviour
 
     public bool IsAlive() {
         return health > 0;
+    }
+
+    void TakeDamage(int damage, Vector2 direction)
+    {
+        // update health
+        health -= damage;
+
+        // update UI
+        for(int i=1; i==damage; i++)
+        {
+            healthBar.fillAmount = (health / maxHealth);
+        }
+
+        // knockback
+        isInHitstun = true;
+        rb.AddForce(direction * 500); //TODO: make '3' a variable for knockback force
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            // Get knockback direction
+            Vector2 knockbackDirection = new Vector2(collision.transform.position.x - transform.position.x, collision.transform.position.y - transform.position.y);
+            TakeDamage(1, knockbackDirection);
+        }
     }
 }
