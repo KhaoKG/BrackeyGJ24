@@ -365,6 +365,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4996420702338285433, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
   m_PrefabInstance: {fileID: 6747081703983400597}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1613927569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f54f5c058a63ff4d9777651396ff157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1674893243
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,6 +685,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 605126042586856106, guid: d197bca01781586439127b8c63d24ed2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1613927569}
     - target: {fileID: 5215561326857501350, guid: d197bca01781586439127b8c63d24ed2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
