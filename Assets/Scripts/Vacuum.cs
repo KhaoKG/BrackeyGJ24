@@ -5,12 +5,12 @@ using UnityEngine;
 public class Vacuum : MonoBehaviour, IAbility
 {
     [SerializeField] AbilitySO SO;
-    [SerializeField] GameObject attractPoint;
+    GameObject attractPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
     }
 
     // Update is called once per frame
@@ -29,8 +29,5 @@ public class Vacuum : MonoBehaviour, IAbility
         attractPoint.GetComponent<AttractPoint>().isOn = false;
     }
 
-    public AbilitySO GetAbilitySo()
-    {
-        return SO;
-    }
+    public AbilitySO GetAbilitySo() => SO != null ? SO : Resources.Load<AbilitySO>("ScriptableObjects/Vacuum");
 }

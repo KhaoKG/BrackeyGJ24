@@ -711,7 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249430a2c3f5ac746bd96dae654b21c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilitiesSo: {fileID: 11400000, guid: 0e7170da2a8b0224eab35781dd3bfbf9, type: 2}
+  abilitiesSo: {fileID: 11400000, guid: abf6c0162f2c825448413ea28fa5cfd2, type: 2}
   HellPortalPrefab: {fileID: 0}
   VascuumPrefab: {fileID: 0}
   TentaclePrefab: {fileID: 0}

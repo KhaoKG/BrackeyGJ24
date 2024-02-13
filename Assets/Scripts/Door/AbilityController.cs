@@ -25,7 +25,8 @@ public class AbilityController : Singleton<AbilityController>
     public void Start()
     {
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
-        abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
+        VascuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
+        abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityListSO");
         PopulateAvailableAbilities();
         UpdateAbilitiesForRound();
     }
@@ -149,6 +150,9 @@ public class AbilityController : Singleton<AbilityController>
             {
                 case "Hell Portal":
                     totalAvailableAbilities.Add(HellPortalPrefab.GetComponent<HellPortal>());
+                    break;
+                case "Vacuum":
+                    totalAvailableAbilities.Add(VascuumPrefab.GetComponent<Vacuum>());
                     break;
                 default:
                     break;
