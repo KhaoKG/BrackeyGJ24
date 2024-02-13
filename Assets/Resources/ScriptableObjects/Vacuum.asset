@@ -15,4 +15,5 @@ MonoBehaviour:
   Name: Vacuum
   Description: Vacuum
   ActiveTime: 10
-  AbilityPrefab: {fileID: 1206911822284272808, guid: bface4c5158605b4ebf65dabeeeb961e, type: 3}
+  KeyIcon: {fileID: 0}
+  AbilityPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}

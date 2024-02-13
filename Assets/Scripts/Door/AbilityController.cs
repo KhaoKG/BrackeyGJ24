@@ -26,7 +26,7 @@ public class AbilityController : Singleton<AbilityController>
     {
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
         VascuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
-        abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityListSO");
+        abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         PopulateAvailableAbilities();
         UpdateAbilitiesForRound();
     }
@@ -62,6 +62,7 @@ public class AbilityController : Singleton<AbilityController>
     public void ActivateNextAbility(Vector3 position)
     {
         var nextAbility = availableAbilitiesForRound.First();
+        Debug.Log(nextAbility.GetAbilitySo().Name);
         var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
         abilityObj.GetComponent<IAbility>().Activate();
         activeAbility = nextAbility;

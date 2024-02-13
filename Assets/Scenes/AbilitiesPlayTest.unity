@@ -768,8 +768,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249430a2c3f5ac746bd96dae654b21c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilitiesSo: {fileID: 11400000, guid: abf6c0162f2c825448413ea28fa5cfd2, type: 2}
-  HellPortalPrefab: {fileID: 0}
+  abilitiesSo: {fileID: 11400000, guid: 0e7170da2a8b0224eab35781dd3bfbf9, type: 2}
+  HellPortalPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
   VascuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
   TentaclePrefab: {fileID: 0}
   LaserPortalPrefab: {fileID: 0}
