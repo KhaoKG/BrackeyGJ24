@@ -42,13 +42,23 @@ public class Player : MonoBehaviour
     [SerializeField]
     bool isInHitstun = false;
     SpriteRenderer sr;
+    float initialSpeed = 1f;
 
+    [Header("Dash")]
+    [SerializeField]
+    float dashSpeed;
+    [SerializeField] 
+    float dashLength = .5f;
+    [SerializeField]
+    float dashCooldown = 1f;
+    private float dashCounter, dashCoolCounter;
     //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
 
     private void Start()
     {
         health = maxHealth;
         sr = GetComponent<SpriteRenderer>();
+        initialSpeed = moveSpeed;
     }
 
     private void Update() {
@@ -59,6 +69,22 @@ public class Player : MonoBehaviour
         if (!isInHitstun) {
             Run();
             //FlipSprite(); commented out until we fix it so it flips just the sprite and not the whole character
+        }
+
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter < 0)
+            {
+                moveSpeed = initialSpeed;
+                dashCoolCounter = dashCooldown;
+            }
+        }
+
+        if (dashCoolCounter > 0)
+        {
+            dashCoolCounter -= Time.deltaTime;
         }
     }
 
@@ -78,6 +104,15 @@ public class Player : MonoBehaviour
 
     void OnMove(InputValue value) {
         moveDirection = value.Get<Vector2>();
+    }
+
+    void OnDash(InputValue value)
+    {
+        if (dashCoolCounter <= 0 && dashCounter <= 0)
+        {
+            moveSpeed = dashSpeed;
+            dashCounter = dashLength;
+        }
     }
 
     void Run() {
