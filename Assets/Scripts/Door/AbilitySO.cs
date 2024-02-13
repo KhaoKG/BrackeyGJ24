@@ -7,6 +7,13 @@ public class AbilitySO : ScriptableObject
 {
     public string Name;
     public string Description;
-    public double ActiveTime;
+    public float ActiveTime;
+    public Sprite KeyIcon;
     public GameObject AbilityPrefab;
+}
+
+[CreateAssetMenu(fileName = "AbilityList", menuName = "ScriptableObjects/AbilityList")]
+public class AbilityListSO : ScriptableObject
+{
+    public List<AbilitySO> Abilities;
 }

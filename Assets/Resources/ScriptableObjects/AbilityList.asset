@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfbf5b60f55931e41be47b80953ed638, type: 3}
-  m_Name: HellPortalKey
-  m_EditorClassIdentifier: 
-  Name: Red Key
-  IconSprite: {fileID: 0}
-  Ability: {fileID: 11400000, guid: 858bbb333362d7d4c89b99969a09186b, type: 2}
+  m_Script: {fileID: 0}
+  m_Name: AbilityList
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityListSO
+  Abilities:
+  - {fileID: 11400000, guid: 858bbb333362d7d4c89b99969a09186b, type: 2}

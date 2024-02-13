@@ -42,13 +42,15 @@ public class HellPortal : MonoBehaviour, IAbility
         // Start drawing the link if the enemy is spawned
         if (spawnedEnemy != null)
         {
+            StartCoroutine(ActivateAndDeactivateCoroutine());
             StartCoroutine(UpdateLineRenderer());
         }
     }
 
     public void Deactivate()
     {
-        StopCoroutine(UpdateLineRenderer());
+        StopAllCoroutines(); // Stop all coroutines when deactivating
+
         lineRenderer.enabled = false;
 
         // Destroy the spawned enemy
@@ -70,5 +72,12 @@ public class HellPortal : MonoBehaviour, IAbility
             yield return null;
         }
     }
-    public AbilitySO GetAbilitySo() => abilityData;
+
+    private IEnumerator ActivateAndDeactivateCoroutine()
+    {
+        yield return new WaitForSeconds(abilityData.ActiveTime); // Wait for 30 seconds
+        Deactivate(); // Deactivate after 30 seconds
+    }
+
+    public AbilitySO GetAbilitySo() => abilityData != null ? abilityData : Resources.Load<AbilitySO>("ScriptableObjects/HellPortal");
 }
