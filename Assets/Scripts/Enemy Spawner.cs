@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] int numEnemies;
+    [SerializeField] public int numEnemies;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
         
     }
 
-    IEnumerator DoSpawnEnemy()
+    public IEnumerator DoSpawnEnemy()
     {
         for (int i = 0; i < numEnemies; i++)
         {
@@ -27,6 +27,6 @@ public class EnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(2, 8));
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

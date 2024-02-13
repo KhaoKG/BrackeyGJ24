@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameStateManager : MonoBehaviour
 {
     [SerializeField] GameObject KeySelectionScreen;
+    [SerializeField] GameObject[] EnemySpawners;
+    int currentNumEnemies = 4;
 
     // Start is called before the first frame update
     void Start()
@@ -21,5 +23,22 @@ public class GameStateManager : MonoBehaviour
             // killed all enemies, round is done.
             KeySelectionScreen.SetActive(true);
         }
+    }
+
+    public void KeySelected(string Key)
+    {
+        // TODO: ADD THE KEY WHEREVER IT IS SUPPOSED TO GO
+
+        // Reset the Enemy Spawners
+        currentNumEnemies += 2;
+        foreach(GameObject enemySpawner in EnemySpawners)
+        {
+            enemySpawner.GetComponent<EnemySpawner>().numEnemies = currentNumEnemies;
+            enemySpawner.SetActive(true);
+            enemySpawner.GetComponent<EnemySpawner>().DoSpawnEnemy();
+        }
+
+        // Reset the Key Selection Screen
+        KeySelectionScreen.SetActive(false);
     }
 }
