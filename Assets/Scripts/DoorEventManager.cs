@@ -31,9 +31,6 @@ public class DoorEventManager : MonoBehaviour
             // Trigger Door Event
             onCooldown = true;
             sr.enabled = true;
-            // TODO: MAKE THE DOOR ACTUALLY FLY TO THE TOP FROM THE PLAYER
-
-            // TODO: ACTUALLY MAKE THE DOOR EVENT HAPPEN
             sr.enabled = false;
         }
         else if (onCooldown)
