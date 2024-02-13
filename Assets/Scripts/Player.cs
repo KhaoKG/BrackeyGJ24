@@ -143,7 +143,7 @@ public class Player : MonoBehaviour
         // knockback
         StartCoroutine(DoHitStun());
         rb.velocity = Vector2.zero;
-        rb.AddForce(direction * knockbackForce);
+        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
     }
 
     IEnumerator DoHitStun()

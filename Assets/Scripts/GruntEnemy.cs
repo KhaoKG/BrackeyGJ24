@@ -42,9 +42,9 @@ public class GruntEnemy : Enemy {
             Die();
         }
         Debug.Log("Direction: " + direction.x + "," + direction.y);
-        rb.velocity = Vector2.zero;
-        rb.AddForce(direction * 150);
         StartCoroutine(DoHitStun());
+        rb.velocity = Vector2.zero;
+        rb.AddForce(direction * 200, ForceMode2D.Impulse);
     }
 
     protected override void Attack() { }
@@ -56,7 +56,7 @@ public class GruntEnemy : Enemy {
     {
         isInHitstun = true;
         Debug.Log("in hitstun");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
         Debug.Log("out of hitstun");
         isInHitstun = false;
         rb.velocity = Vector2.zero;

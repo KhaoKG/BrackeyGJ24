@@ -44,7 +44,7 @@ public abstract class Enemy : MonoBehaviour
         if(collision.gameObject.tag == "Attack")
         {
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.gameObject.GetComponent<PlayerPunch>().punchDamage, knockbackDirection);
+            TakeDamage(collision.gameObject.GetComponent<PlayerPunch>().punchDamage, knockbackDirection.normalized);
         }
     }
 }
