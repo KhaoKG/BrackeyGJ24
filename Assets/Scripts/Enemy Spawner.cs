@@ -23,7 +23,7 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < numEnemies; i++)
         {
-            Instantiate(enemyPrefab);
+            Instantiate(enemyPrefab, transform.position, transform.rotation);
             yield return new WaitForSeconds(Random.Range(2, 8));
         }
     }
