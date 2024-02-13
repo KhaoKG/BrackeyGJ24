@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,4 +27,10 @@ public class FadeEffect : MonoBehaviour {
             enabled = false;
         }
     }
+
+#if UNITY_EDITOR
+    private void OnValidate() {
+        SceneVisibilityManager.instance.Hide(gameObject, false);
+    }
+#endif
 }
