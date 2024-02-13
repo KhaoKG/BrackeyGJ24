@@ -31,7 +31,7 @@ public class PlayerFollowOffset : MonoBehaviour
         Vector2 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector2 offsetDirection = cam2dOffset * (mousePos - (Vector2)player.transform.position).normalized;
 
-        Debug.Log(offsetDirection.magnitude);
+        //Debug.Log(offsetDirection.magnitude);
 
         transposer.m_FollowOffset = Vector3.MoveTowards(transposer.m_FollowOffset, 
             new Vector3(offsetDirection.x, offsetDirection.y, baseOffsetZ), offsetMoveSpeed * Time.deltaTime);

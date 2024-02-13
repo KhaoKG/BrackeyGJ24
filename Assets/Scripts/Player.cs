@@ -14,9 +14,6 @@ public class Player : MonoBehaviour
     Image healthBar;
 
     [SerializeField]
-    int punchDamage = 1;
-
-    [SerializeField]
     Animator animator;
 
     [Header("Door related")]
@@ -46,7 +43,7 @@ public class Player : MonoBehaviour
     bool isInHitstun = false;
     SpriteRenderer sr;
 
-    public int PunchDamage { get => punchDamage; set => punchDamage = value; }
+    //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
 
     private void Start()
     {

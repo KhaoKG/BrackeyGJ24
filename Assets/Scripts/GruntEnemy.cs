@@ -13,7 +13,7 @@ public class GruntEnemy : Enemy {
     }
 
     private void Update() {
-        if (!IsAlive()) {
+        if (!IsAlive() || isInHitstun) {
             return;
         }
 
@@ -33,8 +33,32 @@ public class GruntEnemy : Enemy {
         rb.velocity = movementSpeed * (player.transform.position - transform.position).normalized;
     }
 
+    public override void TakeDamage(int damage, Vector2 direction)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+        Debug.Log("Direction: " + direction.x + "," + direction.y);
+        rb.velocity = Vector2.zero;
+        rb.AddForce(direction * 150);
+        StartCoroutine(DoHitStun());
+    }
+
     protected override void Attack() { }
     protected override void Die() {
         Destroy(gameObject);
+    }
+
+    IEnumerator DoHitStun()
+    {
+        isInHitstun = true;
+        Debug.Log("in hitstun");
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("out of hitstun");
+        isInHitstun = false;
+        rb.velocity = Vector2.zero;
     }
 }

@@ -7,10 +7,14 @@ public class PlayerPunch : MonoBehaviour
     [SerializeField]
     Player player;
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    [SerializeField]
+    public int punchDamage = 1;
+
+    private void OnTriggerEnter2D(Collision2D collision) {
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Enemy")) {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(player.PunchDamage);
+            Vector2 knockbackDirection = collision.transform.position - transform.position;
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(punchDamage, knockbackDirection);
         }
     }
 }
