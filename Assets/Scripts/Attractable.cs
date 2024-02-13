@@ -15,6 +15,7 @@ public class Attractable : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
     }
 
     // Update is called once per frame
