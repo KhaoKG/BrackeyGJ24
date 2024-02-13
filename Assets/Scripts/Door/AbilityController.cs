@@ -1,42 +1,70 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
-public class AbilityController : MonoBehaviour
+public class AbilityController : Singleton<AbilityController>
 {
-    public List<IAbility> availableAbilitiesForRound; // This holds the abilities for this round
-    public List<IAbility> totalAvailableAbilities; // This holds the total abilities the player unlocked in the run
+    public List<IAbility> availableAbilitiesForRound = new(); // This holds the abilities for this round
+    public List<IAbility> totalAvailableAbilities = new(); // This holds the total abilities the player unlocked in the run
     public IAbility activeAbility; // Utilitary, if needed
+    public AbilityListSO abilitiesSo; // Total abilities in the game. Distinct.
+    private bool isNextAbilityUsable = true;
 
+    public GameObject HellPortalPrefab;
+    public GameObject VascuumPrefab;
+    public GameObject TentaclePrefab;
+    public GameObject LaserPortalPrefab;
+
+    public void Start()
+    {
+        HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
+        abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
+        PopulateAvailableAbilities();
+        UpdateAbilitiesForRound();
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            UseAbility();
+        }
+    }
     #region Activate abilities
-    public void ActivateAbility(int index)
+    public void ActivateAbility(int index, Vector3 position)
     {
         if (index >= 0 && index < availableAbilitiesForRound.Count)
         {
-            availableAbilitiesForRound[index].Activate();
-            activeAbility = availableAbilitiesForRound[index];
+            var nextAbility = availableAbilitiesForRound[index];
+            var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
+            abilityObj.GetComponent<IAbility>().Activate();
+            activeAbility = nextAbility;
+            isNextAbilityUsable = false;
         }
     }
 
-    public void ActivateAbility(KeySO key)
+    public void ActivateAbility(IAbility ability, Vector3 position)
     {
-        var ability = availableAbilitiesForRound.Find(ability => ability.GetAbilitySo().Name
-            .Equals(key.Ability.Name));
-        ability.Activate();
+        var abilityObj = Instantiate(ability.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
+        abilityObj.GetComponent<IAbility>().Activate();
         activeAbility = ability;
+        isNextAbilityUsable = false;
     }
 
-    public void ActivateAbility(IAbility ability)
+    public void ActivateNextAbility(Vector3 position)
     {
-        ability.Activate();
-        activeAbility = ability;
-    }
-
-    public void ActivateNextAbility()
-    {
-       availableAbilitiesForRound.First().Activate();
-       activeAbility = availableAbilitiesForRound.First();
+        var nextAbility = availableAbilitiesForRound.First();
+        var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
+        abilityObj.GetComponent<IAbility>().Activate();
+        activeAbility = nextAbility;
+        isNextAbilityUsable = false;
     }
 
     #endregion
@@ -52,29 +80,23 @@ public class AbilityController : MonoBehaviour
 
     #region Disable abilities ( consume )
 
-    public void DisableAbility(KeySO key)
-    {
-        var ability = availableAbilitiesForRound.Find(ability => ability.GetAbilitySo().Name
-            .Equals(key.Ability.Name));
-        ability.Deactivate();
-        activeAbility = null;
-        RemoveAbility(key);
-    }
 
     public void DisableAbility(IAbility ability)
     {
         ability.Deactivate();
         activeAbility = null;
         RemoveAbility(ability);
+        isNextAbilityUsable = true;
     }
 
     public void DisableNextAbility()
     {
-        availableAbilitiesForRound.First().Activate();
+        availableAbilitiesForRound.First().Deactivate();
         activeAbility = null;
         if(availableAbilitiesForRound.Count > 0)
         {
             availableAbilitiesForRound.RemoveAt(0);
+            isNextAbilityUsable = true;
         }
         else
         {
@@ -93,15 +115,6 @@ public class AbilityController : MonoBehaviour
         totalAvailableAbilities.Add(ability);
     }
     /// <summary>
-    /// Add ability should be used at the end of round screen where you receive a key
-    /// </summary>
-    /// <param name="key"></param>
-    public void AddAbility(KeySO key)
-    {
-        totalAvailableAbilities.Add(availableAbilitiesForRound
-            .Find(a => a.GetAbilitySo().Name.Equals(key.Ability.Name)));
-    }
-    /// <summary>
     /// Consumes the current used ability so it can't be used again.
     /// </summary>
     /// <param name="ability"></param>
@@ -115,12 +128,6 @@ public class AbilityController : MonoBehaviour
         availableAbilitiesForRound.RemoveAt(index);
     }
 
-    public void RemoveAbility(KeySO key)
-    {
-        availableAbilitiesForRound.Remove(availableAbilitiesForRound
-            .Find(a => a.GetAbilitySo().Name.Equals(key.Ability.Name)));
-    }
-
     /// <summary>
     /// This should be called when the round changes, to refresh the active keys for the door.
     /// </summary>
@@ -128,5 +135,36 @@ public class AbilityController : MonoBehaviour
     {
         availableAbilitiesForRound.Clear();
         availableAbilitiesForRound.AddRange(totalAvailableAbilities);
+    }
+
+    /// <summary>
+    /// Add here all the abilities you make
+    /// </summary>
+    public void PopulateAvailableAbilities()
+    {
+        totalAvailableAbilities.Clear();
+        abilitiesSo.Abilities.ForEach(ability =>
+        {
+            switch (ability.Name)
+            {
+                case "Hell Portal":
+                    totalAvailableAbilities.Add(HellPortalPrefab.GetComponent<HellPortal>());
+                    break;
+                default:
+                    break;
+            }
+        });
+    }
+
+    void UseAbility()
+    {
+        if (isNextAbilityUsable && availableAbilitiesForRound.Any())
+        {
+            Debug.Log("Activate");
+            //TODO: Add current door position
+            ActivateNextAbility(Vector2.zero);
+            availableAbilitiesForRound.RemoveAt(0);
+            //TODO: Refresh UI ( remove a key icon)
+        }
     }
 }

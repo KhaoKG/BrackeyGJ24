@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Hell Portal
   Description: Summons an Imp to fight for you... or against you.
-  ActiveTime: 0
-  AnimatorController: {fileID: 0}
-  AbilityPrefab: {fileID: 0}
+  ActiveTime: 5
+  AbilityPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
