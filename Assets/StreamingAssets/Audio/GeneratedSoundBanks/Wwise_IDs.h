@@ -18,6 +18,32 @@ namespace AK
         static const AkUniqueID TESTSUCCESS = 1423690258U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BOSSLEVEL = 688280348U;
+                static const AkUniqueID CREDITS = 2201105581U;
+                static const AkUniqueID LEVELONE = 2572514751U;
+                static const AkUniqueID LEVELTRANSITION = 4198606512U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TITLESCREEN = 152105657U;
+            } // namespace STATE
+        } // namespace GAMESTATE
+
+    } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID GAMEEFFECTVOLUME = 2732928946U;
+        static const AkUniqueID GAMEMASTERVOLUME = 4103204207U;
+        static const AkUniqueID GAMEMUSICVOLUME = 516124850U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

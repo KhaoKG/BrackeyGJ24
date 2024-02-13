@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9195A3E2-BF2E-4A19-81B4-247052C09E8A}" SchemaVersion="119" RootDocumentID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" ParentDocumentID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}">
 	<Events>
-		<WorkUnit Name="NPCs" ID="{9195A3E2-BF2E-4A19-81B4-247052C09E8A}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested"/>
+		<WorkUnit Name="NPCs" ID="{9195A3E2-BF2E-4A19-81B4-247052C09E8A}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="enemyOne" ID="{80788C81-E08B-4C60-9B75-94918C2AB773}" ShortID="379709017"/>
+				<Folder Name="enemyTwo" ID="{9B6359AC-214C-4A9E-ABA3-109576B4D127}" ShortID="892020693"/>
+				<Folder Name="enemyThree" ID="{52CD5ABD-0DA8-45EC-8193-A157EB51D6B2}" ShortID="989336557"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

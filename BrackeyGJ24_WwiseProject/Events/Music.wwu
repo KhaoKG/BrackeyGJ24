@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" SchemaVersion="119" RootDocumentID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" ParentDocumentID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}">
 	<Events>
-		<WorkUnit Name="Music" ID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested"/>
+		<WorkUnit Name="Music" ID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="musicStart" ID="{913826F5-966E-4065-B54D-9788E79C8291}"/>
+				<Folder Name="levelStateSetters" ID="{76D46505-7835-434A-9115-60A89A07AA8E}" ShortID="328774799">
+					<ChildrenList>
+						<Event Name="titleState" ID="{F59EAD35-1AAA-4F00-897B-01D4AF907B79}">
+							<ChildrenList>
+								<Action Name="" ID="{1730FDD2-A527-44E5-95F5-A96F5B67CBAE}" ShortID="371375494">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="titleScreen" ID="{0ECEC4D0-A59F-4979-87BA-C1B87DD11330}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="levelOneState" ID="{2647BE64-F307-4F37-BEC6-310092939551}">
+							<ChildrenList>
+								<Action Name="" ID="{CA3E18F2-C4B4-464D-B796-3A9A6D7C6FF5}" ShortID="1059438862">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="levelOne" ID="{A163D7F9-82CA-4012-81C4-3460AED48A21}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="transitionState" ID="{5FD098F7-4D04-463F-8612-50D84124D117}">
+							<ChildrenList>
+								<Action Name="" ID="{93939A37-E5E8-4432-BB64-E975998647B5}" ShortID="750569049">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="levelTransition" ID="{9A3CE06D-DE65-414A-98A1-93B443440290}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="creditState" ID="{D308D011-DD20-42AD-88A3-C0809179A8F8}">
+							<ChildrenList>
+								<Action Name="" ID="{B42BFA71-F999-450F-974D-FE882CF2652A}" ShortID="1072150076">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="credits" ID="{2E0C2AAE-C30B-4699-896A-45F43C133377}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="bossState" ID="{DAC6B68C-DF3E-4922-A034-31FD1F5BA57E}">
+							<ChildrenList>
+								<Action Name="" ID="{32F0D99B-BAB0-43B6-BF3A-86217AD1E0D7}" ShortID="933304219">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="bossLevel" ID="{D343F6BC-3E9F-4E3E-9CC0-7F6895020E5D}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

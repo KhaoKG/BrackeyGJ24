@@ -40,6 +40,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="menuAudio" ID="{30E72E37-2BD8-4806-9664-E16EC65C54D6}" ShortID="87249797">
+					<ChildrenList>
+						<Event Name="playButton" ID="{B52C9E17-5AC3-4423-A652-3B81CA651B15}"/>
+						<Event Name="sliderClick" ID="{9B18A454-82B7-4A54-8483-5DC6EFCC536F}"/>
+						<Event Name="sliderUnclick" ID="{F5404370-E50E-447C-BDFB-8311921F1A74}"/>
+						<Event Name="menuMove" ID="{13908F23-B183-42D6-8E03-C587A6BA0984}"/>
+						<Event Name="menuForward" ID="{49B5A148-D722-4559-BBFF-10189A46DDC4}"/>
+						<Event Name="menuBack" ID="{32DDFE42-7164-4F63-B938-5B56D2421F61}"/>
+					</ChildrenList>
+				</Folder>
+				<Event Name="powerSelect" ID="{AC5C76E5-EEA8-4C63-920E-26DC3DA89A62}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

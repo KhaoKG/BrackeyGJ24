@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="gameState" ID="{27AE8F87-3091-4131-980A-B6EF153A28AF}">
+					<ChildrenList>
+						<State Name="None" ID="{97A62520-7FB4-476E-B590-8651A802E10B}"/>
+						<State Name="titleScreen" ID="{0ECEC4D0-A59F-4979-87BA-C1B87DD11330}"/>
+						<State Name="credits" ID="{2E0C2AAE-C30B-4699-896A-45F43C133377}"/>
+						<State Name="levelTransition" ID="{9A3CE06D-DE65-414A-98A1-93B443440290}"/>
+						<State Name="levelOne" ID="{A163D7F9-82CA-4012-81C4-3460AED48A21}"/>
+						<State Name="bossLevel" ID="{D343F6BC-3E9F-4E3E-9CC0-7F6895020E5D}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

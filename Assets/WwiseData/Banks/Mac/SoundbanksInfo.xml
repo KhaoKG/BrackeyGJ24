@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCC5151C-CA34-02C9-68DF-65958559B72F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{124B5160-993D-4959-7AE8-6517F91978A0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -29,8 +29,25 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="516124850" Name="gameMusicVolume"/>
+				<GameParameter Id="2732928946" Name="gameEffectVolume"/>
+				<GameParameter Id="4103204207" Name="gameMasterVolume"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="4091656514" Name="gameState">
+					<States>
+						<State Id="152105657" Name="titleScreen"/>
+						<State Id="688280348" Name="bossLevel"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2201105581" Name="credits"/>
+						<State Id="2572514751" Name="levelOne"/>
+						<State Id="4198606512" Name="levelTransition"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{45388BB9-626A-B2E1-AD48-7953E6062C80}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{13B8A644-F61D-66AB-DA1C-C3BDCFD73A22}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -66,5 +83,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FAA51761-EA1C-7C9E-B08F-B9FD2D46DFEB}</FileHash>
+	<FileHash>{9A4D2B08-3CDF-FDD0-E6D8-378BC3998EFD}</FileHash>
 </SoundBanksInfo>

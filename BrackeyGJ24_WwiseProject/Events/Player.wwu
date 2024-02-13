@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" SchemaVersion="119" RootDocumentID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" ParentDocumentID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}">
 	<Events>
-		<WorkUnit Name="Player" ID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="playerHealth" ID="{AE3A2973-2147-4B0A-B737-BDBBC5D0DE31}" ShortID="126044130">
+					<ChildrenList>
+						<Event Name="playerHealthUp" ID="{EB758365-0263-44FD-8B71-BC6E63432985}"/>
+						<Event Name="playerHurt" ID="{6A1CABE6-D9B9-4EA2-8565-F81168EA5C7E}"/>
+						<Event Name="playerDie" ID="{380870F1-27A9-4888-A825-BAD75915EFFC}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="playerAttacks" ID="{257C65F1-5B24-4E83-8C28-CC551A31E88C}" ShortID="148111575">
+					<ChildrenList>
+						<Event Name="playerSwing" ID="{9AB2B3DF-41D6-48B7-8581-06F3B91DB363}"/>
+						<Event Name="playerKeyUsed" ID="{AE7F8F57-CD3A-491D-86B4-969AC0133B7C}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="playerResources" ID="{8E38F339-ECDB-4F0B-B4CB-C299568A2751}" ShortID="176472431">
+					<ChildrenList>
+						<Event Name="playerKeyGain" ID="{29257811-8457-46EA-9FA5-96C8AA5EF688}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

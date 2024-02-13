@@ -1,3 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	gameState			\Default Work Unit\gameState	
+
+State	ID	Name	State Group			Notes
+	152105657	titleScreen	gameState			
+	688280348	bossLevel	gameState			
+	748895195	None	gameState			
+	2201105581	credits	gameState			
+	2572514751	levelOne	gameState			
+	4198606512	levelTransition	gameState			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	516124850	gameMusicVolume			\Default Work Unit\volumeParams\gameMusicVolume	
+	2732928946	gameEffectVolume			\Default Work Unit\volumeParams\gameEffectVolume	
+	4103204207	gameMasterVolume			\Default Work Unit\volumeParams\gameMasterVolume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	
 	833916109	NPCs			\Default Work Unit\Master Audio Bus\World\NPCs	
