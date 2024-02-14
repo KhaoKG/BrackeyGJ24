@@ -173,7 +173,7 @@ public class Player : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy" && !isInHitstun)
+        if(collision.gameObject.tag is "Enemy" or "PortalEnemy" && !isInHitstun)
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
