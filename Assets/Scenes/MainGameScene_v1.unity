@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3683078289889090423, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -415,12 +419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1d7182aee2e9a4997d248796700742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 281671041}
   KeySelectionScreen: {fileID: 696331824}
-  EnemySpawners:
-  - {fileID: 839746103}
-  - {fileID: 1314333648}
-  - {fileID: 1499987538}
-  - {fileID: 510712668}
+  enemySpawner: {fileID: 1325988745}
 --- !u!4 &367181713
 Transform:
   m_ObjectHideFlags: 0
@@ -574,11 +575,6 @@ PrefabInstance:
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 3935323497144512240, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
   m_PrefabInstance: {fileID: 1316746443}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &510712668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
-  m_PrefabInstance: {fileID: 725929891}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
@@ -894,6 +890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3683078289889090423, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -951,6 +951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3683078289889090423, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -996,11 +1000,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
---- !u!1 &839746103 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
-  m_PrefabInstance: {fileID: 1325988744}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &947031147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,11 +1399,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222492863}
   m_CullTransparentMesh: 1
---- !u!1 &1314333648 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
-  m_PrefabInstance: {fileID: 821936475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1316746443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1413,6 +1407,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2864711351950993753, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
+      propertyPath: m_TagString
+      value: MapLimits
+      objectReference: {fileID: 0}
     - target: {fileID: 6545363582488526970, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1462,6 +1460,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
+--- !u!1 &1316746444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2864711351950993753, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
+  m_PrefabInstance: {fileID: 1316746443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1325988744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1518,16 +1521,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: limits
+      value: 
+      objectReference: {fileID: 1316746444}
+    - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 281671041}
+    - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: currentWave
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c2f89f58f2932d4d9087a4c6ef9c7ad, type: 2}
+    - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: enemyMapping.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+      propertyPath: enemyMapping.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 1933777511856484991, guid: 2da8adeecdfa601439cd1b412b84665b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
---- !u!1 &1499987538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
-  m_PrefabInstance: {fileID: 71745062}
+--- !u!114 &1325988745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
+  m_PrefabInstance: {fileID: 1325988744}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4b0eb7b15f503449ccbcf6a3a3bfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1509855357
 PrefabInstance:
   m_ObjectHideFlags: 0
