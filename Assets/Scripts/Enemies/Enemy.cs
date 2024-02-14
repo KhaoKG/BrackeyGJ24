@@ -16,12 +16,17 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected Rigidbody2D rb;
 
+    [SerializeField]
+    protected Collider2D col2D;
+
     protected EnemyController enemyController;
 
     // Every enemy keeps track of where the player is
     protected Player player;
 
     protected bool isInHitstun;
+
+    protected bool isSpawning;
 
     public EnemyController EnemyController { get => enemyController; set => enemyController = value; }
     public Player Player { get => player; set => player = value; }
@@ -40,9 +45,25 @@ public abstract class Enemy : MonoBehaviour
     }
     protected abstract void Die();
 
+    private void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+        col2D = GetComponent<Collider2D>();
+    }
+
     private void OnDestroy() {
         // Removes itself from enemy controller
         enemyController.OnEnemyDeath(this);
+    }
+
+    private void OnEnable() {
+        isSpawning = true;
+        col2D.enabled = false;
+        gameObject.AddComponent<EnemySpawnEffect>();
+    }
+
+    public void OnSpawnReady() {
+        isSpawning = false;
+        col2D.enabled = true;
     }
 
     protected bool IsAlive() {

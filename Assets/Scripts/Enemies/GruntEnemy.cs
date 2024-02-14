@@ -10,7 +10,7 @@ public class GruntEnemy : Enemy {
     [SerializeField] GameObject healthPickupPrefab;
 
     private void Update() {
-        if (!IsAlive() || isInHitstun) {
+        if (!IsAlive() || isInHitstun || isSpawning) {
             return;
         }
 
