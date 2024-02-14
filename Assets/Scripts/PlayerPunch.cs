@@ -8,13 +8,21 @@ public class PlayerPunch : MonoBehaviour
     Player player;
 
     [SerializeField]
-    public int punchDamage = 1;
+    int punchDamage = 1;
 
-    private void OnTriggerEnter2D(Collision2D collision) {
-        Debug.Log(collision.gameObject.tag);
+    CameraShake shakeEffect;
+
+    private void Start() {
+        shakeEffect = player.ShakeEffect;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Enemy")) {
             Vector2 knockbackDirection = collision.transform.position - transform.position;
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(punchDamage, knockbackDirection);
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(punchDamage, knockbackDirection.normalized);
+
+            // Shake camera
+            shakeEffect.Shake(4f, 0.3f);
         }
     }
 }

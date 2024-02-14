@@ -16,5 +16,7 @@ MonoBehaviour:
   spawns:
   - delay: 0
     enemies: 0000000000000000
-  - delay: 2
+  - delay: 4
     enemies: 000000000000000000000000
+  - delay: 3
+    enemies: 000000000000000001000000

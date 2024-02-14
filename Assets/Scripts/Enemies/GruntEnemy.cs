@@ -4,9 +4,6 @@ using UnityEngine;
 
 // Basic enemy, basically follows the player and does a melee attack
 public class GruntEnemy : Enemy {
-    [SerializeField]
-    float attackingDistance = 0.5f;
-
     [SerializeField] GameObject healthPickupPrefab;
 
     private void Update() {
@@ -52,15 +49,5 @@ public class GruntEnemy : Enemy {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
         Destroy(gameObject);
-    }
-
-    IEnumerator DoHitStun()
-    {
-        isInHitstun = true;
-        Debug.Log("in hitstun");
-        yield return new WaitForSeconds(0.25f);
-        Debug.Log("out of hitstun");
-        isInHitstun = false;
-        rb.velocity = Vector2.zero;
     }
 }

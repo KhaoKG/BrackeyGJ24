@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     GameObject attackParent; // this is the parent of the attack hitbox. This object is rotated towards the mouse so the attackalways happens in the direction of the mouse
     [SerializeField] float knockbackForce;
     [SerializeField] float knockbackDuration;
-
+    [SerializeField] CameraShake shakeEffect;
 
     [Header("Movement")]
     [SerializeField]
@@ -52,6 +52,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     float dashCooldown = 1f;
     private float dashCounter, dashCoolCounter;
+
+    public CameraShake ShakeEffect { get => shakeEffect; set => shakeEffect = value; }
+
     //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
 
     private void Start()
@@ -130,13 +133,16 @@ public class Player : MonoBehaviour
         return health > 0;
     }
 
-    void TakeDamage(int damage, Vector2 direction)
+    public void TakeDamage(int damage, Vector2 direction)
     {
         // update health
         health -= damage;
 
         // update UI
         healthBar.fillAmount = ((float)health / maxHealth);
+
+        // Shake camera
+        shakeEffect.Shake(damage*2, 0.5f);
 
         // knockback
         StartCoroutine(DoHitStun());
@@ -196,7 +202,7 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Health")
+        if(collision.CompareTag("Health"))
         {
             HealDamage(1);
             Destroy(collision.gameObject);

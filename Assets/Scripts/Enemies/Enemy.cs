@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
+    [Header("Common attributes")]
     [SerializeField]
     protected int health;
 
@@ -13,6 +14,10 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected int damage;
 
+    [SerializeField]
+    protected float attackingDistance = 0.5f;
+
+    [Header("Components")]
     [SerializeField]
     protected Rigidbody2D rb;
 
@@ -24,9 +29,15 @@ public abstract class Enemy : MonoBehaviour
     // Every enemy keeps track of where the player is
     protected Player player;
 
+    [Header("Hitstun")]
+    [SerializeField]
     protected bool isInHitstun;
+    [SerializeField]
+    protected float hitstunDuration;
 
     protected bool isSpawning;
+
+    protected bool isAttacking = false;
 
     public EnemyController EnemyController { get => enemyController; set => enemyController = value; }
     public Player Player { get => player; set => player = value; }
@@ -70,12 +81,12 @@ public abstract class Enemy : MonoBehaviour
         return health > 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Attack")
-        {
-            Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.gameObject.GetComponent<PlayerPunch>().punchDamage, knockbackDirection.normalized);
-        }
+    protected IEnumerator DoHitStun() {
+        isInHitstun = true;
+        Debug.Log("in hitstun");
+        yield return new WaitForSeconds(hitstunDuration);
+        Debug.Log("out of hitstun");
+        isInHitstun = false;
+        rb.velocity = Vector2.zero;
     }
 }

@@ -361,6 +361,7 @@ MonoBehaviour:
   player: {fileID: 281671041}
   KeySelectionScreen: {fileID: 696331824}
   enemySpawner: {fileID: 1325988745}
+  hitStopEffect: {fileID: 793399786}
   waves:
   - {fileID: 11400000, guid: 6c2f89f58f2932d4d9087a4c6ef9c7ad, type: 2}
   - {fileID: 11400000, guid: 001d64153709a264493b3ba7240cb360, type: 2}
@@ -820,11 +821,28 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &894063442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4307330622450814471, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
-  m_PrefabInstance: {fileID: 1316746443}
+--- !u!114 &793399785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4489703749591991349, guid: d197bca01781586439127b8c63d24ed2, type: 3}
+  m_PrefabInstance: {fileID: 1509855357}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c000b89ccbb648c47bc27529b7975b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &793399786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6406082311772109168, guid: d197bca01781586439127b8c63d24ed2, type: 3}
+  m_PrefabInstance: {fileID: 1509855357}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191a05560e7249844a6de481bac0284d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &947031147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4164447351325126278, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
+      propertyPath: gameStateManager
+      value: 
+      objectReference: {fileID: 367181712}
     - target: {fileID: 6545363582488526970, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1280,42 +1302,22 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 281671041}
-    - target: {fileID: 7766179988126211109, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
-      propertyPath: enemyController
-      value: 
-      objectReference: {fileID: 1325988747}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4307330622450814471, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1325988747}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
 --- !u!114 &1325988745 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7766179988126211109, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
   m_PrefabInstance: {fileID: 1316746443}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894063442}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af4b0eb7b15f503449ccbcf6a3a3bfec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1325988747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894063442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb9ee309d9baca14c8d699d4ff5d281a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 367181712}
 --- !u!1001 &1509855357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1909,6 +1911,10 @@ PrefabInstance:
       propertyPath: dashLength
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: shakeEffect
+      value: 
+      objectReference: {fileID: 793399785}
     - target: {fileID: 7777723505001612792, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: m_TagString
       value: Attack
