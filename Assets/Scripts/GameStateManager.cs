@@ -22,6 +22,9 @@ public class GameStateManager : MonoBehaviour
         {
             // killed all enemies, round is done.
             KeySelectionScreen.SetActive(true);
+            FindObjectOfType<Player>().DisableInput();
+
+
         }
     }
 
@@ -41,5 +44,8 @@ public class GameStateManager : MonoBehaviour
 
         // Reset the Key Selection Screen
         KeySelectionScreen.SetActive(false);
+
+        // Reactivate player
+        FindObjectOfType<Player>().EnableInput();
     }
 }
