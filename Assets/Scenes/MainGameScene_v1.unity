@@ -1308,6 +1308,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Attract Point
       objectReference: {fileID: 0}
+    - target: {fileID: 5393611501020650619, guid: bface4c5158605b4ebf65dabeeeb961e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255418774961971378, guid: bface4c5158605b4ebf65dabeeeb961e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255418774961971378, guid: bface4c5158605b4ebf65dabeeeb961e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
