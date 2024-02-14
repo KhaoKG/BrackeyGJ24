@@ -8,6 +8,7 @@ TagManager:
   - Door
   - Attack
   - Attract Point
+  - PortalEnemy
   layers:
   - Default
   - TransparentFX
