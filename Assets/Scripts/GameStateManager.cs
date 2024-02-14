@@ -34,8 +34,9 @@ public class GameStateManager : MonoBehaviour
         foreach(GameObject enemySpawner in EnemySpawners)
         {
             enemySpawner.GetComponent<EnemySpawner>().numEnemies = currentNumEnemies;
+            Debug.Log("setting num enemies to spawn to " + enemySpawner.GetComponent<EnemySpawner>().numEnemies);
             enemySpawner.SetActive(true);
-            enemySpawner.GetComponent<EnemySpawner>().DoSpawnEnemy();
+            enemySpawner.GetComponent<EnemySpawner>().SpawnEnemies();
         }
 
         // Reset the Key Selection Screen

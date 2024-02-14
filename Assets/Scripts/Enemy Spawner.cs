@@ -21,12 +21,18 @@ public class EnemySpawner : MonoBehaviour
 
     public IEnumerator DoSpawnEnemy()
     {
+        Debug.Log("I'm beginning spawning enemies");
         for (int i = 0; i < numEnemies; i++)
         {
+            Debug.Log("spawning enemy");
             Instantiate(enemyPrefab, transform.position, transform.rotation);
             yield return new WaitForSeconds(Random.Range(2, 8));
         }
-
         gameObject.SetActive(false);
+    }
+
+    public void SpawnEnemies()
+    {
+        StartCoroutine(DoSpawnEnemy());
     }
 }
