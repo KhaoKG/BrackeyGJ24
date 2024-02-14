@@ -59,6 +59,9 @@ public class EnemySpawner : MonoBehaviour
 
                 Enemy newEnemy = Instantiate(enemies[enemyEnum], spawnPosition, Quaternion.identity).GetComponent<Enemy>();
                 enemyController.OnSpawnEnemy(newEnemy);
+
+                // Gives enemies the player to track
+                newEnemy.Player = player;
             }
         }
 

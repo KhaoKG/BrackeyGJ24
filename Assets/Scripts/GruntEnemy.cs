@@ -9,11 +9,6 @@ public class GruntEnemy : Enemy {
 
     [SerializeField] GameObject healthPickupPrefab;
 
-    private void Start() {
-        // TODO Avoid find object
-        player = FindObjectOfType<Player>();
-    }
-
     private void Update() {
         if (!IsAlive() || isInHitstun) {
             return;

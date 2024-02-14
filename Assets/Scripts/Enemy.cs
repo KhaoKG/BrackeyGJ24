@@ -16,7 +16,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected Rigidbody2D rb;
 
-    private EnemyController enemyController;
+    protected EnemyController enemyController;
 
     // Every enemy keeps track of where the player is
     protected Player player;
@@ -24,6 +24,7 @@ public abstract class Enemy : MonoBehaviour
     protected bool isInHitstun;
 
     public EnemyController EnemyController { get => enemyController; set => enemyController = value; }
+    public Player Player { get => player; set => player = value; }
 
     protected abstract void Move();
     protected abstract void Attack();
