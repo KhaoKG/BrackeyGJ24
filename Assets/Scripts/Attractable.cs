@@ -28,7 +28,6 @@ public class Attractable : MonoBehaviour
     {
         if (attractPoint == null || !attractPoint.GetComponent<AttractPoint>().isOn) return; // do nothing if no attract point
 
-        Debug.Log("moving to attract point");
 
         float magsqr; // offset squared between object and attract point
         Vector3 offset; // distance to attract point
