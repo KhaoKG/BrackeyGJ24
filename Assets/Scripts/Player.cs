@@ -135,8 +135,6 @@ public class Player : MonoBehaviour
         // update health
         health -= damage;
 
-        Debug.Log("Took Damage, health is now " + health);
-
         // update UI
         healthBar.fillAmount = ((float)health / maxHealth);
 
@@ -144,6 +142,21 @@ public class Player : MonoBehaviour
         StartCoroutine(DoHitStun());
         rb.velocity = Vector2.zero;
         rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+    }
+
+    void HealDamage(int healAmount)
+    {
+        // update health
+        health += healAmount;
+
+        // check for max health
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
+
+        // update UI
+        healthBar.fillAmount = ((float)health / maxHealth);
     }
 
     public void EnableInput() {
@@ -178,6 +191,15 @@ public class Player : MonoBehaviour
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(1, knockbackDirection.normalized);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Health")
+        {
+            HealDamage(1);
+            Destroy(collision.gameObject);
         }
     }
 }
