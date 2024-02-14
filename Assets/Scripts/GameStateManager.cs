@@ -2,42 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameStateManager : Singleton<GameStateManager>
+public class GameStateManager : MonoBehaviour
 {
     [SerializeField] Player player;
     [SerializeField] GameObject KeySelectionScreen;
     [SerializeField] EnemySpawner enemySpawner;
-    int currentNumEnemies = 4;
 
-    void Update()
-    {
-        GameObject[] remainingEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if(remainingEnemies.Length == 0)
-        {
-            // killed all enemies, round is done.
-            KeySelectionScreen.SetActive(true);
-            player.DisableInput();
+    [Header("Waves")]
+    [SerializeField]
+    List<WaveSO> waves;
+
+    private void Start() {
+        // Prepare initial wave
+        enemySpawner.CurrentWave = waves[0];
+        waves.RemoveAt(0);
+        enemySpawner.enabled = true;
+    }
+
+    private void PrepareKeySelect() {
+        KeySelectionScreen.SetActive(true);
+        player.DisableInput();
+    }
+
+    public void CheckIfWaveOver() {
+        if (!enemySpawner.enabled) {
+            // Since spawner is disabled and there are no more living enemies, prepare key screen
+            PrepareKeySelect();
         }
     }
 
-    //public void KeySelected(string Key)
-    //{
-    //    // TODO: ADD THE KEY WHEREVER IT IS SUPPOSED TO GO
+    public void KeySelected(string Key) {
+        // TODO: ADD THE KEY WHEREVER IT IS SUPPOSED TO GO
 
-    //    // Reset the Enemy Spawners
-    //    currentNumEnemies += 2;
-    //    foreach(GameObject enemySpawner in enemySpawner)
-    //    {
-    //        enemySpawner.GetComponent<EnemySpawner>().numEnemies = currentNumEnemies;
-    //        Debug.Log("setting num enemies to spawn to " + enemySpawner.GetComponent<EnemySpawner>().numEnemies);
-    //        enemySpawner.SetActive(true);
-    //        enemySpawner.GetComponent<EnemySpawner>().SpawnEnemies();
-    //    }
+        // TODO Advance enemy spawner to next wave
+        enemySpawner.CurrentWave = waves[0];
+        waves.RemoveAt(0);
+        enemySpawner.enabled = true;
 
-    //    // Reset the Key Selection Screen
-    //    KeySelectionScreen.SetActive(false);
+        // Reset the Key Selection Screen
+        KeySelectionScreen.SetActive(false);
 
-    //    // Reactivate player
-    //    player.EnableInput();
-    //}
+        // Reactivate player
+        player.EnableInput();
+    }
 }
