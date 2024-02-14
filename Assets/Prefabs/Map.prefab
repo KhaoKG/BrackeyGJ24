@@ -533,10 +533,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6c2f89f58f2932d4d9087a4c6ef9c7ad, type: 2}
     - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
-      propertyPath: minSpawnDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6301739973423025022, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
       propertyPath: enemyMapping.Array.size
       value: 1
       objectReference: {fileID: 0}
