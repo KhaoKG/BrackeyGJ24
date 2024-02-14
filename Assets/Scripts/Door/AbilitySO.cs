@@ -9,5 +9,6 @@ public class AbilitySO : ScriptableObject
     public string Description;
     public float ActiveTime;
     public Sprite KeyIcon;
+    public Color KeyColor;
     public GameObject AbilityPrefab;
 }

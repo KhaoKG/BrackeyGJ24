@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using UnityEditor.Playables;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -21,6 +23,9 @@ public class AbilityController : Singleton<AbilityController>
     public GameObject VascuumPrefab;
     public GameObject TentaclePrefab;
     public GameObject LaserPortalPrefab;
+
+    public Action<IAbility> onAbilityUsed;
+    public Action<List<IAbility>> onAbilitiesLoaded;
 
     public void Start()
     {
@@ -47,7 +52,9 @@ public class AbilityController : Singleton<AbilityController>
             var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
             abilityObj.GetComponent<IAbility>().Activate();
             activeAbility = nextAbility;
+            onAbilityUsed?.Invoke(activeAbility);
             isNextAbilityUsable = false;
+            StartCoroutine(WaitForAbility(activeAbility));
         }
     }
 
@@ -56,7 +63,9 @@ public class AbilityController : Singleton<AbilityController>
         var abilityObj = Instantiate(ability.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
         abilityObj.GetComponent<IAbility>().Activate();
         activeAbility = ability;
+        onAbilityUsed?.Invoke(activeAbility);
         isNextAbilityUsable = false;
+        StartCoroutine(WaitForAbility(activeAbility));
     }
 
     public void ActivateNextAbility(Vector3 position)
@@ -66,10 +75,13 @@ public class AbilityController : Singleton<AbilityController>
         var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, position, Quaternion.identity);
         abilityObj.GetComponent<IAbility>().Activate();
         activeAbility = nextAbility;
+        onAbilityUsed?.Invoke(activeAbility);
         isNextAbilityUsable = false;
+        StartCoroutine(WaitForAbility(activeAbility));
     }
 
     #endregion
+    #region Disable abilities ( consume )
     public void DisableAbility(int index)
     {
         if (index >= 0 && index < availableAbilitiesForRound.Count)
@@ -80,7 +92,6 @@ public class AbilityController : Singleton<AbilityController>
         }
     }
 
-    #region Disable abilities ( consume )
 
 
     public void DisableAbility(IAbility ability)
@@ -116,6 +127,32 @@ public class AbilityController : Singleton<AbilityController>
     {
         totalAvailableAbilities.Add(ability);
     }
+
+
+    /// <summary>
+    /// Add ability should be used at the end of round screen where you receive a key
+    /// </summary>
+    /// <param name="ability"></param>
+    public void AddAbility(AbilitySO ability)
+    {
+        AddAbilityToListFromName(ability.Name, totalAvailableAbilities);
+    }
+    [ContextMenu("Add hell portal")]
+    public void AddPortal()
+    {
+        Debug.Log(totalAvailableAbilities.Count + "bcbcbc1");
+        AddAbilityToListFromName("Hell Portal", totalAvailableAbilities);
+        UpdateAbilitiesForRound();
+        Debug.Log(availableAbilitiesForRound.Count + "bcbcbc2");
+    }
+    [ContextMenu("Add vacuum")]
+    public void AddVacuum()
+    {
+        AddAbilityToListFromName("Vacuum", totalAvailableAbilities);
+        UpdateAbilitiesForRound();
+    }
+
+
     /// <summary>
     /// Consumes the current used ability so it can't be used again.
     /// </summary>
@@ -137,6 +174,7 @@ public class AbilityController : Singleton<AbilityController>
     {
         availableAbilitiesForRound.Clear();
         availableAbilitiesForRound.AddRange(totalAvailableAbilities);
+        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
     }
 
     /// <summary>
@@ -145,20 +183,7 @@ public class AbilityController : Singleton<AbilityController>
     public void PopulateAvailableAbilities()
     {
         totalAvailableAbilities.Clear();
-        abilitiesSo.Abilities.ForEach(ability =>
-        {
-            switch (ability.Name)
-            {
-                case "Hell Portal":
-                    totalAvailableAbilities.Add(HellPortalPrefab.GetComponent<HellPortal>());
-                    break;
-                case "Vacuum":
-                    totalAvailableAbilities.Add(VascuumPrefab.GetComponent<Vacuum>());
-                    break;
-                default:
-                    break;
-            }
-        });
+        abilitiesSo.Abilities.ForEach(ability => AddAbilityToListFromName(ability.name, totalAvailableAbilities));
     }
 
     void UseAbility()
@@ -171,5 +196,26 @@ public class AbilityController : Singleton<AbilityController>
             availableAbilitiesForRound.RemoveAt(0);
             //TODO: Refresh UI ( remove a key icon)
         }
+    }
+
+    void AddAbilityToListFromName(string abilityName, List<IAbility> abilities)
+    {
+        switch (abilityName)
+        {
+            case "Hell Portal":
+                abilities.Add(HellPortalPrefab.GetComponent<HellPortal>());
+                break;
+            case "Vacuum":
+                abilities.Add(VascuumPrefab.GetComponent<Vacuum>());
+                break;
+            default:
+                break;
+        }
+    }
+
+    private IEnumerator WaitForAbility(IAbility ability)
+    {
+        yield return new WaitForSeconds(ability.GetAbilitySo().ActiveTime);
+        isNextAbilityUsable = true;
     }
 }
