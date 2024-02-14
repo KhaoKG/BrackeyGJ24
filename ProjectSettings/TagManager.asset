@@ -9,6 +9,7 @@ TagManager:
   - Attack
   - Attract Point
   - PortalEnemy
+  - Health
   layers:
   - Default
   - TransparentFX
