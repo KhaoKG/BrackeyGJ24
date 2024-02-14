@@ -8,7 +8,6 @@ TagManager:
   - Door
   - Attack
   - Attract Point
-  - Health
   layers:
   - Default
   - TransparentFX
