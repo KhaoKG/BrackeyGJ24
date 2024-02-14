@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMapping: []
   currentWave: {fileID: 0}
-  minSpawnDistance: 2
+  minSpawnDistance: 4
   enemyController: {fileID: 0}
   player: {fileID: 0}
   limits: {fileID: 0}
