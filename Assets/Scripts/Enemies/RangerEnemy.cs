@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Basic enemy, basically follows the player and does a melee attack
-public class GruntEnemy : Enemy {
+public class RangerEnemy : Enemy {
     [SerializeField]
     float attackingDistance = 0.5f;
 
     [SerializeField] GameObject healthPickupPrefab;
 
     private void Update() {
-        if (!IsAlive() || isInHitstun) {
+        if (!IsAlive() || isInHitstun || isSpawning) {
             return;
         }
 
