@@ -53,6 +53,7 @@ MonoBehaviour:
   damage: 2
   rb: {fileID: 3943999889115803281}
   attackingDistance: 0.5
+  healthPickupPrefab: {fileID: 2985766413136088510, guid: b19dcfdb7c0fd824a8e76e0ff406d89b, type: 3}
 --- !u!50 &3943999889115803281
 Rigidbody2D:
   serializedVersion: 4

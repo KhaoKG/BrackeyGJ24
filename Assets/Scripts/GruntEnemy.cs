@@ -7,6 +7,8 @@ public class GruntEnemy : Enemy {
     [SerializeField]
     float attackingDistance = 0.5f;
 
+    [SerializeField] GameObject healthPickupPrefab;
+
     private void Start() {
         // TODO Avoid find object
         player = FindObjectOfType<Player>();
@@ -49,6 +51,11 @@ public class GruntEnemy : Enemy {
 
     protected override void Attack() { }
     protected override void Die() {
+        // drop health
+        if(Random.Range(0, 20) == 5)
+        {
+            Instantiate(healthPickupPrefab, transform.position, transform.rotation);
+        }
         Destroy(gameObject);
     }
 
