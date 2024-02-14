@@ -8,9 +8,11 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] GameObject KeySelectionScreen;
     [SerializeField] EnemySpawner enemySpawner;
 
+    [Header("Camera effects")]
+    [SerializeField]  HitStopEffect hitStopEffect;
+
     [Header("Waves")]
-    [SerializeField]
-    List<WaveSO> waves;
+    [SerializeField] List<WaveSO> waves;
 
     private void Start() {
         // Prepare initial wave
@@ -19,16 +21,29 @@ public class GameStateManager : MonoBehaviour
         enemySpawner.enabled = true;
     }
 
-    private void PrepareKeySelect() {
-        KeySelectionScreen.SetActive(true);
-        player.DisableInput();
-    }
-
     public void CheckIfWaveOver() {
         if (!enemySpawner.enabled) {
+            // Play hit stop effect upon last enemy dying
+            hitStopEffect.StartEffect();
+
             // Since spawner is disabled and there are no more living enemies, prepare key screen
-            PrepareKeySelect();
+            StartCoroutine(PrepareKeySelect());
         }
+    }
+
+    IEnumerator PrepareKeySelect() {
+        player.DisableInput();
+
+        yield return new WaitForSeconds(1.5f);
+
+        ShowKeySelect();
+    }
+
+
+
+
+    private void ShowKeySelect() {
+        KeySelectionScreen.SetActive(true);
     }
 
     public void KeySelected(string Key) {

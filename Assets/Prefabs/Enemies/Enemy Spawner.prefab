@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3683078289889090423}
   - component: {fileID: 6301739973423025022}
+  - component: {fileID: 394155532103727581}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Enemy
@@ -44,9 +45,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4b0eb7b15f503449ccbcf6a3a3bfec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMapping: []
+  enemyMapping:
+  - enemyEnum: 0
+    prefab: {fileID: 0}
+  - enemyEnum: 1
+    prefab: {fileID: 1933777511856484991, guid: 6c3301503290add4699e1a0baa627e79, type: 3}
   currentWave: {fileID: 0}
   minSpawnDistance: 4
-  enemyController: {fileID: 0}
+  enemyController: {fileID: 394155532103727581}
   player: {fileID: 0}
   limits: {fileID: 0}
+--- !u!114 &394155532103727581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537602852702853468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9ee309d9baca14c8d699d4ff5d281a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateManager: {fileID: 0}
