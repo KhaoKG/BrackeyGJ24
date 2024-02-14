@@ -5,8 +5,80 @@
 			<ChildrenList>
 				<Folder Name="drops" ID="{B04CDB39-D0CB-4BAF-BA77-8ADA36F138E0}" ShortID="891802029">
 					<ChildrenList>
-						<Event Name="keyDropped" ID="{029D065F-1D62-4BC6-B943-58BBFACD2C50}"/>
+						<Event Name="keyDropped" ID="{029D065F-1D62-4BC6-B943-58BBFACD2C50}">
+							<ChildrenList>
+								<Action Name="" ID="{F8B5BFA0-2BB0-44D3-9BA5-670A164553ED}" ShortID="939519334">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="keyDrop" ID="{44E508F2-7B4E-4DEB-A378-FBEDDA494DBC}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="healthDropped" ID="{B66A54BA-E338-4384-BFE5-14B29894D01B}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="doorEvents" ID="{720B7C61-2746-4B04-A4FE-CB7745578C03}" ShortID="469093503">
+					<ChildrenList>
+						<Event Name="doorOpened" ID="{EFF318BF-B8B5-4445-9A6F-A2B7EB4AFD9C}">
+							<ChildrenList>
+								<Action Name="" ID="{927A31E4-8012-4ADA-B5A2-1664199CC505}" ShortID="922748024">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="doorOpened" ID="{6DE80B40-1EF7-453D-B387-70F5D12B3D5A}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}">
+							<ChildrenList>
+								<Action Name="" ID="{77E6B4A6-E200-43CA-A3BA-FE9CC6DA711D}" ShortID="814158787">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="doorVacuumStop" ID="{39C3FB9A-A2A0-4462-9244-824F843F9E9F}">
+							<ChildrenList>
+								<Action Name="" ID="{6477A553-2B5B-4E66-89DD-4FA787905D96}" ShortID="724427999">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="enemySucked" ID="{A87AA008-46EA-4FF8-BB7C-5EFE94AA80A3}">
+							<ChildrenList>
+								<Action Name="" ID="{A379FE3C-C951-4C7C-B86E-BA1A709D286F}" ShortID="820714840">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemySuctioned" ID="{23FFD516-9B13-4E74-A626-463AC11C1FA4}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="doorClosed" ID="{61BFFA00-DF52-4389-BA68-5753AFCA6EFC}">
+							<ChildrenList>
+								<Action Name="" ID="{51DFD4E5-5BB5-40CD-B782-5FB4E15BCF9D}" ShortID="240542245">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="doorClosed" ID="{FCA41A82-11A2-42BB-93C5-BBC3AD6A7320}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

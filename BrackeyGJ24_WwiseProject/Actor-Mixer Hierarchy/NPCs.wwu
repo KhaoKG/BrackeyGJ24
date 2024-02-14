@@ -15,6 +15,11 @@
 							<ObjectRef Name="NPCs" ID="{C97A58F5-4796-4044-A2A6-F0C93435F15C}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="enemyOne" ID="{97AF7057-9E13-42E4-861E-5DFBDD42305E}" ShortID="297623683"/>
+						<Folder Name="enemyTwo" ID="{65D54D6F-E88E-4F0C-9101-FB5B83AD956B}" ShortID="894801000"/>
+						<Folder Name="enemyThree" ID="{61E16F5F-4E78-4FEF-A3DB-79B0F320A3F1}" ShortID="340940455"/>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

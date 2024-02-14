@@ -3,7 +3,37 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" OwnerID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="musicStart" ID="{913826F5-966E-4065-B54D-9788E79C8291}"/>
+				<Event Name="musicStart" ID="{913826F5-966E-4065-B54D-9788E79C8291}">
+					<ChildrenList>
+						<Action Name="" ID="{A2498BE6-EC81-4B37-BEA8-96477CF9A954}" ShortID="739640450">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{404A105B-B44C-40C3-8571-448B8744E535}" ShortID="187406058">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="titleScreen" ID="{0ECEC4D0-A59F-4979-87BA-C1B87DD11330}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4AD6B834-EDA0-47B8-BF40-FA5D3AF731D0}" ShortID="451934435">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Folder Name="levelStateSetters" ID="{76D46505-7835-434A-9115-60A89A07AA8E}" ShortID="328774799">
 					<ChildrenList>
 						<Event Name="titleState" ID="{F59EAD35-1AAA-4F00-897B-01D4AF907B79}">

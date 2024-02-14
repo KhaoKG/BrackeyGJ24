@@ -42,10 +42,50 @@
 				</Folder>
 				<Folder Name="menuAudio" ID="{30E72E37-2BD8-4806-9664-E16EC65C54D6}" ShortID="87249797">
 					<ChildrenList>
-						<Event Name="playButton" ID="{B52C9E17-5AC3-4423-A652-3B81CA651B15}"/>
-						<Event Name="sliderClick" ID="{9B18A454-82B7-4A54-8483-5DC6EFCC536F}"/>
-						<Event Name="sliderUnclick" ID="{F5404370-E50E-447C-BDFB-8311921F1A74}"/>
-						<Event Name="menuMove" ID="{13908F23-B183-42D6-8E03-C587A6BA0984}"/>
+						<Event Name="playButton" ID="{B52C9E17-5AC3-4423-A652-3B81CA651B15}">
+							<ChildrenList>
+								<Action Name="" ID="{528B6D1D-195F-4F92-ACE5-1AE346A1F43E}" ShortID="814248288">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="startGame" ID="{B5A98B9E-1447-499C-B9EA-974A898189A5}" WorkUnitID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sliderClick" ID="{9B18A454-82B7-4A54-8483-5DC6EFCC536F}">
+							<ChildrenList>
+								<Action Name="" ID="{F8670511-C0D6-4E6A-9CCA-80A9F400A421}" ShortID="952512656">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sliderClick" ID="{EC226B38-186B-4E75-A322-EABF718F4B4C}" WorkUnitID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sliderUnclick" ID="{F5404370-E50E-447C-BDFB-8311921F1A74}">
+							<ChildrenList>
+								<Action Name="" ID="{939B864E-11FE-4246-86AC-BDD2576AB047}" ShortID="263007217">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sliderRelease" ID="{96FC08F8-9E29-46BE-95ED-F128226C146D}" WorkUnitID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="menuMove" ID="{13908F23-B183-42D6-8E03-C587A6BA0984}">
+							<ChildrenList>
+								<Action Name="" ID="{86DA93F3-10DF-4DA6-8B55-A1C4352C1318}" ShortID="696597077">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="menuMove" ID="{D96F05D1-13A2-4D60-8CFB-B4C7948F28CA}" WorkUnitID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="menuForward" ID="{49B5A148-D722-4559-BBFF-10189A46DDC4}"/>
 						<Event Name="menuBack" ID="{32DDFE42-7164-4F63-B938-5B56D2421F61}"/>
 					</ChildrenList>
