@@ -146,6 +146,14 @@ public class Player : MonoBehaviour
         rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
     }
 
+    public void EnableInput() {
+        GetComponent<PlayerInput>().ActivateInput();
+    }
+
+    public void DisableInput() {
+        GetComponent<PlayerInput>().DeactivateInput();
+    }
+
     IEnumerator DoHitStun()
     {
         isInHitstun = true;

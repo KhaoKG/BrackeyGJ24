@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FadeEffect : MonoBehaviour
-{
+public class FadeEffect : MonoBehaviour {
     [SerializeField]
     float targetAlpha;
 
@@ -14,11 +14,10 @@ public class FadeEffect : MonoBehaviour
     [SerializeField]
     Image img;
 
-    public float TargetAlpha { get => targetAlpha; set => targetAlpha = value; }
+    public float TargetAlpha { get => targetAlpha; set { img.enabled = true; enabled = true; targetAlpha = value; } }
     public float FadeSpeed { get => fadeSpeed; set => fadeSpeed = value; }
 
-    void Update()
-    {
+    void Update() {
         Color color = img.color;
         color.a = Mathf.MoveTowards(color.a, targetAlpha, fadeSpeed * Time.deltaTime);
         img.color = color;
@@ -28,4 +27,10 @@ public class FadeEffect : MonoBehaviour
             enabled = false;
         }
     }
+
+#if UNITY_EDITOR
+    private void OnValidate() {
+        SceneVisibilityManager.instance.Hide(gameObject, false);
+    }
+#endif
 }
