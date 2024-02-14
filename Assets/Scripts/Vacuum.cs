@@ -21,6 +21,7 @@ public class Vacuum : MonoBehaviour, IAbility
 
     public void Activate()
     {
+        AkSoundEngine.PostEvent("doorVacuumEvent", this.gameObject);
         attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
         attractPoint.GetComponent<AttractPoint>().TurnOn();
         StartCoroutine(ActivateAndDeactivateCoroutine());
@@ -28,6 +29,7 @@ public class Vacuum : MonoBehaviour, IAbility
 
     public void Deactivate()
     {
+        AkSoundEngine.PostEvent("doorVacuumStop", this.gameObject);
         attractPoint.GetComponent<AttractPoint>().TurnOff();
         StopAllCoroutines();
     }

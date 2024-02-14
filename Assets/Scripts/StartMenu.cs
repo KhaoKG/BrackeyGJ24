@@ -34,6 +34,7 @@ public class StartMenu : MonoBehaviour
     // Adjust build index as needed
     public void PlayGame()
     {
+        AkSoundEngine.PostEvent("PlayButton", this.gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

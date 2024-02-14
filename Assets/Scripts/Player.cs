@@ -132,6 +132,10 @@ public class Player : MonoBehaviour
 
     void TakeDamage(int damage, Vector2 direction)
     {
+
+        // play sound
+        AkSoundEngine.PostEvent("playerHurt", this.gameObject);
+
         // update health
         health -= damage;
 
@@ -146,6 +150,9 @@ public class Player : MonoBehaviour
 
     void HealDamage(int healAmount)
     {
+        // play sound
+        AkSoundEngine.PostEvent("PlayerHealthUp", this.gameObject);
+
         // update health
         health += healAmount;
 
