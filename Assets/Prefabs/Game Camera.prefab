@@ -301,6 +301,8 @@ GameObject:
   - component: {fileID: 2762805853854687546}
   - component: {fileID: 3253927366313823584}
   - component: {fileID: 571409962010302115}
+  - component: {fileID: 6406082311772109168}
+  - component: {fileID: 4489703749591991349}
   m_Layer: 0
   m_Name: Game Camera
   m_TagString: MainCamera
@@ -489,3 +491,36 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6406082311772109168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562292700214955195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191a05560e7249844a6de481bac0284d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcam: {fileID: 6728041587841688783}
+  effectSize: 3.5
+  duration: 1
+  effectTimeScale: 0.1
+  zoomSpeed: 5
+  brain: {fileID: 571409962010302115}
+--- !u!114 &4489703749591991349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562292700214955195}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c000b89ccbb648c47bc27529b7975b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vcam: {fileID: 6728041587841688783}
+  shakeAmplitude: 0
+  duration: 0
