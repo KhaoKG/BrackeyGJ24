@@ -22,13 +22,13 @@ public class Vacuum : MonoBehaviour, IAbility
     public void Activate()
     {
         attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
-        attractPoint.GetComponent<AttractPoint>().isOn = true;
+        attractPoint.GetComponent<AttractPoint>().TurnOn();
         StartCoroutine(ActivateAndDeactivateCoroutine());
     }
 
     public void Deactivate()
     {
-        attractPoint.GetComponent<AttractPoint>().isOn = false;
+        attractPoint.GetComponent<AttractPoint>().TurnOff();
         StopAllCoroutines();
     }
 
