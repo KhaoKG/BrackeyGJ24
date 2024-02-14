@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{670704C8-1B1C-47B1-9BE3-DF1070CBEA07}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{670704C8-1B1C-47B1-9BE3-DF1070CBEA07}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{670704C8-1B1C-47B1-9BE3-DF1070CBEA07}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="speedTesting" ID="{DA3DFC9A-88DF-40F1-B109-3AE7029561F6}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playerHit" ID="{50E51490-DE77-42D5-A1D6-862FD27AC0F9}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}"/>
+							<Value>0.478260869565217</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -22,6 +22,16 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="gameEffects" ID="{67E84C17-7EE9-4B7E-842A-0743D1A22ECA}" ShortID="325314588">
+					<ChildrenList>
+						<GameParameter Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -91,6 +91,12 @@
 					</ChildrenList>
 				</Folder>
 				<Event Name="powerSelect" ID="{AC5C76E5-EEA8-4C63-920E-26DC3DA89A62}"/>
+				<Folder Name="timeEffects" ID="{05615AE0-80DA-4DC5-842A-007B6DB23C0E}" ShortID="867754944">
+					<ChildrenList>
+						<Event Name="slowDown" ID="{1FC1AB12-A51A-49DF-A20E-F3BC5E95187A}"/>
+						<Event Name="speedUp" ID="{D6B2E0BF-B597-4311-A7A3-C00500BA4B43}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
