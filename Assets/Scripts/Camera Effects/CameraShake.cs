@@ -7,6 +7,7 @@ public class CameraShake : MonoBehaviour
 {
     [SerializeField]
     CinemachineVirtualCamera vcam;
+    CinemachineBasicMultiChannelPerlin noise;
 
     [SerializeField]
     float shakeAmplitude = 0f;
@@ -14,6 +15,10 @@ public class CameraShake : MonoBehaviour
 
     [SerializeField]
     float duration = 0f;
+
+    private void Awake() {
+        noise = vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+    }
 
     public void Shake(float amount, float duration) {
         enabled = true;
@@ -34,7 +39,7 @@ public class CameraShake : MonoBehaviour
             Mathf.MoveTowards(currentAmplitude, 0,
             shakeAmplitude / duration * Time.deltaTime);
 
-        vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = currentAmplitude;
+        noise.m_AmplitudeGain = currentAmplitude;
 
         // Check if shaking is over
         if (currentAmplitude == 0) {
