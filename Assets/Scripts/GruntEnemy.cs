@@ -37,6 +37,8 @@ public class GruntEnemy : Enemy {
 
     public override void TakeDamage(int damage, Vector2 direction)
     {
+        AkSoundEngine.PostEvent("PlayerHit", this.gameObject);
+
         health -= damage;
 
         if (health <= 0)

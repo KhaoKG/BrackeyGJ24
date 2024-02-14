@@ -52,6 +52,7 @@ public class PlayerMelee : MonoBehaviour
 
     IEnumerator DoAttack()
     {
+        AkSoundEngine.PostEvent("playerSwing", this.gameObject); // play sound
         attackHitbox.SetActive(true);
         inAttack = true;
         attackAnimator.SetTrigger("attack");
