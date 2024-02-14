@@ -16,10 +16,14 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected Rigidbody2D rb;
 
+    private EnemyController enemyController;
+
     // Every enemy keeps track of where the player is
     protected Player player;
 
     protected bool isInHitstun;
+
+    public EnemyController EnemyController { get => enemyController; set => enemyController = value; }
 
     protected abstract void Move();
     protected abstract void Attack();
@@ -34,6 +38,11 @@ public abstract class Enemy : MonoBehaviour
         rb.AddForce(direction * 250);
     }
     protected abstract void Die();
+
+    private void OnDestroy() {
+        // Removes itself from enemy controller
+        enemyController.OnEnemyDeath(this);
+    }
 
     protected bool IsAlive() {
         return health > 0;

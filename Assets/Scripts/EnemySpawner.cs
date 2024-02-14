@@ -17,6 +17,7 @@ public class EnemySpawner : MonoBehaviour
     Dictionary<EnemySpawnEnum, GameObject> enemies = new Dictionary<EnemySpawnEnum, GameObject>();
     [SerializeField] WaveSO currentWave;
     [SerializeField] float minSpawnDistance = 2f;
+    [SerializeField] EnemyController enemyController;
 
     [Header("Player")]
     [SerializeField]
@@ -36,6 +37,9 @@ public class EnemySpawner : MonoBehaviour
 
         // Frees list memory
         enemyMapping.Clear();
+
+        // Deactivate to wait for starting signal from GameStateManager
+        enabled = false;
     }
 
     private void OnEnable() {
@@ -46,17 +50,19 @@ public class EnemySpawner : MonoBehaviour
     public IEnumerator ProcessCurrentWave()
     {
         Debug.Log("I'm beginning spawning enemies");
-        while (true)
+
         foreach (WaveSO.TimeSpawn spawn in currentWave.spawns) {
             yield return new WaitForSeconds(spawn.delay);
 
             foreach (EnemySpawnEnum enemyEnum in spawn.enemies) {
                 Vector3 spawnPosition = DefineSpawnPosition();
-                Instantiate(enemies[enemyEnum], spawnPosition, Quaternion.identity);
+
+                Enemy newEnemy = Instantiate(enemies[enemyEnum], spawnPosition, Quaternion.identity).GetComponent<Enemy>();
+                enemyController.OnSpawnEnemy(newEnemy);
             }
         }
 
-        //enabled = false;
+        enabled = false;
     }
 
     Vector3 DefineSpawnPosition() {

@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// Keeps track of enemies alive in the arena
+public class EnemyController : MonoBehaviour
+{
+    [SerializeField]
+    GameStateManager gameStateManager;
+    List<Enemy> enemiesAlive = new List<Enemy>();
+
+    public void OnSpawnEnemy(Enemy enemy) {
+        enemiesAlive.Add(enemy);
+
+        // Prepares enemy to report on death
+        enemy.EnemyController = this;
+    }
+
+    public void OnEnemyDeath(Enemy enemy) {
+        enemiesAlive.Remove(enemy);
+
+        // Inform game state manager in case there are no more enemies
+        if (enemiesAlive.Count == 0) {
+            gameStateManager.CheckIfWaveOver();
+        }
+    }
+}

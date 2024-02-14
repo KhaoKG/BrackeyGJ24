@@ -54,7 +54,7 @@ public class GruntEnemy : Enemy {
         // drop health
         if(Random.Range(0, 20) == 5)
         {
-            Instantiate(healthPickupPrefab, transform.position, transform.rotation);
+            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
         Destroy(gameObject);
     }
