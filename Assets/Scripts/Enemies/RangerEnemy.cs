@@ -20,12 +20,6 @@ public class RangerEnemy : Enemy {
     [SerializeField]
     bool movingAway = false;
 
-    GameObject score;
-
-    private void Start()
-    {
-        score = GameObject.FindGameObjectWithTag("Score");
-    }
 
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning || isAttacking) {
@@ -115,11 +109,6 @@ public class RangerEnemy : Enemy {
             Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("keyDropped", this.gameObject);
         }
-
-        // update score
-        score.GetComponent<Score>().SetScore(20);
-
-        // die
         col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }

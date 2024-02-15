@@ -5,12 +5,6 @@ using UnityEngine;
 // Basic enemy, basically follows the player and does a melee attack
 public class GruntEnemy : Enemy {
     [SerializeField] GameObject healthPickupPrefab;
-    GameObject score;
-
-    private void Start()
-    {
-        score = GameObject.FindGameObjectWithTag("Score");
-    }
 
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning) {
@@ -59,10 +53,6 @@ public class GruntEnemy : Enemy {
             AkSoundEngine.PostEvent("healthDropped", this.gameObject);
         }
 
-        // update score
-        score.GetComponent<Score>().SetScore(10);
-
-        // die
         col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }
