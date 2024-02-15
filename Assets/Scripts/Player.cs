@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     bool isInHitstun = false;
     float initialSpeed = 1f;
+    bool facingLeft = true;
+    bool flipping = false;
 
     [Header("Dash")]
     [SerializeField]
@@ -115,17 +117,38 @@ public class Player : MonoBehaviour
     }
 
     void FlipSprite() {
-        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-        if (playerHasHorizontalSpeed) {
+        //bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        if (flipping) return;
+
+        if ((rb.velocity.x > 0.1f && facingLeft) || (rb.velocity.x < -0.1f && !facingLeft)) {
             //transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
-            spriteRenderer.flipX = rb.velocity.x >= 0;
-            //DoFlipSprite();
+            //spriteRenderer.flipX = rb.velocity.x >= 0;
+            StartCoroutine(DoFlipSprite(spriteRenderer.transform));
         }
     }
 
-    IEnumerator DoFlipSprite()
+    IEnumerator DoFlipSprite(Transform sprite)
     {
-        yield return new WaitForEndOfFrame();
+        flipping = true; // semaphore
+
+        // calc the direction of flip
+        float currentScale = sprite.localScale.x;
+        float goalScale = currentScale * -1;
+        float increment = 0f;
+        if (currentScale > 0) increment = -0.2f;
+        if (currentScale < 0) increment = 0.2f;
+
+        // do the flip
+        for (int i = 0; i < 10; i++)
+        {
+            sprite.localScale = new Vector3(sprite.localScale.x + increment, 1, 1);
+            yield return new WaitForSeconds(0.02f);
+        }
+
+        // update direction
+        facingLeft = !facingLeft;
+
+        flipping = false;
     }
 
     public bool IsAlive() {
