@@ -61,11 +61,6 @@ public abstract class Enemy : MonoBehaviour
         col2D = GetComponent<Collider2D>();
     }
 
-    private void OnDestroy() {
-        // Removes itself from enemy controller
-        enemyController.OnEnemyDeath(this);
-    }
-
     private void OnEnable() {
         isSpawning = true;
         col2D.enabled = false;

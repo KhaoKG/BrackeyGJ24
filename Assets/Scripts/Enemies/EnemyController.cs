@@ -17,6 +17,9 @@ public class EnemyController : MonoBehaviour
     }
 
     public void OnEnemyDeath(Enemy enemy) {
+        // Add enemy dying effect to enemy
+        enemy.gameObject.AddComponent<EnemyDyingEffect>();
+
         enemiesAlive.Remove(enemy);
 
         // Inform game state manager in case there are no more enemies
