@@ -19,26 +19,27 @@ public class Vacuum : MonoBehaviour, IAbility
         
     }
 
-    public void Activate()
+    public void Activate(GameObject door)
     {
         AkSoundEngine.PostEvent("doorVacuumEvent", this.gameObject);
         attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
         attractPoint.GetComponent<AttractPoint>().TurnOn();
-        StartCoroutine(ActivateAndDeactivateCoroutine());
+        StartCoroutine(ActivateAndDeactivateCoroutine(door));
     }
 
-    public void Deactivate()
+    public void Deactivate(GameObject door)
     {
         AkSoundEngine.PostEvent("doorVacuumStop", this.gameObject);
         attractPoint.GetComponent<AttractPoint>().TurnOff();
         StopAllCoroutines();
+        door.GetComponent<DoorEventManager>().isUsingAbility = false;
     }
 
     public AbilitySO GetAbilitySo() => SO != null ? SO : Resources.Load<AbilitySO>("ScriptableObjects/Vacuum");
 
-    private IEnumerator ActivateAndDeactivateCoroutine()
+    private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
     {
         yield return new WaitForSeconds(SO.ActiveTime);
-        Deactivate();
+        Deactivate(door);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,45 +8,43 @@ using UnityEngine.Events;
 public class DoorEventManager : MonoBehaviour
 {
     Vector3 homePosition; // the position the door goes to during a door event
-    SpriteRenderer sr;
+    public int DoorId; // 1 left 2 top 3 right
+    private Camera mainCamera;
 
-    [Header("Cooldown")]
-    float doorEventTimer = 1.0f; // the time for a door event
-    float maxDoorEventTimer = 1.0f; // upper limit of the timer
-    [SerializeField] Image CooldownIndicator;
-    bool onCooldown = false;
+    public bool isUsingAbility = false;
+    private bool isInCameraView = false; //Only allow ability use if you can see the door
+
+    public static event Action<GameObject> ActivateDoor;
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
+        mainCamera = Camera.main;
         homePosition = transform.position; // save this position for when the door returns here
-        sr = GetComponent<SpriteRenderer>();
-        sr.enabled = false; // start as invisible
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1) && !onCooldown)
+        if (mainCamera != null)
         {
-            // Trigger Door Event
-            onCooldown = true;
-            sr.enabled = true;
-            sr.enabled = false;
-        }
-        else if (onCooldown)
-        {
-            // Update Timer
-            doorEventTimer -= Time.deltaTime; // tick the timer
-            CooldownIndicator.fillAmount = doorEventTimer; // update the UI
+            // Convert the object's position to viewport space using the main camera
+            Vector3 viewportPosition = mainCamera.WorldToViewportPoint(transform.position);
 
-            // Check for Cooldown Completion
-            if (doorEventTimer <= 0)
+            // Check if the object is within the viewport
+            if (viewportPosition.x > 0 && viewportPosition is { x: < 1, y: > 0 } and { y: < 1, z: > 0 })
             {
-                // timer ended, reset timer
-                doorEventTimer = maxDoorEventTimer;
-                CooldownIndicator.fillAmount = maxDoorEventTimer;
-                onCooldown = false;
+                if (Input.GetKeyDown(KeyCode.K))
+                {
+                    if (isUsingAbility) return;
+                    ActivateDoor?.Invoke(gameObject);
+                }
+            }
+            else
+            {
+                Debug.Log($"The object {DoorId} is outside the Cinemachine camera's view.");
             }
         }
     }

@@ -20,19 +20,7 @@ public class HellPortal : MonoBehaviour, IAbility
 
         lineRenderer.sortingLayerName = "Foreground";
     }
-    [ContextMenu("Activate Hell Portal")]
-    public void ActivateForDebug()
-    {
-        Activate();
-    }
-
-    [ContextMenu("Deactivate Hell Portal")]
-    public void DeactivateForDebug()
-    {
-        Deactivate();
-    }
-
-    public void Activate()
+    public void Activate(GameObject door)
     {
         if (EnemyPrefab != null)
         {
@@ -42,12 +30,12 @@ public class HellPortal : MonoBehaviour, IAbility
         // Start drawing the link if the enemy is spawned
         if (spawnedEnemy != null)
         {
-            StartCoroutine(ActivateAndDeactivateCoroutine());
+            StartCoroutine(ActivateAndDeactivateCoroutine(door));
             StartCoroutine(UpdateLineRenderer());
         }
     }
 
-    public void Deactivate()
+    public void Deactivate(GameObject door)
     {
         StopAllCoroutines(); // Stop all coroutines when deactivating
 
@@ -59,6 +47,8 @@ public class HellPortal : MonoBehaviour, IAbility
             Destroy(spawnedEnemy);
             spawnedEnemy = null;
         }
+
+        door.GetComponent<DoorEventManager>().isUsingAbility = false;
     }
 
     private IEnumerator UpdateLineRenderer()
@@ -73,10 +63,10 @@ public class HellPortal : MonoBehaviour, IAbility
         }
     }
 
-    private IEnumerator ActivateAndDeactivateCoroutine()
+    private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
     {
         yield return new WaitForSeconds(abilityData.ActiveTime); // Wait for 30 seconds
-        Deactivate(); // Deactivate after 30 seconds
+        Deactivate(door); // Deactivate after 30 seconds
     }
 
     public AbilitySO GetAbilitySo() => abilityData != null ? abilityData : Resources.Load<AbilitySO>("ScriptableObjects/HellPortal");

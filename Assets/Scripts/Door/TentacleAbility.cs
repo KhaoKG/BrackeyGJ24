@@ -10,30 +10,14 @@ public class TentacleAbility : MonoBehaviour, IAbility {
     GameObject tentaclePrefab;
     GameObject spawnedTentacle;
 
-    [SerializeField]
-    GameObject door;
 
-    public GameObject Door { get => door; set => door = value; }
-
-
-    [ContextMenu("Activate Tentacle")]
-    public void ActivateForDebug() {
-        Activate();
-    }
-
-    [ContextMenu("Deactivate Tentacle")]
-    public void DeactivateForDebug() {
-        Deactivate();
-    }
-
-
-    public void Activate() {
+    public void Activate(GameObject door) {
         // Spawn tentacle
         spawnedTentacle = Instantiate(tentaclePrefab, door.transform);
         spawnedTentacle.transform.localPosition = Vector3.zero;
     }
 
-    public void Deactivate() {
+    public void Deactivate(GameObject door) {
         // Tentacle already dies by itself after its animation and particles
     }
 
