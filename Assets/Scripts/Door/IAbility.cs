@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IAbility
 {
-    public void Activate();
-    public void Deactivate();
+    public void Activate(GameObject door);
+    public void Deactivate(GameObject door);
     public AbilitySO GetAbilitySo();
 }
