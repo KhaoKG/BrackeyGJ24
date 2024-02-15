@@ -6,8 +6,6 @@ using UnityEngine;
 public class HellPortalEnemy : Enemy
 {
     [SerializeField]
-    float attackingDistance = 0.7f;
-    [SerializeField]
     public int damageToEnemy = 1;
 
     public float detectionRange = 2f;
@@ -62,16 +60,6 @@ public class HellPortalEnemy : Enemy
     protected override void Die()
     {
         Destroy(gameObject);
-    }
-
-    IEnumerator DoHitStun()
-    {
-        isInHitstun = true;
-        Debug.Log("in hitstun");
-        yield return new WaitForSeconds(0.25f);
-        Debug.Log("out of hitstun");
-        isInHitstun = false;
-        rb.velocity = Vector2.zero;
     }
 
     void FindNewTarget()
