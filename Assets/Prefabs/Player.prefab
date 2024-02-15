@@ -136,11 +136,12 @@ MonoBehaviour:
   attackParent: {fileID: 2103094387012240461}
   knockbackForce: 150
   knockbackDuration: 0.5
+  shakeEffect: {fileID: 0}
   moveSpeed: 6
   rb: {fileID: 420199765914226485}
   isInHitstun: 0
-  dashSpeed: 0
-  dashLength: 0.5
+  dashSpeed: 10
+  dashLength: 0.2
   dashCooldown: 1
 --- !u!212 &5676607009974289422
 SpriteRenderer:
@@ -183,7 +184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40131799bcf7a5d479267cf8fefec367, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -228,9 +229,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.4}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    border: {x: 0.8125, y: 0.114999995, z: 0.7, w: 0.1725}
+    pivot: {x: 0.5240439, y: 0.07807196}
+    oldSize: {x: 2.4, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -300,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractableRadius: 100
-  attractionStrength: 140.2
+  attractionStrength: 140
   blackHoleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -320,7 +321,7 @@ GameObject:
   - component: {fileID: 6036200964700534384}
   m_Layer: 7
   m_Name: Attack
-  m_TagString: Player
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

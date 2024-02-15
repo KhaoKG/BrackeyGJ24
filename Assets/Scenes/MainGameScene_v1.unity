@@ -329,6 +329,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f47fc7acb12a1f4dbf4716ae5ef5c30, type: 3}
+--- !u!95 &323544623 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7824602286148099528, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &323544625 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5676607009974289422, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &367181711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,37 +1905,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5676607009974289422, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676607009974289422, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676607009974289422, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6065484187918596696, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
-      propertyPath: dashSpeed
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 323544623}
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2147102831}
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
-      propertyPath: dashLength
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: shakeEffect
       value: 
       objectReference: {fileID: 793399785}
-    - target: {fileID: 7777723505001612792, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
-      propertyPath: m_TagString
-      value: Attack
+    - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 323544625}
+    - target: {fileID: 7824602286148099528, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e0e4a12e98f501e4389894c2cee90d0d, type: 2}
+    - target: {fileID: 8338704882114001934, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8870093619991154624, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+    - target: {fileID: 8338704882114001934, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.4
       objectReference: {fileID: 0}
-    - target: {fileID: 9134003981759521353, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
-      propertyPath: attractionStrength
-      value: 140
+    - target: {fileID: 8338704882114001934, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     Animator animator;
+    [SerializeField]
+    SpriteRenderer spriteRenderer;
 
     [Header("Door related")]
     [SerializeField]
@@ -41,7 +43,6 @@ public class Player : MonoBehaviour
     Vector2 moveDirection;
     [SerializeField]
     bool isInHitstun = false;
-    SpriteRenderer sr;
     float initialSpeed = 1f;
 
     [Header("Dash")]
@@ -60,7 +61,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         health = maxHealth;
-        sr = GetComponent<SpriteRenderer>();
         initialSpeed = moveSpeed;
     }
 
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
 
         if (!isInHitstun) {
             Run();
-            //FlipSprite(); commented out until we fix it so it flips just the sprite and not the whole character
+            FlipSprite(); 
         }
 
         if (dashCounter > 0)
@@ -91,18 +91,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
-
     void OnAttack(InputValue value) {
-        if (isHoldingDoor) {
-            
-        }
-        else {
-            
-        }
+        animator.SetTrigger("Attack");
     }
 
     void OnMove(InputValue value) {
@@ -120,12 +110,15 @@ public class Player : MonoBehaviour
 
     void Run() {
         rb.velocity = moveSpeed * moveDirection;
+
+        animator.SetBool("IsMoving", rb.velocity != Vector2.zero);
     }
 
     void FlipSprite() {
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         if (playerHasHorizontalSpeed) {
-            transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
+            //transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
+            spriteRenderer.flipX = rb.velocity.x >= 0;
         }
     }
 
@@ -187,9 +180,9 @@ public class Player : MonoBehaviour
 
         for(int i=0; i<3; i++)
         {
-            sr.color = Color.clear;
+            spriteRenderer.color = Color.clear;
             yield return new WaitForSeconds(knockbackDurationFraction);
-            sr.color = Color.white;
+            spriteRenderer.color = Color.white;
             yield return new WaitForSeconds(knockbackDurationFraction);
         }
 
