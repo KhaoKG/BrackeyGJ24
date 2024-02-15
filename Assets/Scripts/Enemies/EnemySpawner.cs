@@ -27,6 +27,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     GameObject limits;
 
+    Coroutine spawningCoroutine;
+
     public WaveSO CurrentWave { get => currentWave; set => currentWave = value; }
 
     void Awake() {
@@ -44,7 +46,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnEnable() {
         // Process wave as soon as script is enabled
-        StartCoroutine(ProcessCurrentWave());
+        spawningCoroutine = StartCoroutine(ProcessCurrentWave());
     }
 
     public IEnumerator ProcessCurrentWave()
@@ -66,6 +68,14 @@ public class EnemySpawner : MonoBehaviour
         }
 
         enabled = false;
+        spawningCoroutine = null;
+    }
+
+    public void StopSpawning() {
+        if (spawningCoroutine != null) {
+            StopCoroutine(spawningCoroutine); 
+            spawningCoroutine = null;
+        }
     }
 
     Vector3 DefineSpawnPosition() {

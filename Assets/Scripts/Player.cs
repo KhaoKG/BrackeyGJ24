@@ -17,12 +17,10 @@ public class Player : MonoBehaviour
     Animator animator;
     [SerializeField]
     SpriteRenderer spriteRenderer;
+    [SerializeField]
+    SpriteBlinkEffect blinkEffect;
 
     [Header("Door related")]
-    [SerializeField]
-    bool isHoldingDoor = true;
-    //[SerializeField]
-    //GameObject doorHeld = null;
     //[SerializeField]
     //bool isNearDoor = false;
     //[SerializeField]
@@ -128,7 +126,6 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 direction)
     {
-
         // play sound
         AkSoundEngine.PostEvent("playerHurt", this.gameObject);
 
@@ -138,13 +135,36 @@ public class Player : MonoBehaviour
         // update UI
         healthBar.fillAmount = ((float)health / maxHealth);
 
-        // Shake camera
-        shakeEffect.Shake(damage*2, 0.5f);
+        if (IsAlive()) {
+            // Still alive after hit
 
-        // knockback
-        StartCoroutine(DoHitStun());
+            // Shake camera
+            shakeEffect.Shake(damage * 2, 0.5f);
+
+            // knockback
+            StartCoroutine(SufferHitStun());
+            rb.velocity = Vector2.zero;
+            rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+        } else {
+            Die();
+
+            // Prepare game over
+            GameStateManager gameManager = FindObjectOfType<GameStateManager>();
+
+            gameManager.GameOver();
+        }
+    }
+
+    void Die() {
+        // TODO Death animation
+        spriteRenderer.color = Color.clear;
+
+        // Disable script
+        enabled = false;
+
+        // Disable collider and velocity
+        GetComponent<Collider2D>().enabled = false;
         rb.velocity = Vector2.zero;
-        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
     }
 
     void HealDamage(int healAmount)
@@ -173,18 +193,15 @@ public class Player : MonoBehaviour
         GetComponent<PlayerInput>().DeactivateInput();
     }
 
-    IEnumerator DoHitStun()
+    IEnumerator SufferHitStun()
     {
         isInHitstun = true;
-        float knockbackDurationFraction = knockbackDuration / 6;
 
-        for(int i=0; i<3; i++)
-        {
-            spriteRenderer.color = Color.clear;
-            yield return new WaitForSeconds(knockbackDurationFraction);
-            spriteRenderer.color = Color.white;
-            yield return new WaitForSeconds(knockbackDurationFraction);
-        }
+        blinkEffect.StartBlinking();
+
+        yield return new WaitForSeconds(knockbackDuration);
+
+        blinkEffect.StopBlinking();
 
         isInHitstun = false;
         rb.velocity = Vector2.zero;
