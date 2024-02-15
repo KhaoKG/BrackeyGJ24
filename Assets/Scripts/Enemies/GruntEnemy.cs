@@ -53,6 +53,7 @@ public class GruntEnemy : Enemy {
             AkSoundEngine.PostEvent("healthDropped", this.gameObject);
         }
 
+        // die
         col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }

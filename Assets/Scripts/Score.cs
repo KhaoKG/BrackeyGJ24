@@ -10,13 +10,6 @@ public class Score : MonoBehaviour
     int streak = 0;
     float streakTimer = 0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         if(streakTimer > -1)
@@ -25,7 +18,7 @@ public class Score : MonoBehaviour
         }
     }
 
-    public void SetScore(int addScore)
+    public void AddScore(int addScore)
     {
         score += addScore;
         streak += 10;

@@ -194,6 +194,7 @@ MonoBehaviour:
   movementSpeed: 1
   damage: 2
   attackingDistance: 9
+  score: 20
   rb: {fileID: 0}
   col2D: {fileID: 0}
   isInHitstun: 0

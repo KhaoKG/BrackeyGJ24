@@ -20,7 +20,6 @@ public class RangerEnemy : Enemy {
     [SerializeField]
     bool movingAway = false;
 
-
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning || isAttacking) {
             return;
@@ -109,6 +108,8 @@ public class RangerEnemy : Enemy {
             Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("keyDropped", this.gameObject);
         }
+
+        // die
         col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }
