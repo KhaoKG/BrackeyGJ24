@@ -11,6 +11,7 @@ TagManager:
   - PortalEnemy
   - Health
   - MapLimits
+  - Door Ability
   layers:
   - Default
   - TransparentFX

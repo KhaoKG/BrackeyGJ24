@@ -192,7 +192,7 @@ public class Player : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag is "Enemy" or "PortalEnemy" && !isInHitstun)
+        if(collision.gameObject.tag is "Enemy" or "PortalEnemy" or "Door Ability" && !isInHitstun)
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
@@ -206,6 +206,12 @@ public class Player : MonoBehaviour
         {
             HealDamage(1);
             Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.tag == "Door Ability")
+        {
+            // Get knockback direction
+            Vector2 knockbackDirection = transform.position - collision.transform.position;
+            TakeDamage(1, knockbackDirection.normalized);
         }
     }
 }
