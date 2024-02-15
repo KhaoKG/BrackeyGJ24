@@ -119,7 +119,13 @@ public class Player : MonoBehaviour
         if (playerHasHorizontalSpeed) {
             //transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
             spriteRenderer.flipX = rb.velocity.x >= 0;
+            //DoFlipSprite();
         }
+    }
+
+    IEnumerator DoFlipSprite()
+    {
+        yield return new WaitForEndOfFrame();
     }
 
     public bool IsAlive() {
