@@ -48,6 +48,8 @@ MonoBehaviour:
   attackAnimator: {fileID: 6036200964700534384}
   attackCooldown: 0.5
   attackHitbox: {fileID: 7777723505001612792}
+  animator: {fileID: 1684260990788786577}
+  player: {fileID: 6966646645160173175}
 --- !u!1 &4754356125795066288
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +264,7 @@ MonoBehaviour:
   moveSpeed: 6
   rb: {fileID: 420199765914226485}
   isInHitstun: 0
+  facingLeft: 1
   dashSpeed: 10
   dashLength: 0.2
   dashCooldown: 1

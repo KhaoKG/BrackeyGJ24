@@ -12,6 +12,9 @@ public class PlayerMelee : MonoBehaviour
     [SerializeField]
     GameObject attackHitbox;
 
+    // animation variables
+    [SerializeField] Animator animator; // player animator
+    [SerializeField] Player player;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,17 @@ public class PlayerMelee : MonoBehaviour
 
         // rotate
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+
+
+        // USE THE CORRECT ANIMATION
+        // flip walk
+        if((player.facingLeft && mousePosition.x > screenPosition.x) || (!player.facingLeft && mousePosition.x < screenPosition.x))
+        {
+            Debug.Log("mouse: " + mousePosition.x);
+            Debug.Log("player: " + player.transform.position.x);
+            player.FlipSprite();
+        }
+
     }
 
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b)

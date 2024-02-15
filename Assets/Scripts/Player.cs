@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     bool isInHitstun = false;
     float initialSpeed = 1f;
-    bool facingLeft = true;
+    public bool facingLeft = true;
     bool flipping = false;
 
     [Header("Dash")]
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
 
         if (!isInHitstun) {
             Run();
-            FlipSprite(); 
+            //FlipSprite(); 
         }
 
         if (dashCounter > 0)
@@ -114,15 +114,17 @@ public class Player : MonoBehaviour
         animator.SetBool("IsMoving", rb.velocity != Vector2.zero);
     }
 
-    void FlipSprite() {
+    public void FlipSprite() {
         //bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         if (flipping) return;
 
-        if ((rb.velocity.x > 0.1f && facingLeft) || (rb.velocity.x < -0.1f && !facingLeft)) {
+        StartCoroutine(DoFlipSprite(spriteRenderer.transform));
+
+        //if ((rb.velocity.x > 0.1f && facingLeft) || (rb.velocity.x < -0.1f && !facingLeft)) {
             //transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
             //spriteRenderer.flipX = rb.velocity.x >= 0;
-            StartCoroutine(DoFlipSprite(spriteRenderer.transform));
-        }
+            //StartCoroutine(DoFlipSprite(spriteRenderer.transform));
+        //}
     }
 
     IEnumerator DoFlipSprite(Transform sprite)
