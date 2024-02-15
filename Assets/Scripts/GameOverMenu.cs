@@ -13,6 +13,9 @@ public class GameOverMenu : MonoBehaviour
     [SerializeField]
     float fadeSpeed = 1f;
 
+    [SerializeField]
+    FadeEffect screenFadeEffect;
+
     void Start()
     {
         image = GetComponent<Image>();
@@ -49,10 +52,19 @@ public class GameOverMenu : MonoBehaviour
     }
 
     public void Retry() {
-        SceneManager.LoadScene(1);
+        StartCoroutine(FadeAndLoadScene(1));
     }
 
     public void Quit() {
-        SceneManager.LoadScene(0);
+        StartCoroutine(FadeAndLoadScene(0));
+    }
+
+    IEnumerator FadeAndLoadScene(int scene) {
+        // Activate game object
+        screenFadeEffect.TargetAlpha = 1f;
+
+        yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
+
+        SceneManager.LoadScene(scene);
     }
 }

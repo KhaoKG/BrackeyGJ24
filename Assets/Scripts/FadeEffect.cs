@@ -14,8 +14,12 @@ public class FadeEffect : MonoBehaviour {
     [SerializeField]
     Image img;
 
-    public float TargetAlpha { get => targetAlpha; set { img.enabled = true; enabled = true; targetAlpha = value; } }
+    public float TargetAlpha { get => targetAlpha; set { enabled = true; targetAlpha = value; } }
     public float FadeSpeed { get => fadeSpeed; set => fadeSpeed = value; }
+
+    private void OnEnable() {
+        img.enabled = true;
+    }
 
     void Update() {
         Color color = img.color;
