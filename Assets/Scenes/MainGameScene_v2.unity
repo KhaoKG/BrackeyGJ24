@@ -1931,7 +1931,7 @@ PrefabInstance:
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: spriteRenderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6747081703983400598}
     - target: {fileID: 7824602286148099528, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1953,6 +1953,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+--- !u!212 &6747081703983400598 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7595423339297774504, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8358751820287113819
 PrefabInstance:
   m_ObjectHideFlags: 0
