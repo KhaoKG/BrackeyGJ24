@@ -34,7 +34,7 @@ public class TentacleAbility : MonoBehaviour, IAbility {
     }
 
     public void Deactivate() {
-        Destroy(spawnedTentacle);
+        // Tentacle already dies by itself after its animation and particles
     }
 
     public AbilitySO GetAbilitySo() => abilityData;
