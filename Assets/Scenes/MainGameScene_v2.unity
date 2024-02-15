@@ -1461,6 +1461,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7229421020210345176, guid: f8749f65b3096d54dabf766d34c8c4cc, type: 3}
   m_PrefabInstance: {fileID: 6732255436674867287}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1705095478 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1684260990788786577, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1860837844 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6709014572982272751, guid: 7f47fc7acb12a1f4dbf4716ae5ef5c30, type: 3}
@@ -1914,7 +1919,7 @@ PrefabInstance:
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705095478}
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: healthBar
       value: 
