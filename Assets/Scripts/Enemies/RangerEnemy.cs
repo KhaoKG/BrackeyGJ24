@@ -106,7 +106,8 @@ public class RangerEnemy : Enemy {
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
-        Destroy(gameObject);
+        col2D.enabled = false;
+        enemyController.OnEnemyDeath(this);
     }
 
     private void OnValidate() {
