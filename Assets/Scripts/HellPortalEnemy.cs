@@ -57,9 +57,9 @@ public class HellPortalEnemy : Enemy
     }
 
     protected override void Attack() {}
-    protected override void Die()
-    {
-        Destroy(gameObject);
+    protected override void Die() {
+        col2D.enabled = false;
+        enemyController.OnEnemyDeath(this);
     }
 
     void FindNewTarget()

@@ -117,7 +117,8 @@ public class RangerEnemy : Enemy {
         score.GetComponent<Score>().SetScore(20);
 
         // die
-        Destroy(gameObject);
+        col2D.enabled = false;
+        enemyController.OnEnemyDeath(this);
     }
 
     private void OnValidate() {

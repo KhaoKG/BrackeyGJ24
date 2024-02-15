@@ -50,6 +50,7 @@ public class GruntEnemy : Enemy {
     }
 
     protected override void Attack() { }
+
     protected override void Die() {
         // drop health
         if(Random.Range(0, 20) == 5)
@@ -61,6 +62,7 @@ public class GruntEnemy : Enemy {
         score.GetComponent<Score>().SetScore(10);
 
         // die
-        Destroy(gameObject);
+        col2D.enabled = false;
+        enemyController.OnEnemyDeath(this);
     }
 }
