@@ -7,6 +7,11 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] GameObject KeySelectionScreen;
     [SerializeField] EnemySpawner enemySpawner;
+    [SerializeField] EnemyController enemyController;
+
+    [Header("Game Over")]
+    [SerializeField] GameObject gameOverMenu;
+    [SerializeField] bool isGameOver = false;
 
     [Header("Camera effects")]
     [SerializeField]  HitStopEffect hitStopEffect;
@@ -22,7 +27,7 @@ public class GameStateManager : MonoBehaviour
     }
 
     public void CheckIfWaveOver() {
-        if (!enemySpawner.enabled) {
+        if (!isGameOver && !enemySpawner.enabled) {
             // Play hit stop effect upon last enemy dying
             hitStopEffect.StartEffect();
 
@@ -38,9 +43,6 @@ public class GameStateManager : MonoBehaviour
 
         ShowKeySelect();
     }
-
-
-
 
     private void ShowKeySelect() {
         KeySelectionScreen.SetActive(true);
@@ -59,5 +61,17 @@ public class GameStateManager : MonoBehaviour
 
         // Reactivate player
         player.EnableInput();
+    }
+
+    public void GameOver() {
+        isGameOver = true;
+        player.DisableInput();
+
+        // Stop enemies
+        enemySpawner.StopSpawning();
+        enemyController.OnGameOver();
+
+        // Show game over menu
+        gameOverMenu.SetActive(true);
     }
 }

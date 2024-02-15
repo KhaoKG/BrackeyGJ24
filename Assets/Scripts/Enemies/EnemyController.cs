@@ -24,4 +24,10 @@ public class EnemyController : MonoBehaviour
             gameStateManager.CheckIfWaveOver();
         }
     }
+
+    public void OnGameOver() {
+        foreach (Enemy enemy in enemiesAlive) {
+            enemy.enabled = false;
+        }
+    }
 }
