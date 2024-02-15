@@ -29,13 +29,32 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    [SerializeField] Animator doorAnimator;
 
     // Starts the game
     // Adjust build index as needed
     public void PlayGame()
     {
+        StartCoroutine(DoPlayGame());
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    IEnumerator DoPlayGame()
+    {
+        // Wait for animation and sound to finish
         AkSoundEngine.PostEvent("PlayButton", this.gameObject);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        doorAnimator.SetTrigger("StartGame");
+        yield return new WaitForSeconds(1.5f);
+
+        // zoom camera
+        for(int i = 0; i < 50; i++)
+        {
+            Camera.main.orthographicSize -= 0.1f;
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        // Load Game
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // Quits the game
