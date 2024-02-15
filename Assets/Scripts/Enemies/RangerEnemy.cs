@@ -20,6 +20,12 @@ public class RangerEnemy : Enemy {
     [SerializeField]
     bool movingAway = false;
 
+    GameObject score;
+
+    private void Start()
+    {
+        score = GameObject.FindGameObjectWithTag("Score");
+    }
 
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning || isAttacking) {
@@ -106,6 +112,11 @@ public class RangerEnemy : Enemy {
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
         }
+
+        // update score
+        score.GetComponent<Score>().SetScore(20);
+
+        // die
         Destroy(gameObject);
     }
 

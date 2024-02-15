@@ -12,6 +12,7 @@ TagManager:
   - Health
   - MapLimits
   - Door Ability
+  - Score
   layers:
   - Default
   - TransparentFX
