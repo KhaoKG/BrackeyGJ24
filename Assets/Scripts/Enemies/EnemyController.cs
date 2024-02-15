@@ -7,6 +7,8 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField]
     GameStateManager gameStateManager;
+    [SerializeField]
+    Score score;
     List<Enemy> enemiesAlive = new List<Enemy>();
 
     public void OnSpawnEnemy(Enemy enemy) {
@@ -19,6 +21,9 @@ public class EnemyController : MonoBehaviour
     public void OnEnemyDeath(Enemy enemy) {
         // Add enemy dying effect to enemy
         enemy.gameObject.AddComponent<EnemyDyingEffect>();
+
+        // Update score
+        score.AddScore(enemy.Score);
 
         enemiesAlive.Remove(enemy);
 

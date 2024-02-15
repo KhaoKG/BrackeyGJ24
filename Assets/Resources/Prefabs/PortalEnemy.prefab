@@ -193,7 +193,11 @@ MonoBehaviour:
   health: 5
   movementSpeed: 2
   damage: 1
-  rb: {fileID: 8535055744048365009}
   attackingDistance: 0.7
+  score: 0
+  rb: {fileID: 8535055744048365009}
+  col2D: {fileID: 0}
+  isInHitstun: 0
+  hitstunDuration: 0
   damageToEnemy: 1
   detectionRange: 3

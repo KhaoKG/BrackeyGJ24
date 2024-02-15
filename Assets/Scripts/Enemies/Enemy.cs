@@ -17,6 +17,9 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected float attackingDistance = 0.5f;
 
+    [SerializeField]
+    protected int score = 10;
+
     [Header("Components")]
     [SerializeField]
     protected Rigidbody2D rb;
@@ -41,6 +44,7 @@ public abstract class Enemy : MonoBehaviour
 
     public EnemyController EnemyController { get => enemyController; set => enemyController = value; }
     public Player Player { get => player; set => player = value; }
+    public int Score { get => score; set => score = value; }
 
     protected abstract void Move();
     protected abstract void Attack();
