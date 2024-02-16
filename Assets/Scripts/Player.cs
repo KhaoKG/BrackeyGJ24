@@ -62,7 +62,6 @@ public class Player : MonoBehaviour
     {
         health = maxHealth;
         initialSpeed = moveSpeed;
-        AkSoundEngine.PostEvent("musicStart", this.gameObject);
     }
 
     private void Update() {
@@ -137,7 +136,7 @@ public class Player : MonoBehaviour
         float goalScale = currentScale * -1;
         float increment = 0f;
         if (currentScale > 0) increment = -0.2f;
-        if (currentScale < 0) increment = 0.2f;
+        else if (currentScale < 0) increment = 0.2f;
 
         // do the flip
         for (int i = 0; i < 10; i++)
