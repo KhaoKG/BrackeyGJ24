@@ -19,6 +19,16 @@
 						<Folder Name="enemyOne" ID="{97AF7057-9E13-42E4-861E-5DFBDD42305E}" ShortID="297623683"/>
 						<Folder Name="enemyTwo" ID="{65D54D6F-E88E-4F0C-9101-FB5B83AD956B}" ShortID="894801000"/>
 						<Folder Name="enemyThree" ID="{61E16F5F-4E78-4FEF-A3DB-79B0F320A3F1}" ShortID="340940455"/>
+						<Sound Name="enemySpawner" ID="{ED12017C-C65A-4D23-84BD-E53BDA1B702C}" ShortID="891997542">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+								</Reference>
+							</ReferenceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

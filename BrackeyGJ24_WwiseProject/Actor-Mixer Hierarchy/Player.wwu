@@ -399,6 +399,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="playerPickUp" ID="{B6A7743F-CC8D-47D2-92D1-14642EA9B973}" ShortID="763012514">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1200</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>

@@ -25,7 +25,7 @@ namespace AK
         static const AkUniqueID DOOROPENED = 2649542654U;
         static const AkUniqueID DOORTENTACLELOOM = 3322069076U;
         static const AkUniqueID DOORTENTACLESLAM = 1407830652U;
-        static const AkUniqueID DOORTENTACLEWHOOSH = 3590016449U;
+        static const AkUniqueID DOORTENTACLESWING = 2420079027U;
         static const AkUniqueID DOORVACUUMEVENT = 1046624244U;
         static const AkUniqueID DOORVACUUMSTOP = 2136737028U;
         static const AkUniqueID ENEMYSUCKED = 3431269606U;

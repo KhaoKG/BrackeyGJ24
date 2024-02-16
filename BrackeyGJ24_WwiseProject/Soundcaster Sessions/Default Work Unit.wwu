@@ -6,6 +6,10 @@
 				<SoundcasterSession Name="speedTesting" ID="{DA3DFC9A-88DF-40F1-B109-3AE7029561F6}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="doorTentacleLoom" ID="{784AF6E6-8407-45DD-977A-D4B6E75E123C}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="0" Y="7"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -14,12 +18,20 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="doorTentacleSlam" ID="{0F429EFA-D527-40FF-BE43-7895E9A2E28B}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="1" Y="7"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="playerHit" ID="{50E51490-DE77-42D5-A1D6-862FD27AC0F9}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="playerLastHitOver" ID="{2133D5A2-01AE-423D-AA12-14467AE3CAA2}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
 							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="doorTentacleSwing" ID="{6DF76FEE-037A-44A4-BC6D-221537B47ACF}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="2" Y="7"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

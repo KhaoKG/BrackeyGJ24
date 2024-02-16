@@ -26,6 +26,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2136737028	doorVacuumStop			\Default Work Unit\Objects\doorEvents\doorSuck\doorVacuumStop	
 	2198663230	doorLaserStop			\Default Work Unit\Objects\doorEvents\doorLaser\doorLaserStop	
 	2209591688	powerSelect			\Default Work Unit\UI\powerSelect	
+	2420079027	doorTentacleSwing			\Default Work Unit\Objects\doorEvents\doorTentacle\doorTentacleSwing	
 	2634859593	menuBack			\Default Work Unit\UI\menuAudio\menuBack	
 	2649542654	doorOpened			\Default Work Unit\Objects\doorEvents\doorOpened	
 	2780352335	menuForward			\Default Work Unit\UI\menuAudio\menuForward	
@@ -37,7 +38,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3400151318	playerEatCrayon			\Default Work Unit\Player\playerHealth\playerEatCrayon	
 	3431269606	enemySucked			\Default Work Unit\Objects\doorEvents\doorSuck\enemySucked	
 	3537581393	playerHurt			\Default Work Unit\Player\playerHealth\playerHurt	
-	3590016449	doorTentacleWhoosh			\Default Work Unit\Objects\doorEvents\doorTentacle\doorTentacleWhoosh	
 	3831688773	playerHit			\Default Work Unit\Player\playerAttacks\playerHit	
 	3966601280	playerDie			\Default Work Unit\Player\playerHealth\playerDie	
 	3986149976	keyDropped			\Default Work Unit\Objects\drops\keyDropped	
@@ -62,38 +62,41 @@ Effect plug-ins	ID	Name	Type				Notes
 	3101299514	Slowdown	Wwise Pitch Shifter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	28133891	attackWhooshes-002	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-002_47068059.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-002		2723
+	28133891	attackWhooshes-002	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-002_F20A1F16.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-002		2723
 	51235534	playerPickUp	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\playerPickUp_7565C99A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerPickUp\playerPickUp		2966
 	81243737	doorClosed-002	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorClosed-002_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorClosed\doorClosed-002		12975
 	94567938	doorClosed-001	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorClosed-001_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorClosed\doorClosed-001		13649
 	171609622	attackHits	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackHits_909DBA61.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\playerAttackHits\attackHits		6703
 	202590603	keyUsed-004	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyUsed-004_65CC8933.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\keyUsed\keyUsed-004		11688
-	221981477	sliderRelease	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_End_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\sliderRelease		7668
-	235602188	doorLaser	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorLaser_B898768D.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorLaser\doorLaser		77315
+	221981477	sliderRelease	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_End_95D30AD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\sliderRelease		2038
+	235602188	doorLaser	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorLaser_89FAFE1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorLaser\doorLaser		77315
 	281856875	testSuccess	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\scoreUp_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testAudio\testSuccess		17809
-	293374694	doorTentacleLooming	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorTentacleLooming_0FAF7036.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorTentacle\doorTentacleLooming		58023
+	293374694	doorTentacleLooming	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorTentacleLooming_4DAD2B41.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorTentacle\doorTentacleLooming		58023
 	306161651	attackHits3	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackHits3_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\playerAttackHits\attackHits3		6066
 	314971826	keyJangles-002	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyJangles-002_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\keyDrop\keyJangles-002		6247
 	329629832	doorClosed-003	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorClosed-003_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorClosed\doorClosed-003		13369
+	351355434	doorTentacleSlam	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorTentacleSlam_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorTentacle\doorTentacleSlam		22844
 	366046247	attackHits2	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackHits2_7F92F72F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\playerAttackHits\attackHits2		6656
 	375074967	menuForward	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\menuForward_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\menuForward		6834
-	429214499	sliderClick	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_Start_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\sliderClick		3237
-	431594120	doorOpened	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorOpened_96033C1B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorOpened		8729
+	429214499	sliderClick	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_Start_4E349B9E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\sliderClick		2381
+	431594120	doorOpened	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorOpened_31FDAA4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorOpened		8715
 	436939186	keyUsed-001	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyUsed-001_E41C6CDD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\keyUsed\keyUsed-001		11624
 	519084594	testStart	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\playerJoin_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testAudio\testStart		25354
-	549912924	attackWhooshes-001	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-001_D6B40BE4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-001		2791
+	549912924	attackWhooshes-001	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-001_8FF172EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-001		2791
+	587161954	doorTentacleSwing	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorTentacleSwing_B85C8E51.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorTentacle\doorTentacleSwing		8460
 	607508543	enemySuctioned	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\506546__matrixxx__pop-01_7A8664BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorVacuum\enemySuctioned		1300
 	685037215	keyJangles-003	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyJangles-003_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\keyDrop\keyJangles-003		4880
-	710241185	menuMove	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\SFX_UI_Hover_0B6EA4A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\menuMove		1009
+	710241185	menuMove	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\SFX_UI_Hover_1064B50E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\menuMove		1009
 	715772750	keyJangles-004	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyJangles-004_F37BCC38.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\keyDrop\keyJangles-004		5167
 	757248233	keyUsed-002	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyUsed-002_E6B06B8D.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\keyUsed\keyUsed-002		12105
 	759789812	attackWhooshes-003	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-003_B0974C12.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-003		2790
-	815177471	doorLaserWarn	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorLaserWarn_2A99CE6F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorLaser\doorLaserWarn		118053
+	815177471	doorLaserWarn	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorLaserWarn_90508781.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorLaser\doorLaserWarn		116215
 	846321805	keyUsed-003	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyUsed-003_322A63B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\keyUsed\keyUsed-003		12539
-	866819570	doorVacuumLoop	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\wind_tornado_with_destruction_01_780E0F21.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorVacuum\doorVacuumLoop		223534
+	866819570	doorVacuumLoop	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\wind_tornado_with_destruction_01_E26799F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorVacuum\doorVacuumLoop		223534
 	889930564	testFail	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\scoreDown_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testAudio\testFail		8339
-	908824382	attackWhooshes-004	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-004_8DF02852.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-004		3005
-	953208197	menuBack	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\menuBack_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\menuBack		2136
+	908824382	attackWhooshes-004	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\attackWhooshes-004_D640A08F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\playerAttacks\testing\attackWhoosh\attackWhooshes-004		3005
+	953208197	menuBack	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\menuBack_9F87B400.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\menuBack		1581
 	1043833764	keyJangles-001	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\keyJangles-001_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\keyDrop\keyJangles-001		8398
-	1049733785	startGame	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\startGame_F6E9FB4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\startGame		17051
+	1047713376	doorDemonSpawner	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\doorDemonSpawner_1DCCA227.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorEvents\doorDemon\doorDemonSpawner		96863
+	1049733785	startGame	D:\Game_Production\UnityProjects\BrackeyGJ24\BrackeyGJ24_WwiseProject\.cache\Mac\SFX\startGame_3BA96E43.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\menuAudio\startGame		17051
 

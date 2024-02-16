@@ -105,6 +105,18 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="sliderClick" ID="{EC226B38-186B-4E75-A322-EABF718F4B4C}" ShortID="839320084">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>300</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -115,6 +127,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_UI_Slider_Start" ID="{F42008ED-1D84-40DD-BB99-31DBC3B4CE37}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00366178428761651"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00499334221038615"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0439414114513982"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.141810918774967"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_UI_Slider_Start.wav</AudioFile>
 											<MediaIDList>
@@ -127,6 +146,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="sliderRelease" ID="{96FC08F8-9E29-46BE-95ED-F128226C146D}" ShortID="21618405">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>65</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-800</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -137,6 +168,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_UI_Slider_End" ID="{8DB7179E-D4A7-4A6C-85F4-8686ACD45BB8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00565912117177096"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0585885486018642"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.119507323568575"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_UI_Slider_End.wav</AudioFile>
 											<MediaIDList>
@@ -299,6 +336,11 @@
 											</MediaIDList>
 										</AudioFileSource>
 										<AudioFileSource Name="menuBack" ID="{168FFFC6-190A-4912-84BD-7DEA2A2A1CE2}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00738113071460275"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.0834831335996449"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>menuBack.wav</AudioFile>
 											<MediaIDList>

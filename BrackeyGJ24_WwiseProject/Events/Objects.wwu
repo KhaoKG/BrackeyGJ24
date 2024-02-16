@@ -97,8 +97,28 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="doorTentacleSlam" ID="{0F429EFA-D527-40FF-BE43-7895E9A2E28B}"/>
-								<Event Name="doorTentacleWhoosh" ID="{6DF76FEE-037A-44A4-BC6D-221537B47ACF}"/>
+								<Event Name="doorTentacleSlam" ID="{0F429EFA-D527-40FF-BE43-7895E9A2E28B}">
+									<ChildrenList>
+										<Action Name="" ID="{4CCF6B7D-13B0-4B76-B5E5-FA00034E482C}" ShortID="276979589">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorTentacleSlam" ID="{B830593B-2848-4542-8EDA-E3713C805327}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="doorTentacleSwing" ID="{6DF76FEE-037A-44A4-BC6D-221537B47ACF}">
+									<ChildrenList>
+										<Action Name="" ID="{C4965215-976E-4A54-AF85-84DAC9487F13}" ShortID="445998219">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorTentacleSwing" ID="{5822FB41-1BA8-44BD-A77C-DA62D80635BE}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="doorLaser" ID="{73497F5F-68BF-43CD-BFB8-15EF72E0A612}" ShortID="81531544">
@@ -143,7 +163,17 @@
 						</Folder>
 						<Folder Name="doorKnight" ID="{27E4358C-E698-4D0A-B6AF-9BF42BFDAD62}" ShortID="1034161880">
 							<ChildrenList>
-								<Event Name="doorKnightSpawn" ID="{77B57C3E-E764-4916-AA8B-3197A02C7760}"/>
+								<Event Name="doorKnightSpawn" ID="{77B57C3E-E764-4916-AA8B-3197A02C7760}">
+									<ChildrenList>
+										<Action Name="" ID="{819FC38D-415C-46BB-9779-4284B6E187F7}" ShortID="820137429">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorDemonSpawner" ID="{79061FE2-8F4A-47BE-A27E-EB0BBE3F3E9B}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="doorKnightDie" ID="{1226BDEC-9010-49B8-AB32-5480D7653BBA}"/>
 							</ChildrenList>
 						</Folder>
