@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OnHoverScale : MonoBehaviour
 {
+    public string chosenKey;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +26,10 @@ public class OnHoverScale : MonoBehaviour
     public void OnPointerExit()
     {
         transform.localScale = new Vector2(1f, 1f);
+    }
+
+    public void ChooseKey()
+    {
+        transform.parent.GetComponent<KeySelection>().KeySelected(chosenKey);
     }
 }
