@@ -163,7 +163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 14}
+  m_Size: {x: 0.5, y: 24}
   m_EdgeRadius: 0
 --- !u!61 &4195011138402754184
 BoxCollider2D:
@@ -208,7 +208,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 14}
+  m_Size: {x: 0.5, y: 24}
   m_EdgeRadius: 0
 --- !u!61 &1040335667909196385
 BoxCollider2D:
@@ -242,7 +242,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 6}
+  m_Offset: {x: 0, y: 11}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -287,7 +287,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -7}
+  m_Offset: {x: 0, y: -12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -379,10 +379,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 12, y: 7}
-      - {x: 12, y: -7}
-      - {x: -12, y: -7}
-      - {x: -12, y: 7}
+    - - {x: 12, y: 12}
+      - {x: 12, y: -12}
+      - {x: -12, y: -12}
+      - {x: -12, y: 12}
   m_UseDelaunayMesh: 0
 --- !u!1 &8572357621183473625
 GameObject:
@@ -478,7 +478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner
+      value: Enemy Controller
       objectReference: {fileID: 0}
     - target: {fileID: 537602852702853468, guid: 7b7e32c2f96e3794d93fd1cfaa654f01, type: 3}
       propertyPath: m_TagString
