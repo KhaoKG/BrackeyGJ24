@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
 using Quaternion = UnityEngine.Quaternion;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -20,9 +21,8 @@ public class AbilityController : Singleton<AbilityController>
     public GameObject TentaclePrefab;
     public GameObject LaserPrefab;
     public GameObject KeyPrefab;
+    public GameObject KeyPrefabUi;
 
-    public Action<IAbility> onAbilityUsed;
-    public Action<List<IAbility>> onAbilitiesLoaded;
     public Dictionary<int, bool> doorsInUse;
 
     public void Start()
@@ -33,6 +33,7 @@ public class AbilityController : Singleton<AbilityController>
         TentaclePrefab = Resources.Load<GameObject>("Prefabs/Tentacle Ability");
         abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         KeyPrefab = Resources.Load<GameObject>("Prefabs/KeySprite");
+        KeyPrefabUi = Resources.Load<GameObject>("Prefabs/Key");
         DoorEventManager.ActivateDoor += OnDoorActivated;
         UpdateAbilitiesForRound();
     }
@@ -49,7 +50,7 @@ public class AbilityController : Singleton<AbilityController>
         var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, door.transform.position, Quaternion.identity);
         abilityObj.GetComponent<IAbility>().Activate(door);
         activeAbility = nextAbility;
-        onAbilityUsed?.Invoke(activeAbility);
+        OnAbilityUsed(nextAbility);
     }
 
     #endregion
@@ -77,28 +78,31 @@ public class AbilityController : Singleton<AbilityController>
     public void UnlockAbility(string abName)
     {
         if (!typesOfAbilitesUnlocked.Exists(ability => ability.GetAbilitySo().Name == abName))
+        {
             AddAbilityToListFromName(abName, typesOfAbilitesUnlocked);
+            InstantiateAbilitiesUi();
+        }
     }
 
     public void AddAbilityForRound(AbilitySO ability)
     {
         AddAbilityToListFromName(ability.Name, availableAbilitiesForRound);
         Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
-        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
+        InstantiateAbilitiesUi();
     }
 
     public void AddAbilityForRound(IAbility ability)
     {
         availableAbilitiesForRound.Add(ability);
         Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
-        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
+        InstantiateAbilitiesUi();
     }
 
     public void AddAbilityForRound(string abName)
     {
         AddAbilityToListFromName(abName, availableAbilitiesForRound);
         Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
-        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
+        InstantiateAbilitiesUi();
     }
     [ContextMenu("Add hell portal")]
     public void AddPortal()
@@ -158,6 +162,7 @@ public class AbilityController : Singleton<AbilityController>
             Debug.Log("Activate");
             ActivateNextAbility(door);
             availableAbilitiesForRound.RemoveAt(0);
+
         }
     }
 
@@ -218,4 +223,41 @@ public class AbilityController : Singleton<AbilityController>
     }
 
     [CanBeNull] IAbility GetNextAbility() => availableAbilitiesForRound.FirstOrDefault();
+
+    private void OnAbilityUsed(IAbility ability)
+    {
+        Debug.Log("Ability used: " + ability.GetAbilitySo().name);
+        var abilityUi = GameObject.FindGameObjectWithTag("AvailableAbilities");
+        if (abilityUi.transform.childCount > 0)
+        {
+            Destroy(abilityUi.transform.GetChild(0).gameObject);
+        }
+        else
+        {
+            Debug.LogWarning("No abilities to remove.");
+        }
+    }
+
+    void InstantiateAbilitiesUi()
+    {
+        var abilityUi = GameObject.FindGameObjectWithTag("AvailableAbilities");
+        if (abilityUi is null) return;
+        Debug.Log(availableAbilitiesForRound.Count + "total abilities for ui");
+        if (abilityUi.transform.childCount > 0)
+        {
+            for (var i = 0; i < abilityUi.transform.childCount; i++)
+            {
+                Destroy(abilityUi.transform.GetChild(i).gameObject);
+            }
+        }
+
+        var abilities = availableAbilitiesForRound.Select(a => a.GetAbilitySo());
+        foreach (AbilitySO ability in abilities)
+        {
+            var keyObject = Instantiate(KeyPrefabUi, abilityUi.transform);
+            keyObject.SetActive(true);
+            keyObject.GetComponent<Image>().sprite = ability.KeyIcon;
+            keyObject.GetComponent<Image>().color = ability.KeyColor;
+        }
+    }
 }

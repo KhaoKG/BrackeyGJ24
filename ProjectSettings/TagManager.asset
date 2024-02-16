@@ -15,6 +15,7 @@ TagManager:
   - Score
   - Key Pickup
   - Ability Controller
+  - AvailableAbilities
   layers:
   - Default
   - TransparentFX
