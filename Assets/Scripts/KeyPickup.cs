@@ -10,26 +10,37 @@ public class KeyPickup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("key spawned");
+
         sr = GetComponent<SpriteRenderer>();
-        float keyIndex = Random.Range(0, 100);
-        if(keyIndex <= 25)
+        float keyIndex = Random.Range(0, AbilityController.Instance.typesOfAbilitesUnlocked.Count * 25);
+
+        Debug.Log("unlocked abilities count: " + AbilityController.Instance.typesOfAbilitesUnlocked.Count);
+        Debug.Log("key index: " + keyIndex);
+
+        if (keyIndex <= 0)
         {
-            sr.color = Color.magenta;
-            keyType = "Laser";
+            Destroy(gameObject);
+        }
+        else if(keyIndex <= 25)
+        {
+            sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[0].GetAbilitySo().KeyColor;
+            keyType = AbilityController.Instance.typesOfAbilitesUnlocked[0].GetAbilitySo().Name;
         }
         else if(keyIndex <= 50)
         {
-            keyType = "Vacuum";
+            sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[1].GetAbilitySo().KeyColor;
+            keyType = AbilityController.Instance.typesOfAbilitesUnlocked[1].GetAbilitySo().Name;
         }
         else if(keyIndex <= 75)
         {
-            sr.color = Color.red;
-            keyType = "Hell Portal";
+            sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[2].GetAbilitySo().KeyColor;
+            keyType = AbilityController.Instance.typesOfAbilitesUnlocked[2].GetAbilitySo().Name;
         }
         else
         {
-            sr.color = new Color(0.47f, 0, 1, 1);
-            keyType = "Tentacle";
+            sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[3].GetAbilitySo().KeyColor;
+            keyType = AbilityController.Instance.typesOfAbilitesUnlocked[3].GetAbilitySo().Name;
         }
     }
 

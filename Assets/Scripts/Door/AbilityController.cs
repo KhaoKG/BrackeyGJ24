@@ -65,6 +65,7 @@ public class AbilityController : Singleton<AbilityController>
     /// <param name="ability"></param>
     public void UnlockAbility(IAbility ability)
     {
+        if(!typesOfAbilitesUnlocked.Contains(ability))
         typesOfAbilitesUnlocked.Add(ability);
     }
 
@@ -80,7 +81,8 @@ public class AbilityController : Singleton<AbilityController>
 
     public void UnlockAbility(string abName)
     {
-        AddAbilityToListFromName(abName, typesOfAbilitesUnlocked);
+        if (!typesOfAbilitesUnlocked.Exists(ability => ability.GetAbilitySo().Name == abName))
+            AddAbilityToListFromName(abName, typesOfAbilitesUnlocked);
     }
 
     public void AddAbilityForRound(AbilitySO ability)

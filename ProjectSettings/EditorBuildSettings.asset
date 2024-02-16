@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 289f9027d3282c94488590a56cb7083c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainGameScene_v2.unity
     guid: c6ae3622ffbafe040bb5a42ba604ca0b
+  - enabled: 1
+    path: Assets/Scenes/MainGameScene_v2 1.unity
+    guid: 4e5148a2e544a034da1ac2a23e9f200f
   - enabled: 1
     path: Assets/Scenes/DoorBonus.unity
     guid: f1a5cff283f1a79468008da92547fbe7

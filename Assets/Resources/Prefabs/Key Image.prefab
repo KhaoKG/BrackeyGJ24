@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 58fbd13b8eeb6cc4bb059f27d5dc1216, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -259,7 +259,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1930412351969679874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1432720666953268847}
+        m_TargetAssemblyTypeName: OnHoverScale, Assembly-CSharp
+        m_MethodName: ChooseKey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1432720666953268847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa49e3478410544089677fb79e27544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chosenKey: 
 --- !u!114 &2343552848118346976
 MonoBehaviour:
   m_ObjectHideFlags: 0
