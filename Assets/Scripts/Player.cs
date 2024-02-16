@@ -261,5 +261,17 @@ public class Player : MonoBehaviour
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(1, knockbackDirection.normalized);
         }
+        else if (collision.gameObject.tag == "Key Pickup")
+        {
+            if(AbilityController.Instance.availableAbilitiesForRound.Count >= 4)
+            {
+                return;
+            }
+            else
+            {
+                AbilityController.Instance.AddAbilityForRound(collision.gameObject.GetComponent<KeyPickup>().keyType);
+                Destroy(collision.gameObject);
+            }
+        }
     }
 }

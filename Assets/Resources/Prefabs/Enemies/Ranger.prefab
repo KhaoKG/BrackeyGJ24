@@ -199,7 +199,7 @@ MonoBehaviour:
   col2D: {fileID: 0}
   isInHitstun: 0
   hitstunDuration: 0
-  keyPickupPrefab: {fileID: 2985766413136088510, guid: b19dcfdb7c0fd824a8e76e0ff406d89b, type: 3}
+  keyPickupPrefab: {fileID: 2985766413136088510, guid: 91b5834572059eb48bad492591c8c7f6, type: 3}
   projectilePrefab: {fileID: 2509709318422134789, guid: e0c3f10904ea0eb4fb70d91dbc995d76, type: 3}
   projectileSpeed: 2
   projectileFiringDuration: 1

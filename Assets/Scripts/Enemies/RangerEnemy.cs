@@ -103,7 +103,7 @@ public class RangerEnemy : Enemy {
 
     protected override void Die() {
         // drop Key
-        if(Random.Range(0, 20) == 5)
+        if(Random.Range(0, 20) > -1)
         {
             Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("keyDropped", this.gameObject);
