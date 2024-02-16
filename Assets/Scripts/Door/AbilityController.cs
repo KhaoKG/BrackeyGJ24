@@ -17,7 +17,7 @@ using Vector3 = UnityEngine.Vector3;
 public class AbilityController : Singleton<AbilityController>
 {
     public List<IAbility> availableAbilitiesForRound = new(); // This holds the abilities for this round
-    public List<IAbility> totalAvailableAbilities = new(); // This holds the total abilities the player unlocked in the run
+    public List<IAbility> typesOfAbilitesUnlocked = new(); // This holds the total abilities the player unlocked in the run
     public IAbility activeAbility; // Utilitary, if needed
     public AbilityListSO abilitiesSo; // Total abilities in the game. Distinct.
 
@@ -38,7 +38,6 @@ public class AbilityController : Singleton<AbilityController>
         abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         KeyPrefab = Resources.Load<GameObject>("Prefabs/KeySprite");
         DoorEventManager.ActivateDoor += OnDoorActivated;
-        PopulateAvailableAbilities();
         UpdateAbilitiesForRound();
     }
 
@@ -63,9 +62,9 @@ public class AbilityController : Singleton<AbilityController>
     /// Add ability should be used at the end of round screen where you receive a key
     /// </summary>
     /// <param name="ability"></param>
-    public void AddAbility(IAbility ability)
+    public void UnlockAbility(IAbility ability)
     {
-        totalAvailableAbilities.Add(ability);
+        typesOfAbilitesUnlocked.Add(ability);
     }
 
 
@@ -73,23 +72,46 @@ public class AbilityController : Singleton<AbilityController>
     /// Add ability should be used at the end of round screen where you receive a key
     /// </summary>
     /// <param name="ability"></param>
-    public void AddAbility(AbilitySO ability)
+    public void UnlockAbility(AbilitySO ability)
     {
-        AddAbilityToListFromName(ability.Name, totalAvailableAbilities);
+        AddAbilityToListFromName(ability.Name, typesOfAbilitesUnlocked);
+    }
+
+    public void UnlockAbility(string abName)
+    {
+        AddAbilityToListFromName(abName, typesOfAbilitesUnlocked);
+    }
+
+    public void AddAbilityForRound(AbilitySO ability)
+    {
+        AddAbilityToListFromName(ability.Name, availableAbilitiesForRound);
+        Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
+        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
+    }
+
+    public void AddAbilityForRound(IAbility ability)
+    {
+        availableAbilitiesForRound.Add(ability);
+        Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
+        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
+    }
+
+    public void AddAbilityForRound(string abName)
+    {
+        AddAbilityToListFromName(abName, availableAbilitiesForRound);
+        Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
+        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
     }
     [ContextMenu("Add hell portal")]
     public void AddPortal()
     {
-        Debug.Log(totalAvailableAbilities.Count + "bcbcbc1");
-        AddAbilityToListFromName("Hell Portal", totalAvailableAbilities);
-        UpdateAbilitiesForRound();
-        Debug.Log(availableAbilitiesForRound.Count + "bcbcbc2");
+        AddAbilityForRound("Hell Portal");
+
     }
     [ContextMenu("Add vacuum")]
     public void AddVacuum()
     {
-        AddAbilityToListFromName("Vacuum", totalAvailableAbilities);
-        UpdateAbilitiesForRound();
+        AddAbilityForRound("Vacuum");
     }
 
 
@@ -113,18 +135,13 @@ public class AbilityController : Singleton<AbilityController>
     public void UpdateAbilitiesForRound()
     {
         availableAbilitiesForRound.Clear();
-        availableAbilitiesForRound.AddRange(totalAvailableAbilities);
-        Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
-        onAbilitiesLoaded?.Invoke(availableAbilitiesForRound);
     }
 
-    /// <summary>
-    /// Add here all the abilities you make
-    /// </summary>
-    public void PopulateAvailableAbilities()
+    [ContextMenu("UNLOCK ALL ABILITIES")]
+    public void UnlockAllAbilities()
     {
-        totalAvailableAbilities.Clear();
-        abilitiesSo.Abilities.ForEach(ability => AddAbilityToListFromName(ability.name, totalAvailableAbilities));
+        typesOfAbilitesUnlocked.Clear();
+        abilitiesSo.Abilities.ForEach(ability => AddAbilityToListFromName(ability.name, typesOfAbilitesUnlocked));
     }
 
     public void UseAbility(GameObject door)
@@ -132,10 +149,8 @@ public class AbilityController : Singleton<AbilityController>
         if (availableAbilitiesForRound.Any())
         {
             Debug.Log("Activate");
-            //TODO: Add current door position
             ActivateNextAbility(door);
             availableAbilitiesForRound.RemoveAt(0);
-            //TODO: Refresh UI ( remove a key icon)
         }
     }
 
