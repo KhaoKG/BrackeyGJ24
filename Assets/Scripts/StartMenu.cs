@@ -30,6 +30,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] Animator doorAnimator;
+    [SerializeField] GameObject settingsPanel;
 
     // Starts the game
     // Adjust build index as needed
@@ -62,5 +63,14 @@ public class StartMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void OpenSettings()
+    {
+        settingsPanel.SetActive(true);
+    }
+    public void HideSettings()
+    {
+        settingsPanel.SetActive(false);
     }
 }
