@@ -244,6 +244,7 @@ public class Player : MonoBehaviour
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
+            //Debug.Log("Collided with enemy");
             TakeDamage(1, knockbackDirection.normalized);
         }
     }

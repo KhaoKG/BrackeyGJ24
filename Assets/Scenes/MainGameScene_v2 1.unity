@@ -2282,6 +2282,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2147102831}
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: shakeEffect
       value: 
       objectReference: {fileID: 793399785}
