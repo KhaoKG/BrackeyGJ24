@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13
+      value: 11.94
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
@@ -817,7 +817,7 @@ MonoBehaviour:
   HellPortalPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
   VascuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
   TentaclePrefab: {fileID: 0}
-  LaserPortalPrefab: {fileID: 0}
+  LaserPrefab: {fileID: 0}
   KeyPrefab: {fileID: 0}
 --- !u!4 &659433758
 Transform:
@@ -1651,7 +1651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -11.84
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
