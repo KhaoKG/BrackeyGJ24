@@ -16,6 +16,9 @@ public class PlayerMelee : MonoBehaviour
     [SerializeField] Animator animator; // player animator
     [SerializeField] Player player;
 
+    Vector2 screenPosition;
+    Vector2 mousePosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,10 +39,10 @@ public class PlayerMelee : MonoBehaviour
 
         // ROTATE ATTACK TOWARD MOUSE
         // Get screen position of the object
-        Vector2 screenPosition = Camera.main.WorldToViewportPoint(transform.position);
+        screenPosition = Camera.main.WorldToViewportPoint(transform.position);
 
         // Get screen position of mouse
-        Vector2 mousePosition = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        mousePosition = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
         // maths
         float angle = AngleBetweenTwoPoints(screenPosition, mousePosition);
@@ -52,32 +55,7 @@ public class PlayerMelee : MonoBehaviour
         // flip walk
         if((player.facingLeft && mousePosition.x > screenPosition.x) || (!player.facingLeft && mousePosition.x < screenPosition.x))
         {
-            Debug.Log("mouse: " + mousePosition.x);
-            Debug.Log("player: " + player.transform.position.x);
             player.FlipSprite();
-        }
-
-        // oh boy here we go
-        float offset = mousePosition.y - screenPosition.y;
-        if(offset > 20f)
-        {
-            animator.SetTrigger("Top");
-        }
-        else if(offset < 20f && offset > 5f)
-        {
-            animator.SetTrigger("TopMiddle");
-        }
-        else if (offset < 5f && offset > -5f)
-        {
-            animator.SetTrigger("Middle");
-        }
-        else if (offset < -5f && offset > -20f)
-        {
-            animator.SetTrigger("BottomMiddle");
-        }
-        else if (offset > 20f)
-        {
-            animator.SetTrigger("Bottom");
         }
 
     }
@@ -92,7 +70,34 @@ public class PlayerMelee : MonoBehaviour
         AkSoundEngine.PostEvent("playerSwing", this.gameObject); // play sound
         attackHitbox.SetActive(true);
         inAttack = true;
-        attackAnimator.SetTrigger("attack");
+
+        // oh boy here we go
+        float offset = mousePosition.y - screenPosition.y;
+        if (offset > 0.03f)
+        {
+            animator.SetTrigger("Top");
+        }
+        else if (offset < 0.03f && offset > 0.025f)
+        {
+            animator.SetTrigger("TopMiddle");
+        }
+        else if (offset < 0.025f && offset > -0.025f)
+        {
+            animator.SetTrigger("Middle");
+        }
+        else if (offset < -0.025f && offset > -0.03f)
+        {
+            animator.SetTrigger("BottomMiddle");
+        }
+        else if (offset < -0.03f)
+        {
+            animator.SetTrigger("Bottom");
+        }
+        else
+        {
+            Debug.Log("error: could not find attack direction");
+            Debug.Log("offset: " + offset);
+        }
 
         yield return new WaitForSeconds(attackCooldown);
 
