@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1353518069603567742}
   - component: {fileID: 497455171629162488}
   - component: {fileID: 2013165512597913766}
+  - component: {fileID: 6334970816792676793}
   m_Layer: 0
   m_Name: PortalEnemy
   m_TagString: PortalEnemy
@@ -99,7 +100,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,8 +150,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.4844726, b: 0.023584902, a: 1}
+  m_Sprite: {fileID: 580995990, guid: 390fecb39cf7f684f8c709a8cc475a1a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -173,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractableRadius: 500
-  attractionStrength: 100
+  attractionStrength: 50
   blackHoleLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -196,8 +197,29 @@ MonoBehaviour:
   attackingDistance: 0.7
   score: 0
   rb: {fileID: 8535055744048365009}
-  col2D: {fileID: 0}
+  col2D: {fileID: 7477901175783117106}
   isInHitstun: 0
   hitstunDuration: 0
-  damageToEnemy: 1
-  detectionRange: 3
+  damageToEnemy: 2
+  detectionRange: 4
+--- !u!95 &6334970816792676793
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791813937421078195}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e102eec0070d839458cc0faf0bbf6e25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

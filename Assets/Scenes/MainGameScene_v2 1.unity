@@ -473,9 +473,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 281671041}
-  KeySelectionScreen: {fileID: 696331824}
   enemySpawner: {fileID: 1325988745}
   enemyController: {fileID: 1692555495}
+  screenFadeEffect: {fileID: 0}
   gameOverMenu: {fileID: 811746901}
   isGameOver: 0
   hitStopEffect: {fileID: 793399786}
