@@ -13,6 +13,7 @@ public class TentacleAbility : MonoBehaviour, IAbility {
 
     public void Activate(GameObject door) {
         // Spawn tentacle
+        AkSoundEngine.PostEvent("doorTentacleLoom", this.gameObject);
         spawnedTentacle = Instantiate(tentaclePrefab, door.transform);
         spawnedTentacle.transform.localPosition = Vector3.zero;
     }
