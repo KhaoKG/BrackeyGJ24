@@ -133,11 +133,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1508656962707393779, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_Name
-      value: Door (3)
+      value: Door Right
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
@@ -176,6 +176,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6420820515629216930, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
+      propertyPath: DoorId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420820515629216930, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: CooldownIndicator
       value: 
       objectReference: {fileID: 1222492865}
@@ -195,10 +199,6 @@ PrefabInstance:
     - target: {fileID: 1111135591382514996, guid: a518da2beb58e4d4cb64f91d71bbcc03, type: 3}
       propertyPath: m_Name
       value: Game Over Screen
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111135591382514996, guid: a518da2beb58e4d4cb64f91d71bbcc03, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4254823675304613740, guid: a518da2beb58e4d4cb64f91d71bbcc03, type: 3}
       propertyPath: m_Pivot.x
@@ -724,7 +724,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1508656962707393779, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door Bottom
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.x
@@ -732,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.z
@@ -811,8 +811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilitiesSo: {fileID: 11400000, guid: 0e7170da2a8b0224eab35781dd3bfbf9, type: 2}
   HellPortalPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
-  VascuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
-  TentaclePrefab: {fileID: 0}
+  VacuumPrefab: {fileID: 0}
+  TentaclePrefab: {fileID: 8753733734401460145, guid: c7829ca931797d049b8b2ef591f2f385, type: 3}
   LaserPortalPrefab: {fileID: 0}
   KeyPrefab: {fileID: 0}
 --- !u!4 &659433758
@@ -1526,10 +1526,6 @@ PrefabInstance:
       propertyPath: gameStateManager
       value: 
       objectReference: {fileID: 367181712}
-    - target: {fileID: 4307330622450814471, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
-      propertyPath: m_Name
-      value: Enemy Controller
-      objectReference: {fileID: 0}
     - target: {fileID: 6545363582488526970, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1681,11 +1677,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1508656962707393779, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_Name
-      value: Door (2)
+      value: Door Left
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1722,6 +1718,10 @@ PrefabInstance:
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420820515629216930, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
+      propertyPath: DoorId
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6420820515629216930, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: CooldownIndicator
@@ -2003,7 +2003,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1508656962707393779, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Doot Top
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2011,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2044,6 +2044,10 @@ PrefabInstance:
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420820515629216930, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
+      propertyPath: DoorId
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6420820515629216930, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: CooldownIndicator
@@ -2223,6 +2227,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8338704882114001934, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2368,9 +2376,9 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 947031150}
   - {fileID: 6747081703983400597}
-  - {fileID: 4863697050561012362}
   - {fileID: 633767446}
   - {fileID: 1515395973}
+  - {fileID: 4863697050561012362}
   - {fileID: 215152401}
   - {fileID: 964138545}
   - {fileID: 1939040361}

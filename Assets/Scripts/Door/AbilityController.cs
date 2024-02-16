@@ -22,7 +22,7 @@ public class AbilityController : Singleton<AbilityController>
     public AbilityListSO abilitiesSo; // Total abilities in the game. Distinct.
 
     public GameObject HellPortalPrefab;
-    public GameObject VascuumPrefab;
+    public GameObject VacuumPrefab;
     public GameObject TentaclePrefab;
     public GameObject LaserPortalPrefab;
     public GameObject KeyPrefab;
@@ -34,7 +34,7 @@ public class AbilityController : Singleton<AbilityController>
     public void Start()
     {
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
-        VascuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
+        VacuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
         abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         KeyPrefab = Resources.Load<GameObject>("Prefabs/KeySprite");
         DoorEventManager.ActivateDoor += OnDoorActivated;
@@ -113,6 +113,10 @@ public class AbilityController : Singleton<AbilityController>
     {
         AddAbilityForRound("Vacuum");
     }
+    [ContextMenu("Add tentacle")]
+    public void AddTentacle() {
+        AddAbilityForRound("Tentacle");
+    }
 
 
     /// <summary>
@@ -162,7 +166,10 @@ public class AbilityController : Singleton<AbilityController>
                 abilities.Add(HellPortalPrefab.GetComponent<HellPortal>());
                 break;
             case "Vacuum":
-                abilities.Add(VascuumPrefab.GetComponent<Vacuum>());
+                abilities.Add(VacuumPrefab.GetComponent<Vacuum>());
+                break;
+            case "Tentacle":
+                abilities.Add(TentaclePrefab.GetComponent<TentacleAbility>());
                 break;
             default:
                 break;

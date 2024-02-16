@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class Tentacle : MonoBehaviour
 {
+    [SerializeField]
+    SpriteRenderer spriteRenderer;
+    [SerializeField]
+    PolygonCollider2D col2D;
+
     private void Start() {
-        // Check which direction should it swing
-        // Default is from the right side
-        if (transform.position.x == 0) {
-            if (transform.position.y > 0) {
-                // From top
-                transform.parent.Rotate(Vector3.forward * 90f);
-            } else {
-                // From bottom
-                transform.parent.Rotate(Vector3.forward * 270f);
-            }
-        } else if (transform.position.x < 0) {
-            // From left
-            transform.parent.Rotate(Vector3.forward * 180f);
-        }
         AkSoundEngine.PostEvent("doorTentacleWhoosh", this.gameObject);
 
+    }
+
+    // Check which direction should it swing
+    public void RotateAccordingToDoor(int doorId) {
+        // Considering clockwise with 0 = bottom and 3 = right
+        transform.parent.Rotate(Vector3.forward * -90f * doorId);
+    }
+
+    public void UpdatePhysicsCollider() {
+        List<Vector2> path = new List<Vector2>();
+        spriteRenderer.sprite.GetPhysicsShape(0, path);
+        col2D.SetPath(0, path.ToArray());
     }
 
     public void Disappear() {
