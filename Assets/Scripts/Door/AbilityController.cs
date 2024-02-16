@@ -22,7 +22,7 @@ public class AbilityController : Singleton<AbilityController>
     public AbilityListSO abilitiesSo; // Total abilities in the game. Distinct.
 
     public GameObject HellPortalPrefab;
-    public GameObject VascuumPrefab;
+    public GameObject VacuumPrefab;
     public GameObject TentaclePrefab;
     public GameObject LaserPrefab;
     public GameObject KeyPrefab;
@@ -119,6 +119,10 @@ public class AbilityController : Singleton<AbilityController>
     {
         AddAbilityForRound("Laser");
     }
+    [ContextMenu("Add tentacle")]
+    public void AddTentacle() {
+        AddAbilityForRound("Tentacle");
+    }
 
 
     /// <summary>
@@ -168,7 +172,10 @@ public class AbilityController : Singleton<AbilityController>
                 abilities.Add(HellPortalPrefab.GetComponent<HellPortal>());
                 break;
             case "Vacuum":
-                abilities.Add(VascuumPrefab.GetComponent<Vacuum>());
+                abilities.Add(VacuumPrefab.GetComponent<Vacuum>());
+                break;
+            case "Tentacle":
+                abilities.Add(TentaclePrefab.GetComponent<TentacleAbility>());
                 break;
             case "Laser":
                 abilities.Add(LaserPrefab.GetComponent<Laser>());

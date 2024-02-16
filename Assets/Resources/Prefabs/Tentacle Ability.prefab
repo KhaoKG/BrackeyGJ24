@@ -44,6 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f995a2ffbf0a53e488a6a05ac8b86386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityData: {fileID: 0}
-  tentaclePrefab: {fileID: 0}
-  door: {fileID: 0}
+  abilityData: {fileID: 11400000, guid: af97636bc4987034ca7f52a6613e39f1, type: 2}
+  tentaclePrefab: {fileID: 595301700912393225, guid: 41c380d23bbd35b46826dd403c497e43, type: 3}
