@@ -475,7 +475,7 @@ MonoBehaviour:
   player: {fileID: 281671041}
   enemySpawner: {fileID: 1325988745}
   enemyController: {fileID: 1692555495}
-  screenFadeEffect: {fileID: 0}
+  screenFadeEffect: {fileID: 1518365284}
   gameOverMenu: {fileID: 811746901}
   isGameOver: 0
   hitStopEffect: {fileID: 793399786}
@@ -2030,7 +2030,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -15.200005, y: -15.200003}
+  m_SizeDelta: {x: -7.999998, y: -8.000002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2147102831
 MonoBehaviour:

@@ -26,6 +26,7 @@ public class EnemyController : MonoBehaviour
         score.AddScore(enemy.Score);
 
         enemiesAlive.Remove(enemy);
+        Debug.Log("Enemy died, new count it " + enemiesAlive.Count);
 
         // Inform game state manager in case there are no more enemies
         if (enemiesAlive.Count == 0) {
