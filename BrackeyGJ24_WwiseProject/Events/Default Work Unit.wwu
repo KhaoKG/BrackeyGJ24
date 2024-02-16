@@ -9,6 +9,7 @@
 				<WorkUnit Name="NPCs" ID="{9195A3E2-BF2E-4A19-81B4-247052C09E8A}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" PersistMode="Reference"/>
 				<WorkUnit Name="UI" ID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" PersistMode="Reference"/>
+				<Event Name="New_Event" ID="{9DB7AF7C-C220-4FB0-AC7B-5D51D13BA00B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

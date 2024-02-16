@@ -32,42 +32,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}">
-							<ChildrenList>
-								<Action Name="" ID="{77E6B4A6-E200-43CA-A3BA-FE9CC6DA711D}" ShortID="814158787">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="doorVacuumStop" ID="{39C3FB9A-A2A0-4462-9244-824F843F9E9F}">
-							<ChildrenList>
-								<Action Name="" ID="{6477A553-2B5B-4E66-89DD-4FA787905D96}" ShortID="724427999">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="enemySucked" ID="{A87AA008-46EA-4FF8-BB7C-5EFE94AA80A3}">
-							<ChildrenList>
-								<Action Name="" ID="{A379FE3C-C951-4C7C-B86E-BA1A709D286F}" ShortID="820714840">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="enemySuctioned" ID="{23FFD516-9B13-4E74-A626-463AC11C1FA4}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="doorClosed" ID="{61BFFA00-DF52-4389-BA68-5753AFCA6EFC}">
 							<ChildrenList>
 								<Action Name="" ID="{51DFD4E5-5BB5-40CD-B782-5FB4E15BCF9D}" ShortID="240542245">
@@ -79,6 +43,110 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="doorSuck" ID="{C9BC76AD-D8A2-4077-A31B-CB5C74DC430B}" ShortID="780459237">
+							<ChildrenList>
+								<Event Name="enemySucked" ID="{A87AA008-46EA-4FF8-BB7C-5EFE94AA80A3}">
+									<ChildrenList>
+										<Action Name="" ID="{A379FE3C-C951-4C7C-B86E-BA1A709D286F}" ShortID="820714840">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="enemySuctioned" ID="{23FFD516-9B13-4E74-A626-463AC11C1FA4}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}">
+									<ChildrenList>
+										<Action Name="" ID="{77E6B4A6-E200-43CA-A3BA-FE9CC6DA711D}" ShortID="814158787">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="doorVacuumStop" ID="{39C3FB9A-A2A0-4462-9244-824F843F9E9F}">
+									<ChildrenList>
+										<Action Name="" ID="{6477A553-2B5B-4E66-89DD-4FA787905D96}" ShortID="724427999">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="doorTentacle" ID="{E76ED7D1-B5B9-45EB-A0A2-733116DFF4F4}" ShortID="590302614">
+							<ChildrenList>
+								<Event Name="doorTentacleLoom" ID="{784AF6E6-8407-45DD-977A-D4B6E75E123C}">
+									<ChildrenList>
+										<Action Name="" ID="{1C417543-11F6-4E58-A54F-D254581331F2}" ShortID="340628031">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorTentacleLooming" ID="{7E05FA21-91D1-4DFD-9C8D-CB0C686B18DD}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="doorTentacleSlam" ID="{0F429EFA-D527-40FF-BE43-7895E9A2E28B}"/>
+								<Event Name="doorTentacleWhoosh" ID="{6DF76FEE-037A-44A4-BC6D-221537B47ACF}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="doorLaser" ID="{73497F5F-68BF-43CD-BFB8-15EF72E0A612}" ShortID="81531544">
+							<ChildrenList>
+								<Event Name="doorLaserWarn" ID="{CE8613E7-15E5-4AF2-A4B5-DC3F2FB8A0FA}">
+									<ChildrenList>
+										<Action Name="" ID="{95D73E3B-515F-4A65-8B44-8738098A571B}" ShortID="682000286">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorLaserWarn" ID="{626ABF3C-96FB-4DCF-B2B2-C3D0521608B3}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="doorLaserFire" ID="{ED15E788-E5AA-49E5-A970-D123AD8A567A}">
+									<ChildrenList>
+										<Action Name="" ID="{D1EAA2EB-3107-42B1-B883-AC4BB33FC082}" ShortID="921819338">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorLaser" ID="{D1EC1B8E-DC05-4F58-8A19-CD19C18EBCBD}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="doorLaserStop" ID="{8DA3B734-5210-48D8-85D6-88AC6925DC32}">
+									<ChildrenList>
+										<Action Name="" ID="{F895968D-C597-4F0E-9F88-47BD92E6108F}" ShortID="828261948">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorLaser" ID="{D1EC1B8E-DC05-4F58-8A19-CD19C18EBCBD}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="doorKnight" ID="{27E4358C-E698-4D0A-B6AF-9BF42BFDAD62}" ShortID="1034161880">
+							<ChildrenList>
+								<Event Name="doorKnightSpawn" ID="{77B57C3E-E764-4916-AA8B-3197A02C7760}"/>
+								<Event Name="doorKnightDie" ID="{1226BDEC-9010-49B8-AB32-5480D7653BBA}"/>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

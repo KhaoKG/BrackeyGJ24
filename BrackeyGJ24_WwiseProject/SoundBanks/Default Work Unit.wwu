@@ -8,7 +8,7 @@
 						<ObjectRef Name="musicStart" ID="{913826F5-966E-4065-B54D-9788E79C8291}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="creditState" ID="{D308D011-DD20-42AD-88A3-C0809179A8F8}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="playerHit" ID="{50E51490-DE77-42D5-A1D6-862FD27AC0F9}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="menuMove" ID="{13908F23-B183-42D6-8E03-C587A6BA0984}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="menuHover" ID="{13908F23-B183-42D6-8E03-C587A6BA0984}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="levelStateSetters" ID="{76D46505-7835-434A-9115-60A89A07AA8E}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="healthDropped" ID="{B66A54BA-E338-4384-BFE5-14B29894D01B}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorClosed" ID="{61BFFA00-DF52-4389-BA68-5753AFCA6EFC}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
@@ -17,8 +17,9 @@
 						<ObjectRef Name="doorOpened" ID="{EFF318BF-B8B5-4445-9A6F-A2B7EB4AFD9C}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorVacuumStop" ID="{39C3FB9A-A2A0-4462-9244-824F843F9E9F}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sliderUnclick" ID="{F5404370-E50E-447C-BDFB-8311921F1A74}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="playerHealthUp" ID="{EB758365-0263-44FD-8B71-BC6E63432985}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="playerEatCrayon" ID="{EB758365-0263-44FD-8B71-BC6E63432985}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="menuForward" ID="{49B5A148-D722-4559-BBFF-10189A46DDC4}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" WorkUnitID="{1E769E99-C2EB-45DF-8E04-7ED1C6B6E7F7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemyThree" ID="{52CD5ABD-0DA8-45EC-8193-A157EB51D6B2}" WorkUnitID="{9195A3E2-BF2E-4A19-81B4-247052C09E8A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="transitionState" ID="{5FD098F7-4D04-463F-8612-50D84124D117}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="playerKeyGain" ID="{29257811-8457-46EA-9FA5-96C8AA5EF688}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>

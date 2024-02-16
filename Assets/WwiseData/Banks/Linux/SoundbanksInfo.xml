@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6C0A9B98-94EE-335B-3332-3CDEF74EC3E3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0C4D2F38-BD86-62E0-8120-607754B09F2D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -31,6 +31,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="516124850" Name="gameMusicVolume"/>
+				<GameParameter Id="1350179952" Name="gameSpeed"/>
 				<GameParameter Id="2732928946" Name="gameEffectVolume"/>
 				<GameParameter Id="4103204207" Name="gameMasterVolume"/>
 			</GameParameters>
@@ -47,25 +48,21 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B06BAAA5-AD73-50D9-BA97-F8229FA16FE7}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B553FA0B-119D-9922-4E2B-0BD1023C112A}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
 				<File Id="28133891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-002.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-002_2DBDF083.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-002_47068059.wem</CachePath>
 				</File>
 				<File Id="51235534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerPickUp.wav</ShortName>
-					<CachePath>SFX/playerPickUp_5FB39EF0.wem</CachePath>
+					<CachePath>SFX/playerPickUp_7565C99A.wem</CachePath>
 				</File>
 				<File Id="81243737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-002.wav</ShortName>
 					<CachePath>SFX/doorClosed-002_8E324C96.wem</CachePath>
-				</File>
-				<File Id="89064465" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>attackWhooshes-005.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-005_77D9A96B.wem</CachePath>
 				</File>
 				<File Id="94567938" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-001.wav</ShortName>
@@ -77,15 +74,23 @@
 				</File>
 				<File Id="202590603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-004.wav</ShortName>
-					<CachePath>SFX/keyUsed-004_2E9F226D.wem</CachePath>
+					<CachePath>SFX/keyUsed-004_65CC8933.wem</CachePath>
 				</File>
 				<File Id="221981477" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_End.wav</ShortName>
 					<CachePath>SFX/SFX_UI_Slider_End_8E324C96.wem</CachePath>
 				</File>
+				<File Id="235602188" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>doorLaser.wav</ShortName>
+					<CachePath>SFX/doorLaser_B898768D.wem</CachePath>
+				</File>
 				<File Id="281856875" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreUp.wav</ShortName>
 					<CachePath>SFX/scoreUp_8E324C96.wem</CachePath>
+				</File>
+				<File Id="293374694" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>doorTentacleLooming.wav</ShortName>
+					<CachePath>SFX/doorTentacleLooming_0FAF7036.wem</CachePath>
 				</File>
 				<File Id="306161651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits3.wav</ShortName>
@@ -103,17 +108,21 @@
 					<ShortName>attackHits2.wav</ShortName>
 					<CachePath>SFX/attackHits2_7F92F72F.wem</CachePath>
 				</File>
+				<File Id="375074967" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>menuForward.wav</ShortName>
+					<CachePath>SFX/menuForward_8E324C96.wem</CachePath>
+				</File>
 				<File Id="429214499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_Start.wav</ShortName>
 					<CachePath>SFX/SFX_UI_Slider_Start_8E324C96.wem</CachePath>
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_68D22348.wem</CachePath>
+					<CachePath>SFX/doorOpened_96033C1B.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
-					<CachePath>SFX/keyUsed-001_80699658.wem</CachePath>
+					<CachePath>SFX/keyUsed-001_E41C6CDD.wem</CachePath>
 				</File>
 				<File Id="519084594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJoin.wav</ShortName>
@@ -121,11 +130,11 @@
 				</File>
 				<File Id="549912924" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-001.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-001_58F9E455.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-001_D6B40BE4.wem</CachePath>
 				</File>
 				<File Id="607508543" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>506546__matrixxx__pop-01.wav</ShortName>
-					<CachePath>SFX/506546__matrixxx__pop-01_034F09D8.wem</CachePath>
+					<CachePath>SFX/506546__matrixxx__pop-01_7A8664BE.wem</CachePath>
 				</File>
 				<File Id="685037215" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-003.wav</ShortName>
@@ -133,27 +142,31 @@
 				</File>
 				<File Id="710241185" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Hover.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Hover_A175949B.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Hover_0B6EA4A1.wem</CachePath>
 				</File>
 				<File Id="715772750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-004.wav</ShortName>
-					<CachePath>SFX/keyJangles-004_18FB64EC.wem</CachePath>
+					<CachePath>SFX/keyJangles-004_F37BCC38.wem</CachePath>
 				</File>
 				<File Id="757248233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-002.wav</ShortName>
-					<CachePath>SFX/keyUsed-002_A051B405.wem</CachePath>
+					<CachePath>SFX/keyUsed-002_E6B06B8D.wem</CachePath>
 				</File>
 				<File Id="759789812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-003.wav</ShortName>
 					<CachePath>SFX/attackWhooshes-003_B0974C12.wem</CachePath>
 				</File>
+				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>doorLaserWarn.wav</ShortName>
+					<CachePath>SFX/doorLaserWarn_2A99CE6F.wem</CachePath>
+				</File>
 				<File Id="846321805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-003.wav</ShortName>
-					<CachePath>SFX/keyUsed-003_6411CE11.wem</CachePath>
+					<CachePath>SFX/keyUsed-003_322A63B4.wem</CachePath>
 				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
-					<CachePath>SFX/wind_tornado_with_destruction_01_466C7D1E.wem</CachePath>
+					<CachePath>SFX/wind_tornado_with_destruction_01_780E0F21.wem</CachePath>
 				</File>
 				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreDown.wav</ShortName>
@@ -161,7 +174,11 @@
 				</File>
 				<File Id="908824382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-004.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-004_477AE489.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-004_8DF02852.wem</CachePath>
+				</File>
+				<File Id="953208197" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>menuBack.wav</ShortName>
+					<CachePath>SFX/menuBack_8E324C96.wem</CachePath>
 				</File>
 				<File Id="1043833764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-001.wav</ShortName>
@@ -169,9 +186,14 @@
 				</File>
 				<File Id="1049733785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
-					<CachePath>SFX/startGame_8E324C96.wem</CachePath>
+					<CachePath>SFX/startGame_F6E9FB4F.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="3101299514" Name="Slowdown" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="1818308409" Name="ambientStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3011728793" Name="bossState" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -190,22 +212,77 @@
 						<MediaRef Id="94567938"/>
 						<MediaRef Id="329629832"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="615317676" Name="doorKnightDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2014340411" Name="doorKnightSpawn" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4161954578" Name="doorLaserFire" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="235602188"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2198663230" Name="doorLaserStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="674637734" Name="doorLaserWarn" MaxAttenuation="100" DurationType="OneShot" DurationMin="3.963724" DurationMax="4.322471">
+					<MediaRefs>
+						<MediaRef Id="815177471"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.73498404" DurationMax="0.80150574">
 					<MediaRefs>
 						<MediaRef Id="431594120"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
+				<Event Id="3322069076" Name="doorTentacleLoom" MaxAttenuation="100" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="293374694"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1407830652" Name="doorTentacleSlam" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3590016449" Name="doorTentacleWhoosh" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1046624244" Name="doorVacuumEvent" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="866819570"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="2136737028" Name="doorVacuumStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3431269606" Name="enemySucked" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.09174714" DurationMax="0.102982685">
 					<MediaRefs>
 						<MediaRef Id="607508543"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1174275515" Name="healthDropped" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3986149976" Name="keyDropped" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200789" DurationMax="0.4729472">
@@ -215,15 +292,28 @@
 						<MediaRef Id="715772750"/>
 						<MediaRef Id="1043833764"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1399705530" Name="levelOneState" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="4091656514" Id="2572514751" Name="levelOne"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2634859593" Name="menuBack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2780352335" Name="menuForward" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1184221871" Name="menuMove" DurationType="OneShot" DurationMin="0.09690793" DurationMax="0.105678834">
+				<Event Id="2634859593" Name="menuBack" DurationType="OneShot" DurationMin="0.38229167" DurationMax="0.38229167">
+					<MediaRefs>
+						<MediaRef Id="953208197"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2780352335" Name="menuForward" DurationType="OneShot" DurationMin="0.38229167" DurationMax="0.38229167">
+					<MediaRefs>
+						<MediaRef Id="375074967"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="303266102" Name="menuHover" DurationType="OneShot" DurationMin="0.023270654" DurationMax="0.025376827">
 					<MediaRefs>
 						<MediaRef Id="710241185"/>
 					</MediaRefs>
@@ -233,25 +323,36 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="152105657" Name="titleScreen"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1843531235" Name="playButton" DurationType="OneShot" DurationMin="3.04" DurationMax="3.04">
+				<Event Id="3050945240" Name="New_Event" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1843531235" Name="playButton" DurationType="OneShot" DurationMin="2.1418843" DurationMax="2.1418843">
 					<MediaRefs>
 						<MediaRef Id="1049733785"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3966601280" Name="playerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="546141403" Name="playerHealthUp" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3831688773" Name="playerHit" DurationType="OneShot" DurationMin="0.44002238" DurationMax="0.53157985">
+				<Event Id="3400151318" Name="playerEatCrayon" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3831688773" Name="playerHit" DurationType="OneShot" DurationMin="0.41988835" DurationMax="0.53157985">
 					<MediaRefs>
 						<MediaRef Id="171609622"/>
 						<MediaRef Id="306161651"/>
 						<MediaRef Id="366046247"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="3537581393" Name="playerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="904027786" Name="playerKeyGain" DurationType="OneShot" DurationMin="0.14874326" DurationMax="0.16220565">
 					<MediaRefs>
 						<MediaRef Id="51235534"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1314825040" Name="playerKeyUsed" DurationType="OneShot" DurationMin="0.4303477" DurationMax="0.5632632">
 					<MediaRefs>
@@ -260,16 +361,26 @@
 						<MediaRef Id="757248233"/>
 						<MediaRef Id="846321805"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="965823281" Name="playerLastHit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1775438520" Name="playerSwing" DurationType="OneShot" DurationMin="0.088774204" DurationMax="0.15504968">
+				<Event Id="351819259" Name="playerLastHitOver" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1775438520" Name="playerSwing" DurationType="OneShot" DurationMin="0.088774204" DurationMax="0.12707679">
 					<MediaRefs>
 						<MediaRef Id="28133891"/>
-						<MediaRef Id="89064465"/>
 						<MediaRef Id="549912924"/>
 						<MediaRef Id="759789812"/>
 						<MediaRef Id="908824382"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="2209591688" Name="powerSelect" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1218812578" Name="sliderClick" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
@@ -282,6 +393,8 @@
 						<MediaRef Id="221981477"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3101299514" Name="slowDown" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1221709037" Name="speedUp" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1435302941" Name="testFail" DurationType="OneShot" DurationMin="3.528125" DurationMax="3.528125">
 					<MediaRefs>
 						<MediaRef Id="889930564"/>
@@ -308,6 +421,9 @@
 					</ActionSetState>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1350179952" Name="gameSpeed"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="4091656514" Name="gameState">
 					<States>
@@ -322,5 +438,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9402BB9B-9183-16B6-286C-73F600764008}</FileHash>
+	<FileHash>{129901FB-BDD6-F610-3F28-68D761212E94}</FileHash>
 </SoundBanksInfo>

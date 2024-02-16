@@ -10,14 +10,22 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="playerLastHit" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="playerHit" ID="{50E51490-DE77-42D5-A1D6-862FD27AC0F9}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
 							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playerLastHitOver" ID="{2133D5A2-01AE-423D-AA12-14467AE3CAA2}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<Position X="2" Y="5"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}"/>
-							<Value>0.478260869565217</Value>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

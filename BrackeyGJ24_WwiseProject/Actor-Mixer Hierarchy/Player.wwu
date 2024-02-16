@@ -87,8 +87,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="attackWhooshes-001" ID="{1F5AB60B-379D-4C74-9530-FDCC96D82B1D}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0200135375055482"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.128548490901021"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -114,8 +114,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="attackWhooshes-002" ID="{69606102-FEC5-40FD-893A-F5BC4B89A2BC}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0263388398801598"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.130941661118509"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -168,8 +168,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="attackWhooshes-004" ID="{144AF9DD-FC35-4EDC-AA7C-278B171BCD67}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0267869229915668"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.14847608743897"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -184,6 +184,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="attackWhooshes-005" ID="{4EEB3897-F63F-4E88-BC2A-588C5B14D39A}" ShortID="12345448">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -195,8 +202,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="attackWhooshes-005" ID="{927552F7-9090-4C70-9545-C2A52371DDAD}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0239316466932978"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.12788473701731"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -244,6 +251,18 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="attackHits" ID="{FF2DD0B3-2FB1-41CC-8E36-D036F11DB05F}" ShortID="960705224">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -274,7 +293,7 @@
 													<PropertyList>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>6</Value>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -364,6 +383,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -417,6 +441,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
