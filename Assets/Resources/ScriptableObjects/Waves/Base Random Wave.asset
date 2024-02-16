@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20a68968ab1f0cc45a808fd9b4681d27, type: 3}
-  m_Name: Wave 1
+  m_Name: Base Random Wave
   m_EditorClassIdentifier: 
-  waveNumber: 1
+  waveNumber: 2
   spawns:
   - delay: 0
-    enemies: 0000000000000000
-  - delay: 4
-    enemies: 000000000000000000000000
+    enemies: 0a0000000a0000000a0000000a000000
   - delay: 3
-    enemies: 000000000000000000000000
+    enemies: 0a0000000a0000000a0000000a0000000a000000
+  - delay: 3
+    enemies: 0a0000000a0000000a0000000a0000000a0000000a000000
