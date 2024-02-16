@@ -44,7 +44,7 @@ public class DoorEventManager : MonoBehaviour
             }
             else
             {
-                Debug.Log($"The object {DoorId} is outside the Cinemachine camera's view.");
+                //Debug.Log($"The object {DoorId} is outside the Cinemachine camera's view.");
             }
         }
     }

@@ -48,6 +48,8 @@ MonoBehaviour:
   attackAnimator: {fileID: 6036200964700534384}
   attackCooldown: 0.5
   attackHitbox: {fileID: 7777723505001612792}
+  animator: {fileID: 1684260990788786577}
+  player: {fileID: 6966646645160173175}
 --- !u!1 &4754356125795066288
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +264,7 @@ MonoBehaviour:
   moveSpeed: 6
   rb: {fileID: 420199765914226485}
   isInHitstun: 0
+  facingLeft: 1
   dashSpeed: 10
   dashLength: 0.2
   dashCooldown: 1
@@ -374,7 +377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8621960390123409325
 Transform:
   m_ObjectHideFlags: 0
@@ -432,7 +435,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e3572c8e8b8cf0148ab5a03fc6913111, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

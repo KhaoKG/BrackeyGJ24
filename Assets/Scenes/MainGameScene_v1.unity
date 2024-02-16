@@ -329,6 +329,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f47fc7acb12a1f4dbf4716ae5ef5c30, type: 3}
+--- !u!95 &324018792 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1684260990788786577, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &324018793 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7595423339297774504, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+  m_PrefabInstance: {fileID: 6747081703983400597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &367181711
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +371,7 @@ MonoBehaviour:
   player: {fileID: 281671041}
   KeySelectionScreen: {fileID: 696331824}
   enemySpawner: {fileID: 1325988745}
+  enemyController: {fileID: 0}
   gameOverMenu: {fileID: 241686547690632217}
   isGameOver: 0
   hitStopEffect: {fileID: 793399786}
@@ -703,6 +714,7 @@ MonoBehaviour:
   VascuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
   TentaclePrefab: {fileID: 0}
   LaserPortalPrefab: {fileID: 0}
+  KeyPrefab: {fileID: 0}
 --- !u!4 &659433758
 Transform:
   m_ObjectHideFlags: 0
@@ -2032,7 +2044,7 @@ PrefabInstance:
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 324018792}
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: healthBar
       value: 
@@ -2044,7 +2056,7 @@ PrefabInstance:
     - target: {fileID: 6966646645160173175, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: spriteRenderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 324018793}
     - target: {fileID: 7824602286148099528, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
       propertyPath: m_Controller
       value: 
