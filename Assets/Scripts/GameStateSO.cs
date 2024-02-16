@@ -20,6 +20,7 @@ public class GameStateSO : ScriptableObject
     }
 
     private void OnEnable() {
+        hideFlags = HideFlags.DontUnloadUnusedAsset;
 #if UNITY_EDITOR
         EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
         EditorApplication.playModeStateChanged += OnPlayModeStateChanged;

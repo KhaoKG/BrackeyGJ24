@@ -55,6 +55,7 @@ public class StartMenu : MonoBehaviour
 
         // Load Game
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
 
     // Quits the game
