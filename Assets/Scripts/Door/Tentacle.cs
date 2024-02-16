@@ -19,10 +19,12 @@ public class Tentacle : MonoBehaviour
             // From left
             transform.parent.Rotate(Vector3.forward * 180f);
         }
+        AkSoundEngine.PostEvent("doorTentacleWhoosh", this.gameObject);
 
     }
 
     public void Disappear() {
+        AkSoundEngine.PostEvent("doorTentacleSlam", this.gameObject);
         transform.parent.GetComponent<ParticleSystem>().Stop();
     }
 }

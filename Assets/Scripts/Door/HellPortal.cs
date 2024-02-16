@@ -25,6 +25,7 @@ public class HellPortal : MonoBehaviour, IAbility
         if (EnemyPrefab != null)
         {
             spawnedEnemy = Instantiate(EnemyPrefab, transform.position, Quaternion.identity);
+            AkSoundEngine.PostEvent("doorKnightSpawn", this.gameObject);
         }
 
         // Start drawing the link if the enemy is spawned
@@ -46,6 +47,7 @@ public class HellPortal : MonoBehaviour, IAbility
         {
             Destroy(spawnedEnemy);
             spawnedEnemy = null;
+            AkSoundEngine.PostEvent("doorKnightDie", this.gameObject);
         }
 
         door.GetComponent<DoorEventManager>().isUsingAbility = false;

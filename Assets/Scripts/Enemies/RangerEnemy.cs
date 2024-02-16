@@ -5,7 +5,7 @@ using UnityEngine;
 // Basic enemy, basically follows the player and does a melee attack
 public class RangerEnemy : Enemy {
     [Header("Ranger specific")]
-    [SerializeField] GameObject healthPickupPrefab;
+    [SerializeField] GameObject keyPickupPrefab;
 
     [SerializeField]
     GameObject projectilePrefab;
@@ -67,6 +67,8 @@ public class RangerEnemy : Enemy {
 
     public override void TakeDamage(int damage, Vector2 direction)
     {
+        AkSoundEngine.PostEvent("playerHit", this.gameObject);
+
         health -= damage;
 
         if (health <= 0)
@@ -107,10 +109,11 @@ public class RangerEnemy : Enemy {
     }
 
     protected override void Die() {
-        // drop health
+        // drop Key
         if(Random.Range(0, 20) == 5)
         {
-            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+            Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
+            AkSoundEngine.PostEvent("keyDropped", this.gameObject);
         }
 
         // update score

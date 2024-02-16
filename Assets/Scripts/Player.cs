@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
     {
         health = maxHealth;
         initialSpeed = moveSpeed;
+        AkSoundEngine.PostEvent("musicStart", this.gameObject);
     }
 
     private void Update() {
@@ -201,7 +202,7 @@ public class Player : MonoBehaviour
     void HealDamage(int healAmount)
     {
         // play sound
-        AkSoundEngine.PostEvent("PlayerHealthUp", this.gameObject);
+        AkSoundEngine.PostEvent("PlayerEatCrayon", this.gameObject);
 
         // update health
         health += healAmount;

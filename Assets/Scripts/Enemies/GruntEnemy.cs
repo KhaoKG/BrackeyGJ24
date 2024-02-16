@@ -35,7 +35,7 @@ public class GruntEnemy : Enemy {
 
     public override void TakeDamage(int damage, Vector2 direction)
     {
-        AkSoundEngine.PostEvent("PlayerHit", this.gameObject);
+        AkSoundEngine.PostEvent("playerHit", this.gameObject);
 
         health -= damage;
 
@@ -55,6 +55,7 @@ public class GruntEnemy : Enemy {
         if(Random.Range(0, 20) == 5)
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+            AkSoundEngine.PostEvent("healthDropped", this.gameObject);
         }
 
         // update score
