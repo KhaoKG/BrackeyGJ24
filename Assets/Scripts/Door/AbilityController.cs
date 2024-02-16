@@ -34,7 +34,7 @@ public class AbilityController : Singleton<AbilityController>
     public void Start()
     {
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
-        VascuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
+        VacuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
         LaserPrefab = Resources.Load<GameObject>("Prefabs/Laser");
         abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         KeyPrefab = Resources.Load<GameObject>("Prefabs/KeySprite");
