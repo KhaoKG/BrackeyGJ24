@@ -62,7 +62,13 @@ public class AbilityController : Singleton<AbilityController>
     public void UnlockAbility(IAbility ability)
     {
         if(!typesOfAbilitesUnlocked.Contains(ability))
-        typesOfAbilitesUnlocked.Add(ability);
+        {
+            typesOfAbilitesUnlocked.Add(ability);
+        }
+        else
+        {
+            ability.GetAbilitySo().AbilityPrefab.GetComponent<DoorDamage>().doorDamage += 1;
+        }
     }
 
 
@@ -84,7 +90,7 @@ public class AbilityController : Singleton<AbilityController>
         }
         else
         {
-
+            typesOfAbilitesUnlocked.Find(ability => ability.GetAbilitySo().Name == abName).GetAbilitySo().AbilityPrefab.GetComponent<DoorDamage>().doorDamage += 1;
         }
     }
 

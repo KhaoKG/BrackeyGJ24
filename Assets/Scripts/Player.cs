@@ -262,7 +262,7 @@ public class Player : MonoBehaviour
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(doorDamage, knockbackDirection.normalized);
+            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
         else if (collision.gameObject.tag == "Key Pickup")
         {
