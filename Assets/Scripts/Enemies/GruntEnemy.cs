@@ -65,4 +65,14 @@ public class GruntEnemy : Enemy {
         col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    { 
+        if (collision.gameObject.tag == "Door Ability")
+        {
+            // Get knockback direction
+            Vector2 knockbackDirection = transform.position - collision.transform.position;
+            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+        }
+    }
 }

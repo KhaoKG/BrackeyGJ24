@@ -119,4 +119,14 @@ public class RangerEnemy : Enemy {
             Debug.LogError("Max attacking distance has to be higher than attacking distance!");
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door Ability")
+        {
+            // Get knockback direction
+            Vector2 knockbackDirection = transform.position - collision.transform.position;
+            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+        }
+    }
 }
