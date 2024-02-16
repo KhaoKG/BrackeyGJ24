@@ -57,6 +57,29 @@ public class PlayerMelee : MonoBehaviour
             player.FlipSprite();
         }
 
+        // oh boy here we go
+        float offset = mousePosition.y - screenPosition.y;
+        if(offset > 20f)
+        {
+            animator.SetTrigger("Top");
+        }
+        else if(offset < 20f && offset > 5f)
+        {
+            animator.SetTrigger("TopMiddle");
+        }
+        else if (offset < 5f && offset > -5f)
+        {
+            animator.SetTrigger("Middle");
+        }
+        else if (offset < -5f && offset > -20f)
+        {
+            animator.SetTrigger("BottomMiddle");
+        }
+        else if (offset > 20f)
+        {
+            animator.SetTrigger("Bottom");
+        }
+
     }
 
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b)
