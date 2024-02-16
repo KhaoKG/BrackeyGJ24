@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: -11.35
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.z
@@ -819,6 +819,7 @@ MonoBehaviour:
   TentaclePrefab: {fileID: 0}
   LaserPrefab: {fileID: 0}
   KeyPrefab: {fileID: 0}
+  KeyPrefabUi: {fileID: 0}
 --- !u!4 &659433758
 Transform:
   m_ObjectHideFlags: 0
@@ -951,10 +952,9 @@ GameObject:
   - component: {fileID: 790609633}
   - component: {fileID: 790609632}
   - component: {fileID: 790609631}
-  - component: {fileID: 790609630}
   m_Layer: 5
   m_Name: AvailableAbilities
-  m_TagString: Untagged
+  m_TagString: AvailableAbilities
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -978,19 +978,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 220, y: 50}
   m_Pivot: {x: 1, y: 1}
---- !u!114 &790609630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790609628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d08f5dbb4af02454bb65302148e58cf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyPrefab: {fileID: 3956335810865213082, guid: 5355c60493a6f8a44a8546015493a4ae, type: 3}
 --- !u!114 &790609631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,7 +2075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 11.35
       objectReference: {fileID: 0}
     - target: {fileID: 1714518234791430273, guid: 2532c36b8c9669b499dbb32346f76266, type: 3}
       propertyPath: m_LocalPosition.z

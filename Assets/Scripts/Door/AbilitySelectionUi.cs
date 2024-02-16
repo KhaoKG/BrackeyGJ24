@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using UnityEngine.UI;
 
-public class AbilitySelectionUi : MonoBehaviour
+public class AbilitySelectionUi : Singleton<AbilitySelectionUi>
 {
     public List<IAbility> AbilitiesToDisplay;
     public GameObject KeyPrefab;
@@ -15,9 +15,13 @@ public class AbilitySelectionUi : MonoBehaviour
     {
         KeyPrefab = Resources.Load<GameObject>("Prefabs/Key");
         AbilitiesToDisplay = AbilityController.Instance.availableAbilitiesForRound;
-        AbilityController.Instance.onAbilityUsed += OnAbilityUsed;
-        AbilityController.Instance.onAbilitiesLoaded += OnAbilitiesLoaded;
+        Debug.Log("START ABILITYSELECTION");
         InstantiateAbilities();
+    }
+
+    void OnEnable()
+    {
+        Debug.Log("ENABLED ABILITYSELECTION");
     }
 
     // This function gets called when the AbilityUsed Action is triggered
@@ -34,7 +38,7 @@ public class AbilitySelectionUi : MonoBehaviour
         }
     }
 
-    private void OnAbilitiesLoaded(List<IAbility> abilities)
+    public void OnAbilitiesLoaded(List<IAbility> abilities)
     {
         AbilitiesToDisplay = abilities;
         InstantiateAbilities();
