@@ -54,6 +54,8 @@ public class Player : MonoBehaviour
     float dashCooldown = 1f;
     private float dashCounter, dashCoolCounter;
 
+    public int doorDamage = 1;
+
     public CameraShake ShakeEffect { get => shakeEffect; set => shakeEffect = value; }
 
     //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
@@ -260,7 +262,7 @@ public class Player : MonoBehaviour
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(1, knockbackDirection.normalized);
+            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
         else if (collision.gameObject.tag == "Key Pickup")
         {
