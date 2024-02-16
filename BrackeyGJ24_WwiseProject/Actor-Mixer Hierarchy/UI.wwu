@@ -150,9 +150,19 @@
 								</Sound>
 								<Sound Name="startGame" ID="{B5A98B9E-1447-499C-B9EA-974A898189A5}" ShortID="148523154">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-650</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -166,6 +176,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="startGame" ID="{9756AF09-FD60-4C73-9CA9-7E8110B17AAD}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.360266311584554"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.761011984021305"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.23243675099867"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>startGame.wav</AudioFile>
 											<MediaIDList>
@@ -179,9 +195,9 @@
 								</Sound>
 								<Sound Name="menuMove" ID="{D96F05D1-13A2-4D60-8CFB-B4C7948F28CA}" ShortID="1047885782">
 									<PropertyList>
-										<Property Name="Highpass" Type="int16">
+										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>60</Value>
+												<Value>30</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -211,7 +227,8 @@
 											<PropertyList>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.00332889480692411"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.101198402130493"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.012982689747004"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.0372836218375503"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_UI_Hover.wav</AudioFile>
@@ -233,6 +250,31 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Latchlocker,aluminum,link,jostle,slide,click,out,over" ID="{0BF3884D-FF5E-44FA-B40F-AB58EEE8FA5C}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.631368175765646"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.431434920106525"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.754134209942299"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Latchlocker,aluminum,link,jostle,slide,click,out,over.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1059854306"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="menuForward" ID="{B3F36862-0DEE-4896-8F8C-8BE558F8DCD6}">
+											<Language>SFX</Language>
+											<AudioFile>menuForward.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="375074967"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menuForward" ID="{B3F36862-0DEE-4896-8F8C-8BE558F8DCD6}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="menuBack" ID="{8E84FB86-808B-46E8-A198-9F79F372A1C4}" ShortID="565809504">
 									<ReferenceList>
@@ -243,6 +285,30 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Closing Latches 4" ID="{72BFA801-15AD-43C9-846D-B7BD00BB662C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0542743009320905"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.159430758988016"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Closing Latches 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="907236016"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="menuBack" ID="{168FFFC6-190A-4912-84BD-7DEA2A2A1CE2}">
+											<Language>SFX</Language>
+											<AudioFile>menuBack.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="953208197"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menuBack" ID="{168FFFC6-190A-4912-84BD-7DEA2A2A1CE2}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>

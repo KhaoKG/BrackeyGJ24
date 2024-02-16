@@ -5,9 +5,22 @@
 			<ChildrenList>
 				<Folder Name="playerHealth" ID="{AE3A2973-2147-4B0A-B737-BDBBC5D0DE31}" ShortID="126044130">
 					<ChildrenList>
-						<Event Name="playerHealthUp" ID="{EB758365-0263-44FD-8B71-BC6E63432985}"/>
+						<Event Name="playerEatCrayon" ID="{EB758365-0263-44FD-8B71-BC6E63432985}"/>
 						<Event Name="playerHurt" ID="{6A1CABE6-D9B9-4EA2-8565-F81168EA5C7E}"/>
-						<Event Name="playerDie" ID="{380870F1-27A9-4888-A825-BAD75915EFFC}"/>
+						<Event Name="playerDie" ID="{380870F1-27A9-4888-A825-BAD75915EFFC}">
+							<ChildrenList>
+								<Action Name="" ID="{52DCA55C-4C7E-4EE2-9E59-4845BBB051E4}" ShortID="846446235">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="World" ID="{0152C4D7-57DB-4702-8098-F455CFF64FCC}" WorkUnitID="{C2FC293E-ECDE-4DA1-9AFB-32BD77150DDF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="playerAttacks" ID="{257C65F1-5B24-4E83-8C28-CC551A31E88C}" ShortID="148111575">
@@ -34,13 +47,44 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="playerLastHit" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}"/>
+						<Event Name="playerLastHit" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}">
+							<ChildrenList>
+								<Action Name="" ID="{667A3A06-5EC8-4736-941B-0E7044163D80}" ShortID="1013793835">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}" WorkUnitID="{5DF93E86-BFDE-41FB-BD94-0E75F680F310}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="playerHit" ID="{50E51490-DE77-42D5-A1D6-862FD27AC0F9}">
 							<ChildrenList>
 								<Action Name="" ID="{B71D777A-47A4-46C6-8706-772AB02AE3A1}" ShortID="709694874">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="playerAttackHits" ID="{F6EA2E51-ACCB-4FDC-AD47-081FF921E69D}" WorkUnitID="{21236B61-3558-4BDC-9517-FE9FC1575DE7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerLastHitOver" ID="{2133D5A2-01AE-423D-AA12-14467AE3CAA2}">
+							<ChildrenList>
+								<Action Name="" ID="{CD605ED4-E9E8-4EF8-B754-56E758E8D1A9}" ShortID="466151844">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}" WorkUnitID="{5DF93E86-BFDE-41FB-BD94-0E75F680F310}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

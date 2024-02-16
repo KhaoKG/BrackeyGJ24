@@ -17,7 +17,15 @@ namespace AK
         static const AkUniqueID BOSSSTATE = 3011728793U;
         static const AkUniqueID CREDITSTATE = 924228849U;
         static const AkUniqueID DOORCLOSED = 1697683977U;
+        static const AkUniqueID DOORKNIGHTDIE = 615317676U;
+        static const AkUniqueID DOORKNIGHTSPAWN = 2014340411U;
+        static const AkUniqueID DOORLASERFIRE = 4161954578U;
+        static const AkUniqueID DOORLASERSTOP = 2198663230U;
+        static const AkUniqueID DOORLASERWARN = 674637734U;
         static const AkUniqueID DOOROPENED = 2649542654U;
+        static const AkUniqueID DOORTENTACLELOOM = 3322069076U;
+        static const AkUniqueID DOORTENTACLESLAM = 1407830652U;
+        static const AkUniqueID DOORTENTACLEWHOOSH = 3590016449U;
         static const AkUniqueID DOORVACUUMEVENT = 1046624244U;
         static const AkUniqueID DOORVACUUMSTOP = 2136737028U;
         static const AkUniqueID ENEMYSUCKED = 3431269606U;
@@ -26,20 +34,24 @@ namespace AK
         static const AkUniqueID LEVELONESTATE = 1399705530U;
         static const AkUniqueID MENUBACK = 2634859593U;
         static const AkUniqueID MENUFORWARD = 2780352335U;
-        static const AkUniqueID MENUMOVE = 1184221871U;
+        static const AkUniqueID MENUHOVER = 303266102U;
         static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID NEW_EVENT = 3050945240U;
         static const AkUniqueID PLAYBUTTON = 1843531235U;
         static const AkUniqueID PLAYERDIE = 3966601280U;
-        static const AkUniqueID PLAYERHEALTHUP = 546141403U;
+        static const AkUniqueID PLAYEREATCRAYON = 3400151318U;
         static const AkUniqueID PLAYERHIT = 3831688773U;
         static const AkUniqueID PLAYERHURT = 3537581393U;
         static const AkUniqueID PLAYERKEYGAIN = 904027786U;
         static const AkUniqueID PLAYERKEYUSED = 1314825040U;
         static const AkUniqueID PLAYERLASTHIT = 965823281U;
+        static const AkUniqueID PLAYERLASTHITOVER = 351819259U;
         static const AkUniqueID PLAYERSWING = 1775438520U;
         static const AkUniqueID POWERSELECT = 2209591688U;
         static const AkUniqueID SLIDERCLICK = 1218812578U;
         static const AkUniqueID SLIDERUNCLICK = 3370401445U;
+        static const AkUniqueID SLOWDOWN = 3101299514U;
+        static const AkUniqueID SPEEDUP = 1221709037U;
         static const AkUniqueID TESTFAIL = 1435302941U;
         static const AkUniqueID TESTSTART = 4011858643U;
         static const AkUniqueID TESTSUCCESS = 1423690258U;
@@ -71,6 +83,7 @@ namespace AK
         static const AkUniqueID GAMEEFFECTVOLUME = 2732928946U;
         static const AkUniqueID GAMEMASTERVOLUME = 4103204207U;
         static const AkUniqueID GAMEMUSICVOLUME = 516124850U;
+        static const AkUniqueID GAMESPEED = 1350179952U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

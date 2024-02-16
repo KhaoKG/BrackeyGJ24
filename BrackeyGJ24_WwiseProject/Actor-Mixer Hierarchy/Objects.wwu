@@ -215,95 +215,6 @@
 										<ActiveSource Name="doorOpened" ID="{48C45F82-CE1D-4496-9C5D-8695376275E4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" ShortID="912381823">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="wind_tornado_with_destruction_01" ID="{F519AA46-70D8-4BA2-91F9-54D8469D98D6}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="400"/>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.218676570128717"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.457232828450954"/>
-												<Property Name="LoopEnd" Type="Real64" Value="16.8977349644918"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="17.4543662339103"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>wind_tornado_with_destruction_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="866819570"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="wind_tornado_with_destruction_01" ID="{F519AA46-70D8-4BA2-91F9-54D8469D98D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="enemySuctioned" ID="{23FFD516-9B13-4E74-A626-463AC11C1FA4}" ShortID="826989968">
-									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>45</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-700</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{E133EEFC-577A-4043-BB1E-434F3E8B5B84}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="506546__matrixxx__pop-01" ID="{B73239A9-EE3D-494C-B241-D80A0E566370}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.00275505674973052"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.00616607939225402"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.0710411061894798"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>506546__matrixxx__pop-01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="607508543"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="506546__matrixxx__pop-01" ID="{B73239A9-EE3D-494C-B241-D80A0E566370}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<RandomSequenceContainer Name="doorClosed" ID="{FCA41A82-11A2-42BB-93C5-BBC3AD6A7320}" ShortID="890221740">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
@@ -418,6 +329,263 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<ActorMixer Name="doorLaser" ID="{FBEF7A48-11AE-4247-ACA9-A1E758F17F6F}" ShortID="475532984">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{34AB1882-DB55-4A87-84DD-8CB7C3747AAE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="doorLaserWarn" ID="{626ABF3C-96FB-4DCF-B2B2-C3D0521608B3}" ShortID="114387435">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="doorLaserWarn" ID="{189BC62A-B8F3-40A1-8487-513A5F979951}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.416047048379938"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.182210386151798"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.3214229915668"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>doorLaserWarn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="815177471"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="doorLaserWarn" ID="{189BC62A-B8F3-40A1-8487-513A5F979951}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="doorLaser" ID="{D1EC1B8E-DC05-4F58-8A19-CD19C18EBCBD}" ShortID="868151442">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="doorLaser" ID="{15824EE6-DD6A-4FE4-A21A-1E5BA177648B}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="350"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.56071404793608"/>
+														<Property Name="LoopEnd" Type="Real64" Value="6.13799278739459"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.86513592987128"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>doorLaser.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="235602188"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="doorLaser" ID="{15824EE6-DD6A-4FE4-A21A-1E5BA177648B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="doorVacuum" ID="{3D1EE130-42B4-44DF-9183-7CFFF99228A6}" ShortID="689064770">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="doorVacuumLoop" ID="{C1EEC033-1236-464C-845D-34675FC032E2}" ShortID="912381823">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="objectAttenuate" ID="{3F03D542-EEAA-4013-9359-827BEBD5D669}" WorkUnitID="{DDC43EAC-0984-45FF-A597-DA5156BED722}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{862D380B-EC09-43E5-8279-2C52B0C4E669}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wind_tornado_with_destruction_01" ID="{F519AA46-70D8-4BA2-91F9-54D8469D98D6}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="400"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.218676570128717"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.021712605415"/>
+														<Property Name="LoopEnd" Type="Real64" Value="13.2001129604971"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.2736161229472"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>wind_tornado_with_destruction_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="866819570"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wind_tornado_with_destruction_01" ID="{F519AA46-70D8-4BA2-91F9-54D8469D98D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="enemySuctioned" ID="{23FFD516-9B13-4E74-A626-463AC11C1FA4}" ShortID="826989968">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>45</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-700</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E133EEFC-577A-4043-BB1E-434F3E8B5B84}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="objectAttenuate" ID="{3F03D542-EEAA-4013-9359-827BEBD5D669}" WorkUnitID="{DDC43EAC-0984-45FF-A597-DA5156BED722}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Objects" ID="{862D380B-EC09-43E5-8279-2C52B0C4E669}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="506546__matrixxx__pop-01" ID="{B73239A9-EE3D-494C-B241-D80A0E566370}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.00275505674973052"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00616607939225402"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0710411061894798"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>506546__matrixxx__pop-01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="607508543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="506546__matrixxx__pop-01" ID="{B73239A9-EE3D-494C-B241-D80A0E566370}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="doorTentacle" ID="{0D5FFBB4-DC64-40C0-8993-882C6B830B28}" ShortID="161138451">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="doorTentacleLooming" ID="{7E05FA21-91D1-4DFD-9C8D-CB0C686B18DD}" ShortID="787223893">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="doorTentacleLooming" ID="{795DA315-423D-4E3A-BF78-6AE4C66F3576}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.018641810918775"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.00798934753661795"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>doorTentacleLooming.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="293374694"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="doorTentacleLooming" ID="{795DA315-423D-4E3A-BF78-6AE4C66F3576}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

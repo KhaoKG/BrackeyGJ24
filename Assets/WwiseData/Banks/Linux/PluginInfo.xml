@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Platform="Linux" BasePlatform="Linux">
 	<PluginLibs>
+		<PluginLib LibName="Wwise Pitch Shifter" LibId="8912899" Type="Effect" DLL="AkPitchShifter" StaticLib="AkPitchShifterFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{AFC8C5A5-D363-5920-6F75-DABE9A71FEBE}</FileHash>
+	<FileHash>{DEB9244F-6D51-AAD9-6466-8A762CEB2B80}</FileHash>
 </PluginInfo>
