@@ -73,11 +73,11 @@ public class PlayerMelee : MonoBehaviour
 
         // oh boy here we go
         float offset = mousePosition.y - screenPosition.y;
-        if (offset > 0.03f)
+        if (offset > 0.04f)
         {
             animator.SetTrigger("Top");
         }
-        else if (offset < 0.03f && offset > 0.025f)
+        else if (offset < 0.04f && offset > 0.025f)
         {
             animator.SetTrigger("TopMiddle");
         }
@@ -85,11 +85,11 @@ public class PlayerMelee : MonoBehaviour
         {
             animator.SetTrigger("Middle");
         }
-        else if (offset < -0.025f && offset > -0.03f)
+        else if (offset < -0.025f && offset > -0.04f)
         {
             animator.SetTrigger("BottomMiddle");
         }
-        else if (offset < -0.03f)
+        else if (offset < -0.04f)
         {
             animator.SetTrigger("Bottom");
         }
