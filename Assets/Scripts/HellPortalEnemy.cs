@@ -18,7 +18,7 @@ public class HellPortalEnemy : Enemy
 
     private void Update()
     {
-        if (!IsAlive() || isInHitstun)
+        if (!IsAlive() || isInHitstun || isSpawning) 
         {
             return;
         }
