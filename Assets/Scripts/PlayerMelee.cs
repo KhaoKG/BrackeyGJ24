@@ -65,11 +65,8 @@ public class PlayerMelee : MonoBehaviour
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 
-    IEnumerator DoAttack()
-    {
+    IEnumerator DoAttack() {
         AkSoundEngine.PostEvent("playerSwing", this.gameObject); // play sound
-        attackHitbox.SetActive(true);
-        inAttack = true;
 
         // oh boy here we go
         float offset = mousePosition.y - screenPosition.y;
@@ -99,7 +96,14 @@ public class PlayerMelee : MonoBehaviour
             Debug.Log("offset: " + offset);
         }
 
-        yield return new WaitForSeconds(attackCooldown);
+        // Wait part of the attack before throwing hitboxes
+        yield return new WaitForSeconds(attackCooldown * 0.25F);
+
+        // Show hitbox
+        attackHitbox.SetActive(true);
+        inAttack = true;
+
+        yield return new WaitForSeconds(attackCooldown * 0.75F);
 
         inAttack = false;
         attackHitbox.SetActive(false);
