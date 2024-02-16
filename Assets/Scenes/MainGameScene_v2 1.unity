@@ -815,7 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilitiesSo: {fileID: 11400000, guid: 0e7170da2a8b0224eab35781dd3bfbf9, type: 2}
   HellPortalPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
-  VascuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
+  VacuumPrefab: {fileID: 0}
   TentaclePrefab: {fileID: 0}
   LaserPrefab: {fileID: 0}
   KeyPrefab: {fileID: 0}
@@ -1493,6 +1493,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4164447351325126278, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 2136396591}
+    - target: {fileID: 4164447351325126278, guid: 9396a24786b822e428e5ef5af14b7d70, type: 3}
       propertyPath: gameStateManager
       value: 
       objectReference: {fileID: 367181712}
@@ -1980,6 +1984,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7759636269211476751, guid: b0858aac00fc4e34dac4d650111ce900, type: 3}
   m_PrefabInstance: {fileID: 2136396589}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2136396591 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2510540946806443567, guid: b0858aac00fc4e34dac4d650111ce900, type: 3}
+  m_PrefabInstance: {fileID: 2136396589}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5037b171e80c07b4897bcf8bc5354547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2147102829
 GameObject:
   m_ObjectHideFlags: 0
