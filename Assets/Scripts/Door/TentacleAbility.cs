@@ -17,13 +17,22 @@ public class TentacleAbility : MonoBehaviour, IAbility {
         spawnedTentacle.transform.localPosition = Vector3.zero;
 
         spawnedTentacle.GetComponentInChildren<Tentacle>().RotateAccordingToDoor(door.GetComponent<DoorEventManager>().DoorId);
+        StartCoroutine(ActivateAndDeactivateCoroutine(door));
     }
 
 
 
     public void Deactivate(GameObject door) {
         // Tentacle already dies by itself after its animation and particles
+        StopAllCoroutines();
+        door.GetComponent<DoorEventManager>().isUsingAbility = false;
     }
 
-    public AbilitySO GetAbilitySo() => abilityData;
+    private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
+    {
+        yield return new WaitForSeconds(abilityData.ActiveTime);
+        Deactivate(door);
+    }
+
+    public AbilitySO GetAbilitySo() => abilityData != null ? abilityData : Resources.Load<AbilitySO>("ScriptableObjects/Tentacle");
 }

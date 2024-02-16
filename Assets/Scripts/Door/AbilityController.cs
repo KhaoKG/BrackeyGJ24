@@ -30,6 +30,7 @@ public class AbilityController : Singleton<AbilityController>
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
         VacuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
         LaserPrefab = Resources.Load<GameObject>("Prefabs/Laser");
+        TentaclePrefab = Resources.Load<GameObject>("Prefabs/Tentacle Ability");
         abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         KeyPrefab = Resources.Load<GameObject>("Prefabs/KeySprite");
         DoorEventManager.ActivateDoor += OnDoorActivated;
