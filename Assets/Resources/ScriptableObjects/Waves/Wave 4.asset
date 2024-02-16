@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveNumber: 2
   spawns:
-  - delay: 1
-    enemies: 00000000000000000000000000000000
-  - delay: 3
-    enemies: 00000000000000000000000000000000
+  - delay: 0
+    enemies: 010000000100000001000000
+  - delay: 4
+    enemies: 00000000010000000100000001000000
+  - delay: 2
+    enemies: 0000000000000000000000000000000000000000

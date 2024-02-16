@@ -417,6 +417,10 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 6c2f89f58f2932d4d9087a4c6ef9c7ad, type: 2}
   - {fileID: 11400000, guid: 001d64153709a264493b3ba7240cb360, type: 2}
+  - {fileID: 11400000, guid: 6ac8b0981c92244468e819bca4724015, type: 2}
+  - {fileID: 11400000, guid: 4f7370890ae9b5640a2776adb9133e8b, type: 2}
+  - {fileID: 11400000, guid: 28667a6dd7def184ea404e378afadefe, type: 2}
+  - {fileID: 11400000, guid: c24d70f897354b04494f6e983b9b8875, type: 2}
 --- !u!4 &367181713
 Transform:
   m_ObjectHideFlags: 0
@@ -2161,6 +2165,10 @@ PrefabInstance:
       propertyPath: shakeEffect
       value: 
       objectReference: {fileID: 793399785}
+    - target: {fileID: 7777723505001612792, guid: 854d6bca422e7dc43b1e86be4f836bfb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
