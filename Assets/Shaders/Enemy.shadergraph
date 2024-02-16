@@ -82,15 +82,6 @@
             "m_Id": "991b03b3a3894ac5afe6fefe746ea7a5"
         },
         {
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-            "m_Id": "3b49c49c75db41cd9a3548570c83ca54"
-        },
-        {
-            "m_Id": "355dbd06a7534e17831d221c949e69b4"
-        },
-        {
-            "m_Id": "47401bd459ed4a939c173ec923b59521"
-=======
             "m_Id": "babeb1406a5a442584a807dd4421d3b5"
         },
         {
@@ -128,7 +119,6 @@
         },
         {
             "m_Id": "ba826f6f9deb4532aac3f49a6922127d"
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
         }
     ],
     "m_GroupDatas": [
@@ -172,9 +162,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-                    "m_Id": "355dbd06a7534e17831d221c949e69b4"
-=======
                     "m_Id": "181bdcbad054421f8b54ff3681a1da11"
                 },
                 "m_SlotId": 0
@@ -190,31 +177,25 @@
             "m_OutputSlot": {
                 "m_Node": {
                     "m_Id": "2050220f26eb4dbe91bc8c3b8eb92014"
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
                 },
-                "m_SlotId": 3
+                "m_SlotId": 2
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "5895be2cbda140dcb154df260cadae95"
+                    "m_Id": "216a395735c1406cbb852bd3bdf40e4c"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 1
             }
         },
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "3b49c49c75db41cd9a3548570c83ca54"
+                    "m_Id": "216a395735c1406cbb852bd3bdf40e4c"
                 },
                 "m_SlotId": 2
             },
             "m_InputSlot": {
                 "m_Node": {
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-                    "m_Id": "47401bd459ed4a939c173ec923b59521"
-                },
-                "m_SlotId": 2
-=======
                     "m_Id": "0491f233299345e2bcbba3e8072a9e0c"
                 },
                 "m_SlotId": 0
@@ -246,15 +227,11 @@
                     "m_Id": "864292afe5c14336aa7df9a69f914ff9"
                 },
                 "m_SlotId": 0
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
             }
         },
         {
             "m_OutputSlot": {
                 "m_Node": {
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-                    "m_Id": "47401bd459ed4a939c173ec923b59521"
-=======
                     "m_Id": "466d1dd65ab1493b85fcdd45cb213087"
                 },
                 "m_SlotId": 2
@@ -262,15 +239,8 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "5453ee4c3bc34ca3963129217d498a8b"
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
                 },
                 "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "355dbd06a7534e17831d221c949e69b4"
-                },
-                "m_SlotId": 2
             }
         },
         {
@@ -310,7 +280,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "1f0b0b2869ef412db68c5425a9d12285"
+                    "m_Id": "216a395735c1406cbb852bd3bdf40e4c"
                 },
                 "m_SlotId": 0
             }
@@ -450,7 +420,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "3b49c49c75db41cd9a3548570c83ca54"
+                    "m_Id": "2050220f26eb4dbe91bc8c3b8eb92014"
                 },
                 "m_SlotId": 1
             }
@@ -464,7 +434,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "3b49c49c75db41cd9a3548570c83ca54"
+                    "m_Id": "2050220f26eb4dbe91bc8c3b8eb92014"
                 },
                 "m_SlotId": 0
             }
@@ -544,25 +514,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "066b8e4b2ce54902a4dc20c942339b4c",
-    "m_Id": 0,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_Labels": []
-=======
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "0491f233299345e2bcbba3e8072a9e0c",
     "m_Group": {
@@ -602,24 +553,15 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
 }
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
-    "m_ObjectId": "0a040051e76446f2bb87be591da82924",
-    "m_Id": 2,
-    "m_DisplayName": "UV",
-    "m_SlotType": 0,
-=======
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "05ad8063dd2b4e4991c5e59ac5c5e7b7",
     "m_Id": 0,
     "m_DisplayName": "Out",
     "m_SlotType": 1,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
@@ -640,14 +582,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "0b9029118a0d4e028554a5df38fd3029",
-    "m_Title": "Disappear",
-    "m_Position": {
-        "x": -1824.0,
-        "y": 212.00001525878907
-=======
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "08711b2e79d3410386383f2ce74dc053",
     "m_Id": 2,
@@ -725,7 +659,6 @@
     "m_Position": {
         "x": -1823.999755859375,
         "y": 211.99998474121095
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     }
 }
 
@@ -746,8 +679,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-=======
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "0f8f28292e5342ccae6a3717824d805b",
     "m_Id": 0,
@@ -844,7 +775,6 @@
 
 {
     "m_SGVersion": 0,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "1432cb12001a4aa887511871048ee25b",
     "m_Group": {
@@ -954,7 +884,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "14f228cd58244471bcd06c548b8d16ab",
     "m_Id": 0,
-    "m_DisplayName": "Amount",
+    "m_DisplayName": "Threshold",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1203,14 +1133,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "25b2dbcc48604723b10bbb23600ddc1f",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "VertexDescription.Normal",
-=======
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "2042550e7a37420e9cd8fe0f26158416",
     "m_Id": 2,
@@ -1265,29 +1187,18 @@
         "m_Id": "0b9029118a0d4e028554a5df38fd3029"
     },
     "m_Name": "Step",
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
-=======
             "x": -1137.2242431640625,
             "y": 306.0943908691406,
             "width": 208.0,
             "height": 302.0
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
         }
     },
     "m_Slots": [
         {
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-            "m_Id": "c666cc1c11e645d2bcc3f097ff4b10b8"
-=======
             "m_Id": "f0bd2ba1e4e84c4e8a8f14634a3053fd"
         },
         {
@@ -1295,7 +1206,6 @@
         },
         {
             "m_Id": "65a1edc5f7504732854f7cde7186b5ca"
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
         }
     ],
     "synonyms": [],
@@ -1305,23 +1215,12 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    },
-    "m_SerializedDescriptor": "VertexDescription.Normal"
-}
+    }
 }
 
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_ObjectId": "2b8804ec986b43c2b775d6d677c87ac0",
-    "m_Id": 5,
-    "m_DisplayName": "G",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "G",
-    "m_StageCapability": 2,
-=======
     "m_ObjectId": "213a55ad928e41be93d955d0fec9a716",
     "m_Id": 2,
     "m_DisplayName": "Cosine Time",
@@ -1329,7 +1228,6 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Cosine Time",
     "m_StageCapability": 3,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
@@ -1337,51 +1235,37 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.TilingAndOffsetNode",
-    "m_ObjectId": "355dbd06a7534e17831d221c949e69b4",
-=======
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "216a395735c1406cbb852bd3bdf40e4c",
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "Tiling And Offset",
+    "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-            "x": -1537.6044921875,
-            "y": -159.6918487548828,
-            "width": 0.0,
-            "height": 0.0
-=======
             "x": -658.0001220703125,
             "y": 11.000006675720215,
             "width": 208.00003051757813,
             "height": 302.00006103515627
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
         }
     },
     "m_Slots": [
         {
-            "m_Id": "8aff45101a964d8cab568575f489171f"
+            "m_Id": "0f8f28292e5342ccae6a3717824d805b"
         },
         {
-            "m_Id": "ae9f6570f7bb43058ecea56858b98371"
+            "m_Id": "958d98a495c446f1b12d1b5c0c4ae374"
         },
         {
-            "m_Id": "a3af2ea37cf24bf1a8f8b6ff423627b7"
-        },
-        {
-            "m_Id": "ffabfe86d855441cbb8e075f57554247"
+            "m_Id": "b639bc068ddc41f3b677d53cbcd38242"
         }
     ],
     "synonyms": [
-        "pan",
-        "scale"
+        "multiplication",
+        "times",
+        "x"
     ],
     "m_Precision": 0,
     "m_PreviewExpanded": true,
@@ -1394,10 +1278,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
-    "m_ObjectId": "3b49c49c75db41cd9a3548570c83ca54",
-=======
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "2178641d863c4439bb48b4319c5c9a77",
     "m_Id": 0,
@@ -1439,46 +1319,32 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "25b2dbcc48604723b10bbb23600ddc1f",
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Group": {
-        "m_Id": "0b9029118a0d4e028554a5df38fd3029"
+        "m_Id": ""
     },
-    "m_Name": "Multiply",
+    "m_Name": "VertexDescription.Normal",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1075.0,
-            "y": 306.0000305175781,
-            "width": 208.0,
-            "height": 301.9999694824219
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
         }
     },
     "m_Slots": [
         {
-            "m_Id": "866d584a79d241be803c5a0387a09cd8"
-        },
-        {
-            "m_Id": "f4cf09609a4d4e8c9972e6f5598c4bc2"
-        },
-        {
-            "m_Id": "cd514949857349e48ed50d1d1e01a058"
+            "m_Id": "c666cc1c11e645d2bcc3f097ff4b10b8"
         }
     ],
-    "synonyms": [
-        "multiplication",
-        "times",
-        "x"
-    ],
+    "synonyms": [],
     "m_Precision": 0,
     "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    }
-=======
     },
     "m_SerializedDescriptor": "VertexDescription.Normal"
 }
@@ -1586,7 +1452,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
 }
 
 {
@@ -1670,59 +1535,24 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.Vector2Node",
-    "m_ObjectId": "47401bd459ed4a939c173ec923b59521",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Vector 2",
-=======
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "466d1dd65ab1493b85fcdd45cb213087",
     "m_Group": {
         "m_Id": "1a14c9b1eac441de9c5fc418d2746a11"
     },
     "m_Name": "Add",
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-            "x": -1730.755859375,
-            "y": -10.646113395690918,
-            "width": 0.0,
-            "height": 0.0
-=======
             "x": -1634.0001220703125,
             "y": 1466.0,
             "width": 130.0,
             "height": 118.0
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
         }
     },
     "m_Slots": [
         {
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-            "m_Id": "5f92e5aa15b34f569dd45925aee5a7d1"
-        },
-        {
-            "m_Id": "a335ce467f11449d891a6600f06217c8"
-        },
-        {
-            "m_Id": "066b8e4b2ce54902a4dc20c942339b4c"
-        }
-    ],
-    "synonyms": [
-        "2",
-        "v2",
-        "vec2",
-        "float2"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-=======
             "m_Id": "2178641d863c4439bb48b4319c5c9a77"
         },
         {
@@ -1739,18 +1569,10 @@
     ],
     "m_Precision": 0,
     "m_PreviewExpanded": false,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    },
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0
-    }
-=======
     }
 }
 
@@ -1825,7 +1647,6 @@
         "w": 0.0
     },
     "m_Labels": []
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
 }
 
 {
@@ -1858,8 +1679,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-=======
     "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
     "m_ObjectId": "54126c2ceba94f38a7775b1e7f1fbc1c",
     "m_Id": 0,
@@ -1948,7 +1767,6 @@
 
 {
     "m_SGVersion": 0,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "5895be2cbda140dcb154df260cadae95",
     "m_Group": {
@@ -2111,21 +1929,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "5f92e5aa15b34f569dd45925aee5a7d1",
-    "m_Id": 1,
-    "m_DisplayName": "X",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "X",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "614ff55a28084bb78066989819aab61d",
     "m_Group": {
@@ -2186,8 +1989,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-=======
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "65a1edc5f7504732854f7cde7186b5ca",
     "m_Id": 2,
@@ -2212,30 +2013,10 @@
 
 {
     "m_SGVersion": 0,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
     "m_ObjectId": "6de1ea5a420e45acb14edad0b2cb035e",
     "m_Guid": {
         "m_GuidSerialized": "535d3696-5e90-466d-9703-639ec720cd2c"
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    },
-    "m_Name": "Main Texture",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Main Texture",
-    "m_DefaultReferenceName": "_Main_Texture",
-    "m_OverrideReferenceName": "_MainTex",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"40131799bcf7a5d479267cf8fefec367\",\"type\":3}}",
-        "m_Guid": ""
-=======
     },
     "m_Name": "Main Texture",
     "m_DefaultRefNameVersion": 1,
@@ -2419,7 +2200,6 @@
             "width": 126.0,
             "height": 118.0
         }
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     },
     "m_Slots": [
         {
@@ -2496,97 +2276,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
-    "m_ObjectId": "7e9ae3b13efb4d329d810c483c502baf",
-    "m_Id": 1,
-    "m_DisplayName": "Texture",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Texture",
-    "m_StageCapability": 3,
-    "m_BareResource": false,
-    "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
-        "m_Guid": ""
-    },
-    "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
-    "m_ObjectId": "866d584a79d241be803c5a0387a09cd8",
-    "m_Id": 0,
-    "m_DisplayName": "A",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "A",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "e00": 0.0,
-        "e01": 0.0,
-        "e02": 0.0,
-        "e03": 0.0,
-        "e10": 0.0,
-        "e11": 0.0,
-        "e12": 0.0,
-        "e13": 0.0,
-        "e20": 0.0,
-        "e21": 0.0,
-        "e22": 0.0,
-        "e23": 0.0,
-        "e30": 0.0,
-        "e31": 0.0,
-        "e32": 0.0,
-        "e33": 0.0
-    },
-    "m_DefaultValue": {
-        "e00": 1.0,
-        "e01": 0.0,
-        "e02": 0.0,
-        "e03": 0.0,
-        "e10": 0.0,
-        "e11": 1.0,
-        "e12": 0.0,
-        "e13": 0.0,
-        "e20": 0.0,
-        "e21": 0.0,
-        "e22": 1.0,
-        "e23": 0.0,
-        "e30": 0.0,
-        "e31": 0.0,
-        "e32": 0.0,
-        "e33": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
-    "m_ObjectId": "8aff45101a964d8cab568575f489171f",
-    "m_Id": 0,
-    "m_DisplayName": "UV",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "UV",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_Labels": [],
-    "m_Channel": 0
-}
-
-{
-    "m_SGVersion": 0,
-=======
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "8b2554046e894c33b5e3dedc094746c2",
     "m_Group": {
@@ -2667,11 +2356,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "8cd2d242c4514bb9aa449cd9455c135a",
     "m_Id": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_DisplayName": "Breath Texture",
-=======
     "m_DisplayName": "Spawn Texture",
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2706,8 +2391,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-=======
     "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
     "m_ObjectId": "9065b503efe0438ea2cf24c3ebac894c",
     "m_Id": 2,
@@ -2793,7 +2476,6 @@
 
 {
     "m_SGVersion": 0,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "97c08adf6e644e3baa01f0190ae63104",
     "m_Group": {
@@ -2826,8 +2508,6 @@
     "m_Property": {
         "m_Id": "d48bc1e3eebe42f0b5f91ff267fb385c"
     }
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-=======
 }
 
 {
@@ -2931,7 +2611,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
 }
 
 {
@@ -2987,44 +2666,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "a335ce467f11449d891a6600f06217c8",
-    "m_Id": 2,
-    "m_DisplayName": "Y",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Y",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [
-        "Y"
-    ]
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "a3af2ea37cf24bf1a8f8b6ff423627b7",
-    "m_Id": 2,
-    "m_DisplayName": "Offset",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Offset",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "ae3c0e1dfb574b4eaea83e50b773634a",
     "m_Group": {
@@ -3055,27 +2696,6 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.BaseColor"
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "ae9f6570f7bb43058ecea56858b98371",
-    "m_Id": 1,
-    "m_DisplayName": "Tiling",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Tiling",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -3114,8 +2734,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-=======
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "b639bc068ddc41f3b677d53cbcd38242",
     "m_Id": 2,
@@ -3212,7 +2830,6 @@
 
 {
     "m_SGVersion": 0,
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "b7117a118a824fd69bac7f61400712f0",
     "m_Id": 7,
@@ -3544,51 +3161,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
-    "m_ObjectId": "cd514949857349e48ed50d1d1e01a058",
-    "m_Id": 2,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "e00": 0.0,
-        "e01": 0.0,
-        "e02": 0.0,
-        "e03": 0.0,
-        "e10": 0.0,
-        "e11": 0.0,
-        "e12": 0.0,
-        "e13": 0.0,
-        "e20": 0.0,
-        "e21": 0.0,
-        "e22": 0.0,
-        "e23": 0.0,
-        "e30": 0.0,
-        "e31": 0.0,
-        "e32": 0.0,
-        "e33": 0.0
-    },
-    "m_DefaultValue": {
-        "e00": 1.0,
-        "e01": 0.0,
-        "e02": 0.0,
-        "e03": 0.0,
-        "e10": 0.0,
-        "e11": 1.0,
-        "e12": 0.0,
-        "e13": 0.0,
-        "e20": 0.0,
-        "e21": 0.0,
-        "e22": 1.0,
-        "e23": 0.0,
-        "e30": 0.0,
-        "e31": 0.0,
-        "e32": 0.0,
-        "e33": 1.0
-=======
     "m_Type": "UnityEditor.ShaderGraph.StepNode",
     "m_ObjectId": "ca28cde8ac2448d4a97a59b7b6258a84",
     "m_Group": {
@@ -3623,7 +3195,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     }
 }
 
@@ -3691,10 +3262,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1330.0001220703125,
-            "y": 437.0,
+            "x": -1322.224365234375,
+            "y": 435.0943908691406,
             "width": 128.0,
-            "height": 33.999969482421878
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -3735,10 +3306,10 @@
     "m_Guid": {
         "m_GuidSerialized": "84552b65-c2d8-4af6-828d-512c750bde5b"
     },
-    "m_Name": "Amount",
+    "m_Name": "Threshold",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Amount",
-    "m_DefaultReferenceName": "_Amount",
+    "m_RefNameGeneratedByDisplayName": "Threshold",
+    "m_DefaultReferenceName": "_Threshold",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -3926,17 +3497,10 @@
     "m_Guid": {
         "m_GuidSerialized": "e36d4fcd-615b-4ebb-8f60-37c6d9f721ac"
     },
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Name": "Breath Texture",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Breath Texture",
-    "m_DefaultReferenceName": "_Breath_Texture",
-=======
     "m_Name": "Spawn Texture",
     "m_DefaultRefNameVersion": 1,
     "m_RefNameGeneratedByDisplayName": "Spawn Texture",
     "m_DefaultReferenceName": "_Spawn_Texture",
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -3947,7 +3511,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"e0c27a7583582e9498661f33957db4c7\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"c8816ffc23cb11547b561e81e162eaec\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -4179,54 +3743,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
-    "m_ObjectId": "f4cf09609a4d4e8c9972e6f5598c4bc2",
-    "m_Id": 1,
-    "m_DisplayName": "B",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "B",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "e00": 2.0,
-        "e01": 2.0,
-        "e02": 2.0,
-        "e03": 2.0,
-        "e10": 2.0,
-        "e11": 2.0,
-        "e12": 2.0,
-        "e13": 2.0,
-        "e20": 2.0,
-        "e21": 2.0,
-        "e22": 2.0,
-        "e23": 2.0,
-        "e30": 2.0,
-        "e31": 2.0,
-        "e32": 2.0,
-        "e33": 2.0
-    },
-    "m_DefaultValue": {
-        "e00": 1.0,
-        "e01": 0.0,
-        "e02": 0.0,
-        "e03": 0.0,
-        "e10": 0.0,
-        "e11": 1.0,
-        "e12": 0.0,
-        "e13": 0.0,
-        "e20": 0.0,
-        "e21": 0.0,
-        "e22": 1.0,
-        "e23": 0.0,
-        "e30": 0.0,
-        "e31": 0.0,
-        "e32": 0.0,
-        "e33": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "f859a22d3d33446c9af2b0d283605ade",
     "m_Id": 2,
@@ -4301,25 +3817,6 @@
 
 {
     "m_SGVersion": 0,
-<<<<<<< HEAD:Assets/Shaders/Player Idle.shadergraph
-    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "ffabfe86d855441cbb8e075f57554247",
-    "m_Id": 3,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_Labels": []
-=======
     "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
     "m_ObjectId": "ffa75e6fa5294aaca7acb81ef08d924d",
     "m_Guid": {
@@ -4346,6 +3843,5 @@
     "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
->>>>>>> Preparing enemy death animation:Assets/Shaders/Enemy.shadergraph
 }
 
