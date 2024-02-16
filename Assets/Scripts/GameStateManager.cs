@@ -1,28 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
+    // Combat
     [SerializeField] Player player;
-    [SerializeField] GameObject KeySelectionScreen;
     [SerializeField] EnemySpawner enemySpawner;
     [SerializeField] EnemyController enemyController;
+    [SerializeField] FadeEffect screenFadeEffect;
 
     [Header("Game Over")]
     [SerializeField] GameObject gameOverMenu;
     [SerializeField] bool isGameOver = false;
 
     [Header("Camera effects")]
-    [SerializeField]  HitStopEffect hitStopEffect;
+    [SerializeField] HitStopEffect hitStopEffect;
 
     [Header("Waves")]
     [SerializeField] List<WaveSO> waves;
 
+    GameStateSO gameStateData;
+
     private void Start() {
+        // Load game data
+        gameStateData = Resources.Load<GameStateSO>("ScriptableObjects/MainGameData");
+
         // Prepare initial wave
-        enemySpawner.CurrentWave = waves[0];
-        waves.RemoveAt(0);
+        enemySpawner.CurrentWave = waves[gameStateData.currentWave-1];
         enemySpawner.enabled = true;
     }
 
@@ -39,28 +45,20 @@ public class GameStateManager : MonoBehaviour
     IEnumerator PrepareKeySelect() {
         player.DisableInput();
 
+        // Short pause
         yield return new WaitForSeconds(1.5f);
+
+        // Activate game object to fade screen
+        screenFadeEffect.TargetAlpha = 1f;
+
+        yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
 
         ShowKeySelect();
     }
 
-    private void ShowKeySelect() {
-        KeySelectionScreen.SetActive(true);
-    }
+    void ShowKeySelect() {
 
-    public void KeySelected(string Key) {
-        // TODO: ADD THE KEY WHEREVER IT IS SUPPOSED TO GO
-
-        // TODO Advance enemy spawner to next wave
-        enemySpawner.CurrentWave = waves[0];
-        waves.RemoveAt(0);
-        enemySpawner.enabled = true;
-
-        // Reset the Key Selection Screen
-        KeySelectionScreen.SetActive(false);
-
-        // Reactivate player
-        player.EnableInput();
+        SceneManager.LoadScene(2);
     }
 
     public void GameOver() {
@@ -73,5 +71,8 @@ public class GameStateManager : MonoBehaviour
 
         // Show game over menu
         gameOverMenu.SetActive(true);
+
+        // Reset game state
+        gameStateData.Reset();
     }
 }
