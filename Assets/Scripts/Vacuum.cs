@@ -23,6 +23,26 @@ public class Vacuum : MonoBehaviour, IAbility
     {
         AkSoundEngine.PostEvent("doorVacuumEvent", this.gameObject);
         attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
+        attractPoint.transform.position = door.transform.position;
+
+        if (door.GetComponent<DoorEventManager>().DoorId == 1) // left
+        {
+            attractPoint.transform.rotation = Quaternion.Euler(0, 0, 270);
+        }
+        else if (door.GetComponent<DoorEventManager>().DoorId == 2) // top
+        {
+            //transform.rotation = Quaternion.Euler(0, 0, 90);
+        }
+        else if (door.GetComponent<DoorEventManager>().DoorId == 3) // right
+        {
+            attractPoint.transform.rotation = Quaternion.Euler(0, 0, 90);
+        }
+        else if (door.GetComponent<DoorEventManager>().DoorId == 0) // bottom
+        {
+            attractPoint.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * -1, transform.localScale.z);
+        }
+        StartCoroutine(ActivateAndDeactivateCoroutine(door));
+
         attractPoint.GetComponent<AttractPoint>().TurnOn();
         StartCoroutine(ActivateAndDeactivateCoroutine(door));
     }
@@ -31,6 +51,8 @@ public class Vacuum : MonoBehaviour, IAbility
     {
         AkSoundEngine.PostEvent("doorVacuumStop", this.gameObject);
         attractPoint.GetComponent<AttractPoint>().TurnOff();
+        attractPoint.transform.localScale = new Vector3(1, 1, 1);
+        attractPoint.transform.rotation = Quaternion.identity;
         StopAllCoroutines();
         door.GetComponent<DoorEventManager>().isUsingAbility = false;
     }

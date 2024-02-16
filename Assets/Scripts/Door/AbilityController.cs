@@ -24,7 +24,7 @@ public class AbilityController : Singleton<AbilityController>
     public GameObject HellPortalPrefab;
     public GameObject VascuumPrefab;
     public GameObject TentaclePrefab;
-    public GameObject LaserPortalPrefab;
+    public GameObject LaserPrefab;
     public GameObject KeyPrefab;
 
     public Action<IAbility> onAbilityUsed;
@@ -35,6 +35,7 @@ public class AbilityController : Singleton<AbilityController>
     {
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
         VascuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
+        LaserPrefab = Resources.Load<GameObject>("Prefabs/Laser");
         abilitiesSo = Resources.Load<AbilityListSO>("ScriptableObjects/AbilityList");
         KeyPrefab = Resources.Load<GameObject>("Prefabs/KeySprite");
         DoorEventManager.ActivateDoor += OnDoorActivated;
@@ -113,6 +114,11 @@ public class AbilityController : Singleton<AbilityController>
     {
         AddAbilityForRound("Vacuum");
     }
+    [ContextMenu("Add laser")]
+    public void AddLaser()
+    {
+        AddAbilityForRound("Laser");
+    }
 
 
     /// <summary>
@@ -163,6 +169,9 @@ public class AbilityController : Singleton<AbilityController>
                 break;
             case "Vacuum":
                 abilities.Add(VascuumPrefab.GetComponent<Vacuum>());
+                break;
+            case "Laser":
+                abilities.Add(LaserPrefab.GetComponent<Laser>());
                 break;
             default:
                 break;
