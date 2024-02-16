@@ -5,6 +5,7 @@ using UnityEngine;
 // Basic enemy, basically follows the player and does a melee attack
 public class GruntEnemy : Enemy {
     [SerializeField] GameObject healthPickupPrefab;
+    [SerializeField] GameObject keyPickupPrefab;
 
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning) {
@@ -37,7 +38,7 @@ public class GruntEnemy : Enemy {
         {
             Die();
         }
-        Debug.Log("Direction: " + direction.x + "," + direction.y);
+        //Debug.Log("Direction: " + direction.x + "," + direction.y);
         StartCoroutine(DoHitStun());
         rb.velocity = Vector2.zero;
         rb.AddForce(direction * 200, ForceMode2D.Impulse);
@@ -47,10 +48,17 @@ public class GruntEnemy : Enemy {
 
     protected override void Die() {
         // drop health
-        if(Random.Range(0, 20) == 5)
+        if(Random.Range(0, 10) == 5)
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("healthDropped", this.gameObject);
+        }
+
+        // drop health
+        if (Random.Range(0, 10) != 900)
+        {
+            Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
+            AkSoundEngine.PostEvent("keyDropped", this.gameObject);
         }
 
         // die
