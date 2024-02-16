@@ -82,6 +82,10 @@ public class AbilityController : Singleton<AbilityController>
             AddAbilityToListFromName(abName, typesOfAbilitesUnlocked);
             InstantiateAbilitiesUi();
         }
+        else
+        {
+
+        }
     }
 
     public void AddAbilityForRound(AbilitySO ability)
