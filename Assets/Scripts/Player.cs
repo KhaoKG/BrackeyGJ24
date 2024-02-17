@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField]
-    int maxHealth = 10;
+    public GameStateSO gameState;
+
+    int maxHealth;
     int health;
     [SerializeField]
     Image healthBar;
@@ -58,6 +59,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        maxHealth = gameState.maxHealth;
         health = maxHealth;
         initialSpeed = moveSpeed;
     }

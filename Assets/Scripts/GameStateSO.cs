@@ -8,6 +8,8 @@ public class GameStateSO : ScriptableObject
 {
     public int score = 0;
 
+    public int maxHealth = 10;
+
     [Min(1)]
     public int currentWave = 0;
 

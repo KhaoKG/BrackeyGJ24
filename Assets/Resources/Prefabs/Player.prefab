@@ -337,15 +337,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f54f5c058a63ff4d9777651396ff157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
+  gameState: {fileID: 11400000, guid: ddaff2b1d47fca2468a10cf728bdce76, type: 2}
   healthBar: {fileID: 0}
   animator: {fileID: 1684260990788786577}
   spriteRenderer: {fileID: 7595423339297774504}
   blinkEffect: {fileID: 8650290935449892775}
+  gameStateManager: {fileID: 0}
   attackParent: {fileID: 2103094387012240461}
   knockbackForce: 150
   knockbackDuration: 0.5
   shakeEffect: {fileID: 0}
+  doorDamage: 1
   moveSpeed: 6
   rb: {fileID: 420199765914226485}
   isInHitstun: 0
@@ -353,7 +355,6 @@ MonoBehaviour:
   dashSpeed: 10
   dashLength: 0.2
   dashCooldown: 1
-  doorDamage: 1
 --- !u!61 &8338704882114001934
 BoxCollider2D:
   m_ObjectHideFlags: 0
