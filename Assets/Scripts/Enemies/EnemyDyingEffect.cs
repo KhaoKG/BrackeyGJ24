@@ -25,4 +25,9 @@ public class EnemyDyingEffect : MonoBehaviour
         }
         material.SetFloat("_Disintegrate_Threshold", Mathf.MoveTowards(curThreshold, 0, Time.deltaTime * effectSpeed));
     }
+
+    private void OnDestroy() {
+        // Removes material instance from memory
+        Destroy(material);
+    }
 }

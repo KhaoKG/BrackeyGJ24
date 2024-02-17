@@ -52,7 +52,6 @@ public class Player : MonoBehaviour
     float dashCooldown = 1f;
     private float dashCounter, dashCoolCounter;
 
-
     public CameraShake ShakeEffect { get => shakeEffect; set => shakeEffect = value; }
 
     //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
