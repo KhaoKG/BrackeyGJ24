@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{7C81A89B-BB2C-49BB-57F3-C3D01FC992FC}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B3F16FA9-CD98-1B3F-189B-663716DE848D}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -122,7 +122,7 @@
 				</File>
 				<File Id="293374694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleLooming.wav</ShortName>
-					<CachePath>SFX/doorTentacleLooming_4DAD2B41.wem</CachePath>
+					<CachePath>SFX/doorTentacleLooming_F6237DCB.wem</CachePath>
 				</File>
 				<File Id="306161651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits3.wav</ShortName>
@@ -154,7 +154,7 @@
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_1D7406E2.wem</CachePath>
+					<CachePath>SFX/doorOpened_678297B5.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
@@ -226,7 +226,7 @@
 				</File>
 				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaserWarn.wav</ShortName>
-					<CachePath>SFX/doorLaserWarn_69EE38E6.wem</CachePath>
+					<CachePath>SFX/doorLaserWarn_06B5928D.wem</CachePath>
 				</File>
 				<File Id="825991925" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-006.wav</ShortName>
@@ -242,7 +242,7 @@
 				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
-					<CachePath>SFX/wind_tornado_with_destruction_01_46070F82.wem</CachePath>
+					<CachePath>SFX/wind_tornado_with_destruction_01_83D49F36.wem</CachePath>
 				</File>
 				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreDown.wav</ShortName>
@@ -270,7 +270,7 @@
 				</File>
 				<File Id="1047713376" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorDemonSpawner.wav</ShortName>
-					<CachePath>SFX/doorDemonSpawner_7AA29106.wem</CachePath>
+					<CachePath>SFX/doorDemonSpawner_EEFC446E.wem</CachePath>
 				</File>
 				<File Id="1049733785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
@@ -307,7 +307,7 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="615317676" Name="doorKnightDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2014340411" Name="doorKnightSpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="5.9980025" DurationMax="5.9980025">
+				<Event Id="2014340411" Name="doorKnightSpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="4.003329" DurationMax="4.003329">
 					<MediaRefs>
 						<MediaRef Id="1047713376"/>
 					</MediaRefs>
@@ -328,7 +328,7 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="2198663230" Name="doorLaserStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="674637734" Name="doorLaserWarn" MaxAttenuation="100" DurationType="OneShot" DurationMin="3.174802" DurationMax="3.174802">
+				<Event Id="674637734" Name="doorLaserWarn" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.5720085" DurationMax="1.5720085">
 					<MediaRefs>
 						<MediaRef Id="815177471"/>
 					</MediaRefs>
@@ -338,7 +338,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.73498404" DurationMax="0.80150574">
+				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200569" DurationMax="0.34902447">
 					<MediaRefs>
 						<MediaRef Id="431594120"/>
 					</MediaRefs>
@@ -348,7 +348,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3322069076" Name="doorTentacleLoom" MaxAttenuation="100" DurationType="OneShot" DurationMin="4" DurationMax="4">
+				<Event Id="3322069076" Name="doorTentacleLoom" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.0053263" DurationMax="2.0053263">
 					<MediaRefs>
 						<MediaRef Id="293374694"/>
 					</MediaRefs>
@@ -476,7 +476,6 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="152105657" Name="titleScreen"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3050945240" Name="New_Event" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1843531235" Name="playButton" DurationType="OneShot" DurationMin="2.1418843" DurationMax="2.1418843">
 					<MediaRefs>
 						<MediaRef Id="1049733785"/>
@@ -637,5 +636,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{84F240A5-768B-0971-9AA4-BED2F08C36F4}</FileHash>
+	<FileHash>{A3411C74-06B3-6575-FA5E-3D6171CC1359}</FileHash>
 </SoundBanksInfo>
