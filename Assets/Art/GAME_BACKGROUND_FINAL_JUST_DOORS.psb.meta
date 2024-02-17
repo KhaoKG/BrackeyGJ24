@@ -1,0 +1,1047 @@
+fileFormatVersion: 2
+guid: 107b8dd990ea0ff43828a131dae4c8ee
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: door open Left F2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 214
+      height: 512
+    spriteID: 47ee2104142187b4bb1cc3a76bb069e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 608, y: 1446}
+  - name: Door Open Left F1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 1418
+      width: 241
+      height: 425
+    spriteID: 76f03ea37fbe437469cc5ef1573cb3b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 1418}
+    spritePosition: {x: 601, y: 1514}
+  - name: Door Open Left Empty
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 1113
+      width: 133
+      height: 467
+    spriteID: f687acd77afd3a848a875c42f1935e87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 1113}
+    spritePosition: {x: 599, y: 1514}
+  - name: door closed left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1044
+      width: 133
+      height: 467
+    spriteID: 94f05d07bbbf9a24ba977bf91a4d53da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1044}
+    spritePosition: {x: 599, y: 1514}
+  - name: door open right F2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 524
+      width: 214
+      height: 512
+    spriteID: 92c67280dc195b74ab85aafd98570380
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 524}
+    spritePosition: {x: 3019, y: 1446}
+  - name: door open right F1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 4
+      width: 241
+      height: 425
+    spriteID: dd99df1cba8a486479655730758b4dc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 4}
+    spritePosition: {x: 2999, y: 1514}
+  - name: door open right Empty
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1519
+      width: 133
+      height: 467
+    spriteID: 220bb6837d551164ba3a70674745847c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1519}
+    spritePosition: {x: 3109, y: 1514}
+  - name: door closed right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 791
+      y: 4
+      width: 133
+      height: 467
+    spriteID: 6bc86e4f67dfb1943a876b058831a201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 791, y: 4}
+    spritePosition: {x: 3109, y: 1514}
+  - name: door open bot F2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 1588
+      width: 70
+      height: 297
+    spriteID: 9bd6dde3ae1a56b4fae83a69cfadf4ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 1588}
+    spritePosition: {x: 1829, y: 772}
+  - name: door open bot F1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 823
+      width: 226
+      height: 282
+    spriteID: 1b172726eab9e014581f6de7476c1e45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 823}
+    spritePosition: {x: 1828, y: 776}
+  - name: door open bot empty
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 712
+      width: 308
+      height: 345
+    spriteID: 5663b42c180aeb24abf9db8507499554
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 712}
+    spritePosition: {x: 1791, y: 778}
+  - name: door closed bot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 4
+      width: 308
+      height: 346
+    spriteID: 94e1f46f4e1da8c4a9a7bfcf20bdc38e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 4}
+    spritePosition: {x: 1791, y: 776}
+  - name: door open F2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 1588
+      width: 118
+      height: 396
+    spriteID: 41ced916e3ae8d243995ae7f44247b7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 1588}
+    spritePosition: {x: 2058, y: 1929}
+  - name: door open F1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 437
+      width: 226
+      height: 378
+    spriteID: c2fdb02add5571f46ad4f7cd29d1c609
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 437}
+    spritePosition: {x: 1832, y: 1969}
+  - name: door open empty
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 1065
+      width: 308
+      height: 345
+    spriteID: 74f9e644188c7c043ae36de40f19ccdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 1065}
+    spritePosition: {x: 1791, y: 2026}
+  - name: door closed top
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 358
+      width: 308
+      height: 346
+    spriteID: d45fe10789142534aad30ce4a2b46755
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 358}
+    spritePosition: {x: 1791, y: 2025}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Door Side left
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: a087b66d9e96c2447be46c7c93b5dc4a
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: door open Left F2
+    spriteName: door open Left F2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 47ee2104142187b4bb1cc3a76bb069e5
+    layerID: 1563326113
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door Open Left F1
+    spriteName: Door Open Left F1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 76f03ea37fbe437469cc5ef1573cb3b3
+    layerID: 105066276
+    mosaicPosition: {x: 226, y: 1418}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door Open Left Empty
+    spriteName: Door Open Left Empty
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f687acd77afd3a848a875c42f1935e87
+    layerID: -454221042
+    mosaicPosition: {x: 542, y: 1113}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door closed left
+    spriteName: door closed left
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 94f05d07bbbf9a24ba977bf91a4d53da
+    layerID: -468220737
+    mosaicPosition: {x: 4, y: 1044}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door Side right
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 799242929181733468de170c1fce6ef7
+    layerID: -1497159703
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: door open right F2
+    spriteName: door open right F2
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 92c67280dc195b74ab85aafd98570380
+    layerID: 1410204476
+    mosaicPosition: {x: 4, y: 524}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door open right F1
+    spriteName: door open right F1
+    isGroup: 0
+    parentIndex: 5
+    spriteID: dd99df1cba8a486479655730758b4dc4
+    layerID: -1318678879
+    mosaicPosition: {x: 542, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door open right Empty
+    spriteName: door open right Empty
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 220bb6837d551164ba3a70674745847c
+    layerID: -608191057
+    mosaicPosition: {x: 4, y: 1519}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door closed right
+    spriteName: door closed right
+    isGroup: 0
+    parentIndex: 5
+    spriteID: 6bc86e4f67dfb1943a876b058831a201
+    layerID: -1472991516
+    mosaicPosition: {x: 791, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door Bot
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 80dba995c59c3ed4099f173ee5b6518f
+    layerID: -304350681
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: door open bot F2
+    spriteName: door open bot F2
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 9bd6dde3ae1a56b4fae83a69cfadf4ba
+    layerID: 383429067
+    mosaicPosition: {x: 668, y: 1588}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door open bot F1
+    spriteName: door open bot F1
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 1b172726eab9e014581f6de7476c1e45
+    layerID: -19855460
+    mosaicPosition: {x: 542, y: 823}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door open bot empty
+    spriteName: door open bot empty
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 5663b42c180aeb24abf9db8507499554
+    layerID: -400734978
+    mosaicPosition: {x: 226, y: 712}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door closed bot
+    spriteName: door closed bot
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 94e1f46f4e1da8c4a9a7bfcf20bdc38e
+    layerID: -1418240871
+    mosaicPosition: {x: 226, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Door Top
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ef4d38ba078469247aa85da721488d4b
+    layerID: 1510300525
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: door open F2
+    spriteName: door open F2
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 41ced916e3ae8d243995ae7f44247b7b
+    layerID: 753474614
+    mosaicPosition: {x: 542, y: 1588}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door open F1
+    spriteName: door open F1
+    isGroup: 0
+    parentIndex: 15
+    spriteID: c2fdb02add5571f46ad4f7cd29d1c609
+    layerID: 1156759141
+    mosaicPosition: {x: 542, y: 437}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door open empty
+    spriteName: door open empty
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 74f9e644188c7c043ae36de40f19ccdc
+    layerID: 1168075187
+    mosaicPosition: {x: 226, y: 1065}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: door closed top
+    spriteName: door closed top
+    isGroup: 0
+    parentIndex: 15
+    spriteID: d45fe10789142534aad30ce4a2b46755
+    layerID: -1418241433
+    mosaicPosition: {x: 226, y: 358}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Front wall
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e8e3ef1acc17c3d49b785bbce9ed1628
+    layerID: -1187020249
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Back and Side Walls
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cdba8534077259f4080fae48f464484a
+    layerID: -2129562018
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Bottom stage
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 05f173abc645ec647b71a5130a16014c
+    layerID: 344346371
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Ball
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 17cf3b099f4b8014f9686bb6114924ec
+    layerID: 405905523
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: space
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 27a512953b6131a47bf9e2e0966721cb
+    layerID: 1144830560
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: EXTRAS
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 71d83226f8caa154d9453a6d32fc219e
+    layerID: -1796183327
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: llogo
+    spriteName: 
+    isGroup: 0
+    parentIndex: 25
+    spriteID: e1caa27172932fd40a01353fb1959ea6
+    layerID: 1420228399
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: door blank
+    spriteName: 
+    isGroup: 0
+    parentIndex: 25
+    spriteID: ba4770452b48e904eb41c51cb41703ac
+    layerID: 2010565788
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: char
+    spriteName: 
+    isGroup: 0
+    parentIndex: 25
+    spriteID: d2388b0eeda09684a967c7550dc0dd39
+    layerID: 681581346
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: shadow
+    spriteName: 
+    isGroup: 0
+    parentIndex: 25
+    spriteID: b077d28bd7f7a184088ca253ddc6e881
+    layerID: -690139442
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Folder 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ec490c4a287371947a3b67babcc0285a
+    layerID: 909244939
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 15 Copy 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: 30c741061d462f740808d040c404da37
+    layerID: 416085945
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 16
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: 805c590b68d4ef94eb06c8d90e567ab9
+    layerID: 292314278
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 15 Copy
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: 1e9c154506b776f4f81d0dc39e6e6745
+    layerID: 1096992296
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 15
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: 4da9262349c2eb44eb631b0e14423ab8
+    layerID: -110970249
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 10 Copy
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: 9ef5b071062bd9c46933c3f8b25cba05
+    layerID: -1164449361
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 10 Copy 2
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: f77ec28444354184680ab1851c133f4b
+    layerID: 1652798177
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: outline' Copy
+    spriteName: 
+    isGroup: 0
+    parentIndex: 30
+    spriteID: c099161b0d2ac5f4da10ffa4540772c0
+    layerID: -7449662
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Folder 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ddaaa694f9c7f3b4e8c22c538a1efd44
+    layerID: -1819638416
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4 Copy 4
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: f861b646ec87a8944b5de24095e761df
+    layerID: 33647636
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4 Copy 2
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 0f03050ea48b05e4f89fabb82aba082b
+    layerID: -1129151778
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 8
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 2639881aad3c637489f65a201f7ab206
+    layerID: -7500609
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4 Copy
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 0c0ca7ccbfbcc8143ae022ffd33e259f
+    layerID: -394523272
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 0c146a88dc9bc1642b05e13856a1aa2f
+    layerID: -7500613
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 6
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 765297ca4a1889d45afbf63cd2e4918a
+    layerID: -7500615
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: ce70164517a06074183aaa948fe31d8e
+    layerID: -7500616
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: 4 Copy 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: bda1bc05e415d594bae5c50b20b8ebe0
+    layerID: -1265657214
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: 4 Copy
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: a9565dc7889d58c4985ae102c7939124
+    layerID: 906510881
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 09876269782358441b7e085b65e5d261
+    layerID: -7500618
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: 271dc9c7b240dc44d918de36559c73d6
+    layerID: -7500619
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4 Copy 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: 38
+    spriteID: e6f26fdadbc2ecf4eb95195f25c32be6
+    layerID: 1599731577
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Paper
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 564a4c44c5e04e94ca93f9b751da0e5d
+    layerID: -1779142660
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
