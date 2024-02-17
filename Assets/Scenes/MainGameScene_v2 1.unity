@@ -1230,7 +1230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2720196278703253205, guid: 3b8a2af3bf98f77418b47de657ec6c95, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MapLimits
       objectReference: {fileID: 0}
     - target: {fileID: 828507847224027856, guid: 3b8a2af3bf98f77418b47de657ec6c95, type: 3}
       propertyPath: m_TagString
@@ -2481,8 +2481,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2864711350983761298}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 45.3, y: -15.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2921,8 +2921,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3120035520286549242}
   - {fileID: 418253896326201217}
+  - {fileID: 3120035520286549242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6732255436674867287
