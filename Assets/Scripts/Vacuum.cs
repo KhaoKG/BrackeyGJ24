@@ -55,6 +55,7 @@ public class Vacuum : MonoBehaviour, IAbility
         attractPoint.transform.rotation = Quaternion.identity;
         StopAllCoroutines();
         door.GetComponent<DoorEventManager>().isUsingAbility = false;
+        door.GetComponent<Animator>().SetBool("doorOpen", false);
     }
 
     public AbilitySO GetAbilitySo() => SO != null ? SO : Resources.Load<AbilitySO>("ScriptableObjects/Vacuum");

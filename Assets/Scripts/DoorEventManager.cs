@@ -17,6 +17,8 @@ public class DoorEventManager : MonoBehaviour
     public static event Action<GameObject> ActivateDoor;
     private GameObject player;
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
