@@ -102,6 +102,8 @@ public class PauseMenu : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(1f / screenFadeEffect.FadeSpeed);
 
+        Time.timeScale = 1;
+
         SceneManager.LoadScene(scene);
     }
 }

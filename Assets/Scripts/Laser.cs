@@ -50,6 +50,10 @@ public class Laser : MonoBehaviour, IAbility
 
     public AbilitySO GetAbilitySo() => SO != null ? SO : Resources.Load<AbilitySO>("ScriptableObjects/Laser");
 
+    public void OnDestroy()
+    {
+        AkSoundEngine.PostEvent("doorLaserStop", this.gameObject);
+    }
     private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
     {
         AkSoundEngine.PostEvent("doorLaserWarn", this.gameObject);

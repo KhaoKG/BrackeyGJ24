@@ -20,6 +20,8 @@ public class RangerEnemy : Enemy {
     [SerializeField]
     bool movingAway = false;
 
+    [SerializeField] int keyDropChance = 50;
+
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning || isAttacking) {
             return;
@@ -103,7 +105,7 @@ public class RangerEnemy : Enemy {
 
     protected override void Die() {
         // drop Key
-        if(Random.Range(0, 20) < 5)
+        if(Random.Range(0, 100) <= keyDropChance)
         {
             Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("keyDropped", this.gameObject);

@@ -7,6 +7,8 @@ public class GruntEnemy : Enemy {
     [SerializeField] GameObject healthPickupPrefab;
     [SerializeField] GameObject keyPickupPrefab;
 
+    [SerializeField] int keyDropChance = 10;
+
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning) {
             return;
@@ -54,8 +56,8 @@ public class GruntEnemy : Enemy {
             AkSoundEngine.PostEvent("healthDropped", this.gameObject);
         }
 
-        // drop health
-        if (Random.Range(0, 10) != 900)
+        // drop key
+        if (Random.Range(0, 100) <= keyDropChance)
         {
             Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("keyDropped", this.gameObject);

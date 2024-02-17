@@ -26,7 +26,11 @@ public class GameStateManager : MonoBehaviour
 
     GameStateSO gameStateData;
 
+    [SerializeField] bool inTutorial = false;
+
     private void Start() {
+        if (inTutorial) return;
+
         // Load game data
         gameStateData = Resources.Load<GameStateSO>("ScriptableObjects/MainGameData");
 
