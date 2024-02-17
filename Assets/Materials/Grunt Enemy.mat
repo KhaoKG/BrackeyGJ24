@@ -7,11 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Materials/Hell Portal Enemy.mat
-  m_Name: Hell Portal Enemy
-=======
   m_Name: Grunt Enemy
->>>>>>> Separating enemy materials and adding shadows to characters:Assets/Materials/Grunt Enemy.mat
   m_Shader: {fileID: -6465566751694194690, guid: 4baddcd127457ba4c9ea6c94a2781f28, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -70,11 +66,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Disintegrate_Speed: -0.5
-<<<<<<< HEAD:Assets/Materials/Hell Portal Enemy.mat
-    - _Disintegrate_Threshold: 0.65
-=======
     - _Disintegrate_Threshold: 0.2
->>>>>>> Separating enemy materials and adding shadows to characters:Assets/Materials/Grunt Enemy.mat
     - _EnableExternalAlpha: 0
     - _QueueControl: 0
     - _QueueOffset: 0
