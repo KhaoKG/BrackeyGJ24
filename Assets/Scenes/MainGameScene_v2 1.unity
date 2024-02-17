@@ -415,11 +415,7 @@ MonoBehaviour:
   isGameOver: 0
   hitStopEffect: {fileID: 793399786}
   waves:
-  - {fileID: 11400000, guid: 6c2f89f58f2932d4d9087a4c6ef9c7ad, type: 2}
-  - {fileID: 11400000, guid: 001d64153709a264493b3ba7240cb360, type: 2}
-  - {fileID: 11400000, guid: 6ac8b0981c92244468e819bca4724015, type: 2}
-  - {fileID: 11400000, guid: 4f7370890ae9b5640a2776adb9133e8b, type: 2}
-  - {fileID: 11400000, guid: 28667a6dd7def184ea404e378afadefe, type: 2}
+  - {fileID: 11400000, guid: a621977825810be478b0522593eb1755, type: 2}
   - {fileID: 11400000, guid: c24d70f897354b04494f6e983b9b8875, type: 2}
 --- !u!4 &367181713
 Transform:
@@ -693,9 +689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilitiesSo: {fileID: 11400000, guid: 0e7170da2a8b0224eab35781dd3bfbf9, type: 2}
   HellPortalPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
-  VacuumPrefab: {fileID: 0}
-  TentaclePrefab: {fileID: 0}
-  LaserPrefab: {fileID: 0}
+  VacuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
+  TentaclePrefab: {fileID: 8753733734401460145, guid: c7829ca931797d049b8b2ef591f2f385, type: 3}
+  LaserPrefab: {fileID: 719089206063104642, guid: b385f0dfb3e8642438afc15aca9fe309, type: 3}
   KeyPrefab: {fileID: 0}
 --- !u!4 &659433758
 Transform:
