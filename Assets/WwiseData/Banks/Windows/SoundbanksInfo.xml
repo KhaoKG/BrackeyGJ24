@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{BE8EA4C5-2A39-46C3-092E-2837E7AE740C}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B3F16FA9-CD98-1B3F-189B-663716DE848D}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -154,7 +154,7 @@
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_1D7406E2.wem</CachePath>
+					<CachePath>SFX/doorOpened_678297B5.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
@@ -338,7 +338,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.73498404" DurationMax="0.80150574">
+				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200569" DurationMax="0.34902447">
 					<MediaRefs>
 						<MediaRef Id="431594120"/>
 					</MediaRefs>
@@ -636,5 +636,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{337E0F9F-175A-0C58-1A2D-FA5FBDE40AC2}</FileHash>
+	<FileHash>{DF048D41-0C91-AB0B-047E-76F73B2311F9}</FileHash>
 </SoundBanksInfo>
