@@ -16,9 +16,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="enemyOne" ID="{97AF7057-9E13-42E4-861E-5DFBDD42305E}" ShortID="297623683"/>
+						<Folder Name="enemySpring" ID="{97AF7057-9E13-42E4-861E-5DFBDD42305E}" ShortID="297623683"/>
 						<Folder Name="enemyTwo" ID="{65D54D6F-E88E-4F0C-9101-FB5B83AD956B}" ShortID="894801000"/>
-						<Folder Name="enemyThree" ID="{61E16F5F-4E78-4FEF-A3DB-79B0F320A3F1}" ShortID="340940455"/>
+						<Folder Name="enemyFace" ID="{61E16F5F-4E78-4FEF-A3DB-79B0F320A3F1}" ShortID="340940455"/>
 						<Sound Name="enemySpawner" ID="{ED12017C-C65A-4D23-84BD-E53BDA1B702C}" ShortID="891997542">
 							<ReferenceList>
 								<Reference Name="Conversion">

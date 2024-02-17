@@ -193,6 +193,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -205,9 +210,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="doorOpened" ID="{48C45F82-CE1D-4496-9C5D-8695376275E4}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0103425294052374"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0342936501331558"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0974375138703949"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0500796160674656"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0653212383488681"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.39954824123391"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>doorOpened.wav</AudioFile>
@@ -596,11 +603,6 @@
 									<ChildrenList>
 										<Sound Name="doorTentacleLooming" ID="{7E05FA21-91D1-4DFD-9C8D-CB0C686B18DD}" ShortID="787223893">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>30</Value>
-													</ValueList>
-												</Property>
 												<Property Name="MakeUpGain" Type="Real64">
 													<ValueList>
 														<Value>4</Value>

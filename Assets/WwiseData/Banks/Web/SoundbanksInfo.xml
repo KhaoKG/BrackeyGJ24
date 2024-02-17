@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B3F16FA9-CD98-1B3F-189B-663716DE848D}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B3C5CB45-F4DF-390C-0950-85C11C1D5678}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -122,7 +122,7 @@
 				</File>
 				<File Id="293374694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleLooming.wav</ShortName>
-					<CachePath>SFX/doorTentacleLooming_F6237DCB.wem</CachePath>
+					<CachePath>SFX/doorTentacleLooming_4DA457CA.wem</CachePath>
 				</File>
 				<File Id="306161651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits3.wav</ShortName>
@@ -154,7 +154,7 @@
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_678297B5.wem</CachePath>
+					<CachePath>SFX/doorOpened_C25A23A6.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
@@ -226,7 +226,7 @@
 				</File>
 				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaserWarn.wav</ShortName>
-					<CachePath>SFX/doorLaserWarn_06B5928D.wem</CachePath>
+					<CachePath>SFX/doorLaserWarn_D0B97D39.wem</CachePath>
 				</File>
 				<File Id="825991925" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-006.wav</ShortName>
@@ -242,7 +242,7 @@
 				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
-					<CachePath>SFX/wind_tornado_with_destruction_01_83D49F36.wem</CachePath>
+					<CachePath>SFX/wind_tornado_with_destruction_01_D19E9AFA.wem</CachePath>
 				</File>
 				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreDown.wav</ShortName>
@@ -270,7 +270,7 @@
 				</File>
 				<File Id="1047713376" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorDemonSpawner.wav</ShortName>
-					<CachePath>SFX/doorDemonSpawner_EEFC446E.wem</CachePath>
+					<CachePath>SFX/doorDemonSpawner_A1D4AC57.wem</CachePath>
 				</File>
 				<File Id="1049733785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
@@ -636,5 +636,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{33CAE8E1-B629-63C6-FBBB-DB06326215F6}</FileHash>
+	<FileHash>{F510A7A4-FC10-F9F5-024B-E9BFEEFBA152}</FileHash>
 </SoundBanksInfo>

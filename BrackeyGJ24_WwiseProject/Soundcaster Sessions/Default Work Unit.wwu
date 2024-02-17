@@ -11,7 +11,7 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
-							<Position X="1" Y="2"/>
+							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="slowDown" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}"/>
@@ -38,6 +38,10 @@
 							<Position X="4" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="titleState" ID="{F59EAD35-1AAA-4F00-897B-01D4AF907B79}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="keyDropped" ID="{029D065F-1D62-4BC6-B943-58BBFACD2C50}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
 							<Position X="4" Y="5"/>
 						</Module>
@@ -46,12 +50,20 @@
 							<Position X="4" Y="6"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="transitionState" ID="{5FD098F7-4D04-463F-8612-50D84124D117}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="playerKeyGain" ID="{29257811-8457-46EA-9FA5-96C8AA5EF688}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
 							<Position X="5" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="playerEatCrayon" ID="{EB758365-0263-44FD-8B71-BC6E63432985}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
 							<Position X="5" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="levelOneState" ID="{2647BE64-F307-4F37-BEC6-310092939551}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}"/>
+							<Position X="6" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
