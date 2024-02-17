@@ -22,6 +22,7 @@ public class KeySelection : MonoBehaviour {
         keys.Add("Vacuum");
         keys.Add("Tentacle");
         keys.Add("Hell Portal");
+        keys.Add("HP Up");
 
         // randomly assign three
         for (int i = 0; i < 3; i++)
@@ -53,6 +54,11 @@ public class KeySelection : MonoBehaviour {
                 transform.GetChild(i).gameObject.GetComponent<Image>().color = new Color(0.47f, 0, 1, 1);
                 transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = "KRAKEN\nOpen the door in front of a very angry Kraken.";
             }
+            else if (chosenKey == "HP Up")
+            {
+                transform.GetChild(i).gameObject.GetComponent<Image>().color = Color.green;
+                transform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>().text = "HP UP\nThis key will just upgrade your HP :)";
+            }
 
 
         }
@@ -61,7 +67,14 @@ public class KeySelection : MonoBehaviour {
     public void KeySelected(string Key) {
 
         // send the key
-        AbilityController.Instance.UnlockAbility(Key);
+        if(Key != "HP Up")
+        {
+            AbilityController.Instance.UnlockAbility(Key);
+        }
+        else
+        {
+            gameStateData.maxHealth += 2;
+        }
 
         // Return to fight next wave
         StartCoroutine(PrepareNextWave());

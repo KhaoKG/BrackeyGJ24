@@ -8,6 +8,8 @@ public class GameStateSO : ScriptableObject
 {
     public int score = 0;
 
+    public int maxHealth = 10;
+
     [Min(1)]
     public int currentWave = 0;
 
@@ -15,7 +17,7 @@ public class GameStateSO : ScriptableObject
 
     public void Reset() {
         score = 0;
-
+        maxHealth = 10;
         currentWave = 0;
     }
 
