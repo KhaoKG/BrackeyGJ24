@@ -9,8 +9,8 @@ public class Player : MonoBehaviour
     [Header("Health")]
     public GameStateSO gameState;
 
-    [SerializeField] int maxHealth;
-    int health;
+    [SerializeField] public int maxHealth;
+    public int health;
     
     [SerializeField]
     Image healthBar;
