@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5403236105926692521}
   - component: {fileID: 9123791102374739975}
+  - component: {fileID: 5446663412043266668}
   m_Layer: 0
   m_Name: Tentacle Ability
   m_TagString: Untagged
@@ -46,3 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityData: {fileID: 11400000, guid: af97636bc4987034ca7f52a6613e39f1, type: 2}
   tentaclePrefab: {fileID: 595301700912393225, guid: 41c380d23bbd35b46826dd403c497e43, type: 3}
+--- !u!114 &5446663412043266668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8753733734401460145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7a26a71b05f3c46a3f67644d87eeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorDamage: 1
