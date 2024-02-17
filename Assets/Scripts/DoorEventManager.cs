@@ -36,7 +36,7 @@ public class DoorEventManager : MonoBehaviour
             // Check if the object is within the viewport
             if (viewportPosition is { x: < 1.2f, y: > -0.2f } and { x: > -0.2f, y: < 1.2f})
             {
-                if (Input.GetKeyDown(KeyCode.K))
+                if (Input.GetMouseButtonDown(1))
                 {
                     if (isUsingAbility) return;
                     ActivateDoor?.Invoke(gameObject);

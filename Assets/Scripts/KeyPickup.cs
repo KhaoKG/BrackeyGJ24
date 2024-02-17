@@ -7,6 +7,8 @@ public class KeyPickup : MonoBehaviour
     SpriteRenderer sr;
     public string keyType;
 
+    [SerializeField] bool inTutorial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,14 @@ public class KeyPickup : MonoBehaviour
 
         if (keyIndex <= 0)
         {
-            Destroy(gameObject);
+            if(!inTutorial)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                keyType = AbilityController.Instance.abilitiesSo.Abilities[0].Name;
+            }
         }
         else if(keyIndex <= 25)
         {
