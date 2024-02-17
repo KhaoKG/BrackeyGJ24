@@ -92,4 +92,38 @@ public class StartMenu : MonoBehaviour
     {
         creditsPanel.SetActive(false);
     }
+
+    public void Tutorial()
+    {
+        StartCoroutine(DoTutorial());
+
+        // Deactivate buttons and title screen
+        foreach (Transform child in transform)
+        {
+            // Avoid deactivating itself
+            if (child != transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    IEnumerator DoTutorial()
+    {
+        // Wait for animation and sound to finish
+        AkSoundEngine.PostEvent("PlayButton", this.gameObject);
+        doorAnimator.SetTrigger("StartGame");
+        yield return new WaitForSeconds(1.5f);
+
+        // zoom camera
+        for (int i = 0; i < 50; i++)
+        {
+            Camera.main.orthographicSize -= 0.1f;
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        // Load Game
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(3);
+    }
 }
