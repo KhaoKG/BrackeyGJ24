@@ -856,6 +856,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1199182942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199182944}
+  - component: {fileID: 1199182943}
+  m_Layer: 0
+  m_Name: AbilityController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1199182943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199182942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249430a2c3f5ac746bd96dae654b21c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilitiesSo: {fileID: 11400000, guid: 0e7170da2a8b0224eab35781dd3bfbf9, type: 2}
+  HellPortalPrefab: {fileID: 1090788724271676748, guid: 0cca89d16718e2b49a67a383bc8eb23f, type: 3}
+  VacuumPrefab: {fileID: 834360364492313296, guid: 7a674dad783f3c24781f4e0f7a127514, type: 3}
+  TentaclePrefab: {fileID: 8753733734401460145, guid: c7829ca931797d049b8b2ef591f2f385, type: 3}
+  LaserPrefab: {fileID: 719089206063104642, guid: b385f0dfb3e8642438afc15aca9fe309, type: 3}
+  KeyPrefab: {fileID: 0}
+  KeyPrefabUi: {fileID: 0}
+--- !u!4 &1199182944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199182942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6580352, y: 1.9807787, z: 0.002036082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343495820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,3 +2055,4 @@ SceneRoots:
   - {fileID: 3120628851668173516}
   - {fileID: 1343495822}
   - {fileID: 1701958924}
+  - {fileID: 1199182944}
