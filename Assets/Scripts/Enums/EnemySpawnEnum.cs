@@ -5,7 +5,7 @@ using UnityEngine;
 public enum EnemySpawnEnum
 {
     Grunt,
-    Ranged,
+    Ranger,
     Tough,
 
     // Random enemy

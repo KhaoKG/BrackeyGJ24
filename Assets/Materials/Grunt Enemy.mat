@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy
+  m_Name: Grunt Enemy
   m_Shader: {fileID: -6465566751694194690, guid: 4baddcd127457ba4c9ea6c94a2781f28, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -66,7 +66,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Disintegrate_Speed: -0.5
-    - _Disintegrate_Threshold: 0.75
+    - _Disintegrate_Threshold: 0.2
     - _EnableExternalAlpha: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -75,6 +75,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4757997723663655445
 MonoBehaviour:

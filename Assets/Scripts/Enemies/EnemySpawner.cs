@@ -18,6 +18,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] WaveSO currentWave;
     [SerializeField] float minSpawnDistance = 2f;
     [SerializeField] EnemyController enemyController;
+    // Adds health/damage to enemies
+    [SerializeField] int waveModifier = 0;
 
     [Header("Player")]
     [SerializeField]
@@ -30,6 +32,7 @@ public class EnemySpawner : MonoBehaviour
     Coroutine spawningCoroutine;
 
     public WaveSO CurrentWave { get => currentWave; set => currentWave = value; }
+    public int WaveModifier { get => waveModifier; set => waveModifier = value; }
 
     void Awake() {
         // Prepares enemies dictionary
@@ -59,8 +62,22 @@ public class EnemySpawner : MonoBehaviour
             foreach (EnemySpawnEnum enemyEnum in spawn.enemies) {
                 Vector3 spawnPosition = DefineSpawnPosition();
 
-                Enemy newEnemy = Instantiate(enemies[enemyEnum], spawnPosition, Quaternion.identity).GetComponent<Enemy>();
+
+                Enemy newEnemy;
+                // Check if random spawn
+                if (enemyEnum == EnemySpawnEnum.Random) {
+                    EnemySpawnEnum curEnemy = (UnityEngine.Random.Range(0,1f) >= 0.5f) ? 
+                        EnemySpawnEnum.Grunt : EnemySpawnEnum.Ranger;
+                    newEnemy = Instantiate(enemies[curEnemy], spawnPosition, Quaternion.identity).GetComponent<Enemy>();
+                }
+                else {
+                    newEnemy = Instantiate(enemies[enemyEnum], spawnPosition, Quaternion.identity).GetComponent<Enemy>();
+                }
                 enemyController.OnSpawnEnemy(newEnemy);
+
+                if (waveModifier > 0) {
+                    newEnemy.EnhanceEnemy(waveModifier*2, waveModifier);
+                }
 
                 // Gives enemies the player to track
                 newEnemy.Player = player;

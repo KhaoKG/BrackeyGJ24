@@ -9,14 +9,14 @@ public class GameStateSO : ScriptableObject
     public int score = 0;
 
     [Min(1)]
-    public int currentWave = 1;
+    public int currentWave = 0;
 
     // TODO Add abilities/keys
 
     public void Reset() {
         score = 0;
 
-        currentWave = 1;
+        currentWave = 0;
     }
 
     private void OnEnable() {
