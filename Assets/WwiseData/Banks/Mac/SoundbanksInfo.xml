@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{50DD435F-3AF6-F681-9921-6E6A9C26F089}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{BE8EA4C5-2A39-46C3-092E-2837E7AE740C}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -226,7 +226,7 @@
 				</File>
 				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaserWarn.wav</ShortName>
-					<CachePath>SFX/doorLaserWarn_BD7EB5BD.wem</CachePath>
+					<CachePath>SFX/doorLaserWarn_06B5928D.wem</CachePath>
 				</File>
 				<File Id="825991925" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-006.wav</ShortName>
@@ -328,7 +328,7 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="2198663230" Name="doorLaserStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="674637734" Name="doorLaserWarn" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.79401183" DurationMax="0.79401183">
+				<Event Id="674637734" Name="doorLaserWarn" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.5720085" DurationMax="1.5720085">
 					<MediaRefs>
 						<MediaRef Id="815177471"/>
 					</MediaRefs>
@@ -636,5 +636,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3CBE4EE2-D087-A3A4-299C-8725CEC70B96}</FileHash>
+	<FileHash>{A9C985AA-EC72-6E2F-08C1-17ABCCD7F02A}</FileHash>
 </SoundBanksInfo>

@@ -382,10 +382,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="doorLaserWarn" ID="{189BC62A-B8F3-40A1-8487-513A5F979951}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0702820128717272"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.178253800488239"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.2"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.20039222703063"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.18060669107856"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>doorLaserWarn.wav</AudioFile>
