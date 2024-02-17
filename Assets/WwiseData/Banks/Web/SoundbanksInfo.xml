@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{5FB897A7-CFB0-4412-5B95-555791C38E8A}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{7C81A89B-BB2C-49BB-57F3-C3D01FC992FC}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -66,7 +66,7 @@
 				</File>
 				<File Id="44412615" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-003.wav</ShortName>
-					<CachePath>SFX/playerHurt-003_A740E966.wem</CachePath>
+					<CachePath>SFX/playerHurt-003_E926E3B7.wem</CachePath>
 				</File>
 				<File Id="51235534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerPickUp.wav</ShortName>
@@ -80,9 +80,13 @@
 					<ShortName>doorClosed-001.wav</ShortName>
 					<CachePath>SFX/doorClosed-001_8E324C96.wem</CachePath>
 				</File>
+				<File Id="135468555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Brackeys Game Jam Feb 2024_Menu Theme V1_17Feb2024.wav</ShortName>
+					<CachePath>SFX/Brackeys Game Jam Feb 2024_Menu Theme V1_17Feb2024_D9B786A0.wem</CachePath>
+				</File>
 				<File Id="145169640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerDie4.wav</ShortName>
-					<CachePath>SFX/playerDie4_CE59304D.wem</CachePath>
+					<CachePath>SFX/playerDie4_883C9197.wem</CachePath>
 				</File>
 				<File Id="165850355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-001.wav</ShortName>
@@ -94,11 +98,11 @@
 				</File>
 				<File Id="172235974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-004.wav</ShortName>
-					<CachePath>SFX/playerHurt-004_7AFE7CD0.wem</CachePath>
+					<CachePath>SFX/playerHurt-004_D876ABDE.wem</CachePath>
 				</File>
 				<File Id="197582343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-005.wav</ShortName>
-					<CachePath>SFX/playerHurt-005_583745E1.wem</CachePath>
+					<CachePath>SFX/playerHurt-005_818C4A45.wem</CachePath>
 				</File>
 				<File Id="202590603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-004.wav</ShortName>
@@ -164,6 +168,10 @@
 					<ShortName>munch4.wav</ShortName>
 					<CachePath>SFX/munch4_8E324C96.wem</CachePath>
 				</File>
+				<File Id="481336322" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024.wav</ShortName>
+					<CachePath>SFX/Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024_D9B786A0.wem</CachePath>
+				</File>
 				<File Id="519084594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJoin.wav</ShortName>
 					<CachePath>SFX/playerJoin_8E324C96.wem</CachePath>
@@ -206,7 +214,7 @@
 				</File>
 				<File Id="751297856" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerDie3.wav</ShortName>
-					<CachePath>SFX/playerDie3_B28A665B.wem</CachePath>
+					<CachePath>SFX/playerDie3_44055464.wem</CachePath>
 				</File>
 				<File Id="757248233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-002.wav</ShortName>
@@ -222,7 +230,7 @@
 				</File>
 				<File Id="825991925" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-006.wav</ShortName>
-					<CachePath>SFX/playerHurt-006_CA79DD86.wem</CachePath>
+					<CachePath>SFX/playerHurt-006_66191CA2.wem</CachePath>
 				</File>
 				<File Id="846321805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-003.wav</ShortName>
@@ -242,7 +250,7 @@
 				</File>
 				<File Id="895624267" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-001.wav</ShortName>
-					<CachePath>SFX/playerHurt-001_2E663C12.wem</CachePath>
+					<CachePath>SFX/playerHurt-001_3AD838A5.wem</CachePath>
 				</File>
 				<File Id="908824382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-004.wav</ShortName>
@@ -254,7 +262,7 @@
 				</File>
 				<File Id="983129434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-002.wav</ShortName>
-					<CachePath>SFX/playerHurt-002_D3D80965.wem</CachePath>
+					<CachePath>SFX/playerHurt-002_E3E3B4CD.wem</CachePath>
 				</File>
 				<File Id="1043833764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-001.wav</ShortName>
@@ -440,7 +448,25 @@
 				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="4091656514" Id="0"/>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="152105657"/>
+							<MediaRefs>
+								<MediaRef Id="135468555"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="4198606512"/>
+							<MediaRefs>
+								<MediaRef Id="481336322"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="2201105581"/>
+							<MediaRefs>
+								<MediaRef Id="135468555"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="2572514751"/>
 							<MediaRefs>
 								<MediaRef Id="548797008"/>
 							</MediaRefs>
@@ -611,5 +637,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{55F38890-159E-DB28-8398-E0AE7C79B8F0}</FileHash>
+	<FileHash>{E1C69990-5B39-AD98-7F71-A38E5D6EC191}</FileHash>
 </SoundBanksInfo>
