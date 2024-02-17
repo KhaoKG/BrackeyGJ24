@@ -8,8 +8,8 @@ public class Player : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField]
-    int maxHealth = 10;
-    int health;
+    public int maxHealth = 10;
+    public int health;
     [SerializeField]
     Image healthBar;
 
