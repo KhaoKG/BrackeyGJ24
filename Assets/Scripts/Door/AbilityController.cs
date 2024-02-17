@@ -174,6 +174,8 @@ public class AbilityController : Singleton<AbilityController>
             ActivateNextAbility(door);
             availableAbilitiesForRound.RemoveAt(0);
 
+            // here maybe
+            door.GetComponent<Animator>().SetBool("doorOpen", true);
         }
     }
 
