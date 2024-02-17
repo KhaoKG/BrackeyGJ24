@@ -48,6 +48,9 @@ public class HitStopEffect : MonoBehaviour {
             endEffectCoroutine = null;
         }
 
+        // Slow down sound effect
+        AkSoundEngine.PostEvent("slowDown", this.gameObject);
+
         zoomingIn = true;
 
         brain.m_UpdateMethod = CinemachineBrain.UpdateMethod.LateUpdate;
@@ -88,5 +91,8 @@ public class HitStopEffect : MonoBehaviour {
 
         zoomingOut = true;
         endEffectCoroutine = null;
+
+        // Sound effect
+        AkSoundEngine.PostEvent("speedUp", this.gameObject);
     }
 }
