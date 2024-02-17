@@ -99,11 +99,14 @@ public class HellPortalEnemy : Enemy
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Vector2 knockbackDirection = collision.transform.position - transform.position;
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damageToEnemy, knockbackDirection);
+        }
+        else
+        {
+            Debug.Log($"COLLIDED WITH {collision.transform.name}");
         }
     }
 }

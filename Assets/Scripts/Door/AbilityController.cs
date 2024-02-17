@@ -43,9 +43,8 @@ public class AbilityController : Singleton<AbilityController>
 
     }
     #region Activate abilities
-    public void ActivateNextAbility(GameObject door)
-    {
-        var nextAbility = availableAbilitiesForRound.First();
+    public void ActivateNextAbility(GameObject door, IAbility nextAbility)
+    { 
         Debug.Log(nextAbility.GetAbilitySo().Name);
         var abilityObj = Instantiate(nextAbility.GetAbilitySo().AbilityPrefab, door.transform.position, Quaternion.identity);
         abilityObj.GetComponent<IAbility>().Activate(door);
@@ -166,17 +165,13 @@ public class AbilityController : Singleton<AbilityController>
         abilitiesSo.Abilities.ForEach(ability => AddAbilityToListFromName(ability.name, typesOfAbilitesUnlocked));
     }
 
-    public void UseAbility(GameObject door)
+    public void UseAbility(GameObject door, IAbility ability)
     {
-        if (availableAbilitiesForRound.Any())
-        {
-            Debug.Log("Activate");
-            ActivateNextAbility(door);
-            availableAbilitiesForRound.RemoveAt(0);
+        Debug.Log("Activate");
+        ActivateNextAbility(door, ability);
 
-            // here maybe
-            door.GetComponent<Animator>().SetBool("doorOpen", true);
-        }
+        // here maybe
+        door.GetComponent<Animator>().SetBool("doorOpen", true);
     }
 
     void AddAbilityToListFromName(string abilityName, List<IAbility> abilities)
@@ -211,11 +206,12 @@ public class AbilityController : Singleton<AbilityController>
             keyObject.SetActive(true);
             keyObject.GetComponent<SpriteRenderer>().sprite = nextAbility.GetAbilitySo().KeyIcon;
             keyObject.GetComponent<SpriteRenderer>().color = nextAbility.GetAbilitySo().KeyColor;
-            StartCoroutine(MoveSpriteToDoor(keyObject, door.transform.position, door, 2f));
+            availableAbilitiesForRound.RemoveAt(0);
+            StartCoroutine(MoveSpriteToDoor(keyObject, door.transform.position, door, 2f, nextAbility));
 
         }
     }
-    IEnumerator MoveSpriteToDoor(GameObject sprite, Vector3 targetPosition, GameObject door, float duration)
+    IEnumerator MoveSpriteToDoor(GameObject sprite, Vector3 targetPosition, GameObject door, float duration, IAbility ability)
     {
         Debug.Log("Moving");
         float time = 0;
@@ -230,8 +226,8 @@ public class AbilityController : Singleton<AbilityController>
 
         sprite.transform.position = targetPosition;
 
-        Destroy(sprite, 2f); // Adjust delay as needed
-        UseAbility(door);
+        Destroy(sprite, 0.3f); // Adjust delay as needed
+        UseAbility(door, ability);
 
     }
 

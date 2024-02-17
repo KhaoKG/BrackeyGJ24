@@ -62,6 +62,7 @@ public class GameStateManager : MonoBehaviour
 
     IEnumerator PrepareKeySelect() {
         player.DisableInput();
+        player.GetComponent<Collider2D>().enabled = false;
 
         // Short pause
         yield return new WaitForSeconds(1.5f);
@@ -70,6 +71,8 @@ public class GameStateManager : MonoBehaviour
         screenFadeEffect.TargetAlpha = 1f;
 
         yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
+
+        player.GetComponent<Collider2D>().enabled = true;
 
         ShowKeySelect();
     }
