@@ -39,6 +39,7 @@ public class Tentacle : MonoBehaviour
 
     public void Disappear() {
         transform.parent.GetComponent<ParticleSystem>().Stop();
+        spriteRenderer.color = Color.clear;
     }
 
     private void OnDestroy() {
