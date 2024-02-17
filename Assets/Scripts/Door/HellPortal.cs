@@ -51,6 +51,7 @@ public class HellPortal : MonoBehaviour, IAbility
         }
 
         door.GetComponent<DoorEventManager>().isUsingAbility = false;
+        door.GetComponent<Animator>().SetBool("doorOpen", false);
     }
 
     private IEnumerator UpdateLineRenderer()

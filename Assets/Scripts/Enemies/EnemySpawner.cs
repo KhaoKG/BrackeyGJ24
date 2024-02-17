@@ -25,10 +25,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     Player player;
 
-    [Header("Map")]
-    [SerializeField]
-    GameObject limits;
-
     Coroutine spawningCoroutine;
 
     public WaveSO CurrentWave { get => currentWave; set => currentWave = value; }

@@ -17,6 +17,8 @@ public class DoorEventManager : MonoBehaviour
     public static event Action<GameObject> ActivateDoor;
     private GameObject player;
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +32,8 @@ public class DoorEventManager : MonoBehaviour
     {
         if (mainCamera != null)
         {
-            // Convert the object's position to viewport space using the main camera
-            Vector3 viewportPosition = mainCamera.WorldToViewportPoint(transform.position);
-
             // Check if the object is within the viewport
-            if (viewportPosition is { x: < 1.2f, y: > -0.2f } and { x: > -0.2f, y: < 1.2f})
+            if (Vector2.Distance(transform.position, player.transform.position) < 6f)
             {
                 if (Input.GetMouseButtonDown(1))
                 {
