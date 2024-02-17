@@ -6,6 +6,9 @@ public class FadeBottomDoor : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField]
+    float transparentAlpha = 0.4f;
+
     void Start()
     {
         // Get the SpriteRenderer component attached to this wall
@@ -17,7 +20,7 @@ public class FadeBottomDoor : MonoBehaviour
         if (collision.CompareTag("Player")) {
             // Lower the alpha value to, for example, 0.5 to make the wall semi-transparent
             Color color = spriteRenderer.color;
-            color.a = 0.5f;
+            color.a = transparentAlpha;
             spriteRenderer.color = color;
         }
     }

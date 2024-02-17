@@ -5,22 +5,11 @@ using UnityEngine;
 public class Laser : MonoBehaviour, IAbility
 {
     [SerializeField] AbilitySO SO;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] GameObject warning;
 
     public void Activate(GameObject door)
     {
-        transform.position = new Vector3(0, 0, 0);
+        transform.position = door.transform.position;
 
         if(door.GetComponent<DoorEventManager>().DoorId == 1) // left
         {
@@ -29,6 +18,7 @@ public class Laser : MonoBehaviour, IAbility
         else if (door.GetComponent<DoorEventManager>().DoorId == 2) // top
         {
             transform.rotation = Quaternion.Euler(0, 0, 90);
+            warning.transform.localRotation = Quaternion.Euler(0, 0, -90);
         }
         else if (door.GetComponent<DoorEventManager>().DoorId == 3) // right
         {
@@ -37,6 +27,7 @@ public class Laser : MonoBehaviour, IAbility
         else if (door.GetComponent<DoorEventManager>().DoorId == 0) // bottom
         {
             transform.rotation = Quaternion.Euler(0, 0, 270);
+            warning.transform.localRotation = Quaternion.Euler(0, 0, -270);
         }
         StartCoroutine(ActivateAndDeactivateCoroutine(door));
     }
