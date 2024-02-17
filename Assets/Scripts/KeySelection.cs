@@ -28,7 +28,7 @@ public class KeySelection : MonoBehaviour {
         for (int i = 0; i < 3; i++)
         {
             // get a key
-            string chosenKey = keys[Random.Range(0, keys.Count+1)];
+            string chosenKey = keys[Random.Range(0, keys.Count)];
             keys.Remove(chosenKey);
             transform.GetChild(i).GetComponent<OnHoverScale>().chosenKey = chosenKey;
 
@@ -67,13 +67,13 @@ public class KeySelection : MonoBehaviour {
     public void KeySelected(string Key) {
 
         // send the key
-        if(Key != "HP UP")
+        if(Key != "HP Up")
         {
             AbilityController.Instance.UnlockAbility(Key);
         }
         else
         {
-            gameStateData.maxHealth += 10;
+            gameStateData.maxHealth += 2;
         }
 
         // Return to fight next wave

@@ -17,7 +17,7 @@ public class GameStateSO : ScriptableObject
 
     public void Reset() {
         score = 0;
-
+        maxHealth = 10;
         currentWave = 0;
     }
 
