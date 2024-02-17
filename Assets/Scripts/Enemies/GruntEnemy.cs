@@ -68,9 +68,8 @@ public class GruntEnemy : Enemy {
 
     public void OnTriggerEnter2D(Collider2D collision)
     { 
-        if (collision.gameObject.tag == "Door Ability")
+        if (collision.CompareTag("Door Ability"))
         {
-            Debug.Log(collision.gameObject.name);
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);

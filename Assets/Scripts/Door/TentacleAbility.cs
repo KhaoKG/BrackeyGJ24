@@ -29,7 +29,6 @@ public class TentacleAbility : MonoBehaviour, IAbility {
 
     public void Deactivate(GameObject door) {
         // Tentacle already dies by itself after its animation and particles
-        StopAllCoroutines();
         door.GetComponent<DoorEventManager>().isUsingAbility = false;
         door.GetComponent<Animator>().SetBool("doorOpen", false);
     }
