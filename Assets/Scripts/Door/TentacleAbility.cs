@@ -10,17 +10,22 @@ public class TentacleAbility : MonoBehaviour, IAbility {
     GameObject tentaclePrefab;
     GameObject spawnedTentacle;
 
+    GameObject door;
+
+    public GameObject Door { get => door; set => door = value; }
+
     public void Activate(GameObject door) {
         // Spawn tentacle
         AkSoundEngine.PostEvent("doorTentacleLoom", this.gameObject);
-        spawnedTentacle = Instantiate(tentaclePrefab, door.transform);
-        spawnedTentacle.transform.localPosition = Vector3.zero;
+        spawnedTentacle = Instantiate(tentaclePrefab, door.transform.position, Quaternion.identity);
 
-        spawnedTentacle.GetComponentInChildren<Tentacle>().RotateAccordingToDoor(door.GetComponent<DoorEventManager>().DoorId);
-        StartCoroutine(ActivateAndDeactivateCoroutine(door));
+        Tentacle tentacleScript = spawnedTentacle.GetComponentInChildren<Tentacle>();
+        tentacleScript.Ability = this;
+        tentacleScript.RotateAccordingToDoor(door.GetComponent<DoorEventManager>().DoorId);
+
+        // Keep track of its door
+        this.door = door;
     }
-
-
 
     public void Deactivate(GameObject door) {
         // Tentacle already dies by itself after its animation and particles
@@ -29,11 +34,6 @@ public class TentacleAbility : MonoBehaviour, IAbility {
         door.GetComponent<Animator>().SetBool("doorOpen", false);
     }
 
-    private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
-    {
-        yield return new WaitForSeconds(abilityData.ActiveTime);
-        Deactivate(door);
-    }
 
     public AbilitySO GetAbilitySo() => abilityData != null ? abilityData : Resources.Load<AbilitySO>("ScriptableObjects/Tentacle");
 }
