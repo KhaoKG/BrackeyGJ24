@@ -28,7 +28,14 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="placeHold" ID="{41633A0E-9F7D-46D7-A0D1-2EB8AFE27B00}" ShortID="551724496">
+						<MusicPlaylistContainer Name="musicLevel" ID="{41633A0E-9F7D-46D7-A0D1-2EB8AFE27B00}" ShortID="551724496">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -43,13 +50,13 @@
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{D0CD11D0-ECDE-4D10-93B4-21F0AA1F500C}" ShortID="522074888">
+												<MusicPlaylistItem Name="" ID="{4AC9E7A0-10FB-4313-9FC9-AB54E65D0EFF}" ShortID="775987873">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="placeHolderLevelMusic" ID="{91CBF4B5-830C-4DCF-911A-EC1F3248FEB1}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+															<ObjectRef Name="Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024" ID="{EA4A2C69-3EAB-4017-9139-42F013F652F3}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -74,32 +81,27 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="placeHolderLevelMusic" ID="{91CBF4B5-830C-4DCF-911A-EC1F3248FEB1}" ShortID="302345954">
+								<MusicSegment Name="Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024" ID="{EA4A2C69-3EAB-4017-9139-42F013F652F3}" ShortID="486233855">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="109375.75"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
+										<Property Name="EndPosition" Type="Real64" Value="109333.395833333"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Music" ID="{B63A9CFE-CBB1-4C2D-BACC-9130CC71102C}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="placeHolderLevelMusic" ID="{FBE29454-6FA5-4164-9A65-45DB6BD54C66}" ShortID="903558775">
+										<MusicTrack Name="Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024" ID="{CDB7637C-7A09-4191-9497-CC63C07AF73A}" ShortID="335065702">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{6FA77982-AAEA-4967-B0EA-853961D0DF75}">
+														<MusicTransition Name="Root" ID="{BD4EBBD6-8B1C-4EF7-AB09-2BEBCA7937B9}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -109,11 +111,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="placeHolderLevelMusic" ID="{DD0BF789-1A58-4C4E-841A-15C5F460525C}">
+												<AudioFileSource Name="Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024" ID="{C0EFEEEC-666C-4D46-A412-CC87CB767F10}">
 													<Language>SFX</Language>
-													<AudioFile>placeHolderLevelMusic.wav</AudioFile>
+													<AudioFile>Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="863263989"/>
+														<MediaID ID="548797008"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -121,18 +123,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{53FE27E6-BAF4-417C-9142-446EEA97EC54}">
+															<MusicTrackSequence Name="" ID="{EB38BAB9-AF22-493C-92ED-A3B4637A37E3}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="placeHolderLevelMusic" ID="{301E43C6-15DE-468E-8F48-A4AB63514CCA}">
+																				<MusicClip Name="Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024" ID="{110515F5-36E2-4A9C-AD6C-651D28639BAE}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="109375.75"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="109333.395833333"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="placeHolderLevelMusic" ID="{DD0BF789-1A58-4C4E-841A-15C5F460525C}"/>
+																					<AudioSourceRef Name="Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024" ID="{C0EFEEEC-666C-4D46-A412-CC87CB767F10}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -149,15 +151,19 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{5EF063D1-E7B9-4793-A966-4F48662A72DF}"/>
+													<MusicCue Name="Entry Cue" ID="{6677C3CC-A2E3-420D-A67E-5C5072F3BD53}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="553.120046374368"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{327FC8B5-CB64-43ED-8CDE-BC8D526FC136}">
+													<MusicCue Name="Exit Cue" ID="{EED05998-2558-4BF4-8560-988D014BA8E1}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="109375.75"/>
+															<Property Name="TimeMs" Type="Real64" Value="108104.240174724"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -180,7 +186,7 @@
 									<MultiSwitchEntry Name="" ID="{14E65E8E-6A95-4A76-9588-2DC395A23A1C}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="placeHold" ID="{41633A0E-9F7D-46D7-A0D1-2EB8AFE27B00}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+												<ObjectRef Name="musicLevel" ID="{41633A0E-9F7D-46D7-A0D1-2EB8AFE27B00}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>

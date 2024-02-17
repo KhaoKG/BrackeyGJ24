@@ -16,16 +16,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="playerHurt" ID="{6A1CABE6-D9B9-4EA2-8565-F81168EA5C7E}"/>
-						<Event Name="playerDie" ID="{380870F1-27A9-4888-A825-BAD75915EFFC}">
+						<Event Name="playerHurt" ID="{6A1CABE6-D9B9-4EA2-8565-F81168EA5C7E}">
 							<ChildrenList>
-								<Action Name="" ID="{52DCA55C-4C7E-4EE2-9E59-4845BBB051E4}" ShortID="846446235">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
+								<Action Name="" ID="{0BAB1A72-C547-4BD7-AB93-E057EC6267CF}" ShortID="256551350">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="World" ID="{0152C4D7-57DB-4702-8098-F455CFF64FCC}" WorkUnitID="{C2FC293E-ECDE-4DA1-9AFB-32BD77150DDF}"/>
+											<ObjectRef Name="playerHurt" ID="{715D6E2F-0719-4B6B-9B17-19B62421404F}" WorkUnitID="{21236B61-3558-4BDC-9517-FE9FC1575DE7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerDie" ID="{380870F1-27A9-4888-A825-BAD75915EFFC}">
+							<ChildrenList>
+								<Action Name="" ID="{CCFCF98B-FBA2-4F6D-9828-A4507883A731}" ShortID="901988665">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<EventActionException Name="" ID="{F0B0FAEF-2982-4EC1-BB43-AF930BA77E6B}">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+												</Reference>
+											</ReferenceList>
+										</EventActionException>
+									</ChildrenList>
+								</Action>
+								<Action Name="" ID="{84EFDA69-9139-471D-B07C-E1711EF8E094}" ShortID="792439449">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerDie" ID="{8026858A-ACD3-495B-91E6-95DF2F48A507}" WorkUnitID="{21236B61-3558-4BDC-9517-FE9FC1575DE7}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

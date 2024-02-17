@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F17622FD-61AF-4709-0F9D-A7F95E522853}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{5FB897A7-CFB0-4412-5B95-555791C38E8A}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -64,6 +64,10 @@
 					<ShortName>munch2.wav</ShortName>
 					<CachePath>SFX/munch2_8E324C96.wem</CachePath>
 				</File>
+				<File Id="44412615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt-003.wav</ShortName>
+					<CachePath>SFX/playerHurt-003_A740E966.wem</CachePath>
+				</File>
 				<File Id="51235534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerPickUp.wav</ShortName>
 					<CachePath>SFX/playerPickUp_7565C99A.wem</CachePath>
@@ -76,6 +80,10 @@
 					<ShortName>doorClosed-001.wav</ShortName>
 					<CachePath>SFX/doorClosed-001_8E324C96.wem</CachePath>
 				</File>
+				<File Id="145169640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerDie4.wav</ShortName>
+					<CachePath>SFX/playerDie4_CE59304D.wem</CachePath>
+				</File>
 				<File Id="165850355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-001.wav</ShortName>
 					<CachePath>SFX/crayonDrops-001_420D60E7.wem</CachePath>
@@ -83,6 +91,14 @@
 				<File Id="171609622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits.wav</ShortName>
 					<CachePath>SFX/attackHits_909DBA61.wem</CachePath>
+				</File>
+				<File Id="172235974" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt-004.wav</ShortName>
+					<CachePath>SFX/playerHurt-004_7AFE7CD0.wem</CachePath>
+				</File>
+				<File Id="197582343" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt-005.wav</ShortName>
+					<CachePath>SFX/playerHurt-005_583745E1.wem</CachePath>
 				</File>
 				<File Id="202590603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-004.wav</ShortName>
@@ -156,6 +172,10 @@
 					<ShortName>crayonDrops-004.wav</ShortName>
 					<CachePath>SFX/crayonDrops-004_1B207E5C.wem</CachePath>
 				</File>
+				<File Id="548797008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024.wav</ShortName>
+					<CachePath>SFX/Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024_D9B786A0.wem</CachePath>
+				</File>
 				<File Id="549912924" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-001.wav</ShortName>
 					<CachePath>SFX/attackWhooshes-001_8FF172EA.wem</CachePath>
@@ -184,6 +204,10 @@
 					<ShortName>munch1.wav</ShortName>
 					<CachePath>SFX/munch1_8E324C96.wem</CachePath>
 				</File>
+				<File Id="751297856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerDie3.wav</ShortName>
+					<CachePath>SFX/playerDie3_B28A665B.wem</CachePath>
+				</File>
 				<File Id="757248233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-002.wav</ShortName>
 					<CachePath>SFX/keyUsed-002_E6B06B8D.wem</CachePath>
@@ -196,6 +220,10 @@
 					<ShortName>doorLaserWarn.wav</ShortName>
 					<CachePath>SFX/doorLaserWarn_69EE38E6.wem</CachePath>
 				</File>
+				<File Id="825991925" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt-006.wav</ShortName>
+					<CachePath>SFX/playerHurt-006_CA79DD86.wem</CachePath>
+				</File>
 				<File Id="846321805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-003.wav</ShortName>
 					<CachePath>SFX/keyUsed-003_322A63B4.wem</CachePath>
@@ -203,10 +231,6 @@
 				<File Id="857493264" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-002.wav</ShortName>
 					<CachePath>SFX/crayonDrops-002_2A753A11.wem</CachePath>
-				</File>
-				<File Id="863263989" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>placeHolderLevelMusic.wav</ShortName>
-					<CachePath>SFX/placeHolderLevelMusic_D9B786A0.wem</CachePath>
 				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
@@ -216,6 +240,10 @@
 					<ShortName>scoreDown.wav</ShortName>
 					<CachePath>SFX/scoreDown_8E324C96.wem</CachePath>
 				</File>
+				<File Id="895624267" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt-001.wav</ShortName>
+					<CachePath>SFX/playerHurt-001_2E663C12.wem</CachePath>
+				</File>
 				<File Id="908824382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-004.wav</ShortName>
 					<CachePath>SFX/attackWhooshes-004_D640A08F.wem</CachePath>
@@ -223,6 +251,10 @@
 				<File Id="953208197" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>menuBack.wav</ShortName>
 					<CachePath>SFX/menuBack_19175BFB.wem</CachePath>
+				</File>
+				<File Id="983129434" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt-002.wav</ShortName>
+					<CachePath>SFX/playerHurt-002_D3D80965.wem</CachePath>
 				</File>
 				<File Id="1043833764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-001.wav</ShortName>
@@ -410,7 +442,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="0"/>
 							<MediaRefs>
-								<MediaRef Id="863263989"/>
+								<MediaRef Id="548797008"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -424,7 +456,17 @@
 						<MediaRef Id="1049733785"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3966601280" Name="playerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3966601280" Name="playerDie" DurationType="OneShot" DurationMin="4.201741" DurationMax="4.4515896">
+					<MediaRefs>
+						<MediaRef Id="145169640"/>
+						<MediaRef Id="751297856"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3400151318" Name="playerEatCrayon" DurationType="OneShot" DurationMin="0.95760334" DurationMax="1.0442737">
 					<MediaRefs>
 						<MediaRef Id="35617866"/>
@@ -450,7 +492,21 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3537581393" Name="playerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3537581393" Name="playerHurt" DurationType="OneShot" DurationMin="0.21862702" DurationMax="0.33099398">
+					<MediaRefs>
+						<MediaRef Id="44412615"/>
+						<MediaRef Id="172235974"/>
+						<MediaRef Id="197582343"/>
+						<MediaRef Id="825991925"/>
+						<MediaRef Id="895624267"/>
+						<MediaRef Id="983129434"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="904027786" Name="playerKeyGain" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200789" DurationMax="0.4729472">
 					<MediaRefs>
 						<MediaRef Id="314971826"/>
@@ -555,5 +611,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1C7A567A-4AD8-12D6-9250-90CC462655EA}</FileHash>
+	<FileHash>{FAAB7B4C-DC87-D2EE-CBA2-757491521EDB}</FileHash>
 </SoundBanksInfo>
