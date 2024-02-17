@@ -224,13 +224,18 @@ public class AbilityController : Singleton<AbilityController>
         while (time < duration)
         {
             sprite.transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
-            time += Time.deltaTime;
+            time += Time.deltaTime * 4;
             yield return null;
         }
 
         sprite.transform.position = targetPosition;
 
-        Destroy(sprite, 2f); // Adjust delay as needed
+        AkSoundEngine.PostEvent("playerKeyUsed", gameObject);
+        Destroy(sprite, 0.5f); // Adjust delay as needed
+
+        // delay door being opened
+        yield return new WaitForSeconds(2f);
+
         UseAbility(door);
 
     }

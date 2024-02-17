@@ -207,6 +207,7 @@ MonoBehaviour:
   projectileFiringDuration: 1
   maxAttackingDistance: 25
   movingAway: 0
+  keyDropChance: 50
 --- !u!95 &8687698369280019233
 Animator:
   serializedVersion: 5

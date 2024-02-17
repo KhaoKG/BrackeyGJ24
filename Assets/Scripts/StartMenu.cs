@@ -38,6 +38,7 @@ public class StartMenu : MonoBehaviour
     // Adjust build index as needed
     public void PlayGame()
     {
+        AkSoundEngine.PostEvent("levelOneState", this.gameObject);
         StartCoroutine(DoPlayGame());
 
         // Deactivate buttons and title screen
@@ -52,7 +53,8 @@ public class StartMenu : MonoBehaviour
     IEnumerator DoPlayGame()
     {
         // Wait for animation and sound to finish
-        AkSoundEngine.PostEvent("PlayButton", this.gameObject);
+        //AkSoundEngine.PostEvent("PlayButton", this.gameObject);
+        AkSoundEngine.PostEvent("menuForward", this.gameObject);
         //doorAnimator.SetTrigger("StartGame");
         yield return new WaitForSeconds(1.5f);
 
@@ -95,6 +97,7 @@ public class StartMenu : MonoBehaviour
 
     public void Tutorial()
     {
+        AkSoundEngine.PostEvent("transitionState", this.gameObject);
         StartCoroutine(DoTutorial());
 
         // Deactivate buttons and title screen
@@ -111,7 +114,8 @@ public class StartMenu : MonoBehaviour
     IEnumerator DoTutorial()
     {
         // Wait for animation and sound to finish
-        AkSoundEngine.PostEvent("PlayButton", this.gameObject);
+        //AkSoundEngine.PostEvent("PlayButton", this.gameObject);
+        AkSoundEngine.PostEvent("menuForward", this.gameObject);
         //doorAnimator.SetTrigger("StartGame");
         yield return new WaitForSeconds(1.5f);
 
