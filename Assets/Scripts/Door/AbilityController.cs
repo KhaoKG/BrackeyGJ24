@@ -111,7 +111,7 @@ public class AbilityController : Singleton<AbilityController>
     public void AddAbilityForRound(string abName)
     {
         AddAbilityToListFromName(abName, availableAbilitiesForRound);
-        Debug.Log($"Invoking {availableAbilitiesForRound.Count}");
+        Debug.Log($"Added new ability {abName}, now we have {availableAbilitiesForRound.Count}");
         InstantiateAbilitiesUi();
     }
     [ContextMenu("Add hell portal")]
@@ -155,6 +155,7 @@ public class AbilityController : Singleton<AbilityController>
     /// </summary>
     public void UpdateAbilitiesForRound()
     {
+        Debug.Log("CLEAR ABILITIES");
         availableAbilitiesForRound.Clear();
     }
 

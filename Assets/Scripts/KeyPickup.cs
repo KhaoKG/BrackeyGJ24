@@ -31,17 +31,17 @@ public class KeyPickup : MonoBehaviour
                 keyType = AbilityController.Instance.abilitiesSo.Abilities[0].Name;
             }
         }
-        else if(keyIndex <= 25)
+        else if(keyIndex is > 0 and <= 25)
         {
             sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[0].GetAbilitySo().KeyColor;
             keyType = AbilityController.Instance.typesOfAbilitesUnlocked[0].GetAbilitySo().Name;
         }
-        else if(keyIndex <= 50)
+        else if(keyIndex is > 25 and <= 50)
         {
             sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[1].GetAbilitySo().KeyColor;
             keyType = AbilityController.Instance.typesOfAbilitesUnlocked[1].GetAbilitySo().Name;
         }
-        else if(keyIndex <= 75)
+        else if(keyIndex is 50 and <= 75)
         {
             sr.color = AbilityController.Instance.typesOfAbilitesUnlocked[2].GetAbilitySo().KeyColor;
             keyType = AbilityController.Instance.typesOfAbilitesUnlocked[2].GetAbilitySo().Name;
