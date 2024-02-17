@@ -60,6 +60,11 @@ public class Vacuum : MonoBehaviour, IAbility
 
     public AbilitySO GetAbilitySo() => SO != null ? SO : Resources.Load<AbilitySO>("ScriptableObjects/Vacuum");
 
+    public void OnDestroy()
+    {
+        AkSoundEngine.PostEvent("doorVacuumStop", this.gameObject);
+    }
+
     private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
     {
         yield return new WaitForSeconds(SO.ActiveTime);
