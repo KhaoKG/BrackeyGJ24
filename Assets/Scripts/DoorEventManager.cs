@@ -36,7 +36,7 @@ public class DoorEventManager : MonoBehaviour
             Vector3 viewportPosition = mainCamera.WorldToViewportPoint(transform.position);
 
             // Check if the object is within the viewport
-            if (viewportPosition is { x: < 1.2f, y: > -0.2f } and { x: > -0.2f, y: < 1.2f})
+            if (viewportPosition is { x: < 0.9f, y: > -0.1f } and { x: > -0.1f, y: < 0.9f})
             {
                 if (Input.GetMouseButtonDown(1))
                 {
