@@ -61,6 +61,80 @@
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
+				<Conversion Name="Music Conversion" ID="{07CCF900-D233-4682-9B69-64EFAB4D244F}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Web">4</Value>
+								<Value Platform="Mac">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="Linux">
+							<ConversionPlugin Name="" ID="{E6F7FAF8-5A63-40F1-8AC3-D25C91ADBBBF}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="6"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{49BA256F-83C7-4E19-B02A-B96C71169526}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="6"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Web">
+							<ConversionPlugin Name="" ID="{4B0C3320-3504-4C02-8D68-1E1C57CDAD72}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="6"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{D4EAEEEE-2FAD-4183-818B-EC0625D3DB9B}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="6"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
 			</ChildrenList>
 		</WorkUnit>
 	</Conversions>

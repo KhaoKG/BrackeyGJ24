@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{660AA33D-3195-AF65-05B1-7E69D8432D5D}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F17622FD-61AF-4709-0F9D-A7F95E522853}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -78,7 +78,7 @@
 				</File>
 				<File Id="165850355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-001.wav</ShortName>
-					<CachePath>SFX/crayonDrops-001_71B09266.wem</CachePath>
+					<CachePath>SFX/crayonDrops-001_420D60E7.wem</CachePath>
 				</File>
 				<File Id="171609622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits.wav</ShortName>
@@ -142,7 +142,7 @@
 				</File>
 				<File Id="460617137" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-003.wav</ShortName>
-					<CachePath>SFX/crayonDrops-003_EF1E85C7.wem</CachePath>
+					<CachePath>SFX/crayonDrops-003_3CEB06A1.wem</CachePath>
 				</File>
 				<File Id="461511639" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch4.wav</ShortName>
@@ -154,7 +154,7 @@
 				</File>
 				<File Id="527999219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-004.wav</ShortName>
-					<CachePath>SFX/crayonDrops-004_2EC7CAE8.wem</CachePath>
+					<CachePath>SFX/crayonDrops-004_1B207E5C.wem</CachePath>
 				</File>
 				<File Id="549912924" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-001.wav</ShortName>
@@ -202,11 +202,15 @@
 				</File>
 				<File Id="857493264" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-002.wav</ShortName>
-					<CachePath>SFX/crayonDrops-002_AAC1F9E3.wem</CachePath>
+					<CachePath>SFX/crayonDrops-002_2A753A11.wem</CachePath>
+				</File>
+				<File Id="863263989" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>placeHolderLevelMusic.wav</ShortName>
+					<CachePath>SFX/placeHolderLevelMusic_D9B786A0.wem</CachePath>
 				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
-					<CachePath>SFX/wind_tornado_with_destruction_01_85289BF6.wem</CachePath>
+					<CachePath>SFX/wind_tornado_with_destruction_01_46070F82.wem</CachePath>
 				</File>
 				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreDown.wav</ShortName>
@@ -402,6 +406,14 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1122283870" Name="musicStart" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="0"/>
+							<MediaRefs>
+								<MediaRef Id="863263989"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="4091656514" Id="152105657" Name="titleScreen"/>
 					</ActionSetState>
@@ -543,5 +555,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2B8106BB-DDE2-C554-690A-2DF3369B25BD}</FileHash>
+	<FileHash>{34DA944D-E1FD-801D-1BF1-018278C62434}</FileHash>
 </SoundBanksInfo>
