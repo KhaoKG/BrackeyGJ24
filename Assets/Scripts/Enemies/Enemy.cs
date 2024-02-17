@@ -88,4 +88,9 @@ public abstract class Enemy : MonoBehaviour
         isInHitstun = false;
         rb.velocity = Vector2.zero;
     }
+
+    public void EnhanceEnemy(int health, int damage) {
+        this.health += health;
+        this.damage += damage;
+    }
 }

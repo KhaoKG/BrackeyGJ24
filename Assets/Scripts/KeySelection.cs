@@ -15,11 +15,6 @@ public class KeySelection : MonoBehaviour {
         // Load game data
         gameStateData = Resources.Load<GameStateSO>("ScriptableObjects/MainGameData");
 
-
-
-
-
-
         // Add a key for each child
         //the four options
         List<string> keys = new List<string>();
@@ -83,6 +78,6 @@ public class KeySelection : MonoBehaviour {
 
     void GoToNextWave() {
         gameStateData.currentWave++;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
