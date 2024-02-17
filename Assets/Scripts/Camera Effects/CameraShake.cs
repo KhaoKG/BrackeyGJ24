@@ -21,6 +21,11 @@ public class CameraShake : MonoBehaviour
     }
 
     public void Shake(float amount, float duration) {
+        // Check if player wants camera shake effect
+        if (PlayerPrefs.GetInt("ScreenShake", 1) == 0) {
+            return;
+        }
+
         enabled = true;
 
         shakeAmplitude = Mathf.Max(shakeAmplitude, amount);

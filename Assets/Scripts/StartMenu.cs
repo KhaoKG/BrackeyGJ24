@@ -27,6 +27,7 @@ using UnityEngine.SceneManagement;
  *  Use buttons to call the menu functions.
  */
 
+
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] Animator doorAnimator;
@@ -37,7 +38,14 @@ public class StartMenu : MonoBehaviour
     public void PlayGame()
     {
         StartCoroutine(DoPlayGame());
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        // Deactivate buttons and title screen
+        foreach (Transform child in transform) {
+            // Avoid deactivating itself
+            if (child != transform) {
+                child.gameObject.SetActive(false);
+            }
+        }
     }
 
     IEnumerator DoPlayGame()
