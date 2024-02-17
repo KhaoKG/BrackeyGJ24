@@ -44,8 +44,6 @@ namespace AK
         static const AkUniqueID PLAYERHURT = 3537581393U;
         static const AkUniqueID PLAYERKEYGAIN = 904027786U;
         static const AkUniqueID PLAYERKEYUSED = 1314825040U;
-        static const AkUniqueID PLAYERLASTHIT = 965823281U;
-        static const AkUniqueID PLAYERLASTHITOVER = 351819259U;
         static const AkUniqueID PLAYERSWING = 1775438520U;
         static const AkUniqueID POWERSELECT = 2209591688U;
         static const AkUniqueID SLIDERCLICK = 1218812578U;

@@ -48,13 +48,21 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B90E7A36-225B-ECE8-301E-BF932CB89F0E}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{660AA33D-3195-AF65-05B1-7E69D8432D5D}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
 				<File Id="28133891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-002.wav</ShortName>
 					<CachePath>SFX/attackWhooshes-002_F20A1F16.wem</CachePath>
+				</File>
+				<File Id="35617866" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>munch3.wav</ShortName>
+					<CachePath>SFX/munch3_8E324C96.wem</CachePath>
+				</File>
+				<File Id="38651332" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>munch2.wav</ShortName>
+					<CachePath>SFX/munch2_8E324C96.wem</CachePath>
 				</File>
 				<File Id="51235534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerPickUp.wav</ShortName>
@@ -68,6 +76,10 @@
 					<ShortName>doorClosed-001.wav</ShortName>
 					<CachePath>SFX/doorClosed-001_8E324C96.wem</CachePath>
 				</File>
+				<File Id="165850355" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crayonDrops-001.wav</ShortName>
+					<CachePath>SFX/crayonDrops-001_71B09266.wem</CachePath>
+				</File>
 				<File Id="171609622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits.wav</ShortName>
 					<CachePath>SFX/attackHits_909DBA61.wem</CachePath>
@@ -78,7 +90,7 @@
 				</File>
 				<File Id="221981477" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_End.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Slider_End_95D30AD7.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Slider_End_D7B0EB22.wem</CachePath>
 				</File>
 				<File Id="235602188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaser.wav</ShortName>
@@ -118,19 +130,31 @@
 				</File>
 				<File Id="429214499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_Start.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Slider_Start_4E349B9E.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Slider_Start_45273B8C.wem</CachePath>
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_31FDAA4B.wem</CachePath>
+					<CachePath>SFX/doorOpened_1D7406E2.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
 					<CachePath>SFX/keyUsed-001_E41C6CDD.wem</CachePath>
 				</File>
+				<File Id="460617137" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crayonDrops-003.wav</ShortName>
+					<CachePath>SFX/crayonDrops-003_EF1E85C7.wem</CachePath>
+				</File>
+				<File Id="461511639" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>munch4.wav</ShortName>
+					<CachePath>SFX/munch4_8E324C96.wem</CachePath>
+				</File>
 				<File Id="519084594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJoin.wav</ShortName>
 					<CachePath>SFX/playerJoin_8E324C96.wem</CachePath>
+				</File>
+				<File Id="527999219" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crayonDrops-004.wav</ShortName>
+					<CachePath>SFX/crayonDrops-004_2EC7CAE8.wem</CachePath>
 				</File>
 				<File Id="549912924" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-001.wav</ShortName>
@@ -138,7 +162,7 @@
 				</File>
 				<File Id="587161954" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleSwing.wav</ShortName>
-					<CachePath>SFX/doorTentacleSwing_B85C8E51.wem</CachePath>
+					<CachePath>SFX/doorTentacleSwing_95D72152.wem</CachePath>
 				</File>
 				<File Id="607508543" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>506546__matrixxx__pop-01.wav</ShortName>
@@ -156,6 +180,10 @@
 					<ShortName>keyJangles-004.wav</ShortName>
 					<CachePath>SFX/keyJangles-004_F37BCC38.wem</CachePath>
 				</File>
+				<File Id="726984224" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>munch1.wav</ShortName>
+					<CachePath>SFX/munch1_8E324C96.wem</CachePath>
+				</File>
 				<File Id="757248233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-002.wav</ShortName>
 					<CachePath>SFX/keyUsed-002_E6B06B8D.wem</CachePath>
@@ -166,15 +194,19 @@
 				</File>
 				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaserWarn.wav</ShortName>
-					<CachePath>SFX/doorLaserWarn_90508781.wem</CachePath>
+					<CachePath>SFX/doorLaserWarn_69EE38E6.wem</CachePath>
 				</File>
 				<File Id="846321805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-003.wav</ShortName>
 					<CachePath>SFX/keyUsed-003_322A63B4.wem</CachePath>
 				</File>
+				<File Id="857493264" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>crayonDrops-002.wav</ShortName>
+					<CachePath>SFX/crayonDrops-002_AAC1F9E3.wem</CachePath>
+				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
-					<CachePath>SFX/wind_tornado_with_destruction_01_E26799F4.wem</CachePath>
+					<CachePath>SFX/wind_tornado_with_destruction_01_85289BF6.wem</CachePath>
 				</File>
 				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreDown.wav</ShortName>
@@ -186,7 +218,7 @@
 				</File>
 				<File Id="953208197" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>menuBack.wav</ShortName>
-					<CachePath>SFX/menuBack_9F87B400.wem</CachePath>
+					<CachePath>SFX/menuBack_19175BFB.wem</CachePath>
 				</File>
 				<File Id="1043833764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-001.wav</ShortName>
@@ -194,7 +226,7 @@
 				</File>
 				<File Id="1047713376" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorDemonSpawner.wav</ShortName>
-					<CachePath>SFX/doorDemonSpawner_1DCCA227.wem</CachePath>
+					<CachePath>SFX/doorDemonSpawner_7AA29106.wem</CachePath>
 				</File>
 				<File Id="1049733785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
@@ -323,7 +355,19 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="1174275515" Name="healthDropped" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1174275515" Name="healthDropped" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.22141892" DurationMax="0.32192928">
+					<MediaRefs>
+						<MediaRef Id="165850355"/>
+						<MediaRef Id="460617137"/>
+						<MediaRef Id="527999219"/>
+						<MediaRef Id="857493264"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3986149976" Name="keyDropped" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200789" DurationMax="0.4729472">
 					<MediaRefs>
 						<MediaRef Id="314971826"/>
@@ -369,7 +413,19 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="3966601280" Name="playerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3400151318" Name="playerEatCrayon" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3400151318" Name="playerEatCrayon" DurationType="OneShot" DurationMin="0.95760334" DurationMax="1.0442737">
+					<MediaRefs>
+						<MediaRef Id="35617866"/>
+						<MediaRef Id="38651332"/>
+						<MediaRef Id="461511639"/>
+						<MediaRef Id="726984224"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3831688773" Name="playerHit" DurationType="OneShot" DurationMin="0.41988835" DurationMax="0.53157985">
 					<MediaRefs>
 						<MediaRef Id="171609622"/>
@@ -383,9 +439,12 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="3537581393" Name="playerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="904027786" Name="playerKeyGain" DurationType="OneShot" DurationMin="0.07437163" DurationMax="0.081102826">
+				<Event Id="904027786" Name="playerKeyGain" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200789" DurationMax="0.4729472">
 					<MediaRefs>
-						<MediaRef Id="51235534"/>
+						<MediaRef Id="314971826"/>
+						<MediaRef Id="685037215"/>
+						<MediaRef Id="715772750"/>
+						<MediaRef Id="1043833764"/>
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
@@ -406,8 +465,6 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="965823281" Name="playerLastHit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="351819259" Name="playerLastHitOver" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1775438520" Name="playerSwing" DurationType="OneShot" DurationMin="0.088774204" DurationMax="0.12707679">
 					<MediaRefs>
 						<MediaRef Id="28133891"/>
@@ -421,7 +478,16 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2209591688" Name="powerSelect" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2209591688" Name="powerSelect" DurationType="OneShot" DurationMin="0.15988016" DurationMax="0.19013062">
+					<MediaRefs>
+						<MediaRef Id="51235534"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="1218812578" Name="sliderClick" DurationType="OneShot" DurationMin="0.08229812" DurationMax="0.08229812">
 					<MediaRefs>
 						<MediaRef Id="429214499"/>
@@ -477,5 +543,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0BF6C3B5-9AA0-16B4-5A3F-95EA2B0F6204}</FileHash>
+	<FileHash>{B3BBC673-F808-82C0-90A8-C976E6A6F961}</FileHash>
 </SoundBanksInfo>

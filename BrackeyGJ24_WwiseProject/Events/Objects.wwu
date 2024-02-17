@@ -7,6 +7,17 @@
 					<ChildrenList>
 						<Event Name="keyDropped" ID="{029D065F-1D62-4BC6-B943-58BBFACD2C50}">
 							<ChildrenList>
+								<Action Name="" ID="{1CFEC330-FD34-4C4B-9E62-715B782AEF9E}" ShortID="120769891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="18"/>
+										<Property Name="Pitch" Type="int32" Value="900"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="keyDrop" ID="{44E508F2-7B4E-4DEB-A378-FBEDDA494DBC}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{F8B5BFA0-2BB0-44D3-9BA5-670A164553ED}" ShortID="939519334">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -16,7 +27,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="healthDropped" ID="{B66A54BA-E338-4384-BFE5-14B29894D01B}"/>
+						<Event Name="healthDropped" ID="{B66A54BA-E338-4384-BFE5-14B29894D01B}">
+							<ChildrenList>
+								<Action Name="" ID="{2354A07F-C556-49DC-A4BF-0DA243127812}" ShortID="660984470">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="crayonDrop" ID="{0EFBE71B-BCBE-47A1-AC56-CDE5CE2F6A4F}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{232EFA80-F9F6-488A-BB15-BD99B87E539C}" ShortID="1025781475">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F1D32A08-74D4-4A02-90DF-B3C6260D0603}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.03"/>
+															<Property Name="Min" Type="Real64" Value="-0.03"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="crayonDrop" ID="{0EFBE71B-BCBE-47A1-AC56-CDE5CE2F6A4F}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="doorEvents" ID="{720B7C61-2746-4B04-A4FE-CB7745578C03}" ShortID="469093503">

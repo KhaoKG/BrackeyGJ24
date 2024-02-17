@@ -13,7 +13,7 @@
 						<ObjectRef Name="healthDropped" ID="{B66A54BA-E338-4384-BFE5-14B29894D01B}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorClosed" ID="{61BFFA00-DF52-4389-BA68-5753AFCA6EFC}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="playButton" ID="{B52C9E17-5AC3-4423-A652-3B81CA651B15}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="playerLastHit" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="slowDown" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorOpened" ID="{EFF318BF-B8B5-4445-9A6F-A2B7EB4AFD9C}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorVacuumStop" ID="{39C3FB9A-A2A0-4462-9244-824F843F9E9F}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sliderUnclick" ID="{F5404370-E50E-447C-BDFB-8311921F1A74}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
@@ -43,7 +43,6 @@
 						<ObjectRef Name="playerHurt" ID="{6A1CABE6-D9B9-4EA2-8565-F81168EA5C7E}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="titleState" ID="{F59EAD35-1AAA-4F00-897B-01D4AF907B79}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="testFail" ID="{5C04360F-5723-4F04-84F1-A16AC2783753}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="playerResources" ID="{8E38F339-ECDB-4F0B-B4CB-C299568A2751}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="levelOneState" ID="{2647BE64-F307-4F37-BEC6-310092939551}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ambientStart" ID="{35508728-A859-4F50-9C8C-3ED4E19D07C3}" WorkUnitID="{2A33957C-0600-4B67-BBF5-959039A6A0C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="menuBack" ID="{32DDFE42-7164-4F63-B938-5B56D2421F61}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>

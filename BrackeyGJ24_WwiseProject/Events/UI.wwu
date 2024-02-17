@@ -110,11 +110,51 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="powerSelect" ID="{AC5C76E5-EEA8-4C63-920E-26DC3DA89A62}"/>
+				<Event Name="powerSelect" ID="{AC5C76E5-EEA8-4C63-920E-26DC3DA89A62}">
+					<ChildrenList>
+						<Action Name="" ID="{D078B4DB-9179-494C-A6E3-24CD854C2E11}" ShortID="759557432">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerSelection" ID="{B6A7743F-CC8D-47D2-92D1-14642EA9B973}" WorkUnitID="{21236B61-3558-4BDC-9517-FE9FC1575DE7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Folder Name="timeEffects" ID="{05615AE0-80DA-4DC5-842A-007B6DB23C0E}" ShortID="867754944">
 					<ChildrenList>
-						<Event Name="slowDown" ID="{1FC1AB12-A51A-49DF-A20E-F3BC5E95187A}"/>
-						<Event Name="speedUp" ID="{D6B2E0BF-B597-4311-A7A3-C00500BA4B43}"/>
+						<Event Name="speedUp" ID="{2133D5A2-01AE-423D-AA12-14467AE3CAA2}">
+							<ChildrenList>
+								<Action Name="" ID="{CD605ED4-E9E8-4EF8-B754-56E758E8D1A9}" ShortID="466151844">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}" WorkUnitID="{5DF93E86-BFDE-41FB-BD94-0E75F680F310}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="slowDown" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}">
+							<ChildrenList>
+								<Action Name="" ID="{667A3A06-5EC8-4736-941B-0E7044163D80}" ShortID="1013793835">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gameSpeed" ID="{67836548-F9EC-408C-AB31-2D2D6857BC36}" WorkUnitID="{5DF93E86-BFDE-41FB-BD94-0E75F680F310}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

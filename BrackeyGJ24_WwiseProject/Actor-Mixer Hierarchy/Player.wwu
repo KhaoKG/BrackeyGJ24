@@ -398,12 +398,28 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="playerPickUp" ID="{B6A7743F-CC8D-47D2-92D1-14642EA9B973}" ShortID="763012514">
+								<Sound Name="powerSelection" ID="{B6A7743F-CC8D-47D2-92D1-14642EA9B973}" ShortID="763012514">
 									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>1200</Value>
+												<Value>-200</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4E1F6790-C6C5-44DE-81ED-7D25AD7F4441}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -432,6 +448,119 @@
 										<ActiveSource Name="playerPickUp" ID="{C66A7B1C-9B67-4DFE-9AC0-6B392362B115}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="playerHealthPick" ID="{203C849B-345F-4B56-A342-497AD9FCECEF}" ShortID="97129890">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="munch1" ID="{54496F99-4D5B-4B86-B2D9-ADCD36993F22}" ShortID="954593755">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="munch1" ID="{2414BF42-1F42-42E9-8FA9-1E5013BD0FF3}">
+													<Language>SFX</Language>
+													<AudioFile>munch1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="726984224"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="munch1" ID="{2414BF42-1F42-42E9-8FA9-1E5013BD0FF3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="munch2" ID="{443575E9-18CE-4B0D-9D6B-7312A37BD78B}" ShortID="143863009">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="munch2" ID="{6FFCCBE9-1534-47D2-A0D1-1B795942E6DF}">
+													<Language>SFX</Language>
+													<AudioFile>munch2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="38651332"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="munch2" ID="{6FFCCBE9-1534-47D2-A0D1-1B795942E6DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="munch3" ID="{07341D86-8B20-48F0-88EF-2B678075FE8E}" ShortID="340065374">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="munch3" ID="{1FA8FFF3-AC45-4797-8A32-CB5E616CA608}">
+													<Language>SFX</Language>
+													<AudioFile>munch3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="35617866"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="munch3" ID="{1FA8FFF3-AC45-4797-8A32-CB5E616CA608}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="munch4" ID="{504D6041-465E-467C-9D99-D16634CEC885}" ShortID="185682481">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="munch4" ID="{DE363043-DDA4-4D5B-BE78-40802502718D}">
+													<Language>SFX</Language>
+													<AudioFile>munch4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="461511639"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="munch4" ID="{DE363043-DDA4-4D5B-BE78-40802502718D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<RandomSequenceContainer Name="keyUsed" ID="{2FEF9B03-1D0A-40AF-9DFA-A7C7F378C9BF}" ShortID="643476903">

@@ -14,7 +14,7 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playerLastHit" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<ObjectRef Name="slowDown" ID="{190962F5-B85D-442F-9F9F-20B520D46F48}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}"/>
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
@@ -26,12 +26,28 @@
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playerLastHitOver" ID="{2133D5A2-01AE-423D-AA12-14467AE3CAA2}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<ObjectRef Name="speedUp" ID="{2133D5A2-01AE-423D-AA12-14467AE3CAA2}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}"/>
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="doorTentacleSwing" ID="{6DF76FEE-037A-44A4-BC6D-221537B47ACF}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
 							<Position X="2" Y="7"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="keyDropped" ID="{029D065F-1D62-4BC6-B943-58BBFACD2C50}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="4" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="healthDropped" ID="{B66A54BA-E338-4384-BFE5-14B29894D01B}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="4" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playerKeyGain" ID="{29257811-8457-46EA-9FA5-96C8AA5EF688}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<Position X="5" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playerEatCrayon" ID="{EB758365-0263-44FD-8B71-BC6E63432985}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
+							<Position X="5" Y="6"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
