@@ -21,7 +21,18 @@ public class Attractable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Vector3.Distance(transform.position, attractPoint.transform.position) <= 0.2 && gameObject.tag == "Enemy")
+        {
+            if(GetComponent<GruntEnemy>() != null)
+            {
+                GetComponent<GruntEnemy>().TakeDamage(1, new Vector2(0, 0));
+            }
 
+            if (GetComponent<RangerEnemy>() != null)
+            {
+                GetComponent<RangerEnemy>().TakeDamage(1, new Vector2(0, 0));
+            }
+        }
     }
 
     private void FixedUpdate()

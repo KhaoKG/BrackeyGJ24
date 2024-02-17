@@ -27,7 +27,7 @@ public class Vacuum : MonoBehaviour, IAbility
 
         if (door.GetComponent<DoorEventManager>().DoorId == 1) // left
         {
-            attractPoint.transform.rotation = Quaternion.Euler(0, 0, 270);
+            attractPoint.transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         else if (door.GetComponent<DoorEventManager>().DoorId == 2) // top
         {
@@ -35,7 +35,7 @@ public class Vacuum : MonoBehaviour, IAbility
         }
         else if (door.GetComponent<DoorEventManager>().DoorId == 3) // right
         {
-            attractPoint.transform.rotation = Quaternion.Euler(0, 0, 90);
+            attractPoint.transform.rotation = Quaternion.Euler(0, 0, 270);
         }
         else if (door.GetComponent<DoorEventManager>().DoorId == 0) // bottom
         {
