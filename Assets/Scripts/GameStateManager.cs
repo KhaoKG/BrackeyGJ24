@@ -47,6 +47,7 @@ public class GameStateManager : MonoBehaviour
 
         enemySpawner.CurrentWave = waves[currentWave];
         enemySpawner.enabled = true;
+        AbilityController.Instance.UpdateAbilitiesForRound();
     }
 
     public void CheckIfWaveOver() {

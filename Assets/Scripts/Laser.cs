@@ -41,6 +41,7 @@ public class Laser : MonoBehaviour, IAbility
 
     public void Deactivate(GameObject door)
     {
+        door.GetComponent<DoorEventManager>().isUsingAbility = false;
         Destroy(transform.gameObject);
     }
 

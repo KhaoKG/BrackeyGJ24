@@ -16,5 +16,5 @@ MonoBehaviour:
   Description: 
   ActiveTime: 3
   KeyIcon: {fileID: 21300000, guid: 58fbd13b8eeb6cc4bb059f27d5dc1216, type: 3}
-  KeyColor: {r: 0.8584906, g: 0.43329477, b: 0.71410584, a: 0}
+  KeyColor: {r: 0.8584906, g: 0.43329477, b: 0.71410584, a: 1}
   AbilityPrefab: {fileID: 719089206063104642, guid: b385f0dfb3e8642438afc15aca9fe309, type: 3}

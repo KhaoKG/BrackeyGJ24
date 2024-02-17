@@ -70,9 +70,10 @@ public class GruntEnemy : Enemy {
     { 
         if (collision.gameObject.tag == "Door Ability")
         {
+            Debug.Log(collision.gameObject.name);
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+            TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
     }
 }
