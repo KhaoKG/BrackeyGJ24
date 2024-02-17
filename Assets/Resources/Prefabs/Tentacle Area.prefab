@@ -4799,7 +4799,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4858,6 +4858,7 @@ GameObject:
   - component: {fileID: 4040058890206753126}
   - component: {fileID: 8105624182065155590}
   - component: {fileID: 6213804078550183192}
+  - component: {fileID: 4678238235327481804}
   m_Layer: 0
   m_Name: Tentacle
   m_TagString: Door Ability
@@ -4920,7 +4921,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2140543666, guid: 06dfcc9c3da32a443930eaad8b98d2ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5030,3 +5031,16 @@ PolygonCollider2D:
       - {x: 5.446666, y: 5.666667}
       - {x: 5.446666, y: 7}
   m_UseDelaunayMesh: 0
+--- !u!114 &4678238235327481804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3571366735752238551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7a26a71b05f3c46a3f67644d87eeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorDamage: 2
