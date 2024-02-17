@@ -32,6 +32,7 @@ public class StartMenu : MonoBehaviour
 {
     [SerializeField] Animator doorAnimator;
     [SerializeField] GameObject settingsPanel;
+    [SerializeField] GameObject creditsPanel;
 
     // Starts the game
     // Adjust build index as needed
@@ -80,5 +81,15 @@ public class StartMenu : MonoBehaviour
     public void HideSettings()
     {
         settingsPanel.SetActive(false);
+    }
+
+    public void OpenCredits()
+    {
+        creditsPanel.SetActive(true);
+    }
+
+    public void HideCredits()
+    {
+        creditsPanel.SetActive(false);
     }
 }
