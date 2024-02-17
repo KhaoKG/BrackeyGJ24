@@ -20,6 +20,8 @@ public class Laser : MonoBehaviour, IAbility
 
     public void Activate(GameObject door)
     {
+        transform.position = new Vector3(0, 0, 0);
+
         if(door.GetComponent<DoorEventManager>().DoorId == 1) // left
         {
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
