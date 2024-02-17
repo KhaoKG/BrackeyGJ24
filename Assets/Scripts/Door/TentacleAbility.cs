@@ -19,6 +19,8 @@ public class TentacleAbility : MonoBehaviour, IAbility {
         AkSoundEngine.PostEvent("doorTentacleLoom", this.gameObject);
         spawnedTentacle = Instantiate(tentaclePrefab, door.transform.position, Quaternion.identity);
 
+        spawnedTentacle.GetComponent<DoorDamage>().doorDamage = GetComponent<DoorDamage>().doorDamage;
+
         Tentacle tentacleScript = spawnedTentacle.GetComponentInChildren<Tentacle>();
         tentacleScript.Ability = this;
         tentacleScript.RotateAccordingToDoor(door.GetComponent<DoorEventManager>().DoorId);
