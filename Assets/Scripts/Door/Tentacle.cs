@@ -8,10 +8,17 @@ public class Tentacle : MonoBehaviour
     SpriteRenderer spriteRenderer;
     [SerializeField]
     PolygonCollider2D col2D;
+    TentacleAbility ability;
+
+    public TentacleAbility Ability { get => ability; set => ability = value; }
 
     private void Start() {
         AkSoundEngine.PostEvent("doorTentacleWhoosh", this.gameObject);
 
+    }
+
+    private void FixedUpdate() {
+        UpdatePhysicsCollider();
     }
 
     // Check which direction should it swing
@@ -20,14 +27,22 @@ public class Tentacle : MonoBehaviour
         transform.parent.Rotate(Vector3.forward * -90f * doorId);
     }
 
-    public void UpdatePhysicsCollider() {
+    void UpdatePhysicsCollider() {
         List<Vector2> path = new List<Vector2>();
         spriteRenderer.sprite.GetPhysicsShape(0, path);
         col2D.SetPath(0, path.ToArray());
     }
 
-    public void Disappear() {
+    public void Slam() {
         AkSoundEngine.PostEvent("doorTentacleSlam", this.gameObject);
+    }
+
+    public void Disappear() {
         transform.parent.GetComponent<ParticleSystem>().Stop();
+    }
+
+    private void OnDestroy() {
+        // Deactivate ability
+        ability.Deactivate(ability.Door);
     }
 }
