@@ -28,7 +28,21 @@ public class GameStateManager : MonoBehaviour
         gameStateData = Resources.Load<GameStateSO>("ScriptableObjects/MainGameData");
 
         // Prepare initial wave
-        enemySpawner.CurrentWave = waves[gameStateData.currentWave-1];
+        int currentWave = Mathf.Min(gameStateData.currentWave - 1, waves.Count - 1);
+
+        // Adding check in case we play fight scene before key choice
+#if UNITY_EDITOR
+        if (currentWave < 0) {
+            currentWave = 0;
+        }
+#endif
+
+        if (currentWave == waves.Count-1) {
+            // Prepare randomized wave
+            PrepareRandomWave();
+        }
+
+        enemySpawner.CurrentWave = waves[currentWave];
         enemySpawner.enabled = true;
     }
 
@@ -57,8 +71,7 @@ public class GameStateManager : MonoBehaviour
     }
 
     void ShowKeySelect() {
-
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("DoorBonus");
     }
 
     public void GameOver() {
@@ -74,5 +87,26 @@ public class GameStateManager : MonoBehaviour
 
         // Reset game state
         gameStateData.Reset();
+    }
+
+    void PrepareRandomWave() {
+        WaveSO wave = waves[waves.Count - 1];
+
+        // Modifies random wave with the amount of current waves
+        int modifier = gameStateData.currentWave - waves.Count;
+
+        // Add modifier to enemy spawner
+        enemySpawner.WaveModifier = modifier;
+
+        while (modifier > 0) {
+            wave.spawns[Random.Range(0, wave.spawns.Count)].enemies.Add(EnemySpawnEnum.Random);
+
+            modifier--;
+        }
+
+        // Randomize spawn delays
+        foreach (WaveSO.TimeSpawn spawn in wave.spawns) {
+            spawn.delay += Random.Range(-1f, 1f);
+        }
     }
 }
