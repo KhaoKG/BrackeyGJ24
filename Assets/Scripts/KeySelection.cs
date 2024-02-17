@@ -11,6 +11,9 @@ public class KeySelection : MonoBehaviour {
     [SerializeField] 
     FadeEffect screenFadeEffect;
 
+    [SerializeField] GameObject door;
+    [SerializeField] GameObject doorBack;
+
     private void Start() {
         // Load game data
         gameStateData = Resources.Load<GameStateSO>("ScriptableObjects/MainGameData");
@@ -82,9 +85,30 @@ public class KeySelection : MonoBehaviour {
 
     IEnumerator PrepareNextWave() {
         // Activate game object to fade screen
-        screenFadeEffect.TargetAlpha = 1f;
+        //screenFadeEffect.TargetAlpha = 1f;
 
-        yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
+        //yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
+
+        door.SetActive(true);
+        doorBack.SetActive(true);
+        Animator doorAnimator = door.GetComponent<Animator>();
+
+        for(int i=0; i < 3; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
+        GetComponent<Image>().enabled = false;
+
+        AkSoundEngine.PostEvent("PlayButton", this.gameObject);
+        doorAnimator.SetTrigger("StartGame");
+        yield return new WaitForSeconds(1.5f);
+
+        // zoom camera
+        for (int i = 0; i < 50; i++)
+        {
+            Camera.main.orthographicSize -= 0.1f;
+            yield return new WaitForSeconds(0.01f);
+        }
 
         GoToNextWave();
     }
