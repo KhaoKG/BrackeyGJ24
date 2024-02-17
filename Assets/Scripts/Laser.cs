@@ -36,7 +36,7 @@ public class Laser : MonoBehaviour, IAbility
     {
         door.GetComponent<DoorEventManager>().isUsingAbility = false;
         door.GetComponent<Animator>().SetBool("doorOpen", false);
-        Destroy(transform.gameObject);
+        Destroy(gameObject);
     }
 
     public AbilitySO GetAbilitySo() => SO != null ? SO : Resources.Load<AbilitySO>("ScriptableObjects/Laser");
