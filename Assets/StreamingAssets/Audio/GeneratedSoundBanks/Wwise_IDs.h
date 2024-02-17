@@ -36,7 +36,6 @@ namespace AK
         static const AkUniqueID MENUFORWARD = 2780352335U;
         static const AkUniqueID MENUHOVER = 303266102U;
         static const AkUniqueID MUSICSTART = 1122283870U;
-        static const AkUniqueID NEW_EVENT = 3050945240U;
         static const AkUniqueID PLAYBUTTON = 1843531235U;
         static const AkUniqueID PLAYERDIE = 3966601280U;
         static const AkUniqueID PLAYEREATCRAYON = 3400151318U;

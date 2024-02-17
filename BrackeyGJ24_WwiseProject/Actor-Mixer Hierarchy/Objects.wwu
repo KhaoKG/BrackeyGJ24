@@ -382,10 +382,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="doorLaserWarn" ID="{189BC62A-B8F3-40A1-8487-513A5F979951}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.176136706613405"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0702820128717272"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.15"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.15"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.2"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.20039222703063"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>doorLaserWarn.wav</AudioFile>
@@ -490,7 +490,7 @@
 												<AudioFileSource Name="wind_tornado_with_destruction_01" ID="{F519AA46-70D8-4BA2-91F9-54D8469D98D6}">
 													<PropertyList>
 														<Property Name="CrossfadeDuration" Type="Real64" Value="600"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="4.05545639147802"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.04760788393253"/>
 														<Property Name="FadeInShape" Type="int16" Value="9"/>
 														<Property Name="LoopBegin" Type="Real64" Value="4.81088454283178"/>
 														<Property Name="LoopEnd" Type="Real64" Value="13.2001129604971"/>
@@ -618,9 +618,11 @@
 											<ChildrenList>
 												<AudioFileSource Name="doorTentacleLooming" ID="{795DA315-423D-4E3A-BF78-6AE4C66F3576}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.018641810918775"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.50732356857523"/>
+														<Property Name="FadeInShape" Type="int16" Value="7"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.00798934753661795"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.99467376830892"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>doorTentacleLooming.wav</AudioFile>
@@ -772,8 +774,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="doorDemonSpawner" ID="{E2380C1F-57CA-4AB4-8817-AB1EAEDEFF3B}">
 													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.130492676431425"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.974034620505992"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.99467376830892"/>
 														<Property Name="TrimEnd" Type="Real64" Value="5.99800266311585"/>
 													</PropertyList>
 													<Language>SFX</Language>
