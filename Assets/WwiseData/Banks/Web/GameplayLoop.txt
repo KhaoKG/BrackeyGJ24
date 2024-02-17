@@ -17,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1423690258	testSuccess			\Default Work Unit\UI\testAudio\testSuccess	
 	1435302941	testFail			\Default Work Unit\UI\testAudio\testFail	
 	1697683977	doorClosed			\Default Work Unit\Objects\doorEvents\doorClosed	
+	1708937119	waveComplete			\Default Work Unit\UI\waveComplete	
 	1775438520	playerSwing			\Default Work Unit\Player\playerAttacks\playerSwing	
 	1818308409	ambientStart			\Default Work Unit\Ambient\ambientStart	
 	1843531235	playButton			\Default Work Unit\UI\menuAudio\playButton	

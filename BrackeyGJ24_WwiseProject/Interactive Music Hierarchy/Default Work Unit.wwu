@@ -550,6 +550,19 @@
 								<ObjectRef Name="gameState" ID="{27AE8F87-3091-4131-980A-B6EF153A28AF}" WorkUnitID="{3A2B50D3-3271-4FFB-A738-052FAA9576E1}"/>
 							</Reference>
 						</ObjectList>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{DA6E1324-E88C-4C17-A058-7C2990AD0250}" ShortID="653990264">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+												<ObjectRef Name="Slowdown" ID="{7EDCAB89-37F3-4883-8A1F-6A0B693CF1A3}" WorkUnitID="{9FB6B8B7-438E-4D51-91FE-908D4AF04309}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
 						<ObjectList Name="Entries">
 							<Reference>
 								<Local>

@@ -54,6 +54,7 @@ namespace AK
         static const AkUniqueID TESTSUCCESS = 1423690258U;
         static const AkUniqueID TITLESTATE = 1179082440U;
         static const AkUniqueID TRANSITIONSTATE = 471385319U;
+        static const AkUniqueID WAVECOMPLETE = 1708937119U;
     } // namespace EVENTS
 
     namespace STATES

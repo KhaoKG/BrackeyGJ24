@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{B3C5CB45-F4DF-390C-0950-85C11C1D5678}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F216C66D-C282-2BBD-C588-E16FC313BC9A}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -452,24 +452,44 @@
 							<MediaRefs>
 								<MediaRef Id="135468555"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3101299514"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="4198606512"/>
 							<MediaRefs>
 								<MediaRef Id="481336322"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3101299514"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="2201105581"/>
 							<MediaRefs>
 								<MediaRef Id="135468555"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3101299514"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="2572514751"/>
 							<MediaRefs>
 								<MediaRef Id="548797008"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="3101299514"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
@@ -618,6 +638,7 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="4198606512" Name="levelTransition"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="1708937119" Name="waveComplete" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1350179952" Name="gameSpeed"/>
@@ -636,5 +657,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0C2ECF07-EAC6-03E9-016F-2DD27DE98600}</FileHash>
+	<FileHash>{F17C60D9-DB22-44C7-2A20-43BD73C3316C}</FileHash>
 </SoundBanksInfo>

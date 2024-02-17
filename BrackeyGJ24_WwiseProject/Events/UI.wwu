@@ -157,6 +157,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="waveComplete" ID="{471B7F8B-9331-4681-994A-63F78A2E0E3A}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
