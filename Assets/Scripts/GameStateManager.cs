@@ -11,7 +11,10 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] EnemyController enemyController;
     [SerializeField] FadeEffect screenFadeEffect;
 
-    [Header("Game Over")]
+    [Header("Pause Menu")]
+    [SerializeField] PauseMenu pauseMenu;
+
+    [Header("Game Over Menu")]
     [SerializeField] GameObject gameOverMenu;
     [SerializeField] bool isGameOver = false;
 
@@ -108,5 +111,19 @@ public class GameStateManager : MonoBehaviour
         foreach (WaveSO.TimeSpawn spawn in wave.spawns) {
             spawn.delay += Random.Range(-1f, 1f);
         }
+    }
+
+    public void ProcessPause() {
+        if (IsPaused()) {
+            pauseMenu.PrepareResume();
+        }
+        else {
+            // Show pause menu
+            pauseMenu.Pause();
+        }
+    }
+
+    public bool IsPaused() {
+        return Time.timeScale == 0f;
     }
 }
