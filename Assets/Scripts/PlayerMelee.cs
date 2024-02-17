@@ -19,15 +19,13 @@ public class PlayerMelee : MonoBehaviour
     Vector2 screenPosition;
     Vector2 mousePosition;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        // Check if not paused
+        if (Time.timeScale == 0f) {
+            return;
+        }
+
         // CHECK FOR ATTACK BUTTON PRESSED
         if(Input.GetMouseButtonDown(0) && !inAttack) // can't attack if already attacking
         {

@@ -13,18 +13,15 @@ public class Player : MonoBehaviour
     [SerializeField]
     Image healthBar;
 
+    [Header("Components")]
     [SerializeField]
     Animator animator;
     [SerializeField]
     SpriteRenderer spriteRenderer;
     [SerializeField]
     SpriteBlinkEffect blinkEffect;
-
-    [Header("Door related")]
-    //[SerializeField]
-    //bool isNearDoor = false;
-    //[SerializeField]
-    //GameObject doorNearby = null;
+    [SerializeField]
+    GameStateManager gameStateManager;
 
     [Header("Combat")]
     [SerializeField]
@@ -32,6 +29,7 @@ public class Player : MonoBehaviour
     [SerializeField] float knockbackForce;
     [SerializeField] float knockbackDuration;
     [SerializeField] CameraShake shakeEffect;
+    public int doorDamage = 1;
 
     [Header("Movement")]
     [SerializeField]
@@ -54,7 +52,6 @@ public class Player : MonoBehaviour
     float dashCooldown = 1f;
     private float dashCounter, dashCoolCounter;
 
-    public int doorDamage = 1;
 
     public CameraShake ShakeEffect { get => shakeEffect; set => shakeEffect = value; }
 
@@ -94,20 +91,35 @@ public class Player : MonoBehaviour
     }
 
     void OnAttack(InputValue value) {
+        if (gameStateManager.IsPaused() || !IsAlive()) {
+            return;
+        }
+
         animator.SetTrigger("Attack");
     }
 
     void OnMove(InputValue value) {
+        if (gameStateManager.IsPaused() || !IsAlive()) {
+            return;
+        }
+
         moveDirection = value.Get<Vector2>();
     }
 
-    void OnDash(InputValue value)
-    {
+    void OnDash(InputValue value) {
+        if (gameStateManager.IsPaused() || !IsAlive()) {
+            return;
+        }
+
         if (dashCoolCounter <= 0 && dashCounter <= 0)
         {
             moveSpeed = dashSpeed;
             dashCounter = dashLength;
         }
+    }
+
+    void OnPause(InputValue value) {
+        gameStateManager.ProcessPause();
     }
 
     void Run() {
@@ -182,9 +194,7 @@ public class Player : MonoBehaviour
             Die();
 
             // Prepare game over
-            GameStateManager gameManager = FindObjectOfType<GameStateManager>();
-
-            gameManager.GameOver();
+            gameStateManager.GameOver();
         }
     }
 
@@ -220,10 +230,12 @@ public class Player : MonoBehaviour
 
     public void EnableInput() {
         GetComponent<PlayerInput>().ActivateInput();
+        GetComponentInChildren<PlayerMelee>().enabled = true;
     }
 
     public void DisableInput() {
         GetComponent<PlayerInput>().DeactivateInput();
+        GetComponentInChildren<PlayerMelee>().enabled = false;
     }
 
     IEnumerator SufferHitStun()
@@ -258,13 +270,13 @@ public class Player : MonoBehaviour
             HealDamage(1);
             Destroy(collision.gameObject);
         }
-        else if (collision.gameObject.tag == "Door Ability")
+        else if (collision.CompareTag("Door Ability"))
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
-        else if (collision.gameObject.tag == "Key Pickup")
+        else if (collision.CompareTag("Key Pickup"))
         {
             if(AbilityController.Instance.availableAbilitiesForRound.Count >= 4)
             {
