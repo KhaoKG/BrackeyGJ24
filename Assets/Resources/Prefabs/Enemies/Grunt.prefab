@@ -63,6 +63,7 @@ MonoBehaviour:
   keyPickupPrefab: {fileID: 2985766413136088510, guid: 91b5834572059eb48bad492591c8c7f6, type: 3}
   keyDropChance: 20
   healthDropChance: 10
+  spriteRenderer: {fileID: 3888510746023318927}
 --- !u!50 &3943999889115803281
 Rigidbody2D:
   serializedVersion: 4
@@ -125,8 +126,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.64, y: 11.88211}
+    pivot: {x: 0.45441192, y: 0.3087802}
+    oldSize: {x: 8.0625, y: 4.641449}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
