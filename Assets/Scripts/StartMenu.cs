@@ -36,9 +36,15 @@ public class StartMenu : MonoBehaviour
     [SerializeField] FadeEffect fadeScreenEffect;
     [SerializeField] float startDelay = 1.5f ;
 
+    private void Start() {
+        // Reset game state just to make sure
+        Resources.Load<GameStateSO>("ScriptableObjects/MainGameData").Reset();
+    }
+
     // Starts the game
     // Adjust build index as needed
     public void PlayGame() {
+
         AkSoundEngine.PostEvent("levelOneState", this.gameObject);
         StartCoroutine(DoPlayGame());
 
