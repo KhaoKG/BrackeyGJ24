@@ -117,6 +117,7 @@ public class Player : MonoBehaviour
 
         if (dashCoolCounter <= 0 && dashCounter <= 0)
         {
+            AkSoundEngine.PostEvent("playerDash", this.gameObject);
             moveSpeed = dashSpeed;
             dashCounter = dashLength;
         }
