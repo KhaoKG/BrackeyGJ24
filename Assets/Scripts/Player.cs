@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
         maxHealth = gameState.maxHealth;
         health = maxHealth;
         initialSpeed = moveSpeed;
+        gameObject.layer = LayerMask.NameToLayer("Player");
     }
 
     private void Update() {
@@ -117,6 +118,7 @@ public class Player : MonoBehaviour
 
         if (dashCoolCounter <= 0 && dashCounter <= 0)
         {
+            StartCoroutine(Invulnerability());
             AkSoundEngine.PostEvent("playerDash", this.gameObject);
             moveSpeed = dashSpeed;
             dashCounter = dashLength;
@@ -168,6 +170,13 @@ public class Player : MonoBehaviour
         facingLeft = !facingLeft;
 
         flipping = false;
+    }
+
+    IEnumerator Invulnerability()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Invincible");
+        yield return new WaitForSeconds(0.5f);
+        gameObject.layer = LayerMask.NameToLayer("Player");
     }
 
     private void FixedUpdate()
