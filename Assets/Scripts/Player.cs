@@ -117,6 +117,7 @@ public class Player : MonoBehaviour
 
         if (dashCoolCounter <= 0 && dashCounter <= 0)
         {
+            AkSoundEngine.PostEvent("playerDash", this.gameObject);
             moveSpeed = dashSpeed;
             dashCounter = dashLength;
         }
@@ -306,19 +307,6 @@ public class Player : MonoBehaviour
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
-        }
-        else if (collision.CompareTag("Key Pickup"))
-        {
-            if(AbilityController.Instance.availableAbilitiesForRound.Count >= 4)
-            {
-                return;
-            }
-            else
-            {
-                AbilityController.Instance.AddAbilityForRound(collision.gameObject.GetComponent<KeyPickup>().keyType);
-                AkSoundEngine.PostEvent("playerKeyGain", this.gameObject);
-                Destroy(collision.gameObject);
-            }
         }
     }
 
