@@ -936,17 +936,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7229421020210345176, guid: f8749f65b3096d54dabf766d34c8c4cc, type: 3}
   m_PrefabInstance: {fileID: 1182005070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1182005072 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6641485495637439136, guid: f8749f65b3096d54dabf766d34c8c4cc, type: 3}
-  m_PrefabInstance: {fileID: 1182005070}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2ac7068b045015418fba7143b84e5da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1265110420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1391,6 +1380,7 @@ GameObject:
   - component: {fileID: 2109837251}
   - component: {fileID: 2109837250}
   - component: {fileID: 2109837253}
+  - component: {fileID: 2109837254}
   m_Layer: 5
   m_Name: Key Selection
   m_TagString: Untagged
@@ -1496,9 +1486,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b351954743d38fd4585d3fc0145df56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenFadeEffect: {fileID: 1182005072}
+  gameCanvas: {fileID: 2143661739}
   door: {fileID: 1720769539}
   doorBack: {fileID: 1769541539}
+--- !u!114 &2109837254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109837248}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ac7068b045015418fba7143b84e5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAlpha: 0
+  fadeSpeed: 2
+  img: {fileID: 2109837251}
 --- !u!1 &2143661739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,9 +1599,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2109837249}
-  - {fileID: 1182005071}
   - {fileID: 1106757494}
   - {fileID: 736148272}
+  - {fileID: 1182005071}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
