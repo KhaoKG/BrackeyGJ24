@@ -195,18 +195,23 @@ public class Player : MonoBehaviour
         // set i-frames
         iframes = 60f;
 
-        // play sound
-        AkSoundEngine.PostEvent("playerHurt", this.gameObject);
-
         // update health
         health -= damage;
 
         // update UI
         healthBar.fillAmount = ((float)health / maxHealth);
 
-        if (IsAlive()) {
+        if (!IsAlive())
+        {
+            Die();
+            AkSoundEngine.PostEvent("playerDie", this.gameObject);
+            // Prepare Game Over
+            gameStateManager.GameOver();
+        }
+        else
+        {
             // Still alive after hit
-
+            AkSoundEngine.PostEvent("playerHurt", this.gameObject);
             // Shake camera
             shakeEffect.Shake(damage * 2, 0.5f);
 
@@ -214,11 +219,6 @@ public class Player : MonoBehaviour
             StartCoroutine(SufferHitStun());
             rb.velocity = Vector2.zero;
             rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-        } else {
-            Die();
-
-            // Prepare game over
-            gameStateManager.GameOver();
         }
     }
 
