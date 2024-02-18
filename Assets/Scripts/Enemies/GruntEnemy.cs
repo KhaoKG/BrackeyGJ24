@@ -69,6 +69,7 @@ public class GruntEnemy : Enemy {
         }
 
         // die
+        AkSoundEngine.PostEvent("springDie", this.gameObject);
         enemyController.OnEnemyDeath(this);
     }
 
