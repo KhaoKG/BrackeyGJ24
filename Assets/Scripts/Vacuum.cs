@@ -21,7 +21,7 @@ public class Vacuum : MonoBehaviour, IAbility
 
     public void Activate(GameObject door)
     {
-        AkSoundEngine.PostEvent("doorVacuumEvent", this.gameObject);
+        //AkSoundEngine.PostEvent("doorVacuumEvent", this.gameObject);
         attractPoint = GameObject.FindGameObjectWithTag("Attract Point");
         attractPoint.transform.position = door.transform.position;
 

@@ -684,12 +684,12 @@
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>49</Value>
+										<Value>25</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>47</Value>
+										<Value>45</Value>
 									</ValueList>
 								</Property>
 								<Property Name="MakeUpGain" Type="Real64">
@@ -700,7 +700,7 @@
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>-200</Value>
+										<Value>500</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>

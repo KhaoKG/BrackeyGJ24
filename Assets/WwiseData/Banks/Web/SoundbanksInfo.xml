@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{7B40DF8F-4DCB-C7C7-3A4F-63CECF37ED50}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{782A018D-19AE-B559-ABD0-70B9455178F9}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -206,7 +206,7 @@
 				</File>
 				<File Id="587161954" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleSwing.wav</ShortName>
-					<CachePath>SFX/doorTentacleSwing_95D72152.wem</CachePath>
+					<CachePath>SFX/doorTentacleSwing_546042EF.wem</CachePath>
 				</File>
 				<File Id="607508543" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>506546__matrixxx__pop-01.wav</ShortName>
@@ -405,7 +405,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2420079027" Name="doorTentacleSwing" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.71234095" DurationMax="0.7768133">
+				<Event Id="2420079027" Name="doorTentacleSwing" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.4405083" DurationMax="0.48037767">
 					<MediaRefs>
 						<MediaRef Id="587161954"/>
 					</MediaRefs>
@@ -731,5 +731,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D781C579-2E38-517B-18AE-1FE00BA3C2A2}</FileHash>
+	<FileHash>{50109530-893F-0314-F790-11DFAFE373F3}</FileHash>
 </SoundBanksInfo>

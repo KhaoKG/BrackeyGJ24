@@ -5,7 +5,17 @@
 			<ChildrenList>
 				<Folder Name="enemySpring" ID="{80788C81-E08B-4C60-9B75-94918C2AB773}" ShortID="379709017">
 					<ChildrenList>
-						<Event Name="springDie" ID="{F62CB48B-7E8A-4331-BA7A-823F111F7442}"/>
+						<Event Name="springDie" ID="{F62CB48B-7E8A-4331-BA7A-823F111F7442}">
+							<ChildrenList>
+								<Action Name="" ID="{4B138D43-8585-4802-9D8C-0A1848DA4B68}" ShortID="43157796">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="springDie" ID="{ABE57AD4-F21C-4BD3-BF6E-908139CD9290}" WorkUnitID="{F70342BF-6E59-4BFA-9C78-FFE90E2DBB5D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="enemyFace" ID="{52CD5ABD-0DA8-45EC-8193-A157EB51D6B2}" ShortID="989336557">

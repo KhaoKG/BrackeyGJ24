@@ -37,7 +37,22 @@
 					<ChildrenList>
 						<Folder Name="enemySpring" ID="{97AF7057-9E13-42E4-861E-5DFBDD42305E}" ShortID="297623683">
 							<ChildrenList>
-								<Sound Name="springDie" ID="{E1D84053-08E1-47CF-B77D-71F5D8D64C77}" ShortID="840091972">
+								<RandomSequenceContainer Name="springDie" ID="{ABE57AD4-F21C-4BD3-BF6E-908139CD9290}" ShortID="836395766">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{89E9EDB2-2F65-40ED-BDE7-D4F06E8320A0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -46,7 +61,99 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 										</Reference>
 									</ReferenceList>
-								</Sound>
+									<ChildrenList>
+										<Sound Name="springBoy-001" ID="{EB5B7D73-7E9C-4060-B2F9-5C79052D2CC4}" ShortID="1069067565">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="springBoy-001" ID="{197F36BF-684B-4B7C-95A8-BE3E7D3BF99E}">
+													<Language>SFX</Language>
+													<AudioFile>springBoy-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="289567978"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="springBoy-001" ID="{197F36BF-684B-4B7C-95A8-BE3E7D3BF99E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="springBoy-002" ID="{7699A6E7-1A10-44EB-9EFF-3CB55071A9BA}" ShortID="222566400">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="springBoy-002" ID="{395040A3-02A3-441F-945C-438092ACB416}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0279627163781624"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0279627163781624"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>springBoy-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="647685535"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="springBoy-002" ID="{395040A3-02A3-441F-945C-438092ACB416}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="springBoy-003" ID="{3595AB5F-472A-476A-8A23-51B6DDED57D2}" ShortID="489129197">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="springBoy-003" ID="{C53EA5A8-C8CB-43CD-9BA0-7C67D3B08048}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0306258322237017"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0306258322237017"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>springBoy-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="190049230"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="springBoy-003" ID="{C53EA5A8-C8CB-43CD-9BA0-7C67D3B08048}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="enemyFace" ID="{61E16F5F-4E78-4FEF-A3DB-79B0F320A3F1}" ShortID="340940455">
