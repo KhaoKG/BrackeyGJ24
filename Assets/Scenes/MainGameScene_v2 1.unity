@@ -2766,6 +2766,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 964138545}
     m_Modifications:
     - target: {fileID: 483737082336324003, guid: 6ac7a08a0b9962f4d86f5f9c4efc7fd3, type: 3}
+      propertyPath: wavePanel
+      value: 
+      objectReference: {fileID: 1573136707020231853}
+    - target: {fileID: 483737082336324003, guid: 6ac7a08a0b9962f4d86f5f9c4efc7fd3, type: 3}
       propertyPath: scorePanel
       value: 
       objectReference: {fileID: 670256561}

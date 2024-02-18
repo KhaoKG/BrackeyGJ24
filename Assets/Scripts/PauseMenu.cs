@@ -23,6 +23,8 @@ public class PauseMenu : MonoBehaviour
     GameObject scorePanel;
     [SerializeField]
     GameObject abilitiesPanel;
+    [SerializeField]
+    GameObject wavePanel;
 
     Player player;
 
@@ -107,17 +109,25 @@ public class PauseMenu : MonoBehaviour
         DeactivateChildren();
         scorePanel.SetActive(false);
         abilitiesPanel.SetActive(false);
-    }
+        if (wavePanel != null)
+        {
+            wavePanel.SetActive(false);
+        }
+        }
 
-    public void SettingsReturn()
+        public void SettingsReturn()
     {
         settingsPanel.SetActive(false);
         ActivateChildren();
         scorePanel.SetActive(true);
         abilitiesPanel.SetActive(true);
-    }
+        if (wavePanel != null)
+        {
+            wavePanel.SetActive(true);
+        }
+        }
 
-    public void Quit()
+        public void Quit()
     {
         StartCoroutine(FadeAndLoadScene(0));
         AkSoundEngine.PostEvent("gameUnpaused", this.gameObject);
