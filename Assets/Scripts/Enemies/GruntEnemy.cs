@@ -4,10 +4,12 @@ using UnityEngine;
 
 // Basic enemy, basically follows the player and does a melee attack
 public class GruntEnemy : Enemy {
+    [Header("Drop rates")]
     [SerializeField] GameObject healthPickupPrefab;
     [SerializeField] GameObject keyPickupPrefab;
 
     [SerializeField] int keyDropChance = 10;
+    [SerializeField] int healthDropChance = 10;
 
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning) {
@@ -53,7 +55,7 @@ public class GruntEnemy : Enemy {
 
     protected override void Die() {
         // drop health
-        if(Random.Range(0, 10) == 5)
+        if(Random.Range(0, 100) <= healthDropChance)
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
             AkSoundEngine.PostEvent("healthDropped", this.gameObject);
