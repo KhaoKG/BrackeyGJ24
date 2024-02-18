@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{818115BA-4616-4347-A99B-3E48BA94C01E}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{825D5FE8-85CD-033B-8949-A70DD70DF633}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -83,6 +83,10 @@
 				<File Id="94567938" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-001.wav</ShortName>
 					<CachePath>SFX/doorClosed-001_8E324C96.wem</CachePath>
+				</File>
+				<File Id="109243815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>porcelainBreak-004.wav</ShortName>
+					<CachePath>SFX/porcelainBreak-004_DB6B3518.wem</CachePath>
 				</File>
 				<File Id="135468555" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Brackeys Game Jam Feb 2024_Menu Theme V1_17Feb2024.wav</ShortName>
@@ -164,6 +168,14 @@
 					<ShortName>menuForward.wav</ShortName>
 					<CachePath>SFX/menuForward_8E324C96.wem</CachePath>
 				</File>
+				<File Id="387334877" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic_Spells_CastLong_Air_Charm02.wav</ShortName>
+					<CachePath>SFX/Magic_Spells_CastLong_Air_Charm02_675EB0D7.wem</CachePath>
+				</File>
+				<File Id="399348121" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>porcelainBreak-002.wav</ShortName>
+					<CachePath>SFX/porcelainBreak-002_A3CFE94F.wem</CachePath>
+				</File>
 				<File Id="429214499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_Start.wav</ShortName>
 					<CachePath>SFX/SFX_UI_Slider_Start_45273B8C.wem</CachePath>
@@ -187,6 +199,10 @@
 				<File Id="481336322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024.wav</ShortName>
 					<CachePath>SFX/Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024_D9B786A0.wem</CachePath>
+				</File>
+				<File Id="500735071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>porcelainBreak-001.wav</ShortName>
+					<CachePath>SFX/porcelainBreak-001_8E324C96.wem</CachePath>
 				</File>
 				<File Id="519084594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJoin.wav</ShortName>
@@ -212,6 +228,10 @@
 					<ShortName>506546__matrixxx__pop-01.wav</ShortName>
 					<CachePath>SFX/506546__matrixxx__pop-01_7A8664BE.wem</CachePath>
 				</File>
+				<File Id="613120640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>faceGroan.wav</ShortName>
+					<CachePath>SFX/faceGroan_CEABFFCF.wem</CachePath>
+				</File>
 				<File Id="647685535" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>springBoy-002.wav</ShortName>
 					<CachePath>SFX/springBoy-002_BBEB649B.wem</CachePath>
@@ -220,6 +240,10 @@
 					<ShortName>keyJangles-003.wav</ShortName>
 					<CachePath>SFX/keyJangles-003_8E324C96.wem</CachePath>
 				</File>
+				<File Id="706274181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>porcelainBreak-003.wav</ShortName>
+					<CachePath>SFX/porcelainBreak-003_06B8FF17.wem</CachePath>
+				</File>
 				<File Id="710241185" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Hover.wav</ShortName>
 					<CachePath>SFX/SFX_UI_Hover_1064B50E.wem</CachePath>
@@ -227,10 +251,6 @@
 				<File Id="715772750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-004.wav</ShortName>
 					<CachePath>SFX/keyJangles-004_F37BCC38.wem</CachePath>
-				</File>
-				<File Id="717439536" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>enemySpawn.wav</ShortName>
-					<CachePath>SFX/enemySpawn_C379BD9F.wem</CachePath>
 				</File>
 				<File Id="726984224" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch1.wav</ShortName>
@@ -283,6 +303,10 @@
 				<File Id="908824382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-004.wav</ShortName>
 					<CachePath>SFX/attackWhooshes-004_D640A08F.wem</CachePath>
+				</File>
+				<File Id="910162868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>porcelainBreak-006.wav</ShortName>
+					<CachePath>SFX/porcelainBreak-006_BF6E9FE1.wem</CachePath>
 				</File>
 				<File Id="953208197" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>menuBack.wav</ShortName>
@@ -426,9 +450,9 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="2136737028" Name="doorVacuumStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3453203440" Name="enemySpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.28078282" DurationMax="0.28078282">
+				<Event Id="3453203440" Name="enemySpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.7433561" DurationMax="0.8106356">
 					<MediaRefs>
-						<MediaRef Id="717439536"/>
+						<MediaRef Id="387334877"/>
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
@@ -446,8 +470,21 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3588219112" Name="faceDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3917283687" Name="faceShoot" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3588219112" Name="faceDie" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.8463386" DurationMax="1.5365835">
+					<MediaRefs>
+						<MediaRef Id="109243815"/>
+						<MediaRef Id="399348121"/>
+						<MediaRef Id="500735071"/>
+						<MediaRef Id="613120640"/>
+						<MediaRef Id="706274181"/>
+						<MediaRef Id="910162868"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="935463065" Name="gamePaused" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="38601912" Name="gameUnpaused" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1174275515" Name="healthDropped" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.22141892" DurationMax="0.32192928">
@@ -731,5 +768,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2005DE0D-3BF7-C6D6-5442-F7261A500CA3}</FileHash>
+	<FileHash>{B5DFB8E3-551D-6BA8-6181-9366BD744D47}</FileHash>
 </SoundBanksInfo>

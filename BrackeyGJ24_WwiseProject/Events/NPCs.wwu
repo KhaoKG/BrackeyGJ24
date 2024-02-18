@@ -20,8 +20,24 @@
 				</Folder>
 				<Folder Name="enemyFace" ID="{52CD5ABD-0DA8-45EC-8193-A157EB51D6B2}" ShortID="989336557">
 					<ChildrenList>
-						<Event Name="faceShoot" ID="{334C6807-3CA3-4834-AD8D-DA80C1D44378}"/>
-						<Event Name="faceDie" ID="{47CBB070-438C-470C-9C98-67460E37832F}"/>
+						<Event Name="faceDie" ID="{47CBB070-438C-470C-9C98-67460E37832F}">
+							<ChildrenList>
+								<Action Name="" ID="{6D25C0E4-ED2B-4BF7-9621-F7F5754D2D02}" ShortID="264702932">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="porcelainBreak" ID="{44E5F9B4-4C16-451B-ACE5-D123F9027AC4}" WorkUnitID="{F70342BF-6E59-4BFA-9C78-FFE90E2DBB5D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4328EF81-6739-4FF5-859B-CE3A185B7B7C}" ShortID="202471854">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="faceGroan" ID="{F4909089-F23F-4DE9-BF3C-6CFA7D82AB63}" WorkUnitID="{F70342BF-6E59-4BFA-9C78-FFE90E2DBB5D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="enemySpawn" ID="{09D13231-E69E-4601-B6C8-93C68E31965D}">

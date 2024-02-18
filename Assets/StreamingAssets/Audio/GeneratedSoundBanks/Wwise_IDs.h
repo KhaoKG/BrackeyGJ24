@@ -31,7 +31,6 @@ namespace AK
         static const AkUniqueID ENEMYSPAWN = 3453203440U;
         static const AkUniqueID ENEMYSUCKED = 3431269606U;
         static const AkUniqueID FACEDIE = 3588219112U;
-        static const AkUniqueID FACESHOOT = 3917283687U;
         static const AkUniqueID GAMEPAUSED = 935463065U;
         static const AkUniqueID GAMEUNPAUSED = 38601912U;
         static const AkUniqueID HEALTHDROPPED = 1174275515U;
