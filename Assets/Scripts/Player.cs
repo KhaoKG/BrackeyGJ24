@@ -223,8 +223,10 @@ public class Player : MonoBehaviour
     }
 
     void Die() {
-        // TODO Death animation
-        spriteRenderer.color = Color.clear;
+        // Disappear the player shadow and character
+        foreach (SpriteRenderer sr in GetComponentsInChildren<SpriteRenderer>()) {
+            sr.color = Color.clear;
+        }
 
         // Disable script
         enabled = false;
