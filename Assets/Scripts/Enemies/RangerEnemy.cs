@@ -122,6 +122,14 @@ public class RangerEnemy : Enemy {
         }
     }
 
+    public void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Door Ability")) {
+            // Get knockback direction
+            Vector2 knockbackDirection = transform.position - collision.transform.position;
+            TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+        }
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Door Ability")
