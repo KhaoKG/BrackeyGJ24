@@ -60,8 +60,11 @@ public class RangerEnemy : Enemy {
         }
     }
 
-    public override void TakeDamage(int damage, Vector2 direction)
-    {
+    public override void TakeDamage(int damage, Vector2 direction) {
+        if (health <= 0) {
+            return;
+        }
+
         AkSoundEngine.PostEvent("playerHit", this.gameObject);
 
         health -= damage;
@@ -112,7 +115,6 @@ public class RangerEnemy : Enemy {
         }
 
         // die
-        col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }
 
@@ -122,13 +124,19 @@ public class RangerEnemy : Enemy {
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Door Ability")
-        {
+    public void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Door Ability")) {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+            TakeDamage(collision.transform.parent.GetComponentInChildren<DoorDamage>().doorDamage, knockbackDirection.normalized);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("Door Ability")) {
+            // Get knockback direction
+            Vector2 knockbackDirection = transform.position - collision.transform.position;
+            TakeDamage(collision.transform.parent.GetComponentInChildren<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
     }
 }

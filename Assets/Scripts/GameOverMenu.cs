@@ -52,7 +52,7 @@ public class GameOverMenu : MonoBehaviour
     }
 
     public void Retry() {
-        StartCoroutine(FadeAndLoadScene(2));
+        StartCoroutine(FadeAndLoadScene(1));
     }
 
     public void Quit() {

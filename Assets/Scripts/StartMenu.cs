@@ -33,6 +33,8 @@ public class StartMenu : MonoBehaviour
     [SerializeField] Animator doorAnimator;
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject creditsPanel;
+    [SerializeField] FadeEffect fadeScreenEffect;
+    [SerializeField] float startDelay = 1.5f ;
 
     // Starts the game
     // Adjust build index as needed
@@ -44,7 +46,7 @@ public class StartMenu : MonoBehaviour
         // Deactivate buttons and title screen
         foreach (Transform child in transform) {
             // Avoid deactivating itself
-            if (child != transform) {
+            if (child != transform && child != fadeScreenEffect.transform) {
                 child.gameObject.SetActive(false);
             }
         }
@@ -56,7 +58,9 @@ public class StartMenu : MonoBehaviour
         //AkSoundEngine.PostEvent("PlayButton", this.gameObject);
         AkSoundEngine.PostEvent("menuForward", this.gameObject);
         //doorAnimator.SetTrigger("StartGame");
-        yield return new WaitForSeconds(1.5f);
+        fadeScreenEffect.FadeSpeed = 1f / startDelay;
+        fadeScreenEffect.TargetAlpha = 1f;
+        yield return new WaitForSeconds(startDelay);
 
         // zoom camera
         /*for(int i = 0; i < 50; i++)

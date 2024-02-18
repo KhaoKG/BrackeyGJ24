@@ -9,7 +9,7 @@ public class KeySelection : MonoBehaviour {
     GameStateSO gameStateData;
 
     [SerializeField] 
-    FadeEffect screenFadeEffect;
+    GameObject gameCanvas;
 
     [SerializeField] GameObject door;
     [SerializeField] GameObject doorBack;
@@ -84,10 +84,7 @@ public class KeySelection : MonoBehaviour {
     }
 
     IEnumerator PrepareNextWave() {
-        // Activate game object to fade screen
-        //screenFadeEffect.TargetAlpha = 1f;
-
-        //yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
+        PrepareCanvasAfterSelection();
 
         door.SetActive(true);
         doorBack.SetActive(true);
@@ -116,5 +113,16 @@ public class KeySelection : MonoBehaviour {
     void GoToNextWave() {
         gameStateData.currentWave++;
         SceneManager.LoadScene(2);
+    }
+
+    void PrepareCanvasAfterSelection() {
+        foreach (Transform child in gameCanvas.transform) {
+            if (child != gameCanvas.transform && child != transform) {
+                child.gameObject.SetActive(false);
+            }
+        }
+
+        // Fade selection panel background
+        GetComponent<FadeEffect>().TargetAlpha = 0f;
     }
 }
