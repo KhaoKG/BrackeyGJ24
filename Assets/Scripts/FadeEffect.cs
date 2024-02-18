@@ -23,7 +23,7 @@ public class FadeEffect : MonoBehaviour {
 
     void Update() {
         Color color = img.color;
-        color.a = Mathf.MoveTowards(color.a, targetAlpha, fadeSpeed * Time.deltaTime);
+        color.a = Mathf.MoveTowards(color.a, targetAlpha, fadeSpeed * Time.unscaledDeltaTime);
         img.color = color;
 
         if (color.a == targetAlpha) {

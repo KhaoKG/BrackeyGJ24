@@ -36,20 +36,19 @@ public class StartMenu : MonoBehaviour
     [SerializeField] FadeEffect fadeScreenEffect;
     [SerializeField] float startDelay = 1.5f ;
 
+    private void Start() {
+        // Reset game state just to make sure
+        Resources.Load<GameStateSO>("ScriptableObjects/MainGameData").Reset();
+    }
+
     // Starts the game
     // Adjust build index as needed
-    public void PlayGame()
-    {
+    public void PlayGame() {
+
         AkSoundEngine.PostEvent("levelOneState", this.gameObject);
         StartCoroutine(DoPlayGame());
 
-        // Deactivate buttons and title screen
-        foreach (Transform child in transform) {
-            // Avoid deactivating itself
-            if (child != transform && child != fadeScreenEffect.transform) {
-                child.gameObject.SetActive(false);
-            }
-        }
+        DeactivateCanvasForFadeEffect();
     }
 
     IEnumerator DoPlayGame()
@@ -95,15 +94,7 @@ public class StartMenu : MonoBehaviour
         AkSoundEngine.PostEvent("transitionState", this.gameObject);
         StartCoroutine(DoTutorial());
 
-        // Deactivate buttons and title screen
-        foreach (Transform child in transform)
-        {
-            // Avoid deactivating itself
-            if (child != transform)
-            {
-                child.gameObject.SetActive(false);
-            }
-        }
+        DeactivateCanvasForFadeEffect();
     }
 
     IEnumerator DoTutorial()
@@ -117,5 +108,15 @@ public class StartMenu : MonoBehaviour
         yield return new WaitForSeconds(startDelay);
 
         SceneManager.LoadScene(3);
+    }
+
+    private void DeactivateCanvasForFadeEffect() {
+        // Deactivate buttons and title screen
+        foreach (Transform child in transform) {
+            // Avoid deactivating itself
+            if (child != transform && child != fadeScreenEffect.transform) {
+                child.gameObject.SetActive(false);
+            }
+        }
     }
 }
