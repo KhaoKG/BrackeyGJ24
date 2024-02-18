@@ -13,7 +13,7 @@ public class Tentacle : MonoBehaviour
     public TentacleAbility Ability { get => ability; set => ability = value; }
 
     private void Start() {
-        AkSoundEngine.PostEvent("doorTentacleWhoosh", this.gameObject);
+        AkSoundEngine.PostEvent("doorTentacleSwing", this.gameObject);
 
     }
 
