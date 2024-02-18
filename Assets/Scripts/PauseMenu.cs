@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     FadeEffect screenFadeEffect;
+    [SerializeField]
+    GameObject settingsPanel;
+    [SerializeField]
+    GameObject scorePanel;
+    [SerializeField]
+    GameObject abilitiesPanel;
 
     Player player;
 
@@ -57,7 +64,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Resume() {
         Time.timeScale = 1f;
-
+        AkSoundEngine.PostEvent("gameUnpaused", this.gameObject);
         enabled = false;
     }
 
@@ -73,9 +80,11 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void Pause() {
+    public void Pause()
+    {
         // Pause game
         Time.timeScale = 0f;
+        AkSoundEngine.PostEvent("gamePaused", this.gameObject);
 
         // Set new target alpha
         bgFadeAlpha = baseBgAlpha;
@@ -92,8 +101,26 @@ public class PauseMenu : MonoBehaviour
         enabled = true;
     }
 
-    public void Quit() {
+    public void Settings()
+    {
+        settingsPanel.SetActive(true);
+        DeactivateChildren();
+        scorePanel.SetActive(false);
+        abilitiesPanel.SetActive(false);
+    }
+
+    public void SettingsReturn()
+    {
+        settingsPanel.SetActive(false);
+        ActivateChildren();
+        scorePanel.SetActive(true);
+        abilitiesPanel.SetActive(true);
+    }
+
+    public void Quit()
+    {
         StartCoroutine(FadeAndLoadScene(0));
+        AkSoundEngine.PostEvent("gameUnpaused", this.gameObject);
     }
 
     IEnumerator FadeAndLoadScene(int scene) {
