@@ -234,7 +234,7 @@ public class Player : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
 
-    void HealDamage(int healAmount)
+    public void HealDamage(int healAmount)
     {
         // play sound
         AkSoundEngine.PostEvent("PlayerEatCrayon", this.gameObject);
@@ -299,12 +299,7 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Health"))
-        {
-            HealDamage(1);
-            Destroy(collision.gameObject);
-        }
-        else if (collision.CompareTag("Door Ability"))
+        if (collision.CompareTag("Door Ability"))
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
