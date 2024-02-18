@@ -30,6 +30,8 @@ namespace AK
         static const AkUniqueID DOORVACUUMSTOP = 2136737028U;
         static const AkUniqueID ENEMYSPAWN = 3453203440U;
         static const AkUniqueID ENEMYSUCKED = 3431269606U;
+        static const AkUniqueID GAMEPAUSED = 935463065U;
+        static const AkUniqueID GAMEUNPAUSED = 38601912U;
         static const AkUniqueID HEALTHDROPPED = 1174275515U;
         static const AkUniqueID KEYDROPPED = 3986149976U;
         static const AkUniqueID LEVELONESTATE = 1399705530U;

@@ -108,6 +108,35 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="gamePaused" ID="{2B5D61F6-3F58-4309-B3C1-562E791C5EA1}">
+					<ChildrenList>
+						<Action Name="" ID="{C0200E82-DD54-415E-B122-23F282F13689}" ShortID="934569478">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="26"/>
+								<Property Name="Lowpass" Type="int16" Value="55"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="gameUnpaused" ID="{735E3ED9-31B5-4A7B-9BF3-E213DA3876F9}">
+					<ChildrenList>
+						<Action Name="" ID="{6D1374A9-DD1B-4B0F-8871-BF8A88D2E56B}" ShortID="799933245">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="27"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

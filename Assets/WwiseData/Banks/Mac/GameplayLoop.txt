@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	38601912	gameUnpaused			\Default Work Unit\Music\gameUnpaused	
 	303266102	menuHover			\Default Work Unit\UI\menuAudio\menuHover	
 	471385319	transitionState			\Default Work Unit\Music\levelStateSetters\transitionState	
 	615317676	doorKnightDie			\Default Work Unit\Objects\doorEvents\doorKnight\doorKnightDie	
 	674637734	doorLaserWarn			\Default Work Unit\Objects\doorEvents\doorLaser\doorLaserWarn	
 	904027786	playerKeyGain			\Default Work Unit\Player\playerKeyGain	
 	924228849	creditState			\Default Work Unit\Music\levelStateSetters\creditState	
+	935463065	gamePaused			\Default Work Unit\Music\gamePaused	
 	1046624244	doorVacuumEvent			\Default Work Unit\Objects\doorEvents\doorSuck\doorVacuumEvent	
 	1122283870	musicStart			\Default Work Unit\Music\musicStart	
 	1174275515	healthDropped			\Default Work Unit\Objects\drops\healthDropped	

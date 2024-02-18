@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0DEA1926-3560-0D8B-E2BF-BBF37EB038EB}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{34F804FE-1529-F871-BFBC-0A8D60CDC39C}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -434,6 +434,8 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="935463065" Name="gamePaused" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="38601912" Name="gameUnpaused" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1174275515" Name="healthDropped" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.22141892" DurationMax="0.32192928">
 					<MediaRefs>
 						<MediaRef Id="165850355"/>
@@ -703,5 +705,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D77C9CA8-C7DD-E7FD-2CAD-0F6D2D04C811}</FileHash>
+	<FileHash>{067D53EC-5DE4-CF77-3B50-52D7D8D9FC21}</FileHash>
 </SoundBanksInfo>
