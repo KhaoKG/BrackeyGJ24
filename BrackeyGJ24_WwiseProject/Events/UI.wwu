@@ -171,6 +171,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{2E732CFD-BDA7-482F-A74E-D06D84E9730C}" ShortID="1070852076">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="menuForward" ID="{90ECB213-5FDD-4333-8CE2-CB218F2CBA6C}" WorkUnitID="{2F3362B9-332F-4638-B3E6-8222E57AFFF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

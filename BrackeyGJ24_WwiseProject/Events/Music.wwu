@@ -122,6 +122,18 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D54FF8F3-AE7E-4993-80E0-0BD6833927BB}" ShortID="354509472">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="World" ID="{0152C4D7-57DB-4702-8098-F455CFF64FCC}" WorkUnitID="{C2FC293E-ECDE-4DA1-9AFB-32BD77150DDF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="gameUnpaused" ID="{735E3ED9-31B5-4A7B-9BF3-E213DA3876F9}">
@@ -134,6 +146,18 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1FAE3D15-273B-4C04-B1EE-E34D4ADC4374}" ShortID="669070367">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="World" ID="{0152C4D7-57DB-4702-8098-F455CFF64FCC}" WorkUnitID="{C2FC293E-ECDE-4DA1-9AFB-32BD77150DDF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
