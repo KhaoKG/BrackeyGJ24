@@ -115,6 +115,7 @@ public class RangerEnemy : Enemy {
         }
 
         // die
+        AkSoundEngine.PostEvent("faceDie", this.gameObject);
         enemyController.OnEnemyDeath(this);
     }
 
