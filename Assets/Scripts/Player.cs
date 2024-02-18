@@ -183,6 +183,9 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 direction)
     {
+        // set hurt animation
+        animator.SetTrigger("Hurt");
+
         // check i-frames
         if (iframes > 0)
         {
