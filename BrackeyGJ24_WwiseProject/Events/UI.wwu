@@ -157,6 +157,22 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="retryOrQuit" ID="{44F03657-F5BA-4FDC-AA04-D9429A692661}">
+							<ChildrenList>
+								<Action Name="" ID="{742650E2-E5A4-4078-BA95-ACFEB4B21B1E}" ShortID="920311992">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="27"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="waveComplete" ID="{471B7F8B-9331-4681-994A-63F78A2E0E3A}"/>
