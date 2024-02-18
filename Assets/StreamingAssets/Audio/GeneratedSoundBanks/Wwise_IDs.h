@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID DOORTENTACLESWING = 2420079027U;
         static const AkUniqueID DOORVACUUMEVENT = 1046624244U;
         static const AkUniqueID DOORVACUUMSTOP = 2136737028U;
+        static const AkUniqueID ENEMYSPAWN = 3453203440U;
         static const AkUniqueID ENEMYSUCKED = 3431269606U;
         static const AkUniqueID HEALTHDROPPED = 1174275515U;
         static const AkUniqueID KEYDROPPED = 3986149976U;
@@ -37,6 +38,7 @@ namespace AK
         static const AkUniqueID MENUHOVER = 303266102U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID PLAYBUTTON = 1843531235U;
+        static const AkUniqueID PLAYERDASH = 2525052962U;
         static const AkUniqueID PLAYERDIE = 3966601280U;
         static const AkUniqueID PLAYEREATCRAYON = 3400151318U;
         static const AkUniqueID PLAYERHIT = 3831688773U;

@@ -211,10 +211,10 @@
 										<AudioFileSource Name="doorOpened" ID="{48C45F82-CE1D-4496-9C5D-8695376275E4}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.0342936501331558"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0974375138703949"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.151871879161118"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.0653212383488681"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.39954824123391"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.502973535286285"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>doorOpened.wav</AudioFile>
@@ -605,7 +605,7 @@
 											<PropertyList>
 												<Property Name="MakeUpGain" Type="Real64">
 													<ValueList>
-														<Value>4</Value>
+														<Value>8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -748,6 +748,21 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="doorDemon" ID="{5B94D888-A8D8-45EC-AA35-5CDFCA24E225}" ShortID="488383174">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DAEFB565-D530-48FA-8EE6-E0EE98D524C6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -791,6 +806,49 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="doorDemonSpawner" ID="{E2380C1F-57CA-4AB4-8817-AB1EAEDEFF3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="doorDemonDie" ID="{8C67A908-BFE9-4F1E-8A9C-B48618A5A671}" ShortID="674870351">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{51039076-2207-4DB3-995D-9A619BF0DA07}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Magic_Spells_CastShort_Air_Whistling04" ID="{F5AA22B8-502F-4B49-AF79-8B2CDFED25C8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0885499907908125"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.752674921721907"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.224780745853601"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.17669314685483"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Magic_Spells_CastShort_Air_Whistling04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="82049524"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Magic_Spells_CastShort_Air_Whistling04" ID="{F5AA22B8-502F-4B49-AF79-8B2CDFED25C8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

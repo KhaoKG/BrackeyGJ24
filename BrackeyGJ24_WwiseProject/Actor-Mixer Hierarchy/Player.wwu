@@ -682,8 +682,21 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="playerHurt" ID="{715D6E2F-0719-4B6B-9B17-19B62421404F}" ShortID="993428103">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>49</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>47</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{7C07C32C-EACB-48D7-A97A-3CAC4543267A}">
@@ -1023,6 +1036,92 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="playerShatter" ID="{E9237854-A8BE-4955-B9FB-526676B6A099}" ShortID="383223816">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>290</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Player" ID="{0C7AC43B-564B-4085-9E9E-86BC4C1C2CDF}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="playerShatter" ID="{6A0EE09B-4257-4496-B954-760044180B29}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.370505992010652"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>playerShatter.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="798063247"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="playerShatter" ID="{6A0EE09B-4257-4496-B954-760044180B29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="playerDash" ID="{0D39C0AC-AD7B-4AC8-8C1A-372E2A2E76C9}" ShortID="641185368">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0E3EE10C-BA6A-4BEA-B1D8-9615A3ADCD0D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player Dash" ID="{0CAFD10D-B0A6-4938-A0F6-C04FB837B463}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0664269258524537"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.218604974168984"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.567648275466423"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Player Dash.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="201302755"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Player Dash" ID="{0CAFD10D-B0A6-4938-A0F6-C04FB837B463}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -28,6 +28,24 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="enemySpawn" ID="{D9B636C0-6FF2-4C2A-A0A1-901442817115}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.103133230452675"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.142592901234568"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.445714917695473"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>enemySpawn.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="717439536"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="enemySpawn" ID="{D9B636C0-6FF2-4C2A-A0A1-901442817115}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>

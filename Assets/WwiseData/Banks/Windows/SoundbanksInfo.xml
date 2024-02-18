@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{F216C66D-C282-2BBD-C588-E16FC313BC9A}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{0DEA1926-3560-0D8B-E2BF-BBF37EB038EB}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -75,6 +75,10 @@
 				<File Id="81243737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-002.wav</ShortName>
 					<CachePath>SFX/doorClosed-002_8E324C96.wem</CachePath>
+				</File>
+				<File Id="82049524" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic_Spells_CastShort_Air_Whistling04.wav</ShortName>
+					<CachePath>SFX/Magic_Spells_CastShort_Air_Whistling04_CF4FC070.wem</CachePath>
 				</File>
 				<File Id="94567938" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-001.wav</ShortName>
@@ -103,6 +107,10 @@
 				<File Id="197582343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-005.wav</ShortName>
 					<CachePath>SFX/playerHurt-005_818C4A45.wem</CachePath>
+				</File>
+				<File Id="201302755" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player Dash.wav</ShortName>
+					<CachePath>SFX/Player Dash_E7C25536.wem</CachePath>
 				</File>
 				<File Id="202590603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-004.wav</ShortName>
@@ -154,7 +162,7 @@
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_C25A23A6.wem</CachePath>
+					<CachePath>SFX/doorOpened_C6FE6B16.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
@@ -208,6 +216,10 @@
 					<ShortName>keyJangles-004.wav</ShortName>
 					<CachePath>SFX/keyJangles-004_F37BCC38.wem</CachePath>
 				</File>
+				<File Id="717439536" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>enemySpawn.wav</ShortName>
+					<CachePath>SFX/enemySpawn_C379BD9F.wem</CachePath>
+				</File>
 				<File Id="726984224" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch1.wav</ShortName>
 					<CachePath>SFX/munch1_8E324C96.wem</CachePath>
@@ -223,6 +235,10 @@
 				<File Id="759789812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-003.wav</ShortName>
 					<CachePath>SFX/attackWhooshes-003_B0974C12.wem</CachePath>
+				</File>
+				<File Id="798063247" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerShatter.wav</ShortName>
+					<CachePath>SFX/playerShatter_6B214E1C.wem</CachePath>
 				</File>
 				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaserWarn.wav</ShortName>
@@ -306,8 +322,17 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="615317676" Name="doorKnightDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2014340411" Name="doorKnightSpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="4.003329" DurationMax="4.003329">
+				<Event Id="615317676" Name="doorKnightDie" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.9115545" DurationMax="0.9940571">
+					<MediaRefs>
+						<MediaRef Id="82049524"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2014340411" Name="doorKnightSpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="3.833601" DurationMax="4.180571">
 					<MediaRefs>
 						<MediaRef Id="1047713376"/>
 					</MediaRefs>
@@ -338,7 +363,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3200569" DurationMax="0.34902447">
+				<Event Id="2649542654" Name="doorOpened" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.4190973" DurationMax="0.45702878">
 					<MediaRefs>
 						<MediaRef Id="431594120"/>
 					</MediaRefs>
@@ -389,6 +414,16 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="2136737028" Name="doorVacuumStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3453203440" Name="enemySpawn" DurationType="OneShot" DurationMin="0.44571492" DurationMax="0.44571492">
+					<MediaRefs>
+						<MediaRef Id="717439536"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3431269606" Name="enemySucked" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.09174714" DurationMax="0.102982685">
 					<MediaRefs>
 						<MediaRef Id="607508543"/>
@@ -501,10 +536,21 @@
 						<MediaRef Id="1049733785"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2525052962" Name="playerDash" DurationType="OneShot" DurationMin="0.33424503" DurationMax="0.36449677">
+					<MediaRefs>
+						<MediaRef Id="201302755"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3101299514"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3966601280" Name="playerDie" DurationType="OneShot" DurationMin="4.201741" DurationMax="4.4515896">
 					<MediaRefs>
 						<MediaRef Id="145169640"/>
 						<MediaRef Id="751297856"/>
+						<MediaRef Id="798063247"/>
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
@@ -537,7 +583,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3537581393" Name="playerHurt" DurationType="OneShot" DurationMin="0.21862702" DurationMax="0.33099398">
+				<Event Id="3537581393" Name="playerHurt" DurationType="OneShot" DurationMin="0.24540053" DurationMax="0.3715282">
 					<MediaRefs>
 						<MediaRef Id="44412615"/>
 						<MediaRef Id="172235974"/>
@@ -657,5 +703,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{035DD082-8869-79EE-17FB-3C312ADD74C4}</FileHash>
+	<FileHash>{D77C9CA8-C7DD-E7FD-2CAD-0F6D2D04C811}</FileHash>
 </SoundBanksInfo>

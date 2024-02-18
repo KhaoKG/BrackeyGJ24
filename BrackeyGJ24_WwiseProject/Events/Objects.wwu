@@ -217,7 +217,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="doorKnightDie" ID="{1226BDEC-9010-49B8-AB32-5480D7653BBA}"/>
+								<Event Name="doorKnightDie" ID="{1226BDEC-9010-49B8-AB32-5480D7653BBA}">
+									<ChildrenList>
+										<Action Name="" ID="{61BD5222-AE4D-4D0B-8D4B-0C727D3FAAB7}" ShortID="631371160">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="doorDemonDie" ID="{8C67A908-BFE9-4F1E-8A9C-B48618A5A671}" WorkUnitID="{A09657B6-6DB7-4835-8FE3-978B67E64759}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

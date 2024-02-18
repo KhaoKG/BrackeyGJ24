@@ -6,6 +6,17 @@
 				<Folder Name="enemyOne" ID="{80788C81-E08B-4C60-9B75-94918C2AB773}" ShortID="379709017"/>
 				<Folder Name="enemyTwo" ID="{9B6359AC-214C-4A9E-ABA3-109576B4D127}" ShortID="892020693"/>
 				<Folder Name="enemyThree" ID="{52CD5ABD-0DA8-45EC-8193-A157EB51D6B2}" ShortID="989336557"/>
+				<Event Name="enemySpawn" ID="{09D13231-E69E-4601-B6C8-93C68E31965D}">
+					<ChildrenList>
+						<Action Name="" ID="{80E7752A-223B-4441-B7B1-459A6709B07E}" ShortID="187746690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="enemySpawner" ID="{ED12017C-C65A-4D23-84BD-E53BDA1B702C}" WorkUnitID="{F70342BF-6E59-4BFA-9C78-FFE90E2DBB5D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

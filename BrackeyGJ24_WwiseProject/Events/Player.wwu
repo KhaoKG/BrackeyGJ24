@@ -44,6 +44,13 @@
 										</EventActionException>
 									</ChildrenList>
 								</Action>
+								<Action Name="" ID="{384FB482-2A6E-42BB-9CBB-3E25D710A8DE}" ShortID="291725004">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerShatter" ID="{E9237854-A8BE-4955-B9FB-526676B6A099}" WorkUnitID="{21236B61-3558-4BDC-9517-FE9FC1575DE7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{84EFDA69-9139-471D-B07C-E1711EF8E094}" ShortID="792439449">
 									<ReferenceList>
 										<Reference Name="Target">
