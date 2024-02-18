@@ -316,6 +316,7 @@ public class Player : MonoBehaviour
             else
             {
                 AbilityController.Instance.AddAbilityForRound(collision.gameObject.GetComponent<KeyPickup>().keyType);
+                AkSoundEngine.PostEvent("playerKeyGain", this.gameObject);
                 Destroy(collision.gameObject);
             }
         }

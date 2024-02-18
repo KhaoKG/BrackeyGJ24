@@ -73,7 +73,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="titleScreen" ID="{0ECEC4D0-A59F-4979-87BA-C1B87DD11330}"/>
+						<CurrentStateRef Name="levelOne" ID="{A163D7F9-82CA-4012-81C4-3460AED48A21}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

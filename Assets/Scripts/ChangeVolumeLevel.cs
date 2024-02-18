@@ -6,15 +6,15 @@ using TMPro;
 
 public class ChangeVolumeLevel : MonoBehaviour
 {
-    public const string SFX_VOLUME_PREF = "gameSFXVolume";
+    public const string SFX_VOLUME_PREF = "gameEffectVolume";
     public const string MUSIC_VOLUME_PREF = "gameMusicVolume";
     public const string MASTER_VOLUME_PREF = "gameMasterVolume";
     public const float DEFAULT_VOLUME = 80f;
 
     [SerializeField]
-    public Slider SFXSlider;
+    public Slider EffectSlider;
     [SerializeField]
-    public TMP_Text SFXSliderValue;
+    public TMP_Text EffectSliderValue;
     [SerializeField]
     public Slider musicSlider;
     [SerializeField]
@@ -24,7 +24,7 @@ public class ChangeVolumeLevel : MonoBehaviour
     [SerializeField]
     public TMP_Text masterSliderValue;
     [SerializeField]
-    public float gameSFXVolume;
+    public float gameEffectVolume;
     [SerializeField]
     public float gameMusicVolume;
     [SerializeField]
@@ -33,9 +33,9 @@ public class ChangeVolumeLevel : MonoBehaviour
     private void Start()
     {
         float currentSFXVolume = PlayerPrefs.GetFloat(SFX_VOLUME_PREF, DEFAULT_VOLUME);
-        SFXSlider.value = currentSFXVolume;
+        EffectSlider.value = currentSFXVolume;
         AkSoundEngine.SetRTPCValue(SFX_VOLUME_PREF, currentSFXVolume);
-        SFXSliderValue.text = gameSFXVolume.ToString();
+        EffectSliderValue.text = gameEffectVolume.ToString();
 
         float currentMusicVolume = PlayerPrefs.GetFloat(MUSIC_VOLUME_PREF, DEFAULT_VOLUME);
         musicSlider.value = currentMusicVolume;
@@ -48,12 +48,12 @@ public class ChangeVolumeLevel : MonoBehaviour
         masterSliderValue.text = gameMasterVolume.ToString();
     }
 
-    public void SetSFXVolume()
+    public void SetEffectVolume()
     {
-        gameSFXVolume = SFXSlider.value;
-        PlayerPrefs.SetFloat(SFX_VOLUME_PREF, gameSFXVolume);
-        AkSoundEngine.SetRTPCValue(SFX_VOLUME_PREF, gameSFXVolume);
-        SFXSliderValue.text = gameSFXVolume.ToString();
+        gameEffectVolume = EffectSlider.value;
+        PlayerPrefs.SetFloat(SFX_VOLUME_PREF, gameEffectVolume);
+        AkSoundEngine.SetRTPCValue(SFX_VOLUME_PREF, gameEffectVolume);
+        EffectSliderValue.text = gameEffectVolume.ToString();
     }
 
     public void SetMusicVolume()

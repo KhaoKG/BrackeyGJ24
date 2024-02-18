@@ -121,6 +121,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="playerDash" ID="{7559F77D-6FB2-488F-96E2-8B458A4A7177}">
+					<ChildrenList>
+						<Action Name="" ID="{05986BE2-868E-49F2-BE81-C61555622FA0}" ShortID="402193858">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="playerDash" ID="{0D39C0AC-AD7B-4AC8-8C1A-372E2A2E76C9}" WorkUnitID="{21236B61-3558-4BDC-9517-FE9FC1575DE7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
