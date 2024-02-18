@@ -54,6 +54,8 @@ public class Player : MonoBehaviour
     float dashCooldown = 1f;
     private float dashCounter, dashCoolCounter;
 
+    float iframes = 0f;
+
     public CameraShake ShakeEffect { get => shakeEffect; set => shakeEffect = value; }
 
     //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
@@ -167,12 +169,29 @@ public class Player : MonoBehaviour
         flipping = false;
     }
 
+    private void FixedUpdate()
+    {
+        if(iframes >= 0)
+        {
+            iframes--;
+        }
+    }
+
     public bool IsAlive() {
         return health > 0;
     }
 
     public void TakeDamage(int damage, Vector2 direction)
     {
+        // check i-frames
+        if (iframes > 0)
+        {
+            return;
+        }
+
+        // set i-frames
+        iframes = 30f;
+
         // play sound
         AkSoundEngine.PostEvent("playerHurt", this.gameObject);
 
