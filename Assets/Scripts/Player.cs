@@ -190,7 +190,7 @@ public class Player : MonoBehaviour
         }
 
         // set i-frames
-        iframes = 30f;
+        iframes = 60f;
 
         // play sound
         AkSoundEngine.PostEvent("playerHurt", this.gameObject);
