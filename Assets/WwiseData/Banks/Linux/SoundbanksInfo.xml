@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{C207A92D-D6E6-C186-25AB-1B1DA9DB5A4C}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{63D192AF-1C84-DEBB-70D7-2E052CDDDBC8}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -636,7 +636,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3537581393" Name="playerHurt" DurationType="OneShot" DurationMin="0.16378519" DurationMax="0.24796532">
+				<Event Id="3537581393" Name="playerHurt" DurationType="OneShot" DurationMin="0.23841447" DurationMax="0.36095148">
 					<MediaRefs>
 						<MediaRef Id="44412615"/>
 						<MediaRef Id="172235974"/>
@@ -769,5 +769,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{19FB980A-61E3-573D-3E5B-BF967A4D853E}</FileHash>
+	<FileHash>{4711016A-69A0-389A-4E4C-D151924D03EC}</FileHash>
 </SoundBanksInfo>
