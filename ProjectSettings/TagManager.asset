@@ -16,6 +16,7 @@ TagManager:
   - Key Pickup
   - Ability Controller
   - AvailableAbilities
+  - Bullet
   layers:
   - Default
   - TransparentFX

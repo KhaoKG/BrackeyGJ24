@@ -111,7 +111,7 @@ public class RangerEnemy : Enemy {
         if(Random.Range(0, 100) <= keyDropChance)
         {
             Instantiate(keyPickupPrefab, transform.position, Quaternion.identity);
-            AkSoundEngine.PostEvent("keyDropped", this.gameObject);
+            //AkSoundEngine.PostEvent("keyDropped", this.gameObject);
         }
 
         // die

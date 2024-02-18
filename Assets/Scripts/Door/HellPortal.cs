@@ -25,6 +25,7 @@ public class HellPortal : MonoBehaviour, IAbility
         if (EnemyPrefab != null)
         {
             spawnedEnemy = Instantiate(EnemyPrefab, transform.position, Quaternion.identity);
+            spawnedEnemy.GetComponent<DoorDamage>().doorDamage = GetComponent<DoorDamage>().doorDamage;
             AkSoundEngine.PostEvent("doorKnightSpawn", this.gameObject);
         }
 

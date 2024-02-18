@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8974297022027999704}
   - component: {fileID: 8066443708324225023}
+  - component: {fileID: 5556006719988058648}
   m_Layer: 0
   m_Name: HellPortal
   m_TagString: Untagged
@@ -46,3 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityData: {fileID: 11400000, guid: 858bbb333362d7d4c89b99969a09186b, type: 2}
   EnemyPrefab: {fileID: 3791813937421078195, guid: f74ef3b5cb2fe84449aa884beaa391ac, type: 3}
+--- !u!114 &5556006719988058648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090788724271676748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7a26a71b05f3c46a3f67644d87eeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorDamage: 1
