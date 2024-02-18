@@ -101,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.525, y: 1.525}
+    oldSize: {x: 2.2954545, y: 1.3863636}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   col2D: {fileID: 0}
   isInHitstun: 0
-  hitstunDuration: 0
+  hitstunDuration: 0.25
   keyPickupPrefab: {fileID: 2985766413136088510, guid: 91b5834572059eb48bad492591c8c7f6, type: 3}
   projectilePrefab: {fileID: 2509709318422134789, guid: e0c3f10904ea0eb4fb70d91dbc995d76, type: 3}
   projectileSpeed: 2
