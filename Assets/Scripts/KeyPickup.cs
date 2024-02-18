@@ -63,4 +63,21 @@ public class KeyPickup : MonoBehaviour
     {
         
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (AbilityController.Instance.availableAbilitiesForRound.Count >= 4)
+            {
+                return;
+            }
+            else
+            {
+                AbilityController.Instance.AddAbilityForRound(keyType);
+                AkSoundEngine.PostEvent("playerKeyGain", this.gameObject);
+                Destroy(gameObject);
+            }
+        }
+    }
 }

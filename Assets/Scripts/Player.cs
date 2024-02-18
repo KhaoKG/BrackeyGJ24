@@ -308,19 +308,6 @@ public class Player : MonoBehaviour
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
-        else if (collision.CompareTag("Key Pickup"))
-        {
-            if(AbilityController.Instance.availableAbilitiesForRound.Count >= 4)
-            {
-                return;
-            }
-            else
-            {
-                AbilityController.Instance.AddAbilityForRound(collision.gameObject.GetComponent<KeyPickup>().keyType);
-                AkSoundEngine.PostEvent("playerKeyGain", this.gameObject);
-                Destroy(collision.gameObject);
-            }
-        }
     }
 
     // Avoids player dying after wave over

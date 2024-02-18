@@ -9,6 +9,7 @@ public class TutorialEnemy : Enemy {
         if (!IsAlive() || isInHitstun || isSpawning) {
             return;
         }
+        Move();
     }
 
     public override void TakeDamage(int damage, Vector2 direction)
@@ -31,7 +32,7 @@ public class TutorialEnemy : Enemy {
 
     protected override void Move()
     {
-        // do nothing
+        rb.velocity = Vector2.zero;
     }
 
     protected override void Die() {
