@@ -76,7 +76,7 @@ public abstract class Enemy : MonoBehaviour
         col2D.enabled = true;
     }
 
-    protected bool IsAlive() {
+    public bool IsAlive() {
         return health > 0;
     }
 

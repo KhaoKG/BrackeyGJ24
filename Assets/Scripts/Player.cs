@@ -275,7 +275,17 @@ public class Player : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag is "Enemy" or "PortalEnemy" or "Door Ability" && !isInHitstun)
+        if (collision.collider.CompareTag("Enemy")) {
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy.IsAlive()) {
+                // Get knockback direction
+                Vector2 knockbackDirection = transform.position - collision.transform.position;
+                //Debug.Log("Collided with enemy");
+                TakeDamage(1, knockbackDirection.normalized);
+            }
+
+        }
+        else if(collision.gameObject.tag is "PortalEnemy" or "Door Ability" && !isInHitstun)
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;

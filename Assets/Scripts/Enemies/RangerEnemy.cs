@@ -60,8 +60,11 @@ public class RangerEnemy : Enemy {
         }
     }
 
-    public override void TakeDamage(int damage, Vector2 direction)
-    {
+    public override void TakeDamage(int damage, Vector2 direction) {
+        if (health <= 0) {
+            return;
+        }
+
         AkSoundEngine.PostEvent("playerHit", this.gameObject);
 
         health -= damage;
@@ -112,7 +115,6 @@ public class RangerEnemy : Enemy {
         }
 
         // die
-        col2D.enabled = false;
         enemyController.OnEnemyDeath(this);
     }
 
