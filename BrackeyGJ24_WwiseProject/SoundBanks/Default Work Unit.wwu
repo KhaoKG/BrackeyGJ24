@@ -30,7 +30,6 @@
 						<ObjectRef Name="bossState" ID="{DAC6B68C-DF3E-4922-A034-31FD1F5BA57E}" WorkUnitID="{52298CEE-4907-4E5C-903F-8DD2B8543541}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sliderClick" ID="{9B18A454-82B7-4A54-8483-5DC6EFCC536F}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="testAudio" ID="{A7C80112-6D54-4A6D-A6ED-E15B24C47316}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="enemyTwo" ID="{9B6359AC-214C-4A9E-ABA3-109576B4D127}" WorkUnitID="{9195A3E2-BF2E-4A19-81B4-247052C09E8A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorEvents" ID="{720B7C61-2746-4B04-A4FE-CB7745578C03}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="playerHealth" ID="{AE3A2973-2147-4B0A-B737-BDBBC5D0DE31}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="testSuccess" ID="{B0601634-8D2B-4B66-9A7C-A7D114BA48E3}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>

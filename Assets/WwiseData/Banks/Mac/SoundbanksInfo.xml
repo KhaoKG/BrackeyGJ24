@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E082AC83-3D7F-8B1F-EC98-B1DCF0324203}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{607D21CB-E62D-C7C5-BF12-1744494F7504}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -414,7 +414,7 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="2136737028" Name="doorVacuumStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3453203440" Name="enemySpawn" DurationType="OneShot" DurationMin="0.44571492" DurationMax="0.44571492">
+				<Event Id="3453203440" Name="enemySpawn" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.28078282" DurationMax="0.28078282">
 					<MediaRefs>
 						<MediaRef Id="717439536"/>
 					</MediaRefs>
@@ -434,6 +434,8 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="3588219112" Name="faceDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3917283687" Name="faceShoot" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="935463065" Name="gamePaused" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="38601912" Name="gameUnpaused" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1174275515" Name="healthDropped" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.22141892" DurationMax="0.32192928">
@@ -661,6 +663,7 @@
 				</Event>
 				<Event Id="3101299514" Name="slowDown" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1221709037" Name="speedUp" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1065147432" Name="springDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1435302941" Name="testFail" DurationType="OneShot" DurationMin="3.528125" DurationMax="3.528125">
 					<MediaRefs>
 						<MediaRef Id="889930564"/>
@@ -705,5 +708,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{452F50B1-5D5B-A649-4C1C-26B28296DA5B}</FileHash>
+	<FileHash>{3E8CBC49-2674-5317-F6D5-A15BA763C9F0}</FileHash>
 </SoundBanksInfo>

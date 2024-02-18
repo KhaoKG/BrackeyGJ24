@@ -25,7 +25,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="objectAttenuate" ID="{3F03D542-EEAA-4013-9359-827BEBD5D669}" WorkUnitID="{DDC43EAC-0984-45FF-A597-DA5156BED722}"/>
+							<ObjectRef Name="enemyAttenuate" ID="{0857890E-3F14-4B83-B174-ADC4AA78233C}" WorkUnitID="{DDC43EAC-0984-45FF-A597-DA5156BED722}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -74,6 +74,18 @@
 							</ChildrenList>
 						</Folder>
 						<Sound Name="enemySpawner" ID="{ED12017C-C65A-4D23-84BD-E53BDA1B702C}" ShortID="891997542">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>800</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
