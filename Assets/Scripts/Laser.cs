@@ -11,7 +11,7 @@ public class Laser : MonoBehaviour, IAbility
     {
         transform.position = door.transform.position;
 
-        if(door.GetComponent<DoorEventManager>().DoorId == 1) // left
+        if (door.GetComponent<DoorEventManager>().DoorId == 1) // left
         {
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
         }
@@ -48,10 +48,20 @@ public class Laser : MonoBehaviour, IAbility
     private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
     {
         //AkSoundEngine.PostEvent("doorLaserWarn", this.gameObject);
-        //yield return new WaitForSeconds(0.5f);
-        AkSoundEngine.PostEvent("doorLaserFire", this.gameObject);
+        yield return new WaitForSeconds(0.5f);
+        //AkSoundEngine.PostEvent("doorLaserFire", this.gameObject);
         yield return new WaitForSeconds(SO.ActiveTime);
-        AkSoundEngine.PostEvent("doorLaserStop", this.gameObject);
+        //AkSoundEngine.PostEvent("doorLaserStop", this.gameObject);
         Deactivate(door);
+    }
+
+    public void Warning ()
+    {
+        AkSoundEngine.PostEvent("doorLaserWarn", this.gameObject);
+    }
+
+    public void LightItUp()
+    {
+        AkSoundEngine.PostEvent("doorLaserFire", this.gameObject);
     }
 }

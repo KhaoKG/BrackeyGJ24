@@ -291,9 +291,9 @@ public class AbilityController : Singleton<AbilityController>
             case "Tentacle":
                 AkSoundEngine.PostEvent("doorTentacleLoom", door);
                 break;
-            case "Laser":
+            /*case "Laser":
                 AkSoundEngine.PostEvent("doorLaserWarn", door);
-                break;
+                break;*/
             default:
                 break;
         }
