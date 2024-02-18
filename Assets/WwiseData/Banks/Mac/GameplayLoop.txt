@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	924228849	creditState			\Default Work Unit\Music\levelStateSetters\creditState	
 	935463065	gamePaused			\Default Work Unit\Music\gamePaused	
 	1046624244	doorVacuumEvent			\Default Work Unit\Objects\doorEvents\doorSuck\doorVacuumEvent	
+	1065147432	springDie			\Default Work Unit\NPCs\enemySpring\springDie	
 	1122283870	musicStart			\Default Work Unit\Music\musicStart	
 	1174275515	healthDropped			\Default Work Unit\Objects\drops\healthDropped	
 	1179082440	titleState			\Default Work Unit\Music\levelStateSetters\titleState	
@@ -40,7 +41,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3431269606	enemySucked			\Default Work Unit\Objects\doorEvents\doorSuck\enemySucked	
 	3453203440	enemySpawn			\Default Work Unit\NPCs\enemySpawn	
 	3537581393	playerHurt			\Default Work Unit\Player\playerHealth\playerHurt	
+	3588219112	faceDie			\Default Work Unit\NPCs\enemyFace\faceDie	
 	3831688773	playerHit			\Default Work Unit\Player\playerAttacks\playerHit	
+	3917283687	faceShoot			\Default Work Unit\NPCs\enemyFace\faceShoot	
 	3966601280	playerDie			\Default Work Unit\Player\playerHealth\playerDie	
 	3986149976	keyDropped			\Default Work Unit\Objects\drops\keyDropped	
 	4011858643	testStart			\Default Work Unit\UI\testAudio\testStart	

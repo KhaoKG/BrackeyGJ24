@@ -11,6 +11,7 @@ public class EnemySpawnEffect : MonoBehaviour
     void Start()
     {
         material = GetComponent<SpriteRenderer>().material;
+        AkSoundEngine.PostEvent("enemySpawn", this.gameObject);
     }
 
     void Update() {

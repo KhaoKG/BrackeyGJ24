@@ -30,6 +30,8 @@ namespace AK
         static const AkUniqueID DOORVACUUMSTOP = 2136737028U;
         static const AkUniqueID ENEMYSPAWN = 3453203440U;
         static const AkUniqueID ENEMYSUCKED = 3431269606U;
+        static const AkUniqueID FACEDIE = 3588219112U;
+        static const AkUniqueID FACESHOOT = 3917283687U;
         static const AkUniqueID GAMEPAUSED = 935463065U;
         static const AkUniqueID GAMEUNPAUSED = 38601912U;
         static const AkUniqueID HEALTHDROPPED = 1174275515U;
@@ -53,6 +55,7 @@ namespace AK
         static const AkUniqueID SLIDERUNCLICK = 3370401445U;
         static const AkUniqueID SLOWDOWN = 3101299514U;
         static const AkUniqueID SPEEDUP = 1221709037U;
+        static const AkUniqueID SPRINGDIE = 1065147432U;
         static const AkUniqueID TESTFAIL = 1435302941U;
         static const AkUniqueID TESTSTART = 4011858643U;
         static const AkUniqueID TESTSUCCESS = 1423690258U;
