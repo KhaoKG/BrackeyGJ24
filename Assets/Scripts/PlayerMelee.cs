@@ -21,19 +21,16 @@ public class PlayerMelee : MonoBehaviour
 
     void Update()
     {
-        // Check if not paused
-        if (Time.timeScale == 0f) {
+        // Check if not paused or already attacking
+        if (Time.timeScale == 0f || inAttack) {
             return;
         }
 
         // CHECK FOR ATTACK BUTTON PRESSED
-        if(Input.GetMouseButtonDown(0) && !inAttack) // can't attack if already attacking
+        if(Input.GetMouseButtonDown(0))
         {
             StartCoroutine(DoAttack());
         }
-
-        if (inAttack)
-            return;
 
         // ROTATE ATTACK TOWARD MOUSE
         // Get screen position of the object
@@ -65,6 +62,7 @@ public class PlayerMelee : MonoBehaviour
 
     IEnumerator DoAttack() {
         AkSoundEngine.PostEvent("playerSwing", this.gameObject); // play sound
+        inAttack = true;
 
         // oh boy here we go
         float offset = mousePosition.y - screenPosition.y;
@@ -99,7 +97,6 @@ public class PlayerMelee : MonoBehaviour
 
         // Show hitbox
         attackHitbox.SetActive(true);
-        inAttack = true;
 
         yield return new WaitForSeconds(attackCooldown * 0.75F);
 
