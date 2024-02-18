@@ -3394,6 +3394,10 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.5176471
       objectReference: {fileID: 0}
+    - target: {fileID: 5475470857828814286, guid: 7325c4acf355ae141853fbbf445bf9f0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 5610743770901863655, guid: 7325c4acf355ae141853fbbf445bf9f0, type: 3}
       propertyPath: m_text
       value: ' Sound Design & Wwise: Evan Seamans'
