@@ -10,6 +10,10 @@
 							<Position X="0" Y="7"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="doorLaserFire" ID="{ED15E788-E5AA-49E5-A970-D123AD8A567A}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
 							<Position X="1" Y="3"/>
 						</Module>
@@ -20,6 +24,10 @@
 						<Module>
 							<ObjectRef Name="doorTentacleSlam" ID="{0F429EFA-D527-40FF-BE43-7895E9A2E28B}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
 							<Position X="1" Y="7"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="doorLaserStop" ID="{8DA3B734-5210-48D8-85D6-88AC6925DC32}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="playerHit" ID="{50E51490-DE77-42D5-A1D6-862FD27AC0F9}" WorkUnitID="{7AFBB92C-EEF4-45D0-82D0-C5D320348C3B}"/>
