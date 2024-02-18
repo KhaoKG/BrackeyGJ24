@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 22.3}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -57.44, y: -135.88}
+  m_AnchoredPosition: {x: -105.3, y: -159.5}
   m_SizeDelta: {x: 518.147, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &260266978
@@ -180,7 +180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Door Dungeon
+  m_text: 'Dreamscape
+
+    Panic!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 713e6ffed4c413349a90a450d4a91004, type: 2}
   m_sharedMaterial: {fileID: -3276159963036876854, guid: 713e6ffed4c413349a90a450d4a91004, type: 2}
