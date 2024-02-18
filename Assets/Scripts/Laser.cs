@@ -47,8 +47,8 @@ public class Laser : MonoBehaviour, IAbility
     }
     private IEnumerator ActivateAndDeactivateCoroutine(GameObject door)
     {
-        AkSoundEngine.PostEvent("doorLaserWarn", this.gameObject);
-        yield return new WaitForSeconds(0.5f);
+        //AkSoundEngine.PostEvent("doorLaserWarn", this.gameObject);
+        //yield return new WaitForSeconds(0.5f);
         AkSoundEngine.PostEvent("doorLaserFire", this.gameObject);
         yield return new WaitForSeconds(SO.ActiveTime);
         AkSoundEngine.PostEvent("doorLaserStop", this.gameObject);

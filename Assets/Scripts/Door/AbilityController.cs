@@ -234,6 +234,7 @@ public class AbilityController : Singleton<AbilityController>
         Destroy(sprite, 0.5f); // Adjust delay as needed
 
         // delay door being opened
+        AbilitySound(door);
         yield return new WaitForSeconds(2f);
 
         UseAbility(door);
@@ -277,5 +278,25 @@ public class AbilityController : Singleton<AbilityController>
             keyObject.GetComponent<Image>().sprite = ability.KeyIcon;
             keyObject.GetComponent<Image>().color = ability.KeyColor;
         }
+    }
+    private void AbilitySound(GameObject door)
+    {
+        switch (availableAbilitiesForRound.First().GetAbilitySo().Name) {
+            case "Hell Portal":
+                AkSoundEngine.PostEvent("doorKnightSpawn", door);
+                break;
+            case "Vacuum":
+                AkSoundEngine.PostEvent("doorVacuumEvent", door);
+                break;
+            case "Tentacle":
+                AkSoundEngine.PostEvent("doorTentacleLoom", door);
+                break;
+            case "Laser":
+                AkSoundEngine.PostEvent("doorLaserWarn", door);
+                break;
+            default:
+                break;
+        }
+        
     }
 }

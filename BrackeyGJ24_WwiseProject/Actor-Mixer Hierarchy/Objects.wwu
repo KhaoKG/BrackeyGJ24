@@ -729,10 +729,9 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0246412838437639"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.154332251442521"/>
 														<Property Name="FadeOutShape" Type="int16" Value="2"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0.233443741677763"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.107643503106969"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.770364347536618"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.291804677097204"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.701628134709277"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>doorTentacleSwing.wav</AudioFile>
