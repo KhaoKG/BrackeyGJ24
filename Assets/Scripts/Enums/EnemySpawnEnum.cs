@@ -6,7 +6,6 @@ public enum EnemySpawnEnum
 {
     Grunt,
     Ranger,
-    Tough,
 
     // Random enemy
     Random = 10

@@ -281,7 +281,7 @@ public class Player : MonoBehaviour
                 // Get knockback direction
                 Vector2 knockbackDirection = transform.position - collision.transform.position;
                 //Debug.Log("Collided with enemy");
-                TakeDamage(1, knockbackDirection.normalized);
+                TakeDamage(enemy.Damage, knockbackDirection.normalized);
             }
 
         }
@@ -290,7 +290,7 @@ public class Player : MonoBehaviour
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
             //Debug.Log("Collided with enemy");
-            TakeDamage(1, knockbackDirection.normalized);
+            TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
     }
 
@@ -305,7 +305,7 @@ public class Player : MonoBehaviour
         {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+            TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
         else if (collision.CompareTag("Key Pickup"))
         {

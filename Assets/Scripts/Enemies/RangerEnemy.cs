@@ -128,17 +128,15 @@ public class RangerEnemy : Enemy {
         if (collision.gameObject.CompareTag("Door Ability")) {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.transform.parent.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+            TakeDamage(collision.transform.parent.GetComponentInChildren<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Door Ability")
-        {
+    public void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("Door Ability")) {
             // Get knockback direction
             Vector2 knockbackDirection = transform.position - collision.transform.position;
-            TakeDamage(collision.gameObject.GetComponent<DoorDamage>().doorDamage, knockbackDirection.normalized);
+            TakeDamage(collision.transform.parent.GetComponentInChildren<DoorDamage>().doorDamage, knockbackDirection.normalized);
         }
     }
 }

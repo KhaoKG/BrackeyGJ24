@@ -45,6 +45,7 @@ public abstract class Enemy : MonoBehaviour
     public EnemyController EnemyController { get => enemyController; set => enemyController = value; }
     public Player Player { get => player; set => player = value; }
     public int Score { get => score; set => score = value; }
+    public int Damage { get => damage; set => damage = value; }
 
     protected abstract void Move();
     protected abstract void Attack();
