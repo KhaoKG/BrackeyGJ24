@@ -11,6 +11,9 @@ public class GruntEnemy : Enemy {
     [SerializeField] int keyDropChance = 10;
     [SerializeField] int healthDropChance = 10;
 
+    [SerializeField] SpriteRenderer spriteRenderer;
+
+
     private void Update() {
         if (!IsAlive() || isInHitstun || isSpawning) {
             return;
@@ -30,6 +33,7 @@ public class GruntEnemy : Enemy {
 
     protected override void Move() {
         rb.velocity = movementSpeed * (player.transform.position - transform.position).normalized;
+        spriteRenderer.flipX = rb.velocity.x > 0;
     }
 
     public override void TakeDamage(int damage, Vector2 direction)
