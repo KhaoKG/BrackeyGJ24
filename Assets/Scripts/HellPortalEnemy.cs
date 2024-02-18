@@ -14,6 +14,7 @@ public class HellPortalEnemy : Enemy
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        damageToEnemy = GetComponent<DoorDamage>().doorDamage;
     }
 
     private void Update()
