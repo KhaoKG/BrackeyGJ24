@@ -109,13 +109,14 @@ public class PauseMenu : MonoBehaviour
         DeactivateChildren();
         scorePanel.SetActive(false);
         abilitiesPanel.SetActive(false);
+        
         if (wavePanel != null)
         {
             wavePanel.SetActive(false);
         }
-        }
+    }
 
-        public void SettingsReturn()
+    public void SettingsReturn()
     {
         settingsPanel.SetActive(false);
         ActivateChildren();
@@ -125,9 +126,9 @@ public class PauseMenu : MonoBehaviour
         {
             wavePanel.SetActive(true);
         }
-        }
+    }
 
-        public void Quit()
+    public void Quit()
     {
         StartCoroutine(FadeAndLoadScene(0));
         AkSoundEngine.PostEvent("gameUnpaused", this.gameObject);
@@ -135,6 +136,7 @@ public class PauseMenu : MonoBehaviour
 
     IEnumerator FadeAndLoadScene(int scene) {
         // Activate game object
+        screenFadeEffect.FadeSpeed = 1f;
         screenFadeEffect.TargetAlpha = 1f;
 
         yield return new WaitForSecondsRealtime(1f / screenFadeEffect.FadeSpeed);

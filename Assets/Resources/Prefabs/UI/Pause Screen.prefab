@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 5875973602976004471}
   - component: {fileID: 753500712478878718}
   - component: {fileID: 2037674322508881833}
+  - component: {fileID: 2034398676392916541}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 753500712478878718}
+      - m_Target: {fileID: 2034398676392916541}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
         m_MethodName: PlayEventSound
         m_Mode: 1
@@ -334,6 +335,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2034398676392916541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000984419688778166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65eb34b3fe1bd146bf23b592cf4e2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 59a58c2ac5b810f468e2206e7809e7f4, type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &3926605777702483361
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +924,7 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   scorePanel: {fileID: 0}
   abilitiesPanel: {fileID: 0}
+  wavePanel: {fileID: 0}
 --- !u!1 &8184977753385207125
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +939,7 @@ GameObject:
   - component: {fileID: 4789727479874397724}
   - component: {fileID: 3123237914599473939}
   - component: {fileID: 469708376528374396}
+  - component: {fileID: 1051053237796288865}
   m_Layer: 5
   m_Name: Resume Button
   m_TagString: Untagged
@@ -1022,7 +1049,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3123237914599473939}
+      - m_Target: {fileID: 1051053237796288865}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
         m_MethodName: PlayEventSound
         m_Mode: 1
@@ -1099,3 +1126,27 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1051053237796288865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184977753385207125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65eb34b3fe1bd146bf23b592cf4e2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 59a58c2ac5b810f468e2206e7809e7f4, type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
