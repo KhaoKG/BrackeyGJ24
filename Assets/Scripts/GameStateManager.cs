@@ -56,6 +56,12 @@ public class GameStateManager : MonoBehaviour
 
     public void CheckIfWaveOver() {
         if (!isGameOver && !enemySpawner.enabled) {
+            // Remove player collider to avoid player dying
+            player.ActivateWaveOverInvincibility();
+
+            // Slow down effect
+            AkSoundEngine.PostEvent("slowDown", this.gameObject);
+
             // Play hit stop effect upon last enemy dying
             hitStopEffect.StartEffect();
 

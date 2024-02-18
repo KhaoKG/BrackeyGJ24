@@ -31,11 +31,6 @@ public class EnemyController : MonoBehaviour
         // Inform game state manager in case there are no more enemies
         if (enemiesAlive.Count == 0) {
             gameStateManager.CheckIfWaveOver();
-            foreach(GameObject bullet in GameObject.FindGameObjectsWithTag("Bullet"))
-            {
-                Destroy(bullet);
-            }
-            AkSoundEngine.PostEvent("slowDown", this.gameObject);
         }
     }
 

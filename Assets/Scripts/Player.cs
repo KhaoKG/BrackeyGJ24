@@ -319,4 +319,9 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    // Avoids player dying after wave over
+    public void ActivateWaveOverInvincibility() {
+        GetComponent<Collider2D>().enabled = false;
+    }
 }
