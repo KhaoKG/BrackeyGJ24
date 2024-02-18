@@ -195,7 +195,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -793,7 +793,7 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.130492676431425"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.974034620505992"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.99467376830892"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.7"/>
 														<Property Name="TrimEnd" Type="Real64" Value="5.99800266311585"/>
 													</PropertyList>
 													<Language>SFX</Language>

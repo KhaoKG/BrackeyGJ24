@@ -46,6 +46,7 @@
 						<ObjectRef Name="ambientStart" ID="{35508728-A859-4F50-9C8C-3ED4E19D07C3}" WorkUnitID="{2A33957C-0600-4B67-BBF5-959039A6A0C9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="menuBack" ID="{32DDFE42-7164-4F63-B938-5B56D2421F61}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="doorVacuumEvent" ID="{0B0C3082-62F8-4F6F-9C78-B9FD4B34FE23}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="retryOrQuit" ID="{44F03657-F5BA-4FDC-AA04-D9429A692661}" WorkUnitID="{69F88892-9BA7-4D04-89BC-EAE9198F348D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemySucked" ID="{A87AA008-46EA-4FF8-BB7C-5EFE94AA80A3}" WorkUnitID="{52DDF85A-C094-429D-86D9-A6798A9AC701}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

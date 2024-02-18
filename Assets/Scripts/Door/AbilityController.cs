@@ -236,7 +236,7 @@ public class AbilityController : Singleton<AbilityController>
         // delay door being opened
         AbilitySound(door);
         yield return new WaitForSeconds(2f);
-
+        AkSoundEngine.PostEvent("doorOpened", door);
         UseAbility(door);
 
     }

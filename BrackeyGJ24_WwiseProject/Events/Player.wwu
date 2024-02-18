@@ -44,6 +44,19 @@
 										</EventActionException>
 									</ChildrenList>
 								</Action>
+								<Action Name="" ID="{E9F94195-EF96-4E5E-8A03-F60A68CFD96D}" ShortID="741267735">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="26"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Lowpass" Type="int16" Value="60"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{384FB482-2A6E-42BB-9CBB-3E25D710A8DE}" ShortID="291725004">
 									<ReferenceList>
 										<Reference Name="Target">
