@@ -114,6 +114,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="26"/>
 								<Property Name="Lowpass" Type="int16" Value="55"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -128,6 +129,7 @@
 						<Action Name="" ID="{6D1374A9-DD1B-4B0F-8871-BF8A88D2E56B}" ShortID="799933245">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="27"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
