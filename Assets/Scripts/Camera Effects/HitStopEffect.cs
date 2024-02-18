@@ -36,6 +36,8 @@ public class HitStopEffect : MonoBehaviour {
     }
 
     public void StartEffect() {
+        //vcam.m_Follow = FindObjectOfType<Enemy>().transform;
+
         enabled = true;
         // Slow time
         Time.timeScale = effectTimeScale;

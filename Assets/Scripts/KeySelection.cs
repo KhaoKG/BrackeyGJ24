@@ -80,6 +80,7 @@ public class KeySelection : MonoBehaviour {
         }
 
         // Return to fight next wave
+        AkSoundEngine.PostEvent("powerSelect", this.gameObject);
         StartCoroutine(PrepareNextWave());
     }
 
