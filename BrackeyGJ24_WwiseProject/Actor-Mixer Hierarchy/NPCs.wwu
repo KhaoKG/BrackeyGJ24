@@ -158,7 +158,22 @@
 						</Folder>
 						<Folder Name="enemyFace" ID="{61E16F5F-4E78-4FEF-A3DB-79B0F320A3F1}" ShortID="340940455">
 							<ChildrenList>
-								<Sound Name="faceShoot" ID="{9ABE3EAD-84E9-44D6-AEBF-44AAFA55DACB}" ShortID="939178259">
+								<RandomSequenceContainer Name="porcelainBreak" ID="{44E5F9B4-4C16-451B-ACE5-D123F9027AC4}" ShortID="698403088">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7FCA6B2C-2EF3-418E-8630-AE180A8E7740}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -167,8 +182,218 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 										</Reference>
 									</ReferenceList>
-								</Sound>
-								<Sound Name="faceDie" ID="{EB7DB313-188A-4C76-83B9-21C79C445770}" ShortID="125578251">
+									<ChildrenList>
+										<Sound Name="porcelainBreak-001" ID="{8D8E005F-C10E-4020-A62D-7A05D93499E5}" ShortID="971505931">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="porcelainBreak-001" ID="{7B3E6870-7CFA-4568-9129-A14854976D67}">
+													<Language>SFX</Language>
+													<AudioFile>porcelainBreak-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="500735071"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="porcelainBreak-001" ID="{7B3E6870-7CFA-4568-9129-A14854976D67}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="porcelainBreak-002" ID="{65D58F30-866A-4D4D-AD78-5C82E59A84CE}" ShortID="2627932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="porcelainBreak-002" ID="{4A7E4C86-CFFB-4AB9-A8A6-98EA594C7CDA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0174685419440746"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0754323402130493"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>porcelainBreak-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="399348121"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="porcelainBreak-002" ID="{4A7E4C86-CFFB-4AB9-A8A6-98EA594C7CDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="porcelainBreak-003" ID="{254BB732-5821-4FE5-8F2D-01B79057BEC6}" ShortID="179121103">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="porcelainBreak-003" ID="{34C24E02-31C9-4124-A8B2-4525F39EABAB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0368220150909898"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0368220150909898"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>porcelainBreak-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="706274181"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="porcelainBreak-003" ID="{34C24E02-31C9-4124-A8B2-4525F39EABAB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="porcelainBreak-004" ID="{1F55FBBD-17CB-40EF-8BE2-E1856B7A5EC7}" ShortID="1000470665">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="porcelainBreak-004" ID="{99D3028D-D55C-4478-9CE8-0CBBE8FB9739}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.01207452563249"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.016904335885486"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>porcelainBreak-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="109243815"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="porcelainBreak-004" ID="{99D3028D-D55C-4478-9CE8-0CBBE8FB9739}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="porcelainBreak-005" ID="{353C04F1-3392-48D2-AC0D-03897AF91BA6}" ShortID="402326042">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="porcelainBreak-005" ID="{77F7542E-52FC-4844-B098-C544B75A3C23}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0287758544163338"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.018884154460719"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>porcelainBreak-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="732757203"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="porcelainBreak-005" ID="{77F7542E-52FC-4844-B098-C544B75A3C23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="porcelainBreak-006" ID="{0773F0C3-1474-44BD-AAE6-FBC1526B0034}" ShortID="279695878">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="porcelainBreak-006" ID="{4740A9FB-0453-4300-8264-C712B5DA95FA}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0209087882822903"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0209087882822903"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>porcelainBreak-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910162868"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="porcelainBreak-006" ID="{4740A9FB-0453-4300-8264-C712B5DA95FA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="faceGroan" ID="{F4909089-F23F-4DE9-BF3C-6CFA7D82AB63}" ShortID="881171683">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FE6ED003-9A1F-457A-9F7C-8CEF0C70EE99}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{61A9DE6B-31BA-42E6-9284-D92D7B5DDF7F}"/>
@@ -177,20 +402,43 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0DF98501-500B-4750-A8F4-C5FD70511B58}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="faceGroan" ID="{E07CBAC9-E0D1-4DDA-8D89-791132A6CC86}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.269775965379494"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.00647187083888"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>faceGroan.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="613120640"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="faceGroan" ID="{E07CBAC9-E0D1-4DDA-8D89-791132A6CC86}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Sound Name="enemySpawner" ID="{ED12017C-C65A-4D23-84BD-E53BDA1B702C}" ShortID="891997542">
 							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>50</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>800</Value>
+										<Value>-240</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2CDEB9EB-38E8-4E28-AC9D-1582776ADEBC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -215,9 +463,23 @@
 										<MediaID ID="717439536"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Magic_Spells_CastLong_Air_Charm02" ID="{54A4B09E-CDA5-45C0-8866-A56E5E0EF52D}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.218823971665897"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.148027980832812"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="6.89295510747575"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.56873501997336"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Magic_Spells_CastLong_Air_Charm02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="387334877"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="enemySpawn" ID="{D9B636C0-6FF2-4C2A-A0A1-901442817115}" Platform="Linked"/>
+								<ActiveSource Name="Magic_Spells_CastLong_Air_Charm02" ID="{54A4B09E-CDA5-45C0-8866-A56E5E0EF52D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
