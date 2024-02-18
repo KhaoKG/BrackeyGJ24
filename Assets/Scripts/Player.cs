@@ -183,14 +183,14 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 direction)
     {
-        // set hurt animation
-        animator.SetTrigger("Hurt");
-
         // check i-frames
         if (iframes > 0)
         {
             return;
         }
+
+        // set hurt animation
+        animator.SetTrigger("Hurt");
 
         // set i-frames
         iframes = 60f;
@@ -318,5 +318,10 @@ public class Player : MonoBehaviour
                 Destroy(collision.gameObject);
             }
         }
+    }
+
+    // Avoids player dying after wave over
+    public void ActivateWaveOverInvincibility() {
+        GetComponent<Collider2D>().enabled = false;
     }
 }
