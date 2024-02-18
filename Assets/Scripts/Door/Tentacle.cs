@@ -49,6 +49,8 @@ public class Tentacle : MonoBehaviour
 
     private void OnDestroy() {
         // Deactivate ability
-        ability.Deactivate(ability.Door);
+        if (ability != null) {
+            ability.Deactivate(ability.Door);
+        }
     }
 }
