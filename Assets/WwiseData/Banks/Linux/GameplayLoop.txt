@@ -43,6 +43,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3537581393	playerHurt			\Default Work Unit\Player\playerHealth\playerHurt	
 	3588219112	faceDie			\Default Work Unit\NPCs\enemyFace\faceDie	
 	3831688773	playerHit			\Default Work Unit\Player\playerAttacks\playerHit	
+	3923079391	retryOrQuit			\Default Work Unit\UI\timeEffects\retryOrQuit	
 	3966601280	playerDie			\Default Work Unit\Player\playerHealth\playerDie	
 	3986149976	keyDropped			\Default Work Unit\Objects\drops\keyDropped	
 	4011858643	testStart			\Default Work Unit\UI\testAudio\testStart	

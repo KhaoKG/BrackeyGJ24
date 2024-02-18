@@ -48,7 +48,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{825D5FE8-85CD-033B-8949-A70DD70DF633}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{C207A92D-D6E6-C186-25AB-1B1DA9DB5A4C}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -700,6 +700,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="3923079391" Name="retryOrQuit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1218812578" Name="sliderClick" DurationType="OneShot" DurationMin="0.08229812" DurationMax="0.08229812">
 					<MediaRefs>
 						<MediaRef Id="429214499"/>
@@ -768,5 +769,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{94D900D4-6F57-58AC-439C-3765C991B285}</FileHash>
+	<FileHash>{BC67A47C-1698-F67F-0E49-5736964DFB99}</FileHash>
 </SoundBanksInfo>
