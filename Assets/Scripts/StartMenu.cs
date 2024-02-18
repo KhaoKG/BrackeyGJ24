@@ -55,22 +55,13 @@ public class StartMenu : MonoBehaviour
     IEnumerator DoPlayGame()
     {
         // Wait for animation and sound to finish
-        //AkSoundEngine.PostEvent("PlayButton", this.gameObject);
         AkSoundEngine.PostEvent("menuForward", this.gameObject);
-        //doorAnimator.SetTrigger("StartGame");
+
+        // Prepare fade effect
         fadeScreenEffect.FadeSpeed = 1f / startDelay;
         fadeScreenEffect.TargetAlpha = 1f;
         yield return new WaitForSeconds(startDelay);
 
-        // zoom camera
-        /*for(int i = 0; i < 50; i++)
-        {
-            Camera.main.orthographicSize -= 0.1f;
-            yield return new WaitForSeconds(0.01f);
-        }*/
-
-        // Load Game
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         SceneManager.LoadScene(1);
     }
 
@@ -118,20 +109,13 @@ public class StartMenu : MonoBehaviour
     IEnumerator DoTutorial()
     {
         // Wait for animation and sound to finish
-        //AkSoundEngine.PostEvent("PlayButton", this.gameObject);
         AkSoundEngine.PostEvent("menuForward", this.gameObject);
-        //doorAnimator.SetTrigger("StartGame");
-        yield return new WaitForSeconds(1.5f);
 
-        // zoom camera
-        /*for (int i = 0; i < 50; i++)
-        {
-            Camera.main.orthographicSize -= 0.1f;
-            yield return new WaitForSeconds(0.01f);
-        }*/
+        // Prepare fade effect
+        fadeScreenEffect.FadeSpeed = 1f / startDelay;
+        fadeScreenEffect.TargetAlpha = 1f;
+        yield return new WaitForSeconds(startDelay);
 
-        // Load Game
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         SceneManager.LoadScene(3);
     }
 }
