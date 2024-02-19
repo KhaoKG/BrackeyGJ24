@@ -52,6 +52,7 @@ public class GameOverMenu : MonoBehaviour
     }
 
     public void Retry() {
+        AbilityController.Instance.ClearUnlockedAbilities();
         StartCoroutine(FadeAndLoadScene(1));
     }
 

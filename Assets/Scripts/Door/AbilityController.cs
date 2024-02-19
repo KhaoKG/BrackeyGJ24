@@ -71,6 +71,10 @@ public class AbilityController : Singleton<AbilityController>
         }
     }
 
+    public void ClearUnlockedAbilities()
+    {
+        typesOfAbilitesUnlocked.Clear();
+    }
 
     /// <summary>
     /// Add ability should be used at the end of round screen where you receive a key
