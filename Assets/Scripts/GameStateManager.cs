@@ -84,8 +84,10 @@ public class GameStateManager : MonoBehaviour
         ShowKeySelect();
     }
 
-    void ShowKeySelect() {
+    void ShowKeySelect()
+    {
         SceneManager.LoadScene("DoorBonus");
+        MovingListener.instance.RemoveListener();
     }
 
     public void GameOver() {

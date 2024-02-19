@@ -8,6 +8,7 @@
 						<Action Name="" ID="{A2498BE6-EC81-4B37-BEA8-96477CF9A954}" ShortID="739640450">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -26,6 +27,9 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{4AD6B834-EDA0-47B8-BF40-FA5D3AF731D0}" ShortID="451934435">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="musicPlaylist" ID="{3AB71A26-7F55-454F-B992-ED3F45D8D07B}" WorkUnitID="{125F14D7-BAA9-4BE3-AA17-65DC4238D52B}"/>

@@ -27,6 +27,7 @@ public class AbilityController : Singleton<AbilityController>
 
     public void Start()
     {
+        
         HellPortalPrefab = Resources.Load<GameObject>("Prefabs/HellPortal");
         VacuumPrefab = Resources.Load<GameObject>("Prefabs/Vacuum");
         LaserPrefab = Resources.Load<GameObject>("Prefabs/Laser");

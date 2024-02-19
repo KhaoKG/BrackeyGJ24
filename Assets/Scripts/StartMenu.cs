@@ -36,9 +36,11 @@ public class StartMenu : MonoBehaviour
     [SerializeField] FadeEffect fadeScreenEffect;
     [SerializeField] float startDelay = 1.5f ;
 
-    private void Start() {
+    private void Start()
+    {
         // Reset game state just to make sure
         Resources.Load<GameStateSO>("ScriptableObjects/MainGameData").Reset();
+        MovingListener.instance.MoveListener();
     }
 
     // Starts the game
@@ -62,6 +64,7 @@ public class StartMenu : MonoBehaviour
         yield return new WaitForSeconds(startDelay);
 
         SceneManager.LoadScene(1);
+        MovingListener.instance.RemoveListener();
     }
 
     // Quits the game
@@ -108,6 +111,7 @@ public class StartMenu : MonoBehaviour
         yield return new WaitForSeconds(startDelay);
 
         SceneManager.LoadScene(3);
+        MovingListener.instance.RemoveListener();
     }
 
     private void DeactivateCanvasForFadeEffect() {

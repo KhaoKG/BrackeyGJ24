@@ -48,285 +48,285 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{6AB8F2E4-2004-8F75-A71A-F3E0F2723E4D}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{8092BD0C-4CB2-25E1-7518-2C80F9A87683}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
 				<File Id="28133891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-002.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-002_F20A1F16.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-002_89DB00BF.wem</CachePath>
 				</File>
 				<File Id="35617866" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch3.wav</ShortName>
-					<CachePath>SFX/munch3_8E324C96.wem</CachePath>
+					<CachePath>SFX/munch3_45856743.wem</CachePath>
 				</File>
 				<File Id="38651332" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch2.wav</ShortName>
-					<CachePath>SFX/munch2_8E324C96.wem</CachePath>
+					<CachePath>SFX/munch2_45856743.wem</CachePath>
 				</File>
 				<File Id="44412615" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-003.wav</ShortName>
-					<CachePath>SFX/playerHurt-003_E926E3B7.wem</CachePath>
+					<CachePath>SFX/playerHurt-003_E64689EA.wem</CachePath>
 				</File>
 				<File Id="51235534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerPickUp.wav</ShortName>
-					<CachePath>SFX/playerPickUp_7565C99A.wem</CachePath>
+					<CachePath>SFX/playerPickUp_6EA5D513.wem</CachePath>
 				</File>
 				<File Id="81243737" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-002.wav</ShortName>
-					<CachePath>SFX/doorClosed-002_8E324C96.wem</CachePath>
+					<CachePath>SFX/doorClosed-002_45856743.wem</CachePath>
 				</File>
 				<File Id="82049524" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic_Spells_CastShort_Air_Whistling04.wav</ShortName>
-					<CachePath>SFX/Magic_Spells_CastShort_Air_Whistling04_C50BBD75.wem</CachePath>
+					<CachePath>SFX/Magic_Spells_CastShort_Air_Whistling04_71A99F60.wem</CachePath>
 				</File>
 				<File Id="94567938" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-001.wav</ShortName>
-					<CachePath>SFX/doorClosed-001_8E324C96.wem</CachePath>
+					<CachePath>SFX/doorClosed-001_45856743.wem</CachePath>
 				</File>
 				<File Id="109243815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>porcelainBreak-004.wav</ShortName>
-					<CachePath>SFX/porcelainBreak-004_6FAF5490.wem</CachePath>
+					<CachePath>SFX/porcelainBreak-004_BD71254D.wem</CachePath>
 				</File>
 				<File Id="135468555" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Brackeys Game Jam Feb 2024_Menu Theme V1_17Feb2024.wav</ShortName>
-					<CachePath>SFX/Brackeys Game Jam Feb 2024_Menu Theme V1_17Feb2024_D9B786A0.wem</CachePath>
+					<CachePath>SFX/Brackeys Game Jam Feb 2024_Menu Theme V1_17Feb2024_58432D41.wem</CachePath>
 				</File>
 				<File Id="145169640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerDie4.wav</ShortName>
-					<CachePath>SFX/playerDie4_883C9197.wem</CachePath>
+					<CachePath>SFX/playerDie4_C31B2DDA.wem</CachePath>
 				</File>
 				<File Id="165850355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-001.wav</ShortName>
-					<CachePath>SFX/crayonDrops-001_420D60E7.wem</CachePath>
+					<CachePath>SFX/crayonDrops-001_75E493DA.wem</CachePath>
 				</File>
 				<File Id="171609622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits.wav</ShortName>
-					<CachePath>SFX/attackHits_909DBA61.wem</CachePath>
+					<CachePath>SFX/attackHits_FE5370D0.wem</CachePath>
 				</File>
 				<File Id="172235974" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-004.wav</ShortName>
-					<CachePath>SFX/playerHurt-004_D876ABDE.wem</CachePath>
+					<CachePath>SFX/playerHurt-004_A5F15DC3.wem</CachePath>
 				</File>
 				<File Id="190049230" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>springBoy-003.wav</ShortName>
-					<CachePath>SFX/springBoy-003_1ADA405D.wem</CachePath>
+					<CachePath>SFX/springBoy-003_5AA79134.wem</CachePath>
 				</File>
 				<File Id="197582343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-005.wav</ShortName>
-					<CachePath>SFX/playerHurt-005_818C4A45.wem</CachePath>
+					<CachePath>SFX/playerHurt-005_AA1D025C.wem</CachePath>
 				</File>
 				<File Id="201302755" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player Dash.wav</ShortName>
-					<CachePath>SFX/Player Dash_7E0F20E7.wem</CachePath>
+					<CachePath>SFX/Player Dash_4BDEFD92.wem</CachePath>
 				</File>
 				<File Id="202590603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-004.wav</ShortName>
-					<CachePath>SFX/keyUsed-004_65CC8933.wem</CachePath>
+					<CachePath>SFX/keyUsed-004_121707D2.wem</CachePath>
 				</File>
 				<File Id="221981477" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_End.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Slider_End_D7B0EB22.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Slider_End_AFD79FF7.wem</CachePath>
 				</File>
 				<File Id="235602188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaser.wav</ShortName>
-					<CachePath>SFX/doorLaser_89FAFE1E.wem</CachePath>
+					<CachePath>SFX/doorLaser_1DB747CF.wem</CachePath>
 				</File>
 				<File Id="281856875" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreUp.wav</ShortName>
-					<CachePath>SFX/scoreUp_8E324C96.wem</CachePath>
+					<CachePath>SFX/scoreUp_45856743.wem</CachePath>
 				</File>
 				<File Id="289567978" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>springBoy-001.wav</ShortName>
-					<CachePath>SFX/springBoy-001_8E324C96.wem</CachePath>
+					<CachePath>SFX/springBoy-001_45856743.wem</CachePath>
 				</File>
 				<File Id="293374694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleLooming.wav</ShortName>
-					<CachePath>SFX/doorTentacleLooming_4DA457CA.wem</CachePath>
+					<CachePath>SFX/doorTentacleLooming_7636F343.wem</CachePath>
 				</File>
 				<File Id="306161651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits3.wav</ShortName>
-					<CachePath>SFX/attackHits3_8E324C96.wem</CachePath>
+					<CachePath>SFX/attackHits3_45856743.wem</CachePath>
 				</File>
 				<File Id="314971826" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-002.wav</ShortName>
-					<CachePath>SFX/keyJangles-002_8E324C96.wem</CachePath>
+					<CachePath>SFX/keyJangles-002_45856743.wem</CachePath>
 				</File>
 				<File Id="329629832" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorClosed-003.wav</ShortName>
-					<CachePath>SFX/doorClosed-003_8E324C96.wem</CachePath>
+					<CachePath>SFX/doorClosed-003_45856743.wem</CachePath>
 				</File>
 				<File Id="351355434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleSlam.wav</ShortName>
-					<CachePath>SFX/doorTentacleSlam_8E324C96.wem</CachePath>
+					<CachePath>SFX/doorTentacleSlam_45856743.wem</CachePath>
 				</File>
 				<File Id="366046247" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackHits2.wav</ShortName>
-					<CachePath>SFX/attackHits2_7F92F72F.wem</CachePath>
+					<CachePath>SFX/attackHits2_97BAD8CE.wem</CachePath>
 				</File>
 				<File Id="375074967" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>menuForward.wav</ShortName>
-					<CachePath>SFX/menuForward_8E324C96.wem</CachePath>
+					<CachePath>SFX/menuForward_45856743.wem</CachePath>
 				</File>
 				<File Id="387334877" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Magic_Spells_CastLong_Air_Charm02.wav</ShortName>
-					<CachePath>SFX/Magic_Spells_CastLong_Air_Charm02_503974FA.wem</CachePath>
+					<CachePath>SFX/Magic_Spells_CastLong_Air_Charm02_6F5FE47B.wem</CachePath>
 				</File>
 				<File Id="399348121" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>porcelainBreak-002.wav</ShortName>
-					<CachePath>SFX/porcelainBreak-002_22E5D5E3.wem</CachePath>
+					<CachePath>SFX/porcelainBreak-002_118A1696.wem</CachePath>
 				</File>
 				<File Id="429214499" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_Start.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Slider_Start_45273B8C.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Slider_Start_E40FD9F5.wem</CachePath>
 				</File>
 				<File Id="431594120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpened.wav</ShortName>
-					<CachePath>SFX/doorOpened_484481CF.wem</CachePath>
+					<CachePath>SFX/doorOpened_DDF396FE.wem</CachePath>
 				</File>
 				<File Id="436939186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-001.wav</ShortName>
-					<CachePath>SFX/keyUsed-001_E41C6CDD.wem</CachePath>
+					<CachePath>SFX/keyUsed-001_51DA3A9C.wem</CachePath>
 				</File>
 				<File Id="460617137" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-003.wav</ShortName>
-					<CachePath>SFX/crayonDrops-003_3CEB06A1.wem</CachePath>
+					<CachePath>SFX/crayonDrops-003_8E5A8FCC.wem</CachePath>
 				</File>
 				<File Id="461511639" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch4.wav</ShortName>
-					<CachePath>SFX/munch4_8E324C96.wem</CachePath>
+					<CachePath>SFX/munch4_45856743.wem</CachePath>
 				</File>
 				<File Id="481336322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024.wav</ShortName>
-					<CachePath>SFX/Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024_D9B786A0.wem</CachePath>
+					<CachePath>SFX/Brackeys Game Jam Feb 2024_Transitional  Theme V1_17Feb2024_58432D41.wem</CachePath>
 				</File>
 				<File Id="500735071" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>porcelainBreak-001.wav</ShortName>
-					<CachePath>SFX/porcelainBreak-001_8E324C96.wem</CachePath>
+					<CachePath>SFX/porcelainBreak-001_45856743.wem</CachePath>
 				</File>
 				<File Id="519084594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJoin.wav</ShortName>
-					<CachePath>SFX/playerJoin_8E324C96.wem</CachePath>
+					<CachePath>SFX/playerJoin_45856743.wem</CachePath>
 				</File>
 				<File Id="527999219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-004.wav</ShortName>
-					<CachePath>SFX/crayonDrops-004_1B207E5C.wem</CachePath>
+					<CachePath>SFX/crayonDrops-004_1799E825.wem</CachePath>
 				</File>
 				<File Id="548797008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024.wav</ShortName>
-					<CachePath>SFX/Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024_D9B786A0.wem</CachePath>
+					<CachePath>SFX/Brackeys Game Jam Feb 2024_Level Theme V2_17Feb2024_58432D41.wem</CachePath>
 				</File>
 				<File Id="549912924" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-001.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-001_8FF172EA.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-001_14EFE6CF.wem</CachePath>
 				</File>
 				<File Id="587161954" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorTentacleSwing.wav</ShortName>
-					<CachePath>SFX/doorTentacleSwing_0AFA084A.wem</CachePath>
+					<CachePath>SFX/doorTentacleSwing_B019E75F.wem</CachePath>
 				</File>
 				<File Id="607508543" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>506546__matrixxx__pop-01.wav</ShortName>
-					<CachePath>SFX/506546__matrixxx__pop-01_7A8664BE.wem</CachePath>
+					<CachePath>SFX/506546__matrixxx__pop-01_8B3E1713.wem</CachePath>
 				</File>
 				<File Id="613120640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>faceGroan.wav</ShortName>
-					<CachePath>SFX/faceGroan_4C6C7315.wem</CachePath>
+					<CachePath>SFX/faceGroan_5BE5832C.wem</CachePath>
 				</File>
 				<File Id="647685535" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>springBoy-002.wav</ShortName>
-					<CachePath>SFX/springBoy-002_8287EF6D.wem</CachePath>
+					<CachePath>SFX/springBoy-002_A89F5DEC.wem</CachePath>
 				</File>
 				<File Id="685037215" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-003.wav</ShortName>
-					<CachePath>SFX/keyJangles-003_8E324C96.wem</CachePath>
+					<CachePath>SFX/keyJangles-003_45856743.wem</CachePath>
 				</File>
 				<File Id="706274181" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>porcelainBreak-003.wav</ShortName>
-					<CachePath>SFX/porcelainBreak-003_90CA3A53.wem</CachePath>
+					<CachePath>SFX/porcelainBreak-003_57881446.wem</CachePath>
 				</File>
 				<File Id="710241185" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Hover.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Hover_1064B50E.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Hover_2A3828C7.wem</CachePath>
 				</File>
 				<File Id="715772750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-004.wav</ShortName>
-					<CachePath>SFX/keyJangles-004_F37BCC38.wem</CachePath>
+					<CachePath>SFX/keyJangles-004_5ECFEC6D.wem</CachePath>
 				</File>
 				<File Id="726984224" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>munch1.wav</ShortName>
-					<CachePath>SFX/munch1_8E324C96.wem</CachePath>
+					<CachePath>SFX/munch1_45856743.wem</CachePath>
 				</File>
 				<File Id="751297856" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerDie3.wav</ShortName>
-					<CachePath>SFX/playerDie3_44055464.wem</CachePath>
+					<CachePath>SFX/playerDie3_A24C9431.wem</CachePath>
 				</File>
 				<File Id="757248233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-002.wav</ShortName>
-					<CachePath>SFX/keyUsed-002_E6B06B8D.wem</CachePath>
+					<CachePath>SFX/keyUsed-002_A1D98664.wem</CachePath>
 				</File>
 				<File Id="759789812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-003.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-003_B0974C12.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-003_052831A7.wem</CachePath>
 				</File>
 				<File Id="798063247" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerShatter.wav</ShortName>
-					<CachePath>SFX/playerShatter_8DED9237.wem</CachePath>
+					<CachePath>SFX/playerShatter_38D127BE.wem</CachePath>
 				</File>
 				<File Id="815177471" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorLaserWarn.wav</ShortName>
-					<CachePath>SFX/doorLaserWarn_D0B97D39.wem</CachePath>
+					<CachePath>SFX/doorLaserWarn_39DD3A68.wem</CachePath>
 				</File>
 				<File Id="825991925" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-006.wav</ShortName>
-					<CachePath>SFX/playerHurt-006_66191CA2.wem</CachePath>
+					<CachePath>SFX/playerHurt-006_6B50C2FF.wem</CachePath>
 				</File>
 				<File Id="846321805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyUsed-003.wav</ShortName>
-					<CachePath>SFX/keyUsed-003_322A63B4.wem</CachePath>
+					<CachePath>SFX/keyUsed-003_95B68209.wem</CachePath>
 				</File>
 				<File Id="857493264" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>crayonDrops-002.wav</ShortName>
-					<CachePath>SFX/crayonDrops-002_2A753A11.wem</CachePath>
+					<CachePath>SFX/crayonDrops-002_0BDE9030.wem</CachePath>
 				</File>
 				<File Id="866819570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>wind_tornado_with_destruction_01.wav</ShortName>
-					<CachePath>SFX/wind_tornado_with_destruction_01_D19E9AFA.wem</CachePath>
+					<CachePath>SFX/wind_tornado_with_destruction_01_E949D3E7.wem</CachePath>
 				</File>
 				<File Id="889930564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>scoreDown.wav</ShortName>
-					<CachePath>SFX/scoreDown_8E324C96.wem</CachePath>
+					<CachePath>SFX/scoreDown_45856743.wem</CachePath>
 				</File>
 				<File Id="895624267" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-001.wav</ShortName>
-					<CachePath>SFX/playerHurt-001_3AD838A5.wem</CachePath>
+					<CachePath>SFX/playerHurt-001_F2110CF0.wem</CachePath>
 				</File>
 				<File Id="908824382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>attackWhooshes-004.wav</ShortName>
-					<CachePath>SFX/attackWhooshes-004_D640A08F.wem</CachePath>
+					<CachePath>SFX/attackWhooshes-004_9460C0BA.wem</CachePath>
 				</File>
 				<File Id="910162868" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>porcelainBreak-006.wav</ShortName>
-					<CachePath>SFX/porcelainBreak-006_E44AE7C7.wem</CachePath>
+					<CachePath>SFX/porcelainBreak-006_F7FDF79A.wem</CachePath>
 				</File>
 				<File Id="953208197" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>menuBack.wav</ShortName>
-					<CachePath>SFX/menuBack_19175BFB.wem</CachePath>
+					<CachePath>SFX/menuBack_62554EF2.wem</CachePath>
 				</File>
 				<File Id="983129434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt-002.wav</ShortName>
-					<CachePath>SFX/playerHurt-002_E3E3B4CD.wem</CachePath>
+					<CachePath>SFX/playerHurt-002_FDE4C64C.wem</CachePath>
 				</File>
 				<File Id="1043833764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>keyJangles-001.wav</ShortName>
-					<CachePath>SFX/keyJangles-001_8E324C96.wem</CachePath>
+					<CachePath>SFX/keyJangles-001_45856743.wem</CachePath>
 				</File>
 				<File Id="1047713376" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorDemonSpawner.wav</ShortName>
-					<CachePath>SFX/doorDemonSpawner_8F99A994.wem</CachePath>
+					<CachePath>SFX/doorDemonSpawner_BEC8E269.wem</CachePath>
 				</File>
 				<File Id="1049733785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGame.wav</ShortName>
-					<CachePath>SFX/startGame_3BA96E43.wem</CachePath>
+					<CachePath>SFX/startGame_859A4A8A.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -773,5 +773,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A67E0668-8CF2-B3CF-F3B5-D00FC25E6E15}</FileHash>
+	<FileHash>{7BB4619E-050E-35D6-CED6-82379A35E2EB}</FileHash>
 </SoundBanksInfo>

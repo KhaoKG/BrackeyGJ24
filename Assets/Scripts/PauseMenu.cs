@@ -132,6 +132,7 @@ public class PauseMenu : MonoBehaviour
     {
         StartCoroutine(FadeAndLoadScene(0));
         AkSoundEngine.PostEvent("gameUnpaused", this.gameObject);
+        AkSoundEngine.PostEvent("titleState", this.gameObject);
     }
 
     IEnumerator FadeAndLoadScene(int scene) {
@@ -144,5 +145,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
 
         SceneManager.LoadScene(scene);
+        MovingListener.instance.RemoveListener();
     }
 }

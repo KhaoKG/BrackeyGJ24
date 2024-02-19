@@ -60,6 +60,11 @@ public class Player : MonoBehaviour
 
     //public int PunchDamage { get => punchDamage; set => punchDamage = value; }
 
+    private void Awake()
+    {
+        MovingListener.instance.MoveListener();
+    }
+
     private void Start()
     {
         maxHealth = gameState.maxHealth;

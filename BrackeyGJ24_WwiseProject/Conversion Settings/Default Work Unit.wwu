@@ -135,6 +135,80 @@
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
+				<Conversion Name="Opus Conversion" ID="{2F2E1A3E-6C45-451A-8F78-D443F8D0DEF5}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Web">4</Value>
+								<Value Platform="Mac">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Web">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="Linux">
+							<ConversionPlugin Name="" ID="{BF48BF6B-8B0C-4578-B9FF-BB4163120203}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="132"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{55F2CC18-ABB8-408F-AEB1-FC64ADE67094}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="132"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Web">
+							<ConversionPlugin Name="" ID="{3454D1F0-FA30-4FA1-A08F-A3C3377CB1D6}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="132"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{AE785D08-8F17-4A3E-B1E4-97A5B0FAC53E}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="132"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
 			</ChildrenList>
 		</WorkUnit>
 	</Conversions>

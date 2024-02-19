@@ -14,10 +14,14 @@ public class KeySelection : MonoBehaviour {
     [SerializeField] GameObject door;
     [SerializeField] GameObject doorBack;
 
+    private void Awake()
+    {
+        MovingListener.instance.MoveListener();
+    }
     private void Start() {
         // Load game data
         gameStateData = Resources.Load<GameStateSO>("ScriptableObjects/MainGameData");
-
+       
         // Add a key for each child
         //the four options
         List<string> keys = new List<string>();
@@ -114,6 +118,7 @@ public class KeySelection : MonoBehaviour {
     void GoToNextWave() {
         gameStateData.currentWave++;
         SceneManager.LoadScene(2);
+        MovingListener.instance.RemoveListener();
     }
 
     void PrepareCanvasAfterSelection() {

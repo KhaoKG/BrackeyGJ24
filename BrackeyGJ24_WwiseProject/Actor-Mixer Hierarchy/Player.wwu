@@ -204,6 +204,13 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="playerAttackHits" ID="{F6EA2E51-ACCB-4FDC-AD47-081FF921E69D}" ShortID="753800438">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -217,6 +224,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>

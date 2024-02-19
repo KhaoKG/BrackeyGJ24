@@ -59,6 +59,7 @@ public class GameOverMenu : MonoBehaviour
     public void Quit() {
         AbilityController.Instance.ClearUnlockedAbilities();
         StartCoroutine(FadeAndLoadScene(0));
+        AkSoundEngine.PostEvent("titleState", this.gameObject);
     }
 
     IEnumerator FadeAndLoadScene(int scene) {
@@ -68,5 +69,6 @@ public class GameOverMenu : MonoBehaviour
         yield return new WaitForSeconds(1f / screenFadeEffect.FadeSpeed);
 
         SceneManager.LoadScene(scene);
+        MovingListener.instance.RemoveListener();
     }
 }
